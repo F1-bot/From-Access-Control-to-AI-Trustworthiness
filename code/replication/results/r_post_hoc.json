@@ -1,0 +1,102 @@
+{
+ "causal_onset": {
+  "baseline_s0": {
+   "plan": {
+    "detected": 44,
+    "false_alarms": 6,
+    "ttd_median_s": 29.0
+   },
+   "causal": {
+    "detected": 44,
+    "false_alarms": 6,
+    "ttd_median_s": 32.5
+   }
+  },
+  "baseline_s1": {
+   "plan": {
+    "detected": 42,
+    "false_alarms": 7,
+    "ttd_median_s": 29.0
+   },
+   "causal": {
+    "detected": 42,
+    "false_alarms": 7,
+    "ttd_median_s": 30.0
+   }
+  },
+  "baseline_s2": {
+   "plan": {
+    "detected": 42,
+    "false_alarms": 9,
+    "ttd_median_s": 30.0
+   },
+   "causal": {
+    "detected": 42,
+    "false_alarms": 9,
+    "ttd_median_s": 33.0
+   }
+  },
+  "baseline_s3": {
+   "plan": {
+    "detected": 44,
+    "false_alarms": 9,
+    "ttd_median_s": 29.5
+   },
+   "causal": {
+    "detected": 44,
+    "false_alarms": 9,
+    "ttd_median_s": 31.0
+   }
+  },
+  "baseline_s4": {
+   "plan": {
+    "detected": 44,
+    "false_alarms": 7,
+    "ttd_median_s": 26.5
+   },
+   "causal": {
+    "detected": 44,
+    "false_alarms": 7,
+    "ttd_median_s": 29.0
+   }
+  },
+  "hardened_s0": {
+   "plan": {
+    "detected": 45,
+    "false_alarms": 3,
+    "ttd_median_s": 29.0
+   },
+   "causal": {
+    "detected": 45,
+    "false_alarms": 3,
+    "ttd_median_s": 29.0
+   }
+  }
+ },
+ "drift_planning_deff": {
+  "lag1_rho_training_hours": 0.6873386492266131,
+  "deff": 5.396697241449505,
+  "n_hours": 60,
+  "check": {
+   "test": "IV-3 drift FPR (hours, planning design effect from training hours)",
+   "kind": "proportion",
+   "tau": 0.05,
+   "direction": "<=",
+   "alpha": 0.05,
+   "units": "hours",
+   "n": 60,
+   "deff": 5.396697241449505,
+   "n_eff": 11.117911069601623,
+   "best_bound": 0.2362012964904191,
+   "decidable": false,
+   "delta": 0.2,
+   "n_min": 59,
+   "power_at_delta": 0.0,
+   "min_detectable_margin": null,
+   "flags": [
+    "not decidable"
+   ],
+   "verdict": "not decidable"
+  }
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "plan": "replication_plan_2103.yaml",
+ "plan_sha256": "da8704e640f427f885627b25fd175527b6c468ec12717675e8fceeae04b21783",
+ "frozen_utc": "2026-10-13T04:13:43Z",
+ "note": "test-data scripts refuse to run unless the plan file matches this digest"
+}

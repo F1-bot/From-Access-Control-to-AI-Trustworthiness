@@ -1,0 +1,8017 @@
+{
+ "eps": [
+  0.1,
+  0.25,
+  0.5,
+  1.0
+ ],
+ "models": {
+  "baseline_s0": {
+   "theta": 19.623428543382843,
+   "rows": [
+    {
+     "attack_id": "A101",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 22.219141006469727,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 34.56771469116211,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 128.45838928222656,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 456.02447509765625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 20.779083251953125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 24.815673828125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 61.7696418762207,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 259.5113525390625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 22.7838191986084,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 22.297948837280273,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 27.97893714904785,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 34.658023834228516,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 624.8500366210938,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 604.647216796875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 606.5636596679688,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 797.1708984375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 624.5236206054688,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 597.2067260742188,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 569.8281860351562,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 585.0768432617188,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 626.3947143554688,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 593.2538452148438,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 540.0873413085938,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 441.4356994628906,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 73.69384002685547,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 68.56897735595703,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 126.91291809082031,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 519.4859008789062,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 73.28215789794922,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 60.85441970825195,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 62.46842575073242,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 261.0826416015625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 80.89193725585938,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 73.58773040771484,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 65.20897674560547,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 55.10377883911133,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 311242.34375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 309308.0,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 306176.40625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 300477.0625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 311324.75,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 309484.84375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 306485.46875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 300747.40625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 312591.59375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 312591.15625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 312591.71875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 312596.8125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 20.24776840209961,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 28.22894859313965,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 120.4603042602539,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 464.31353759765625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 18.452295303344727,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 17.176034927368164,
+     "linf": 0.21875
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 60.32318115234375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 248.9761199951172,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 18.446714401245117,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 16.832517623901367,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 14.876899719238281,
+     "linf": 0.1875
+    },
+    {
+     "attack_id": "A106",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 15.343672752380371,
+     "linf": 0.375
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 724.8759155273438,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 554.2450561523438,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 389.9704284667969,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 470.4888610839844,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 724.483154296875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 544.3369140625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 348.6142578125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 194.99072265625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 877.71337890625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 878.0517578125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 879.2330322265625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 883.9776611328125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 23.03285789489746,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 40.22175979614258,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 133.1094207763672,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 517.2753295898438,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 20.668670654296875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 28.96315574645996,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 129.61790466308594,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 464.60400390625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 17.948774337768555,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 16.45892333984375,
+     "linf": 0.15625
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 17.2531795501709,
+     "linf": 0.1875
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 41.0504035949707,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 67.69855499267578,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 71.10669708251953,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 123.9519271850586,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 494.2819519042969,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 68.0377197265625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 67.0866928100586,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 110.0597152709961,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 403.1830749511719,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 76.0096206665039,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 76.83179473876953,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 80.04852294921875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 94.0688247680664,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 279601.65625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 278062.59375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 275610.3125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 271039.34375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 279680.09375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 278221.9375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 275842.4375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 271232.625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 280676.84375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 280674.96875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 280672.46875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 280670.1875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 17.654260635375977,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 27.10857582092285,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 120.83650207519531,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 476.8710021972656,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": true,
+     "max_score": 16.842424392700195,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": true,
+     "max_score": 15.37011432647705,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 58.16408157348633,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 244.5718231201172,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 16.708480834960938,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 16.695226669311523,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 16.92957305908203,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 17.58282470703125,
+     "linf": 0.375
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 680.1461181640625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 537.6090698242188,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 400.3885803222656,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 481.0394592285156,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 684.4483642578125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 530.7677612304688,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 358.6866149902344,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 277.4004821777344,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 701.5941162109375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 560.3385620117188,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 370.2466735839844,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 165.4149932861328,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 934.1822509765625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 757.9326782226562,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 577.055908203125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 538.6685180664062,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 1077.0181884765625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 1082.3177490234375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 1104.96240234375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 1209.6453857421875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 1077.56396484375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 1077.7210693359375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 1078.1302490234375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 1078.1480712890625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 20.246030807495117,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 28.512617111206055,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 114.71119689941406,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 463.70440673828125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 19.2020263671875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 14.88190746307373,
+     "linf": 0.1875
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 51.84542465209961,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 225.6034698486328,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 18.777406692504883,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 15.188125610351562,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 15.971049308776855,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A213",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 14.71984577178955,
+     "linf": 0.375
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 27.126623153686523,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 36.96623611450195,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 117.44005584716797,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 452.505859375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 26.583784103393555,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 26.681211471557617,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 54.937408447265625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 242.6076202392578,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 37.58573532104492,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 37.209224700927734,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 37.15754318237305,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 37.377197265625,
+     "linf": 0.75
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 17.45484733581543,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 34.091896057128906,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 129.6847686767578,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 476.5316467285156,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 17.006282806396484,
+     "linf": 0.07500000298023224
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 17.163537979125977,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 60.31427764892578,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 240.8957061767578,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 20.020666122436523,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 18.158586502075195,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 17.4167423248291,
+     "linf": 0.4375
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": true,
+     "max_score": 18.719968795776367,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 30.8717098236084,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 41.81834030151367,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 126.72029113769531,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 485.24395751953125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 30.35347557067871,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 33.397621154785156,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 84.69664764404297,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 312.5076904296875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 36.26662063598633,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 36.277462005615234,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 36.3256950378418,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 36.60287094116211,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2196931.0,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2191369.0,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2181999.25,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2163075.0,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 2197030.25,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 2191508.75,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 2182383.5,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 2164345.75,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 2200735.75,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 2200730.25,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 2200723.25,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 2200717.25,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 41.79240417480469,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 50.92411422729492,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 122.688720703125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 435.0514221191406,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 41.300350189208984,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 42.05745315551758,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 80.4298095703125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 299.8951110839844,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 48.09288787841797,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 48.98798751831055,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 52.091732025146484,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 61.64773178100586,
+     "linf": 0.625
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 824.8031616210938,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 794.4105224609375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 785.4826049804688,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 923.9730834960938,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 824.58056640625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 786.0263061523438,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 741.9189453125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 715.8036499023438,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 855.7117309570312,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 855.7510986328125,
+     "linf": 0.1875
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 855.9496459960938,
+     "linf": 0.375
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 856.7648315429688,
+     "linf": 0.75
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 4194869.5,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 4186840.5,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 4173662.5,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 4147907.25,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 4195227.5,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 4187495.25,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 4174721.25,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 4149681.25,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 4200423.0,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 4200401.0,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 4200377.5,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 4200362.5,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 82397.375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 81099.5234375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 78767.8359375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 74984.671875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 82453.8359375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 81226.0859375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 79269.3359375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 75601.953125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 83293.890625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 83289.8203125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 83292.1015625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 83295.203125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 784686.5625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 775867.1875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 761566.8125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 734805.5,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 784761.4375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 776054.3125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 761945.5,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 735364.125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 785418.4375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 777588.6875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 764696.375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 739544.8125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 44240.31640625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 42754.48828125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 40403.640625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 36153.09375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 44268.69921875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 42796.3515625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 40434.99609375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 36064.0078125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 73.41010284423828,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 70.98882293701172,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 133.9908905029297,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 484.0560607910156,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 74.65229797363281,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 63.7474365234375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 84.04936218261719,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 319.20379638671875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 92.6200942993164,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 92.66441345214844,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 92.84502410888672,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 94.29847717285156,
+     "linf": 0.75
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 101022.4453125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 99974.9140625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 98697.984375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 96325.171875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 101217.96875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 100375.25,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 99059.8046875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 96739.4921875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 101811.7421875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 101805.8046875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 101794.015625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 101778.0703125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 824.0424194335938,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 790.2233276367188,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 772.2582397460938,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 896.1881103515625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 824.2369384765625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 785.306884765625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 735.1578979492188,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 683.639404296875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 825.2833251953125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 781.7526245117188,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 711.8287353515625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 583.7050170898438,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 101.34820556640625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 103.2793960571289,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 175.5283660888672,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 485.2310485839844,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 101.25038146972656,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 99.19011688232422,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 144.7873077392578,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 414.0055847167969,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 114.06121063232422,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 111.45361328125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 112.6749267578125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 127.70365142822266,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 39996.71875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 38612.578125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 36422.8828125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 32444.916015625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 40004.9609375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 38627.33984375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 36435.671875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 32445.375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 40961.125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 40961.359375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 40962.3359375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 40966.5390625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 75.80522155761719,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 85.6909408569336,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 152.4772186279297,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 488.720947265625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 76.29357147216797,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 84.2552261352539,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 139.98414611816406,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 424.09576416015625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 99.82552337646484,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 100.4722671508789,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 102.74968719482422,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 112.55537414550781,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 43130.69921875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 41663.80078125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 39366.265625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 35173.796875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 43152.73828125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 41703.60546875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 39390.41796875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 35080.20703125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 44142.28125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 44142.08203125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 44141.96484375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 44142.51953125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 39150.3828125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 37788.23046875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 35610.90234375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 31691.203125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 39168.19921875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 37804.2109375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 35618.0234375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 31576.380859375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 174.20521545410156,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 154.57810974121094,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 174.745361328125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 511.1714782714844,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 173.43260192871094,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 143.58599853515625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 113.830078125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 241.2291717529297,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 199.73045349121094,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 201.02146911621094,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 205.76760864257812,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A417",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 221.2819366455078,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 25.909921646118164,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 36.952049255371094,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 124.2329330444336,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 484.7411804199219,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 25.119964599609375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 28.783170700073242,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 60.1689567565918,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 264.14990234375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 30.0145206451416,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 30.50884437561035,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 33.91249465942383,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 43.76544189453125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 976.7978515625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 808.4734497070312,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 600.961669921875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 499.3315124511719,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 980.2826538085938,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 806.3804931640625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 564.6344604492188,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 281.2912292480469,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 981.4988403320312,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 805.3121948242188,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 552.4459228515625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 199.55152893066406,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 30.665485382080078,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 28.20526123046875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 130.26107788085938,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 485.07086181640625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 30.261322021484375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 25.961933135986328,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 111.9348373413086,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 474.2349548339844,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 30.26386070251465,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": true,
+     "max_score": 15.818160057067871,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": true,
+     "max_score": 16.110910415649414,
+     "linf": 0.375
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 34.017234802246094,
+     "linf": 0.75
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 82.9678955078125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 88.86183166503906,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 156.734619140625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 470.16827392578125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 83.51683807373047,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 85.19111633300781,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 131.8428192138672,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 519.2169799804688,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 117.34869384765625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 117.6229019165039,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 120.15081024169922,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 142.04759216308594,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 25.849639892578125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 28.62379264831543,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 122.81623840332031,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 473.4062194824219,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 18.087011337280273,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 25.722021102905273,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 117.7872543334961,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 430.03082275390625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 18.70724105834961,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 16.8843994140625,
+     "linf": 0.15625
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 16.79680633544922,
+     "linf": 0.3125
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 41.39223098754883,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 28.3709774017334,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 35.28533935546875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 130.23049926757812,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 454.9813537597656,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 27.07876968383789,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 24.080917358398438,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 56.18408203125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 248.0872039794922,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 30.598453521728516,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 24.114063262939453,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 23.76616859436035,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 28.910268783569336,
+     "linf": 1.0
+    }
+   ],
+   "summary": [
+    {
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n": 38,
+     "concealed": 5
+    },
+    {
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n": 38,
+     "concealed": 4
+    },
+    {
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n": 38,
+     "concealed": 0
+    },
+    {
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n": 38,
+     "concealed": 0
+    },
+    {
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n": 38,
+     "concealed": 2
+    },
+    {
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n": 38,
+     "concealed": 0
+    },
+    {
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n": 38,
+     "concealed": 0
+    },
+    {
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n": 38,
+     "concealed": 0
+    },
+    {
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n": 36,
+     "concealed": 5
+    },
+    {
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n": 36,
+     "concealed": 7
+    },
+    {
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n": 36,
+     "concealed": 7
+    },
+    {
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n": 36,
+     "concealed": 4
+    }
+   ]
+  },
+  "hardened_s0": {
+   "theta": 7.22991242408742,
+   "rows": [
+    {
+     "attack_id": "A101",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 11.224855422973633,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 8.39260482788086,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 7.959968566894531,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 11.150195121765137,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 12.788802146911621,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 10.23606014251709,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 8.38304615020752,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 11.265085220336914,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 16.10664939880371,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 16.087209701538086,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 16.07575798034668,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A101",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 16.078481674194336,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 79.9598388671875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 72.49639892578125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 65.13387298583984,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 58.974395751953125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 83.326171875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 77.28914642333984,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 70.26016235351562,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 60.45545196533203,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 86.7357177734375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 83.24935150146484,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 77.63412475585938,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A102",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 67.1651611328125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 23.140338897705078,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 18.06320571899414,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 13.25910472869873,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 11.204657554626465,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 24.453466415405273,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 19.55376434326172,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 13.847861289978027,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 10.520813941955566,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 27.918420791625977,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 26.62704849243164,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 24.927568435668945,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A103",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 22.762144088745117,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 37278.79296875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 36835.0078125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 36251.88671875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 35178.875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 37331.91796875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 36958.578125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 36402.27734375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 35470.0390625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 37586.5625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 37584.41796875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 37580.94921875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A105",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 37575.671875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 68.64088439941406,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 45.35727310180664,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 24.268247604370117,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 18.050199508666992,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 74.03788757324219,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 54.2916259765625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 29.334640502929688,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 16.720163345336914,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 87.60457611083984,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 85.29718017578125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 81.52242279052734,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A203",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 74.32404327392578,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.3713860511779785,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.483851909637451,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 5.8737473487854,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 11.118817329406738,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 6.4805803298950195,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 6.193458080291748,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 6.374356269836426,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 10.125222206115723,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 11.329488754272461,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 9.121904373168945,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 7.13704252243042,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A204",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 7.076030254364014,
+     "linf": 0.875
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 165.4853973388672,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 116.68963623046875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 65.58309936523438,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 30.183349609375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 170.06057739257812,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 128.50372314453125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 78.06429290771484,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 35.21150588989258,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 195.61911010742188,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 188.8422393798828,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 177.2531280517578,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A206",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 157.2507781982422,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 35535.62109375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 34882.84375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 33710.33984375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 32151.19140625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 35677.88671875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 35275.703125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 34621.7265625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 33346.87109375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 35939.04296875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 35928.96484375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 35912.87109375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A207",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 35881.34375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.326760768890381,
+     "linf": 0.07500000298023224
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.505397796630859,
+     "linf": 0.09375
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.364583492279053,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.092406272888184,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": true,
+     "max_score": 6.445077419281006,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": true,
+     "max_score": 6.262055397033691,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": true,
+     "max_score": 5.881280422210693,
+     "linf": 0.1875
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": true,
+     "max_score": 6.394636631011963,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 8.261909484863281,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 6.289563179016113,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 6.207974433898926,
+     "linf": 0.3125
+    },
+    {
+     "attack_id": "A208",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 5.848692417144775,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 122.2887954711914,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 87.09661865234375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 36.82793045043945,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 21.351110458374023,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 133.43991088867188,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 108.30513000488281,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 70.32086181640625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 20.758596420288086,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 148.3478546142578,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 145.98666381835938,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 141.7542266845703,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A210",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 132.97511291503906,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 8.916319847106934,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.4936676025390625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.439425945281982,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 12.084001541137695,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 12.033096313476562,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 11.34074878692627,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 11.642181396484375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 13.725934028625488,
+     "linf": 0.875
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 13.45825481414795,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 13.44897174835205,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 13.417746543884277,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A211",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 13.459612846374512,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 14.113476753234863,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.486787796020508,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 8.289676666259766,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.688821792602539,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 15.330309867858887,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 12.112995147705078,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 9.215221405029297,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 9.192056655883789,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 18.77530860900879,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 18.58566665649414,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 18.511661529541016,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A215",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 18.547927856445312,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.45061731338501,
+     "linf": 0.07500000298023224
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.03861141204834,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 5.829992771148682,
+     "linf": 0.3125
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 11.476455688476562,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 6.4752655029296875,
+     "linf": 0.07500000298023224
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 6.33674955368042,
+     "linf": 0.09375
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 6.1179375648498535,
+     "linf": 0.1875
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 4.8554863929748535,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 8.55722713470459,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 8.362820625305176,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 8.219159126281738,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A217",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 8.176656723022461,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 16.93039321899414,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 12.6134672164917,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 11.102812767028809,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 17.34200096130371,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 18.920513153076172,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 14.663187026977539,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 11.774253845214844,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 12.959985733032227,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 23.470815658569336,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 23.3906307220459,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 23.300954818725586,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A301",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 23.317094802856445,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 283888.71875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 282916.28125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 281069.875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 277098.09375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 283980.28125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 283135.84375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 281732.15625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 278785.65625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 284550.0625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 284546.84375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 284542.78125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A302",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 284533.34375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 13.884467124938965,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.778936386108398,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.23565673828125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 13.386637687683105,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 15.401644706726074,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 12.1605224609375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 10.94199275970459,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 41,
+     "concealed": false,
+     "max_score": 11.192185401916504,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 19.271020889282227,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 18.936233520507812,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 18.730085372924805,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A303",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 18.814489364624023,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 92.48320770263672,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 83.15911865234375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 74.71187591552734,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 65.20112609863281,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 95.90300750732422,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 88.189208984375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 79.46346282958984,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 67.22539520263672,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 103.22010803222656,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 103.16871643066406,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 103.16851806640625,
+     "linf": 0.375
+    },
+    {
+     "attack_id": "A305",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 103.25829315185547,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 543579.8125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 542082.875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 539241.9375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 533321.125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 543751.5625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 542555.4375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 540541.75,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 536160.25,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 544531.9375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 544514.9375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 544487.25,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A306",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 544432.125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 9292.7236328125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 8833.7333984375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 8525.0546875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 7919.29638671875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 9417.9443359375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 9122.8662109375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 8622.7265625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 8095.79150390625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 9593.228515625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 9568.6533203125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 9527.1220703125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A308",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 9441.1220703125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 13.951438903808594,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.137238502502441,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 9.164924621582031,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 13.602499961853027,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 7,
+     "concealed": false,
+     "max_score": 16.623794555664062,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 7,
+     "concealed": false,
+     "max_score": 14.62684154510498,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 7,
+     "concealed": false,
+     "max_score": 11.700575828552246,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 7,
+     "concealed": true,
+     "max_score": 7.145971775054932,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 16.718515396118164,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 14.804829597473145,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 11.938319206237793,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A310",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 7.2251505851745605,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1418.4937744140625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1346.6297607421875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1252.323974609375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1128.6265869140625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 1434.746826171875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 1380.3603515625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 1303.2701416015625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 1196.228271484375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 1468.4852294921875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 1458.8934326171875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 1443.1004638671875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A401",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 1412.1976318359375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2321.22705078125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2231.047119140625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2090.279541015625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1875.431640625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 2342.560302734375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 2281.69091796875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 2191.359619140625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A403",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 2018.467041015625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 128.4352264404297,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 88.53185272216797,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 31.69352149963379,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 21.0191707611084,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 142.66233825683594,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 116.90303039550781,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 79.30123901367188,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 37.835025787353516,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 160.66830444335938,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 157.28269958496094,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 150.95091247558594,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A404",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 139.6003875732422,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 16119.4169921875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 15409.3408203125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 14301.4423828125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 12674.8984375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 16316.3544921875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 15882.5185546875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 15204.111328125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 14072.5341796875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 16573.318359375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 16517.771484375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 16425.275390625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A408",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 16240.7001953125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 88.4568099975586,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 79.65013885498047,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 71.6794204711914,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 62.31977081298828,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 92.1632308959961,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 84.73845672607422,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 76.17632293701172,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 63.92377853393555,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 96.37244415283203,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 91.87752532958984,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 84.71968841552734,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A409",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 71.56502532958984,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 345.8324890136719,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 267.5796813964844,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 99.6376724243164,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 29.39765739440918,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 359.9027404785156,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 304.35455322265625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 210.8708953857422,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 65.20820617675781,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 391.8979187011719,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 387.91778564453125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 380.54595947265625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A410",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 4,
+     "concealed": false,
+     "max_score": 365.65753173828125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2196.550537109375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2104.0654296875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1975.601806640625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1770.661376953125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 2205.34033203125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 2123.826171875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 2004.535400390625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 1815.3775634765625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 2263.26904296875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 2263.032958984375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 2262.722412109375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A411",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 2262.12841796875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 349.5318298339844,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 277.84185791015625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 154.3136749267578,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 60.658203125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 361.9906921386719,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 312.07537841796875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 224.14358520507812,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 90.78294372558594,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 391.6936950683594,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 388.460205078125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 382.6022644042969,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A413",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 369.0848083496094,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2263.615966796875,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2168.123046875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2029.8358154296875,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1813.20703125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 2282.4052734375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 2211.63134765625,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 2106.481689453125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 23,
+     "concealed": false,
+     "max_score": 1924.0250244140625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 2331.54150390625,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 2330.26318359375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 2328.446533203125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A414",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 2325.884765625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2177.714111328125,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 2086.594482421875,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1938.1083984375,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 1705.23828125,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 2200.638427734375,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 2138.559814453125,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 2039.91015625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A415",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 16,
+     "concealed": false,
+     "max_score": 1863.7528076171875,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 14.333999633789062,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.311973571777344,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 9.345552444458008,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 14.415507316589355,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 16.326038360595703,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 12.910666465759277,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 10.539023399353027,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 11.249290466308594,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 19.652769088745117,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 19.063318252563477,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 18.18137550354004,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A418",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 16.743961334228516,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 17.050846099853516,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 13.603113174438477,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.603080749511719,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.685683250427246,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 18.101621627807617,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 14.821063041687012,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 11.036301612854004,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 8.177691459655762,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 19.909025192260742,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 17.605636596679688,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 14.174867630004883,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A420",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 1,
+     "concealed": false,
+     "max_score": 8.981541633605957,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.178793430328369,
+     "linf": 0.0625
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 5.643250942230225,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 5.826451301574707,
+     "linf": 0.0625
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.1083903312683105,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 6.443145751953125,
+     "linf": 0.05000000074505806
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 6.417180061340332,
+     "linf": 0.09375
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 5.989687442779541,
+     "linf": 0.0625
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 5.694204330444336,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": true,
+     "max_score": 6.6678338050842285,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": true,
+     "max_score": 6.3595123291015625,
+     "linf": 0.15625
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": true,
+     "max_score": 5.963294506072998,
+     "linf": 0.1875
+    },
+    {
+     "attack_id": "A421",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": true,
+     "max_score": 5.9953789710998535,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 273.4791564941406,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 208.22586059570312,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 134.09556579589844,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 43.99758529663086,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 283.2485046386719,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 232.45999145507812,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 164.8194580078125,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": false,
+     "max_score": 76.06494140625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 319.3851013183594,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 317.09075927734375,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 312.9186706542969,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A422",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 3,
+     "concealed": false,
+     "max_score": 305.66705322265625,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.456897258758545,
+     "linf": 0.07500000298023224
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.444985389709473,
+     "linf": 0.09375
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.472888469696045,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.322515964508057,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 6.439094543457031,
+     "linf": 0.07500000298023224
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 6.3320817947387695,
+     "linf": 0.125
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 6.3271098136901855,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 50,
+     "concealed": true,
+     "max_score": 5.926584243774414,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 8.518902778625488,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 6.438838958740234,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 6.215966701507568,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A423",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": true,
+     "max_score": 6.21791934967041,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 9.666092872619629,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.81417989730835,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n_channels": 68,
+     "concealed": true,
+     "max_score": 6.009147644042969,
+     "linf": 0.375
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n_channels": 68,
+     "concealed": false,
+     "max_score": 10.527679443359375,
+     "linf": 1.0
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 10.256301879882812,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n_channels": 34,
+     "concealed": false,
+     "max_score": 7.399926662445068,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 5.9113945960998535,
+     "linf": 0.375
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n_channels": 34,
+     "concealed": true,
+     "max_score": 5.3994140625,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 12.995378494262695,
+     "linf": 0.10000000149011612
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 12.774243354797363,
+     "linf": 0.25
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 12.543289184570312,
+     "linf": 0.5
+    },
+    {
+     "attack_id": "A424",
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n_channels": 2,
+     "concealed": false,
+     "max_score": 12.401780128479004,
+     "linf": 1.0
+    }
+   ],
+   "summary": [
+    {
+     "tm": "TM-A",
+     "eps": 0.1,
+     "n": 36,
+     "concealed": 5
+    },
+    {
+     "tm": "TM-A",
+     "eps": 0.25,
+     "n": 36,
+     "concealed": 5
+    },
+    {
+     "tm": "TM-A",
+     "eps": 0.5,
+     "n": 36,
+     "concealed": 6
+    },
+    {
+     "tm": "TM-A",
+     "eps": 1.0,
+     "n": 36,
+     "concealed": 6
+    },
+    {
+     "tm": "TM-ALL",
+     "eps": 0.1,
+     "n": 36,
+     "concealed": 5
+    },
+    {
+     "tm": "TM-ALL",
+     "eps": 0.25,
+     "n": 36,
+     "concealed": 7
+    },
+    {
+     "tm": "TM-ALL",
+     "eps": 0.5,
+     "n": 36,
+     "concealed": 7
+    },
+    {
+     "tm": "TM-ALL",
+     "eps": 1.0,
+     "n": 36,
+     "concealed": 2
+    },
+    {
+     "tm": "TM-B",
+     "eps": 0.1,
+     "n": 34,
+     "concealed": 1
+    },
+    {
+     "tm": "TM-B",
+     "eps": 0.25,
+     "n": 34,
+     "concealed": 3
+    },
+    {
+     "tm": "TM-B",
+     "eps": 0.5,
+     "n": 34,
+     "concealed": 4
+    },
+    {
+     "tm": "TM-B",
+     "eps": 1.0,
+     "n": 34,
+     "concealed": 5
+    }
+   ]
+  }
+ },
+ "runtime_s": 140.7487919330597
+}

@@ -1,0 +1,3917 @@
+{
+ "eps": [
+  0.1,
+  0.25,
+  0.5
+ ],
+ "unbounded_eps": 5.0,
+ "threat_model": "TM-A",
+ "on_delay_s": 20,
+ "variants": {
+  "baseline_s0": {
+   "theta": 18.012214903831914,
+   "summary": {
+    "n_attackable": 44,
+    "strongest_ball_plan": {
+     "0.1": 2,
+     "0.25": 3,
+     "0.5": 5
+    },
+    "strongest_ball_causal": {
+     "0.1": 2,
+     "0.25": 3,
+     "0.5": 5
+    },
+    "differing_attacks": []
+   },
+   "rows": [
+    {
+     "attack_id": "A101",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A102",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       true,
+       true
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       true,
+       true
+      ],
+      "0.25": [
+       true,
+       true
+      ],
+      "0.5": [
+       true,
+       true
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       true,
+       true
+      ],
+      "0.25": [
+       true,
+       true
+      ],
+      "0.5": [
+       true,
+       true
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       true,
+       true
+      ],
+      "0.25": [
+       true,
+       true
+      ],
+      "0.5": [
+       true,
+       true
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       true,
+       true
+      ],
+      "0.25": [
+       true,
+       true
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": true,
+      "0.25": true,
+      "0.5": true
+     },
+     "strongest_ball_causal": {
+      "0.1": true,
+      "0.25": true,
+      "0.5": true
+     }
+    },
+    {
+     "attack_id": "A103",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A104",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A105",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A201",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A202",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A203",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A204",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A206",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A207",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A208",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A209",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A211",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A212",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A213",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A215",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A216",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A217",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      true,
+      true
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A218",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A301",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A302",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A303",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       true,
+       true
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": true
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": true
+     }
+    },
+    {
+     "attack_id": "A304",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A305",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A306",
+     "n_channels": 40,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A307",
+     "n_channels": 40,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A308",
+     "n_channels": 40,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A401",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       true,
+       true
+      ],
+      "0.5": [
+       true,
+       true
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       true,
+       true
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": true,
+      "0.5": true
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": true,
+      "0.5": true
+     }
+    },
+    {
+     "attack_id": "A402",
+     "n_channels": 35,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A403",
+     "n_channels": 35,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       true,
+       true
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": true
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": true
+     }
+    },
+    {
+     "attack_id": "A404",
+     "n_channels": 40,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A405",
+     "n_channels": 15,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A501",
+     "n_channels": 40,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A502",
+     "n_channels": 40,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A503",
+     "n_channels": 40,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A504",
+     "n_channels": 35,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A505",
+     "n_channels": 40,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       true,
+       true
+      ],
+      "0.25": [
+       true,
+       true
+      ],
+      "0.5": [
+       true,
+       true
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": true,
+      "0.25": true,
+      "0.5": true
+     },
+     "strongest_ball_causal": {
+      "0.1": true,
+      "0.25": true,
+      "0.5": true
+     }
+    },
+    {
+     "attack_id": "A506",
+     "n_channels": 15,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A507",
+     "n_channels": 10,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A508",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A510",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A511",
+     "n_channels": 15,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    },
+    {
+     "attack_id": "A512",
+     "n_channels": 30,
+     "pgd_planned": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "pgd_improved_window": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "greedy": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "unbounded": [
+      false,
+      false
+     ],
+     "transfer_data_surrogate": {
+      "0.1": [
+       false,
+       false
+      ],
+      "0.25": [
+       false,
+       false
+      ],
+      "0.5": [
+       false,
+       false
+      ]
+     },
+     "strongest_ball_plan": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     },
+     "strongest_ball_causal": {
+      "0.1": false,
+      "0.25": false,
+      "0.5": false
+     }
+    }
+   ]
+  }
+ },
+ "meta": {
+  "script": "r4_e2.py",
+  "runtime_s": 1888.6664292812347,
+  "finished_utc": "2026-10-13T06:03:10Z",
+  "versions": {
+   "python": "3.10.6",
+   "numpy": "1.26.4",
+   "scipy": "1.15.3",
+   "pandas": "2.3.3",
+   "torch": "2.6.0+cu124",
+   "cuda": "12.4",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  }
+ }
+}

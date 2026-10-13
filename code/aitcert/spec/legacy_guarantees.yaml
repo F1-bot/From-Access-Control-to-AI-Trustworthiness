@@ -1,0 +1,66 @@
+# Assurance (guarantee) criteria of ND TZI 2.5-004-99, Section 10 (levels G-1 ... G-7, Cyrillic Г-1 ... Г-7).
+# Markers per level G-1..G-7 follow the standard: '-' requirement absent, '+' requirement appears,
+# '=' requirement retained, '+*' requirement strengthened (automated configuration management from G-4).
+# Progressions ('show' / 'demonstrate' / 'prove'; specification style) are encoded per level.
+source: ND TZI 2.5-004-99, Section 10 (tables 10.1-10.6) and Annex B
+dimensions:
+  architecture:
+    name: Architecture
+    name_uk: Архітектура
+    rows:
+      - {id: AR-1, text: "The TCB implements the security policy; all of its components are clearly defined", marks: ['+', '=', '=', '=', '=', '=', '=']}
+      - {id: AR-2, text: "The TCB consists of well-defined, maximally independent components designed on the least-privilege principle", marks: ['-', '-', '+', '=', '=', '=', '=']}
+      - {id: AR-3, text: "Security-critical TCB components are protected from non-critical ones by lower-level hardware/firmware mechanisms", marks: ['-', '-', '-', '+', '=', '=', '=']}
+      - {id: AR-4, text: "Components that are not security-critical are excluded from the TCB or their inclusion is justified", marks: ['-', '-', '-', '-', '+', '=', '=']}
+      - {id: AR-5, text: "TCB complexity is minimised around a conceptually simple protection mechanism with precise semantics (modularity, data hiding)", marks: ['-', '-', '-', '-', '+', '=', '=']}
+  development_environment:
+    name: Development environment
+    name_uk: Середовище розробки
+    rows:
+      - {id: DE-1, text: "All life-cycle stages are defined with documented procedures and exit criteria", marks: ['+', '=', '=', '=', '=', '=', '=']}
+      - {id: DE-2, text: "Coding standards are defined and enforced; implementation-dependent language/compiler options are documented", marks: ['-', '-', '+', '=', '=', '=', '=']}
+      - {id: DE-3, text: "Documented physical, technical, organisational and personnel security procedures for development", marks: ['-', '-', '-', '+', '=', '=', '=']}
+      - {id: DE-4, text: "Documented configuration management over the whole life cycle (hardware, firmware, source and object code, tests, documentation)", marks: ['+', '=', '=', '+*', '=', '=', '=']}
+      - {id: DE-5, text: "Configuration management is used to generate the TCB from source and to account for all changes between versions", marks: ['-', '-', '-', '+', '=', '=', '=']}
+      - {id: DE-6, text: "Configuration management reports the status of configuration items", marks: ['-', '-', '-', '+', '=', '=', '=']}
+      - {id: DE-7, text: "All means and materials used to generate the TCB are protected against unauthorised modification or destruction", marks: ['-', '-', '-', '-', '-', '+', '=']}
+  development_sequence:
+    name: Development sequence
+    name_uk: Послідовність розробки
+    rows:
+      - {id: DS-1, text: "Functional specification with an informal security policy listing the security services", marks: ['+', '=', '=', '=', '=', '=', '=']}
+      - {id: DS-2, text: "Functional specification includes a security policy model", marks: ['-', '+', '=', '=', '=', '=', '=']}
+      - {id: DS-3, text: "Architecture design listing TCB components, their functions and external interfaces", marks: ['+', '=', '=', '=', '=', '=', '=']}
+      - {id: DS-4, text: "Detailed design of the TCB (security-relevant components only at G-1)", marks: ['+', '=', '=', '=', '=', '=', '=']}
+      - {id: DS-5, text: "Source code of part of the TCB is provided", marks: ['-', '-', '+', '=', '=', '=', '=']}
+      - {id: DS-6, text: "Source code of the whole TCB is provided", marks: ['-', '-', '-', '-', '+', '=', '=']}
+      - {id: DS-7, text: "Source code of all run-time libraries is provided", marks: ['-', '-', '-', '-', '-', '-', '+']}
+    correspondence:
+      policy_model_to_policy: ['-', show, show, demonstrate, demonstrate, demonstrate, demonstrate]
+      architecture_to_policy_model: ['-', show, show, show, demonstrate, prove, prove]
+      detailed_design_to_architecture: ['-', show, show, show, show, demonstrate, prove]
+      implementation_to_detailed_design: ['-', '-', show, show, show, show, demonstrate]
+    specification_style:
+      policy_model: ['-', informal, semi-formal, formal, formal, formal, formal]
+      architecture_design: [informal, informal, semi-formal, semi-formal, semi-formal, formal, formal]
+      detailed_design: [informal, informal, informal, semi-formal, semi-formal, semi-formal, formal]
+  operational_environment:
+    name: Operational environment
+    name_uk: Середовище функціонування
+    rows:
+      - {id: OE-1, text: "Installation, generation and start-up means guarantee a secure initial state; all configuration parameters are listed", marks: ['+', '=', '=', '=', '=', '=', '=']}
+      - {id: OE-2, text: "Measures guarantee that the delivered TCB exactly matches the reference copy", marks: ['-', '-', '+', '=', '=', '=', '=']}
+      - {id: OE-3, text: "A distribution-control system maintains correspondence between delivered TCB and the reference copy", marks: ['-', '-', '-', '-', '-', '+', '=']}
+  documentation:
+    name: Documentation
+    name_uk: Документація
+    rows:
+      - {id: DO-1, text: "Description of security services, administrator guidance and user guidance (common to all levels)", marks: ['+', '=', '=', '=', '=', '=', '=']}
+  testing:
+    name: Testing
+    name_uk: Випробування КЗЗ
+    rows:
+      - {id: TE-1, text: "Test programme and procedures for all security mechanisms with arguments for sufficient coverage", marks: ['+', '=', '=', '=', '=', '=', '=']}
+      - {id: TE-2, text: "Detailed test evidence allowing results to be verified by repeating the tests", marks: ['+', '=', '=', '=', '=', '=', '=']}
+      - {id: TE-3, text: "All found weaknesses are eliminated or neutralised and the TCB is re-tested", marks: ['-', '+', '=', '=', '=', '=', '=']}
+      - {id: TE-4, text: "Developer penetration testing shows relative (G-4) or absolute (G-6) resistance of the TCB to such attacks", marks: ['-', '-', '-', '+', '=', '+', '=']}

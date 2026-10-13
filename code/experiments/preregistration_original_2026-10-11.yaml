@@ -1,0 +1,24 @@
+# Pre-registered evaluation plan for the HAI case study (fixed BEFORE any model was trained or evaluated).
+# Date fixed: 2026-10-11. Any later change must be recorded below with a justification.
+system: "ML-based attack/anomaly detector for an industrial control system (HAI 22.04 testbed: boiler P1, turbine P2, water treatment P3, HIL P4)"
+reference_profile: "3.CDI.ICS (critical-infrastructure detector), assurance level G-4"
+assurance_level: 4
+alpha: 0.05            # alpha_G for G-4 (one-sided)
+data:
+  train: [train1, train2, train3, train4, train5, train6]   # normal operation only
+  validation: "last 20% (time-contiguous) of train6 -> threshold calibration only"
+  test: [test1, test2, test3, test4]                          # 58 labelled attacks, sequestered until final evaluation
+  drift_target: "HAI 23.05 normal data (same configuration as 22.04, later collection campaign)"
+operating_point:
+  rule: "alarm threshold = 99.9th percentile of the smoothed validation score (point FPR approx. 1e-3), fixed before testing"
+  alarm_merge_gap_s: 30
+  detection_tolerance_s: 60       # alarm overlapping [attack start, attack end + 60 s] counts as detection
+thresholds:                        # acceptance thresholds tau (assignment parameters of the security target)
+  IV-2: {event_recall: ">= 0.50", false_alarm_rate_per_h: "<= 0.25"}
+  IO-2: {alerts_per_operator_hour: "<= 6"}          # EEMUA 191 / ISA-18.2 benchmark: about one alarm per 10 min
+  IR-2: {attack_success_rate: "<= 0.20", threat_model: "attacker adds bounded perturbation (L_inf <= 0.5 SD) to all sensor channels of the attacked process(es) during the attack; white-box, adaptive (PGD)"}
+  ID-3: {poison_detection_rate: ">= 0.80 at clean-sample removal rate <= 0.05", recall_degradation: "<= 0.10 (absolute) at poisoning budget 1%"}
+  IP-2: {extraction_fidelity: "<= 0.90 at query budget Q = 10000 (label-only interface)"}
+  IE-2: {process_localisation_accuracy: ">= 0.60"}
+  IV-3: {drift_detection: "daily drift alarm TPR >= 0.90 with daily FPR <= 0.05"}
+changes: []

@@ -1,0 +1,217 @@
+# Machine-readable model of the functional criteria of ND TZI 2.5-004-99
+# ("Criteria for evaluating the security of information in computer systems against
+#  unauthorised access", DSTSZI SBU Order No. 22 of 28.04.1999).
+# Service codes are transliterated from Cyrillic following ISO 9:1995 (К->K, Ц->C, Д->D, Н->N, ...).
+# 'requires' lists the necessary conditions stated in the standard for each level
+# (service-level codes, or G-k for a minimum assurance level). In addition, the standard states
+# that NC-1 is a necessary condition for every level of every other service (global_requirements).
+source: ND TZI 2.5-004-99, Sections 6-9 and Annex A
+transliteration: ISO 9:1995
+global_requirements:
+  - {requires: NC-1, applies_to: all_levels, except: [NC]}
+groups:
+  K: {name: Confidentiality, name_uk: Конфіденційність}
+  C: {name: Integrity, name_uk: Цілісність}
+  D: {name: Availability, name_uk: Доступність}
+  N: {name: Observability (accountability), name_uk: Спостереженість}
+services:
+  KD:
+    uk: КД
+    group: K
+    name: Trusted (discretionary) confidentiality
+    name_uk: Довірча конфіденційність
+    levels:
+      1: {name: Minimal, requires: [NI-1]}
+      2: {name: Basic, requires: [NI-1]}
+      3: {name: Full, requires: [KO-1, NI-1]}
+      4: {name: Absolute, requires: [KO-1, NI-1]}
+  KA:
+    uk: КА
+    group: K
+    name: Administrative (mandatory) confidentiality
+    name_uk: Адміністративна конфіденційність
+    levels:
+      1: {name: Minimal, requires: [NO-1, NI-1]}
+      2: {name: Basic, requires: [NO-1, NI-1]}
+      3: {name: Full, requires: [KO-1, NO-1, NI-1]}
+      4: {name: Absolute, requires: [KO-1, NO-1, NI-1]}
+  KO:
+    uk: КО
+    group: K
+    name: Object reuse
+    name_uk: Повторне використання об'єктів
+    levels:
+      1: {name: Object reuse, requires: []}
+  KK:
+    uk: КК
+    group: K
+    name: Covert channel analysis
+    name_uk: Аналіз прихованих каналів
+    levels:
+      1: {name: Detection, requires: [KO-1, G-3]}
+      2: {name: Control, requires: [KO-1, NR-1, G-3]}
+      3: {name: Elimination, requires: [KO-1, G-3]}
+  KV:
+    uk: КВ
+    group: K
+    name: Confidentiality during exchange
+    name_uk: Конфіденційність при обміні
+    levels:
+      1: {name: Minimal, requires: []}
+      2: {name: Basic, requires: [NO-1]}
+      3: {name: Full, requires: [NO-1, NV-1]}
+      4: {name: Absolute, requires: [NO-1, NV-1, NR-1, G-3]}
+  CD:
+    uk: ЦД
+    group: C
+    name: Trusted (discretionary) integrity
+    name_uk: Довірча цілісність
+    levels:
+      1: {name: Minimal, requires: [NI-1]}
+      2: {name: Basic, requires: [NI-1]}
+      3: {name: Full, requires: [KO-1, NI-1]}
+      4: {name: Absolute, requires: [KO-1, NI-1]}
+  CA:
+    uk: ЦА
+    group: C
+    name: Administrative (mandatory) integrity
+    name_uk: Адміністративна цілісність
+    levels:
+      1: {name: Minimal, requires: [NO-1, NI-1]}
+      2: {name: Basic, requires: [NO-1, NI-1]}
+      3: {name: Full, requires: [KO-1, NO-1, NI-1]}
+      4: {name: Absolute, requires: [KO-1, NO-1, NI-1]}
+  CO:
+    uk: ЦО
+    group: C
+    name: Rollback
+    name_uk: Відкат
+    levels:
+      1: {name: Limited rollback, requires: [NI-1]}
+      2: {name: Full rollback, requires: [NI-1]}
+  CV:
+    uk: ЦВ
+    group: C
+    name: Integrity during exchange
+    name_uk: Цілісність при обміні
+    levels:
+      1: {name: Minimal, requires: []}
+      2: {name: Basic, requires: [NO-1]}
+      3: {name: Full, requires: [NO-1, NV-1]}
+  DR:
+    uk: ДР
+    group: D
+    name: Resource usage
+    name_uk: Використання ресурсів
+    levels:
+      1: {name: Quotas, requires: [NO-1]}
+      2: {name: Prevention of resource capture, requires: [NO-1]}
+      3: {name: Prioritised resource use, requires: [NO-1]}
+  DS:
+    uk: ДС
+    group: D
+    name: Fault tolerance
+    name_uk: Стійкість до відмов
+    levels:
+      1: {name: Tolerance of limited failures, requires: [NO-1]}
+      2: {name: Tolerance with degraded service, requires: [NO-1]}
+      3: {name: Tolerance without degradation, requires: [NO-1]}
+  DZ:
+    uk: ДЗ
+    group: D
+    name: Hot swapping
+    name_uk: Гаряча заміна
+    levels:
+      1: {name: Upgrade, requires: [NO-1]}
+      2: {name: Limited hot swap, requires: [NO-1, DS-1]}
+      3: {name: Hot swap of any component, requires: [NO-1, DS-1]}
+  DV:
+    uk: ДВ
+    group: D
+    name: Recovery after failures
+    name_uk: Відновлення після збоїв
+    levels:
+      1: {name: Manual recovery, requires: [NO-1]}
+      2: {name: Automated recovery, requires: [NO-1]}
+      3: {name: Selective recovery, requires: [NO-1]}
+  NR:
+    uk: НР
+    group: N
+    name: Registration (audit)
+    name_uk: Реєстрація
+    levels:
+      1: {name: External analysis, requires: [NI-1]}
+      2: {name: Protected log, requires: [NI-1, NO-1]}
+      3: {name: Danger signalling, requires: [NI-1, NO-1]}
+      4: {name: Detailed registration, requires: [NI-1, NO-1]}
+      5: {name: Real-time analysis, requires: [NI-1, NO-1]}
+  NI:
+    uk: НИ
+    group: N
+    name: Identification and authentication
+    name_uk: Ідентифікація і автентифікація
+    levels:
+      1: {name: External identification and authentication, requires: []}
+      2: {name: Single identification and authentication, requires: [NK-1]}
+      3: {name: Multiple identification and authentication, requires: [NK-1]}
+  NK:
+    uk: НК
+    group: N
+    name: Trusted path
+    name_uk: Достовірний канал
+    levels:
+      1: {name: One-way trusted path, requires: []}
+      2: {name: Two-way trusted path, requires: []}
+  "NO":
+    uk: НО
+    group: N
+    name: Separation of duties
+    name_uk: Розподіл обов'язків
+    levels:
+      1: {name: Administrator role, requires: [NI-1]}
+      2: {name: Separation of administrator duties, requires: [NI-1]}
+      3: {name: Privilege-based separation, requires: [NI-1]}
+  NC:
+    uk: НЦ
+    group: N
+    name: Integrity of the TCB (protection complex)
+    name_uk: Цілісність комплексу засобів захисту
+    levels:
+      1: {name: TCB with integrity control, requires: [NR-1, NO-1]}
+      2: {name: TCB with guaranteed integrity, requires: []}
+      3: {name: TCB with access-mediation (reference monitor) functions, requires: []}
+  NT:
+    uk: НТ
+    group: N
+    name: Self-testing
+    name_uk: Самотестування
+    levels:
+      1: {name: Self-testing on request, requires: [NO-1]}
+      2: {name: Self-testing at start-up, requires: [NO-1]}
+      3: {name: Real-time self-testing, requires: [NO-1]}
+  NV:
+    uk: НВ
+    group: N
+    name: Identification and authentication during exchange
+    name_uk: Автентифікація при обміні
+    levels:
+      1: {name: Node authentication, requires: []}
+      2: {name: Data-origin authentication, requires: []}
+      3: {name: Authentication with confirmation, requires: []}
+  NA:
+    uk: НА
+    group: N
+    name: Sender authentication (non-repudiation of origin)
+    name_uk: Автентифікація відправника
+    levels:
+      1: {name: Basic sender authentication, requires: [NI-1]}
+      2: {name: Sender authentication with third-party confirmation, requires: [NI-1]}
+  NP:
+    uk: НП
+    group: N
+    name: Receiver authentication (non-repudiation of receipt)
+    name_uk: Автентифікація одержувача
+    levels:
+      1: {name: Basic receiver authentication, requires: [NI-1]}
+      2: {name: Receiver authentication with third-party confirmation, requires: [NI-1]}
+guarantee_levels: [1, 2, 3, 4, 5, 6, 7]

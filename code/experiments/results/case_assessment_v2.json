@@ -1,0 +1,2182 @@
+{
+ "reference_profile": {
+  "id": "3.CDI.ICS/G-4",
+  "required_class_I": {
+   "ID": 3,
+   "IR": 2,
+   "IV": 3,
+   "IE": 2,
+   "IP": 2,
+   "IO": 2,
+   "IM": 2
+  },
+  "platform_assumed": {
+   "KO": 1,
+   "CD": 1,
+   "CA": 3,
+   "CO": 2,
+   "CV": 2,
+   "DR": 3,
+   "DS": 2,
+   "DZ": 2,
+   "DV": 2,
+   "NR": 3,
+   "NI": 2,
+   "NK": 1,
+   "NO": 2,
+   "NC": 3,
+   "NT": 2,
+   "NV": 2,
+   "NA": 1,
+   "NP": 1,
+   "KA": 1
+  },
+  "G": 4,
+  "formatted_required": "{ID-3, IR-2, IV-3, IE-2, IP-2, IO-2, IM-2}"
+ },
+ "tau": {
+  "recall": 0.5,
+  "far": 0.25,
+  "load": 6.0,
+  "asr": 0.2,
+  "pdet": 0.8,
+  "pdet_fpr": 0.05,
+  "pdeg": 0.1,
+  "ext": 0.9,
+  "xfid": 0.6,
+  "drift_tpr": 0.9,
+  "drift_fpr": 0.05
+ },
+ "delta_post_hoc": 0.2,
+ "alpha_primary": 0.05,
+ "variants": {
+  "baseline_s0": {
+   "tests": {
+    "IV-1.report": {
+     "decision": "reported",
+     "recall": 0.6551724137931034,
+     "recall_ci95": [
+      0.5188026848764367,
+      0.7750990656336632
+     ],
+     "far_per_h": 0.5002171081198437,
+     "far_ci95": [
+      0.36882060780008585,
+      0.6632153140994591
+     ]
+    },
+    "IV-2.recall": {
+     "registered": {
+      "k": 38,
+      "n": 58,
+      "estimate": 0.6551724137931034,
+      "lcb": 0.5395567799220093,
+      "ucb": 0.7584238801456535,
+      "tau": 0.5,
+      "direction": ">=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "final": {
+      "estimate": 0.6551724137931034,
+      "lcb": 0.47519997632630395,
+      "ucb": 0.8070951281194334,
+      "tau": 0.5,
+      "direction": ">=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "method": "effective-n CP, design effect 2.23 (attack primitives)"
+     }
+    },
+    "IV-2.far": {
+     "registered": {
+      "count": 48,
+      "exposure_h": 95.95833333333334,
+      "estimate": 0.5002171081198437,
+      "lcb": 0.3876710468749679,
+      "ucb": 0.6362539363082209,
+      "tau": 0.25,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "reject",
+      "naive": "reject"
+     },
+     "final": {
+      "estimate": 0.5002171081198437,
+      "lcb": 0.3876710468749679,
+      "ucb": 0.6381180189931381,
+      "tau": 0.25,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "reject",
+      "method": "exact Poisson; dispersion X2/df = 1.05 (quasi-Poisson widening)",
+      "dispersion": 1.0517608575715907
+     }
+    },
+    "IO-2.load": {
+     "registered": {
+      "count": 102,
+      "exposure_h": 100.333,
+      "estimate": 1.0166146731384489,
+      "lcb": 0.8569007138609537,
+      "ucb": 1.1984325751228038,
+      "tau": 6.0,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "final": {
+      "count": 102,
+      "exposure_h": 100.333,
+      "estimate": 1.0166146731384489,
+      "lcb": 0.8569007138609537,
+      "ucb": 1.1984325751228038,
+      "tau": 6.0,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     }
+    },
+    "IE-2.xfid": {
+     "registered": {
+      "k": 37,
+      "n": 38,
+      "estimate": 0.9736842105263158,
+      "lcb": 0.8811458772994392,
+      "ucb": 0.998651087065512,
+      "tau": 0.6,
+      "direction": ">=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "final": {
+      "decision": "inconclusive",
+      "absolute": {
+       "k": 37,
+       "n": 38,
+       "estimate": 0.9736842105263158,
+       "lcb": 0.8811458772994392,
+       "ucb": 0.998651087065512,
+       "tau": 0.6,
+       "direction": ">=",
+       "alpha": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "trivial_constant_P1": {
+       "k": 30,
+       "n": 38,
+       "estimate": 0.7894736842105263,
+       "lcb": 0.6520886486542556,
+       "ucb": 0.8906929986235025,
+       "tau": 0.6,
+       "direction": ">=",
+       "alpha": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "tau_admissible": false,
+      "mcnemar_vs_constant_P1": {
+       "b_model_only": 8,
+       "c_constant_only": 1,
+       "p_one_sided": 0.01953125,
+       "p_reverse": 0.998046875,
+       "decision_independent_units": "accept",
+       "dependence": {
+        "b": 8,
+        "c": 1,
+        "deff": 1.5099694629064127,
+        "p": 0.065152470815125,
+        "p_reverse": 0.9940275226479898,
+        "discordant_pairs_sharing_a_primitive": [
+         [
+          "A210",
+          "A404"
+         ],
+         [
+          "A414",
+          "A415"
+         ]
+        ]
+       },
+       "p_dependence_robust": 0.065152470815125,
+       "decision": "inconclusive"
+      },
+      "random_channel_proportional_expected_accuracy": 0.504643962848297,
+      "tag_top5": [
+       20,
+       38
+      ],
+      "tag_top5_chance_rate": 0.1243084869014817
+     }
+    },
+    "IR-1.transfer": {
+     "decision": "reported",
+     "k": 9,
+     "n": 38,
+     "ci95": [
+      0.1144417048225307,
+      0.4024123605714909
+     ]
+    },
+    "IR-1.query": {
+     "decision": "reported",
+     "k_max_over_interfaces_and_budgets": 0,
+     "n": 38,
+     "ci95": [
+      0.0,
+      0.09251276141587828
+     ],
+     "runs": [
+      {
+       "interface": "score",
+       "Q": 1000,
+       "balanced_agreement": 0.512105201760297,
+       "transfer_k": 0,
+       "transfer_n": 38
+      },
+      {
+       "interface": "score",
+       "Q": 10000,
+       "balanced_agreement": 0.7299323846531373,
+       "transfer_k": 0,
+       "transfer_n": 38
+      },
+      {
+       "interface": "score",
+       "Q": 100000,
+       "balanced_agreement": 0.5591480664721556,
+       "transfer_k": 0,
+       "transfer_n": 38
+      },
+      {
+       "interface": "label",
+       "Q": 1000,
+       "balanced_agreement": 0.7623846387353974,
+       "transfer_k": 0,
+       "transfer_n": 38
+      },
+      {
+       "interface": "label",
+       "Q": 10000,
+       "balanced_agreement": 0.7554352391908497,
+       "transfer_k": 0,
+       "transfer_n": 38
+      },
+      {
+       "interface": "label",
+       "Q": 100000,
+       "balanced_agreement": 0.543454829943098,
+       "transfer_k": 0,
+       "transfer_n": 38
+      }
+     ],
+     "registered_available": true
+    },
+    "IR-2.asr": {
+     "pgd_single_eps0.5": {
+      "k": 0,
+      "n": 38,
+      "estimate": 0.0,
+      "lcb": 0.0,
+      "ucb": 0.07580765168296455,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "pgd_registered_ball": {
+      "k": 5,
+      "n": 38,
+      "estimate": 0.13157894736842105,
+      "lcb": 0.053309045938400815,
+      "ucb": 0.2569582971119705,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     },
+     "greedy_ball": {
+      "k": 9,
+      "n": 38,
+      "estimate": 0.23684210526315788,
+      "lcb": 0.12949772490069086,
+      "ucb": 0.37690642691332116,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "reject"
+     },
+     "pgd_improved_ball": {
+      "k": 11,
+      "n": 38,
+      "estimate": 0.2894736842105263,
+      "lcb": 0.17159800911229156,
+      "ucb": 0.43333884318381183,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "reject"
+     },
+     "strongest_union_ball": {
+      "k": 11,
+      "n": 38,
+      "estimate": 0.2894736842105263,
+      "lcb": 0.17159800911229156,
+      "ucb": 0.43333884318381183,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "reject"
+     },
+     "concealed_by_union": [
+      "A101",
+      "A106",
+      "A204",
+      "A208",
+      "A213",
+      "A215",
+      "A217",
+      "A418",
+      "A421",
+      "A423",
+      "A424"
+     ],
+     "pgd_registered_by_eps": {
+      "0.1": 5,
+      "0.25": 4,
+      "0.5": 0,
+      "1.0": 0
+     },
+     "pgd_improved_by_eps": {
+      "0.1": 7,
+      "0.25": 10,
+      "0.5": 11
+     },
+     "unbounded_eps5_TM-A": {
+      "k": 20,
+      "n": 38,
+      "lcb95": 0.3822444289465348,
+      "ucb95": 0.667170924429084
+     },
+     "registered": {
+      "k": 5,
+      "n": 38,
+      "estimate": 0.13157894736842105,
+      "lcb": 0.053309045938400815,
+      "ucb": 0.2569582971119705,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     },
+     "final": {
+      "k": 11,
+      "n": 38,
+      "estimate": 0.2894736842105263,
+      "lcb": 0.17159800911229156,
+      "ucb": 0.43333884318381183,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "reject"
+     }
+    }
+   },
+   "results": {
+    "registered/demonstrated": {
+     "own_requirements": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 1,
+      "IP": 0,
+      "IO": 0,
+      "IM": 0
+     },
+     "rating": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 1,
+      "IP": 0,
+      "IO": 0,
+      "IM": 0
+     },
+     "formatted": "{ID-1, IR-1, IV-1, IE-1}",
+     "platform_valid": true,
+     "blocked_by_conditions": {},
+     "gaps": {
+      "ID": [
+       1,
+       3
+      ],
+      "IR": [
+       1,
+       2
+      ],
+      "IV": [
+       1,
+       3
+      ],
+      "IE": [
+       1,
+       2
+      ],
+      "IP": [
+       0,
+       2
+      ],
+      "IO": [
+       0,
+       2
+      ],
+      "IM": [
+       0,
+       2
+      ]
+     },
+     "requirements": {
+      "ID-1": {
+       "ID-1.1": true,
+       "ID-1.2": true,
+       "ID-1.3": true
+      },
+      "ID-2": {
+       "ID-2.1": true,
+       "ID-2.2": false,
+       "ID-2.3": false
+      },
+      "IR-1": {
+       "IR-1.1": true,
+       "IR-1.2": true
+      },
+      "IR-2": {
+       "IR-2.1": false,
+       "IR-2.2": true
+      },
+      "IV-1": {
+       "IV-1.1": true,
+       "IV-1.2": true
+      },
+      "IV-2": {
+       "IV-2.1": false,
+       "IV-2.2": true
+      },
+      "IE-1": {
+       "IE-1.1": true,
+       "IE-1.2": true
+      },
+      "IE-2": {
+       "IE-2.1": false,
+       "IE-2.2": true
+      },
+      "IP-1": {
+       "IP-1.1": true,
+       "IP-1.2": false
+      },
+      "IO-1": {
+       "IO-1.1": false,
+       "IO-1.2": true
+      },
+      "IM-1": {
+       "IM-1.1": true,
+       "IM-1.2": false
+      }
+     }
+    },
+    "registered/conditional": {
+     "own_requirements": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 2,
+      "IP": 2,
+      "IO": 2,
+      "IM": 2
+     },
+     "rating": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 2,
+      "IP": 2,
+      "IO": 2,
+      "IM": 2
+     },
+     "formatted": "{ID-1, IR-1, IV-1, IE-2, IP-2, IO-2, IM-2}",
+     "platform_valid": true,
+     "blocked_by_conditions": {},
+     "gaps": {
+      "ID": [
+       1,
+       3
+      ],
+      "IR": [
+       1,
+       2
+      ],
+      "IV": [
+       1,
+       3
+      ]
+     },
+     "requirements": {
+      "ID-1": {
+       "ID-1.1": true,
+       "ID-1.2": true,
+       "ID-1.3": true
+      },
+      "ID-2": {
+       "ID-2.1": true,
+       "ID-2.2": false,
+       "ID-2.3": true
+      },
+      "IR-1": {
+       "IR-1.1": true,
+       "IR-1.2": true
+      },
+      "IR-2": {
+       "IR-2.1": false,
+       "IR-2.2": true
+      },
+      "IV-1": {
+       "IV-1.1": true,
+       "IV-1.2": true
+      },
+      "IV-2": {
+       "IV-2.1": false,
+       "IV-2.2": true
+      },
+      "IE-1": {
+       "IE-1.1": true,
+       "IE-1.2": true
+      },
+      "IE-2": {
+       "IE-2.1": true,
+       "IE-2.2": true
+      },
+      "IP-1": {
+       "IP-1.1": true,
+       "IP-1.2": true
+      },
+      "IP-2": {
+       "IP-2.1a": true,
+       "IP-2.1b": true,
+       "IP-2.2": true
+      },
+      "IO-1": {
+       "IO-1.1": true,
+       "IO-1.2": true
+      },
+      "IO-2": {
+       "IO-2.1": true,
+       "IO-2.2a": true,
+       "IO-2.2b": true
+      },
+      "IM-1": {
+       "IM-1.1": true,
+       "IM-1.2": true
+      },
+      "IM-2": {
+       "IM-2.1": true,
+       "IM-2.2": true
+      }
+     }
+    },
+    "final/demonstrated": {
+     "own_requirements": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 1,
+      "IP": 0,
+      "IO": 0,
+      "IM": 0
+     },
+     "rating": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 1,
+      "IP": 0,
+      "IO": 0,
+      "IM": 0
+     },
+     "formatted": "{ID-1, IR-1, IV-1, IE-1}",
+     "platform_valid": true,
+     "blocked_by_conditions": {},
+     "gaps": {
+      "ID": [
+       1,
+       3
+      ],
+      "IR": [
+       1,
+       2
+      ],
+      "IV": [
+       1,
+       3
+      ],
+      "IE": [
+       1,
+       2
+      ],
+      "IP": [
+       0,
+       2
+      ],
+      "IO": [
+       0,
+       2
+      ],
+      "IM": [
+       0,
+       2
+      ]
+     },
+     "requirements": {
+      "ID-1": {
+       "ID-1.1": true,
+       "ID-1.2": true,
+       "ID-1.3": true
+      },
+      "ID-2": {
+       "ID-2.1": true,
+       "ID-2.2": false,
+       "ID-2.3": false
+      },
+      "IR-1": {
+       "IR-1.1": true,
+       "IR-1.2": true
+      },
+      "IR-2": {
+       "IR-2.1": false,
+       "IR-2.2": true
+      },
+      "IV-1": {
+       "IV-1.1": true,
+       "IV-1.2": true
+      },
+      "IV-2": {
+       "IV-2.1": false,
+       "IV-2.2": true
+      },
+      "IE-1": {
+       "IE-1.1": true,
+       "IE-1.2": true
+      },
+      "IE-2": {
+       "IE-2.1": false,
+       "IE-2.2": false
+      },
+      "IP-1": {
+       "IP-1.1": true,
+       "IP-1.2": false
+      },
+      "IO-1": {
+       "IO-1.1": false,
+       "IO-1.2": true
+      },
+      "IM-1": {
+       "IM-1.1": true,
+       "IM-1.2": false
+      }
+     }
+    },
+    "final/conditional": {
+     "own_requirements": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 1,
+      "IP": 2,
+      "IO": 2,
+      "IM": 2
+     },
+     "rating": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 1,
+      "IP": 2,
+      "IO": 1,
+      "IM": 2
+     },
+     "formatted": "{ID-1, IR-1, IV-1, IE-1, IP-2, IO-1, IM-2}",
+     "platform_valid": true,
+     "blocked_by_conditions": {
+      "IO": [
+       2,
+       1
+      ]
+     },
+     "gaps": {
+      "ID": [
+       1,
+       3
+      ],
+      "IR": [
+       1,
+       2
+      ],
+      "IV": [
+       1,
+       3
+      ],
+      "IE": [
+       1,
+       2
+      ],
+      "IO": [
+       1,
+       2
+      ]
+     },
+     "requirements": {
+      "ID-1": {
+       "ID-1.1": true,
+       "ID-1.2": true,
+       "ID-1.3": true
+      },
+      "ID-2": {
+       "ID-2.1": true,
+       "ID-2.2": false,
+       "ID-2.3": true
+      },
+      "IR-1": {
+       "IR-1.1": true,
+       "IR-1.2": true
+      },
+      "IR-2": {
+       "IR-2.1": false,
+       "IR-2.2": true
+      },
+      "IV-1": {
+       "IV-1.1": true,
+       "IV-1.2": true
+      },
+      "IV-2": {
+       "IV-2.1": false,
+       "IV-2.2": true
+      },
+      "IE-1": {
+       "IE-1.1": true,
+       "IE-1.2": true
+      },
+      "IE-2": {
+       "IE-2.1": true,
+       "IE-2.2": false
+      },
+      "IP-1": {
+       "IP-1.1": true,
+       "IP-1.2": true
+      },
+      "IP-2": {
+       "IP-2.1a": true,
+       "IP-2.1b": true,
+       "IP-2.2": true
+      },
+      "IO-1": {
+       "IO-1.1": true,
+       "IO-1.2": true
+      },
+      "IO-2": {
+       "IO-2.1": true,
+       "IO-2.2a": true,
+       "IO-2.2b": true
+      },
+      "IM-1": {
+       "IM-1.1": true,
+       "IM-1.2": true
+      },
+      "IM-2": {
+       "IM-2.1": true,
+       "IM-2.2": true
+      }
+     }
+    }
+   }
+  },
+  "hardened_s0": {
+   "tests": {
+    "IV-1.report": {
+     "decision": "reported",
+     "recall": 0.6206896551724138,
+     "recall_ci95": [
+      0.48371765991337434,
+      0.7448923477548457
+     ],
+     "far_per_h": 0.2709509335649153,
+     "far_ci95": [
+      0.17699414553812948,
+      0.3970058957859313
+     ]
+    },
+    "IV-2.recall": {
+     "registered": {
+      "k": 36,
+      "n": 58,
+      "estimate": 0.6206896551724138,
+      "lcb": 0.5043899603088324,
+      "ucb": 0.7273902688002601,
+      "tau": 0.5,
+      "direction": ">=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "final": {
+      "estimate": 0.6206896551724138,
+      "lcb": 0.44650039790015256,
+      "ucb": 0.7743644309527528,
+      "tau": 0.5,
+      "direction": ">=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "method": "effective-n CP, design effect 2.10 (attack primitives)"
+     }
+    },
+    "IV-2.far": {
+     "registered": {
+      "count": 26,
+      "exposure_h": 95.95833333333334,
+      "estimate": 0.2709509335649153,
+      "lcb": 0.18985893132188433,
+      "ucb": 0.37596117846473165,
+      "tau": 0.25,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "reject"
+     },
+     "final": {
+      "estimate": 0.2709509335649153,
+      "lcb": 0.188747481987704,
+      "ucb": 0.3889556915222554,
+      "tau": 0.25,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "method": "exact Poisson; dispersion X2/df = 1.26 (quasi-Poisson widening)",
+      "dispersion": 1.2560356729506104
+     }
+    },
+    "IO-2.load": {
+     "registered": {
+      "count": 79,
+      "exposure_h": 100.333,
+      "estimate": 0.7873780311562497,
+      "lcb": 0.6475476730402976,
+      "ucb": 0.9494207116001642,
+      "tau": 6.0,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "final": {
+      "count": 79,
+      "exposure_h": 100.333,
+      "estimate": 0.7873780311562497,
+      "lcb": 0.6475476730402976,
+      "ucb": 0.9494207116001642,
+      "tau": 6.0,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     }
+    },
+    "IE-2.xfid": {
+     "registered": {
+      "k": 36,
+      "n": 36,
+      "estimate": 1.0,
+      "lcb": 0.9201534904801056,
+      "ucb": 1.0,
+      "tau": 0.6,
+      "direction": ">=",
+      "alpha": 0.05,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "final": {
+      "decision": "accept",
+      "absolute": {
+       "k": 36,
+       "n": 36,
+       "estimate": 1.0,
+       "lcb": 0.9201534904801056,
+       "ucb": 1.0,
+       "tau": 0.6,
+       "direction": ">=",
+       "alpha": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "trivial_constant_P1": {
+       "k": 27,
+       "n": 36,
+       "estimate": 0.75,
+       "lcb": 0.6042932189708055,
+       "ucb": 0.8629191548164595,
+       "tau": 0.6,
+       "direction": ">=",
+       "alpha": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "tau_admissible": false,
+      "mcnemar_vs_constant_P1": {
+       "b_model_only": 9,
+       "c_constant_only": 0,
+       "p_one_sided": 0.001953125,
+       "p_reverse": 1.0,
+       "decision_independent_units": "accept",
+       "dependence": {
+        "b": 9,
+        "c": 0,
+        "deff": 1.7222222222222223,
+        "p": 0.026722402829917318,
+        "p_reverse": 1.0,
+        "discordant_pairs_sharing_a_primitive": [
+         [
+          "A210",
+          "A404"
+         ],
+         [
+          "A310",
+          "A404"
+         ],
+         [
+          "A414",
+          "A415"
+         ]
+        ]
+       },
+       "p_dependence_robust": 0.026722402829917318,
+       "decision": "accept"
+      },
+      "random_channel_proportional_expected_accuracy": 0.4938725490196077,
+      "tag_top5": [
+       20,
+       36
+      ],
+      "tag_top5_chance_rate": 0.13109257462857116
+     }
+    },
+    "IR-1.transfer": {
+     "decision": "reported",
+     "k": 0,
+     "n": 36,
+     "ci95": [
+      0.0,
+      0.09739375591449193
+     ],
+     "hardening_aware_surrogate": {
+      "k": 0,
+      "n": 36,
+      "ci95": [
+       0.0,
+       0.09739375591449193
+      ]
+     }
+    },
+    "IR-1.query": {
+     "decision": "reported",
+     "k_max_over_interfaces_and_budgets": 0,
+     "n": 36,
+     "ci95": [
+      0.0,
+      0.09739375591449193
+     ],
+     "runs": [
+      {
+       "interface": "score",
+       "Q": 1000,
+       "balanced_agreement": 0.5738330875120801,
+       "transfer_k": 0,
+       "transfer_n": 36
+      },
+      {
+       "interface": "score",
+       "Q": 10000,
+       "balanced_agreement": 0.670348375455524,
+       "transfer_k": 0,
+       "transfer_n": 36
+      },
+      {
+       "interface": "score",
+       "Q": 100000,
+       "balanced_agreement": 0.6948618038616753,
+       "transfer_k": 0,
+       "transfer_n": 36
+      },
+      {
+       "interface": "label",
+       "Q": 1000,
+       "balanced_agreement": 0.49735588827370397,
+       "transfer_k": 0,
+       "transfer_n": 36
+      },
+      {
+       "interface": "label",
+       "Q": 10000,
+       "balanced_agreement": 0.6882881684163819,
+       "transfer_k": 0,
+       "transfer_n": 36
+      },
+      {
+       "interface": "label",
+       "Q": 100000,
+       "balanced_agreement": 0.6876650549890055,
+       "transfer_k": 0,
+       "transfer_n": 36
+      }
+     ],
+     "registered_available": false
+    },
+    "IR-2.asr": {
+     "pgd_single_eps0.5": {
+      "k": 6,
+      "n": 36,
+      "estimate": 0.16666666666666666,
+      "lcb": 0.07516516931350616,
+      "ucb": 0.30267742362657557,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     },
+     "pgd_registered_ball": {
+      "k": 6,
+      "n": 36,
+      "estimate": 0.16666666666666666,
+      "lcb": 0.07516516931350616,
+      "ucb": 0.30267742362657557,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     },
+     "greedy_ball": {
+      "k": 6,
+      "n": 36,
+      "estimate": 0.16666666666666666,
+      "lcb": 0.07516516931350616,
+      "ucb": 0.30267742362657557,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     },
+     "pgd_improved_ball": {
+      "k": 7,
+      "n": 36,
+      "estimate": 0.19444444444444445,
+      "lcb": 0.09499448663954846,
+      "ucb": 0.33439333794874854,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     },
+     "strongest_union_ball": {
+      "k": 7,
+      "n": 36,
+      "estimate": 0.19444444444444445,
+      "lcb": 0.09499448663954846,
+      "ucb": 0.33439333794874854,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     },
+     "concealed_by_union": [
+      "A101",
+      "A204",
+      "A208",
+      "A217",
+      "A421",
+      "A423",
+      "A424"
+     ],
+     "pgd_registered_by_eps": {
+      "0.1": 5,
+      "0.25": 5,
+      "0.5": 6,
+      "1.0": 6
+     },
+     "pgd_improved_by_eps": {
+      "0.1": 5,
+      "0.25": 6,
+      "0.5": 7
+     },
+     "unbounded_eps5_TM-A": {
+      "k": 15,
+      "n": 36,
+      "lcb95": 0.2771950317435585,
+      "ucb95": 0.5669143924080698
+     },
+     "registered": {
+      "k": 6,
+      "n": 36,
+      "estimate": 0.16666666666666666,
+      "lcb": 0.07516516931350616,
+      "ucb": 0.30267742362657557,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     },
+     "final": {
+      "k": 7,
+      "n": 36,
+      "estimate": 0.19444444444444445,
+      "lcb": 0.09499448663954846,
+      "ucb": 0.33439333794874854,
+      "tau": 0.2,
+      "direction": "<=",
+      "alpha": 0.05,
+      "decision": "inconclusive",
+      "naive": "accept"
+     }
+    },
+    "IP-2.ext": {
+     "registered": {
+      "decision": "not evaluated"
+     },
+     "final": {
+      "decision": "accept",
+      "balanced": 0.6882881684163819,
+      "ucb": 0.7014858284675951,
+      "note": "single extraction run of the IR-1 chain (E4 procedure); windows treated as independent; exploratory"
+     }
+    }
+   },
+   "results": {
+    "registered/demonstrated": {
+     "own_requirements": {
+      "ID": 1,
+      "IR": 0,
+      "IV": 1,
+      "IE": 1,
+      "IP": 0,
+      "IO": 0,
+      "IM": 0
+     },
+     "rating": {
+      "ID": 1,
+      "IR": 0,
+      "IV": 1,
+      "IE": 1,
+      "IP": 0,
+      "IO": 0,
+      "IM": 0
+     },
+     "formatted": "{ID-1, IV-1, IE-1}",
+     "platform_valid": true,
+     "blocked_by_conditions": {},
+     "gaps": {
+      "ID": [
+       1,
+       3
+      ],
+      "IR": [
+       0,
+       2
+      ],
+      "IV": [
+       1,
+       3
+      ],
+      "IE": [
+       1,
+       2
+      ],
+      "IP": [
+       0,
+       2
+      ],
+      "IO": [
+       0,
+       2
+      ],
+      "IM": [
+       0,
+       2
+      ]
+     },
+     "requirements": {
+      "ID-1": {
+       "ID-1.1": true,
+       "ID-1.2": true,
+       "ID-1.3": true
+      },
+      "ID-2": {
+       "ID-2.1": true,
+       "ID-2.2": false,
+       "ID-2.3": false
+      },
+      "IR-1": {
+       "IR-1.1": true,
+       "IR-1.2": false
+      },
+      "IV-1": {
+       "IV-1.1": true,
+       "IV-1.2": true
+      },
+      "IV-2": {
+       "IV-2.1": false,
+       "IV-2.2": true
+      },
+      "IE-1": {
+       "IE-1.1": true,
+       "IE-1.2": true
+      },
+      "IE-2": {
+       "IE-2.1": false,
+       "IE-2.2": true
+      },
+      "IP-1": {
+       "IP-1.1": true,
+       "IP-1.2": false
+      },
+      "IO-1": {
+       "IO-1.1": false,
+       "IO-1.2": true
+      },
+      "IM-1": {
+       "IM-1.1": true,
+       "IM-1.2": false
+      }
+     }
+    },
+    "registered/conditional": {
+     "own_requirements": {
+      "ID": 1,
+      "IR": 0,
+      "IV": 1,
+      "IE": 2,
+      "IP": 1,
+      "IO": 2,
+      "IM": 2
+     },
+     "rating": {
+      "ID": 1,
+      "IR": 0,
+      "IV": 1,
+      "IE": 2,
+      "IP": 1,
+      "IO": 2,
+      "IM": 2
+     },
+     "formatted": "{ID-1, IV-1, IE-2, IP-1, IO-2, IM-2}",
+     "platform_valid": true,
+     "blocked_by_conditions": {},
+     "gaps": {
+      "ID": [
+       1,
+       3
+      ],
+      "IR": [
+       0,
+       2
+      ],
+      "IV": [
+       1,
+       3
+      ],
+      "IP": [
+       1,
+       2
+      ]
+     },
+     "requirements": {
+      "ID-1": {
+       "ID-1.1": true,
+       "ID-1.2": true,
+       "ID-1.3": true
+      },
+      "ID-2": {
+       "ID-2.1": true,
+       "ID-2.2": false,
+       "ID-2.3": true
+      },
+      "IR-1": {
+       "IR-1.1": true,
+       "IR-1.2": false
+      },
+      "IV-1": {
+       "IV-1.1": true,
+       "IV-1.2": true
+      },
+      "IV-2": {
+       "IV-2.1": false,
+       "IV-2.2": true
+      },
+      "IE-1": {
+       "IE-1.1": true,
+       "IE-1.2": true
+      },
+      "IE-2": {
+       "IE-2.1": true,
+       "IE-2.2": true
+      },
+      "IP-1": {
+       "IP-1.1": true,
+       "IP-1.2": true
+      },
+      "IP-2": {
+       "IP-2.1a": true,
+       "IP-2.1b": false,
+       "IP-2.2": true
+      },
+      "IO-1": {
+       "IO-1.1": true,
+       "IO-1.2": true
+      },
+      "IO-2": {
+       "IO-2.1": true,
+       "IO-2.2a": true,
+       "IO-2.2b": true
+      },
+      "IM-1": {
+       "IM-1.1": true,
+       "IM-1.2": true
+      },
+      "IM-2": {
+       "IM-2.1": true,
+       "IM-2.2": true
+      }
+     }
+    },
+    "final/demonstrated": {
+     "own_requirements": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 1,
+      "IP": 0,
+      "IO": 0,
+      "IM": 0
+     },
+     "rating": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 1,
+      "IP": 0,
+      "IO": 0,
+      "IM": 0
+     },
+     "formatted": "{ID-1, IR-1, IV-1, IE-1}",
+     "platform_valid": true,
+     "blocked_by_conditions": {},
+     "gaps": {
+      "ID": [
+       1,
+       3
+      ],
+      "IR": [
+       1,
+       2
+      ],
+      "IV": [
+       1,
+       3
+      ],
+      "IE": [
+       1,
+       2
+      ],
+      "IP": [
+       0,
+       2
+      ],
+      "IO": [
+       0,
+       2
+      ],
+      "IM": [
+       0,
+       2
+      ]
+     },
+     "requirements": {
+      "ID-1": {
+       "ID-1.1": true,
+       "ID-1.2": true,
+       "ID-1.3": true
+      },
+      "ID-2": {
+       "ID-2.1": true,
+       "ID-2.2": false,
+       "ID-2.3": false
+      },
+      "IR-1": {
+       "IR-1.1": true,
+       "IR-1.2": true
+      },
+      "IR-2": {
+       "IR-2.1": false,
+       "IR-2.2": true
+      },
+      "IV-1": {
+       "IV-1.1": true,
+       "IV-1.2": true
+      },
+      "IV-2": {
+       "IV-2.1": false,
+       "IV-2.2": true
+      },
+      "IE-1": {
+       "IE-1.1": true,
+       "IE-1.2": true
+      },
+      "IE-2": {
+       "IE-2.1": false,
+       "IE-2.2": true
+      },
+      "IP-1": {
+       "IP-1.1": true,
+       "IP-1.2": false
+      },
+      "IO-1": {
+       "IO-1.1": false,
+       "IO-1.2": true
+      },
+      "IM-1": {
+       "IM-1.1": true,
+       "IM-1.2": false
+      }
+     }
+    },
+    "final/conditional": {
+     "own_requirements": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 2,
+      "IP": 2,
+      "IO": 2,
+      "IM": 2
+     },
+     "rating": {
+      "ID": 1,
+      "IR": 1,
+      "IV": 1,
+      "IE": 2,
+      "IP": 2,
+      "IO": 2,
+      "IM": 2
+     },
+     "formatted": "{ID-1, IR-1, IV-1, IE-2, IP-2, IO-2, IM-2}",
+     "platform_valid": true,
+     "blocked_by_conditions": {},
+     "gaps": {
+      "ID": [
+       1,
+       3
+      ],
+      "IR": [
+       1,
+       2
+      ],
+      "IV": [
+       1,
+       3
+      ]
+     },
+     "requirements": {
+      "ID-1": {
+       "ID-1.1": true,
+       "ID-1.2": true,
+       "ID-1.3": true
+      },
+      "ID-2": {
+       "ID-2.1": true,
+       "ID-2.2": false,
+       "ID-2.3": true
+      },
+      "IR-1": {
+       "IR-1.1": true,
+       "IR-1.2": true
+      },
+      "IR-2": {
+       "IR-2.1": false,
+       "IR-2.2": true
+      },
+      "IV-1": {
+       "IV-1.1": true,
+       "IV-1.2": true
+      },
+      "IV-2": {
+       "IV-2.1": false,
+       "IV-2.2": true
+      },
+      "IE-1": {
+       "IE-1.1": true,
+       "IE-1.2": true
+      },
+      "IE-2": {
+       "IE-2.1": true,
+       "IE-2.2": true
+      },
+      "IP-1": {
+       "IP-1.1": true,
+       "IP-1.2": true
+      },
+      "IP-2": {
+       "IP-2.1a": true,
+       "IP-2.1b": true,
+       "IP-2.2": true
+      },
+      "IO-1": {
+       "IO-1.1": true,
+       "IO-1.2": true
+      },
+      "IO-2": {
+       "IO-2.1": true,
+       "IO-2.2a": true,
+       "IO-2.2b": true
+      },
+      "IM-1": {
+       "IM-1.1": true,
+       "IM-1.2": true
+      },
+      "IM-2": {
+       "IM-2.1": true,
+       "IM-2.2": true
+      }
+     }
+    }
+   }
+  }
+ },
+ "shared": {
+  "ID-3.pdet": {
+   "registered": {
+    "k": 1794,
+    "n": 10308,
+    "estimate": 0.1740395809080326,
+    "lcb": 0.16791717173557794,
+    "ucb": 0.18029847816997474,
+    "tau": 0.8,
+    "direction": ">=",
+    "alpha": 0.05,
+    "decision": "reject",
+    "naive": "reject",
+    "clean_removal": {
+     "k": 185603,
+     "n": 952202,
+     "estimate": 0.19491977542580252,
+     "lcb": 0.19425219175138012,
+     "ucb": 0.19558872984605746,
+     "tau": 0.05,
+     "direction": "<=",
+     "alpha": 0.05,
+     "decision": "reject",
+     "naive": "reject"
+    }
+   },
+   "final": {
+    "estimate": 0.1740395809080326,
+    "lcb": 0.08766233766233766,
+    "ucb": 0.25059952038369304,
+    "tau": 0.8,
+    "direction": ">=",
+    "alpha": 0.05,
+    "decision": "reject",
+    "method": "percentile cluster bootstrap over the 7 source traces (B = 10000)",
+    "max_attainable_lcb_7_traces": 0.6518363448688391,
+    "oracle_max_window_level": 0.759604190919674,
+    "clean_removal": {
+     "k": 185603,
+     "n": 952202,
+     "estimate": 0.19491977542580252,
+     "lcb": 0.19425219175138012,
+     "ucb": 0.19558872984605746,
+     "tau": 0.05,
+     "direction": "<=",
+     "alpha": 0.05,
+     "decision": "reject",
+     "naive": "reject"
+    }
+   }
+  },
+  "ID-3.pdeg": {
+   "registered": {
+    "estimate": 0.0,
+    "lcb": -0.06977703074953864,
+    "ucb": 0.057047952360442765,
+    "tau": 0.1,
+    "direction": "<=",
+    "alpha": 0.05,
+    "decision": "accept",
+    "method": "paired exact bound, simple/no_sanitisation/vs_baseline_s0_e1",
+    "n10": 0,
+    "n01": 0,
+    "n": 51
+   },
+   "final": {
+    "estimate": 0.0196078431372549,
+    "lcb": -0.06928072634180087,
+    "ucb": 0.08967153829142847,
+    "tau": 0.1,
+    "direction": "<=",
+    "alpha": 0.05,
+    "decision": "accept",
+    "method": "paired exact bound, simple/no_sanitisation/vs_clean_e3_recipe",
+    "n10": 1,
+    "n01": 0,
+    "n": 51
+   }
+  },
+  "IV-3.daily": {
+   "registered": {
+    "decision": "inconclusive",
+    "tpr": {
+     "k": 9,
+     "n": 9,
+     "estimate": 1.0,
+     "lcb": 0.7168711644368865,
+     "ucb": 1.0,
+     "tau": 0.9,
+     "direction": ">=",
+     "alpha": 0.05,
+     "decision": "inconclusive",
+     "naive": "accept"
+    },
+    "fpr": {
+     "k": 1,
+     "n": 1,
+     "estimate": 1.0,
+     "lcb": 0.05,
+     "ucb": 1.0,
+     "tau": 0.05,
+     "direction": "<=",
+     "alpha": 0.05,
+     "decision": "inconclusive",
+     "naive": "reject"
+    },
+    "feasible": false
+   },
+   "final": {
+    "decision": "inconclusive",
+    "tpr": {
+     "k": 9,
+     "n": 9,
+     "estimate": 1.0,
+     "lcb": 0.7168711644368865,
+     "ucb": 1.0,
+     "tau": 0.9,
+     "direction": ">=",
+     "alpha": 0.05,
+     "decision": "inconclusive",
+     "naive": "accept"
+    },
+    "fpr": {
+     "k": 1,
+     "n": 1,
+     "estimate": 1.0,
+     "lcb": 0.05,
+     "ucb": 1.0,
+     "tau": 0.05,
+     "direction": "<=",
+     "alpha": 0.05,
+     "decision": "inconclusive",
+     "naive": "reject"
+    },
+    "feasible": false
+   },
+   "exploratory_hourly_residual_E5b": {
+    "tpr": {
+     "k": 249,
+     "n": 249,
+     "estimate": 1.0,
+     "lcb": 0.9880410304436503,
+     "ucb": 1.0,
+     "tau": 0.9,
+     "direction": ">=",
+     "alpha": 0.05,
+     "decision": "accept",
+     "naive": "accept"
+    },
+    "fpr": {
+     "k": 20,
+     "n": 42,
+     "estimate": 0.47619047619047616,
+     "lcb": 0.3421939976538657,
+     "ucb": 0.6128142604725105,
+     "tau": 0.05,
+     "direction": "<=",
+     "alpha": 0.05,
+     "decision": "reject",
+     "naive": "reject"
+    },
+    "auc": 0.9992350353796137,
+    "detector": "retrained on the 60 shared channels (E5b)",
+    "decision": "reject"
+   },
+   "exploratory_hourly_residual_E5": {
+    "tpr": {
+     "k": 249,
+     "n": 249,
+     "estimate": 1.0,
+     "lcb": 0.9880410304436503,
+     "ucb": 1.0,
+     "tau": 0.9,
+     "direction": ">=",
+     "alpha": 0.05,
+     "decision": "accept",
+     "naive": "accept"
+    },
+    "fpr": {
+     "k": 17,
+     "n": 42,
+     "estimate": 0.40476190476190477,
+     "lcb": 0.27679547498028134,
+     "ucb": 0.5432553703175158,
+     "tau": 0.05,
+     "direction": "<=",
+     "alpha": 0.05,
+     "decision": "reject",
+     "naive": "reject"
+    },
+    "decision": "reject"
+   }
+  },
+  "IP-2.ext": {
+   "registered": {
+    "decision": "accept",
+    "max_ucb95_operational_cp": 0.7790120405436022,
+    "estimates_operational": [
+     0.7625215507533037,
+     0.6833364046995999,
+     0.703526952262778
+    ],
+    "note": "evaluation distribution not named in the plan"
+   },
+   "final": {
+    "decision": "accept",
+    "max_ucb95_dependent_data": 0.6923548841388167,
+    "estimates": [
+     0.6498826684435567,
+     0.6201539194782228,
+     0.6175551295635916
+    ],
+    "method": "moving-block (600 s) and test-file cluster bootstrap on all 360,956 test windows"
+   },
+   "attacker_query_distribution": {
+    "decision": "reject",
+    "max_ucb95": 0.9728993030837602,
+    "min_lcb_approx": 0.9609862294454867,
+    "estimates": [
+     0.9701025597010255,
+     0.9679527546795275,
+     0.9632525346325254
+    ]
+   },
+   "exploratory_deployed_oracle_E4c": {
+    "post_hoc": true,
+    "runs": 9
+   }
+  },
+  "IM-2.sig": {
+   "registered": {
+    "decision": "accept",
+    "flaw": "v1 verifier trusts the public key shipped in the envelope; a foreign-key re-signature is accepted",
+    "v1_on_foreign_key_forgery": {
+     "accepted": true,
+     "reason": "v1: signature valid under the embedded key"
+    }
+   },
+   "final": {
+    "decision": "accept",
+    "tests": {
+     "i_original": "accept",
+     "ii_one_byte_modified": "reject",
+     "iii_foreign_key_resigned": "reject",
+     "iv_anchor_replaced": "reject",
+     "v_v1_envelope_against_anchor": "reject"
+    },
+    "anchor_sha256": "1dba522bf480fcbd30a1869c3024659a5e09e788b743d45ba0de5202e760ffd0"
+   }
+  }
+ },
+ "by_alpha": {
+  "0.1": {
+   "baseline_s0": {
+    "registered/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "registered/conditional": "{ID-1, IR-1, IV-1, IE-2, IP-2, IO-2, IM-2}",
+    "final/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "final/conditional": "{ID-1, IR-1, IV-1, IE-2, IP-2, IO-2, IM-2}",
+    "decisions_final": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "accept",
+     "IV-3.daily": "reject",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "accept",
+     "IV-2.far": "reject",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    },
+    "decisions_registered": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "accept",
+     "IV-3.daily": "reject",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "accept",
+     "IV-2.far": "reject",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    }
+   },
+   "hardened_s0": {
+    "registered/demonstrated": "{ID-1, IV-1, IE-1}",
+    "registered/conditional": "{ID-1, IV-1, IE-2, IP-1, IO-2, IM-2}",
+    "final/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "final/conditional": "{ID-1, IR-1, IV-1, IE-2, IP-2, IO-2, IM-2}",
+    "decisions_final": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "not evaluated",
+     "IV-3.daily": "reject",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "inconclusive",
+     "IV-2.far": "inconclusive",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    },
+    "decisions_registered": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "not evaluated",
+     "IV-3.daily": "reject",
+     "IP-2.ext": "not evaluated",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "accept",
+     "IV-2.far": "inconclusive",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    }
+   }
+  },
+  "0.05": {
+   "baseline_s0": {
+    "registered/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "registered/conditional": "{ID-1, IR-1, IV-1, IE-2, IP-2, IO-2, IM-2}",
+    "final/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "final/conditional": "{ID-1, IR-1, IV-1, IE-1, IP-2, IO-1, IM-2}",
+    "decisions_final": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "accept",
+     "IV-3.daily": "inconclusive",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "inconclusive",
+     "IV-2.far": "reject",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "inconclusive",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    },
+    "decisions_registered": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "accept",
+     "IV-3.daily": "inconclusive",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "accept",
+     "IV-2.far": "reject",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    }
+   },
+   "hardened_s0": {
+    "registered/demonstrated": "{ID-1, IV-1, IE-1}",
+    "registered/conditional": "{ID-1, IV-1, IE-2, IP-1, IO-2, IM-2}",
+    "final/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "final/conditional": "{ID-1, IR-1, IV-1, IE-2, IP-2, IO-2, IM-2}",
+    "decisions_final": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "not evaluated",
+     "IV-3.daily": "inconclusive",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "inconclusive",
+     "IV-2.far": "inconclusive",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    },
+    "decisions_registered": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "not evaluated",
+     "IV-3.daily": "inconclusive",
+     "IP-2.ext": "not evaluated",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "accept",
+     "IV-2.far": "inconclusive",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    }
+   }
+  },
+  "0.01": {
+   "baseline_s0": {
+    "registered/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "registered/conditional": "{ID-1, IR-1, IV-1, IE-2, IP-2, IO-2, IM-2}",
+    "final/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "final/conditional": "{ID-1, IR-1, IV-1, IE-1, IP-2, IO-1, IM-2}",
+    "decisions_final": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "inconclusive",
+     "IV-3.daily": "inconclusive",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "inconclusive",
+     "IV-2.far": "reject",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "inconclusive",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    },
+    "decisions_registered": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "accept",
+     "IV-3.daily": "inconclusive",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "inconclusive",
+     "IV-2.far": "reject",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    }
+   },
+   "hardened_s0": {
+    "registered/demonstrated": "{ID-1, IV-1, IE-1}",
+    "registered/conditional": "{ID-1, IV-1, IE-2, IP-1, IO-2, IM-2}",
+    "final/demonstrated": "{ID-1, IR-1, IV-1, IE-1}",
+    "final/conditional": "{ID-1, IR-1, IV-1, IE-1, IP-2, IO-1, IM-2}",
+    "decisions_final": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "not evaluated",
+     "IV-3.daily": "inconclusive",
+     "IP-2.ext": "accept",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "inconclusive",
+     "IV-2.far": "inconclusive",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "inconclusive",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    },
+    "decisions_registered": {
+     "ID-3.pdet": "reject",
+     "ID-3.pdeg": "not evaluated",
+     "IV-3.daily": "inconclusive",
+     "IP-2.ext": "not evaluated",
+     "IM-2.sig": "accept",
+     "IV-1.report": "reported",
+     "IV-2.recall": "inconclusive",
+     "IV-2.far": "inconclusive",
+     "IO-2.load": "accept",
+     "IE-2.xfid": "accept",
+     "IR-1.transfer": "reported",
+     "IR-1.query": "reported",
+     "IR-2.asr": "inconclusive"
+    }
+   }
+  }
+ },
+ "feasibility": {
+  "IV-2 recall": {
+   "tau": 0.5,
+   "direction": ">=",
+   "n": 58,
+   "n_min_delta0.1": 169,
+   "n_min_delta0.2": 42,
+   "passable_with_all_successes": true
+  },
+  "IE-2 localisation": {
+   "tau": 0.6,
+   "direction": ">=",
+   "n": 38,
+   "n_min_delta0.1": 157,
+   "n_min_delta0.2": 39,
+   "passable_with_all_successes": true
+  },
+  "IR-2 attack success": {
+   "tau": 0.2,
+   "direction": "<=",
+   "n": 38,
+   "n_min_delta0.1": 94,
+   "n_min_delta0.2": 14,
+   "passable_with_all_successes": true
+  },
+  "IV-3 drift TPR (days)": {
+   "tau": 0.9,
+   "direction": ">=",
+   "n": 9,
+   "n_min_delta0.1": 29,
+   "n_min_delta0.2": 29,
+   "passable_with_all_successes": false
+  },
+  "ID-3 poison detection (traces)": {
+   "tau": 0.8,
+   "direction": ">=",
+   "n": 7,
+   "n_min_delta0.1": 94,
+   "n_min_delta0.2": 14,
+   "passable_with_all_successes": false
+  },
+  "IV-3 drift FPR (days)": {
+   "tau": 0.05,
+   "n": 1,
+   "smallest_ucb_with_zero_failures": 0.95,
+   "passable": false,
+   "n_zero_failure": 59
+  },
+  "IV-2 FAR (hours)": {
+   "tau": 0.25,
+   "zero_alarm_hours_needed": 11.982929094215958
+  }
+ },
+ "retrospective_integrity_check": {
+  "files": 20,
+  "all_match_manifest": true,
+  "date": "2026-10-12"
+ },
+ "deviations": [
+  {
+   "id": "D1",
+   "item": "IR-2 attack",
+   "registered": "white-box adaptive PGD within L_inf <= 0.5 SD (TM-A)",
+   "change": "attack success over the whole ball (eps in {0.1, 0.25, 0.5}) with the strongest attack: union of the planned PGD, an improved PGD (restarts, warm start, step schedule) and greedy prediction replay",
+   "reason": "the planned PGD success fell with the budget (5, 4, 0, 0 of 38), the signature of a failed optimiser; adaptive-attack guidance requires the strongest available attack",
+   "decided": "greedy attack after E2; improved PGD and nested aggregation in the revision"
+  },
+  {
+   "id": "D2",
+   "item": "IP-2 evaluation distribution",
+   "registered": "fidelity <= 0.90 at Q = 10^4, label-only; distribution not named",
+   "change": "surrogates retrained after the first ones proved under-trained (E4b); operational test windows named as the evaluation distribution; attacker's query distribution reported; dependent-data bounds; extraction against the deployed alarm (E4c) exploratory",
+   "reason": "the plan left the distribution open; fidelity on the task distribution is the conventional definition",
+   "decided": "after E4 (redesign E4b) and in the revision"
+  },
+  {
+   "id": "D3",
+   "item": "ID-3 evaluation units",
+   "registered": "poison detection rate >= 0.80 (window level), degradation <= 0.10",
+   "change": "poison detection bounded with the 7 source traces as units; exact paired bound for degradation; cross-fitted sanitisers (E3b, E3c) exploratory",
+   "reason": "10,308 windows are replicas of 7 traces and are not independent",
+   "decided": "revision"
+  },
+  {
+   "id": "D4",
+   "item": "IV-3",
+   "registered": "daily drift alarm TPR >= 0.90 with daily FPR <= 0.05",
+   "change": "none to the decision; hourly monitors exploratory; drift re-estimated with a detector retrained on the 60 channels shared by both campaigns (E5b)",
+   "reason": "only one in-distribution day exists, so the daily test cannot be passed; E5 had imputed eight renamed tags",
+   "decided": "revision"
+  },
+  {
+   "id": "D5",
+   "item": "IE-2 trivial baseline",
+   "registered": "process-localisation accuracy >= 0.60",
+   "change": "the explainer must also beat the best constant explainer (exact one-sided McNemar test at alpha_G)",
+   "reason": "a constant 'P1' explainer reaches 0.79, above the planned threshold",
+   "decided": "revision"
+  },
+  {
+   "id": "D6",
+   "item": "margin delta",
+   "registered": "not declared",
+   "change": "delta = 0.2 declared for proportion requirements",
+   "reason": "TE-AI-1 requires n >= n_min(alpha_G, delta)",
+   "decided": "revision"
+  },
+  {
+   "id": "D7",
+   "item": "dependence of evaluation units",
+   "registered": "exact binomial and Poisson bounds",
+   "change": "cluster-robust bound for event recall and for the paired comparison with the constant explainer (shared attack primitives); dispersion check and quasi-Poisson widening of hourly false-alarm counts",
+   "reason": "attacks reuse primitives; Section 3.4 requires cluster or block bounds for dependent units",
+   "decided": "revision"
+  },
+  {
+   "id": "D8",
+   "item": "IM-2 verification",
+   "registered": "signature and tamper test (v1)",
+   "change": "verification against a trust anchor pinned outside the envelope (v2) with negative tests",
+   "reason": "the v1 verifier accepted a model re-signed with a foreign key",
+   "decided": "revision"
+  }
+ ],
+ "meta": {
+  "script": "assess_case_v2.py",
+  "evidence_file": "case_evidence.yaml",
+  "runtime_s": 8.49,
+  "generated": "2026-10-12T12:45:50",
+  "numpy": "1.26.4"
+ }
+}

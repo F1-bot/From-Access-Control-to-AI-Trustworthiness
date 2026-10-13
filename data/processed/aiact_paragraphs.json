@@ -1,0 +1,2912 @@
+{
+ "source": "https://artificialintelligenceact.eu/article/<n>/ (consolidated text incl. Digital Omnibus markup)",
+ "retrieved": "2026-10-11",
+ "meta": {
+  "3": {
+   "page_title": "Article 3: Definitions | EU Artificial Intelligence Act",
+   "applicability": "2 February 2025"
+  },
+  "6": {
+   "page_title": "Article 6: Classification Rules for High-Risk AI Systems | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "9": {
+   "page_title": "Article 9: Risk Management System | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "10": {
+   "page_title": "Article 10: Data and Data Governance | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "11": {
+   "page_title": "Article 11: Technical Documentation | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "12": {
+   "page_title": "Article 12: Record-Keeping | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "13": {
+   "page_title": "Article 13: Transparency and Provision of Information to Deployers | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "14": {
+   "page_title": "Article 14: Human Oversight | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "15": {
+   "page_title": "Article 15: Accuracy, Robustness and Cybersecurity | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "17": {
+   "page_title": "Article 17: Quality Management System | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "26": {
+   "page_title": "Article 26: Obligations of Deployers of High-Risk AI Systems | EU Artificial Intelligence Act",
+   "applicability": "2 December 2027 (high-risk under Annex III) / 2 August 2028 (high-risk under Annex I)"
+  },
+  "43": {
+   "page_title": "Article 43: Conformity Assessment | EU Artificial Intelligence Act",
+   "applicability": "2 August 2026"
+  },
+  "50": {
+   "page_title": "Article 50: Transparency Obligations for Providers and Deployers of Certain AI Systems | EU Artificial Intelligence Act",
+   "applicability": "2 August 2026"
+  },
+  "72": {
+   "page_title": "Article 72: Post-Market Monitoring by Providers and Post-Market Monitoring Plan for High-Risk AI Systems | EU Artificial Intelligence Act",
+   "applicability": "2 August 2026"
+  },
+  "73": {
+   "page_title": "Article 73: Reporting of Serious Incidents | EU Artificial Intelligence Act",
+   "applicability": "2 August 2026"
+  },
+  "113": {
+   "page_title": "Article 113: Entry into Force and Application | EU Artificial Intelligence Act",
+   "applicability": "1 August 2024"
+  }
+ },
+ "requirements": [
+  {
+   "anchor": "p-article-3-0",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "For the purposes of this Regulation, the following definitions apply:",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3"
+  },
+  {
+   "anchor": "p-article-3-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "‘AI system’ means a machine-based system that is designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(1)"
+  },
+  {
+   "anchor": "p-article-3-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "‘risk’ means the combination of the probability of an occurrence of harm and the severity of that harm;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(2)"
+  },
+  {
+   "anchor": "p-article-3-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "‘provider’ means a natural or legal person, public authority, agency or other body that develops an AI system or a general-purpose AI model or that has an AI system or a general-purpose AI model developed and places it on the market or puts the AI system into service under its own name or trademark, whether for payment or free of charge;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(3)"
+  },
+  {
+   "anchor": "p-article-3-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "‘deployer’ means a natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(4)"
+  },
+  {
+   "anchor": "p-article-3-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "‘authorised representative’ means a natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the obligations and procedures established by this Regulation;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(5)"
+  },
+  {
+   "anchor": "p-article-3-6",
+   "depth": 0,
+   "label": "6.",
+   "status": "original",
+   "text": "‘importer’ means a natural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established in a third country;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(6)"
+  },
+  {
+   "anchor": "p-article-3-7",
+   "depth": 0,
+   "label": "7.",
+   "status": "original",
+   "text": "‘distributor’ means a natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(7)"
+  },
+  {
+   "anchor": "p-article-3-8",
+   "depth": 0,
+   "label": "8.",
+   "status": "original",
+   "text": "‘operator’ means a provider, product manufacturer, deployer, authorised representative, importer or distributor;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(8)"
+  },
+  {
+   "anchor": "p-article-3-9",
+   "depth": 0,
+   "label": "9.",
+   "status": "original",
+   "text": "‘placing on the market’ means the first making available of an AI system or a general-purpose AI model on the Union market;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(9)"
+  },
+  {
+   "anchor": "p-article-3-10",
+   "depth": 0,
+   "label": "10.",
+   "status": "original",
+   "text": "‘making available on the market’ means the supply of an AI system or a general-purpose AI model for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(10)"
+  },
+  {
+   "anchor": "p-article-3-11",
+   "depth": 0,
+   "label": "11.",
+   "status": "original",
+   "text": "‘putting into service’ means the supply of an AI system for first use directly to the deployer or for own use in the Union for its intended purpose;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(11)"
+  },
+  {
+   "anchor": "p-article-3-12",
+   "depth": 0,
+   "label": "12.",
+   "status": "original",
+   "text": "‘intended purpose’ means the use for which an AI system is intended by the provider, including the specific context and conditions of use, as specified in the information supplied by the provider in the instructions for use, promotional or sales materials and statements, as well as in the technical documentation;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(12)"
+  },
+  {
+   "anchor": "p-article-3-13",
+   "depth": 0,
+   "label": "13.",
+   "status": "original",
+   "text": "‘reasonably foreseeable misuse’ means the use of an AI system in a way that is not in accordance with its intended purpose, but which may result from reasonably foreseeable human behaviour or interaction with other systems, including other AI systems;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(13)"
+  },
+  {
+   "anchor": "p-article-3-14",
+   "depth": 0,
+   "label": "14.",
+   "status": "amended",
+   "text": "‘safety component’ means a component of a product or of an AI system which fulfils a safety function for that product or AI system, or the failure or malfunctioning of which endangers the health and safety of persons or property; for the purposes of this definition, a component fulfils a safety function where its intended purpose is to prevent or mitigate risks to health and safety of persons or property;",
+   "original_text": "‘safety component’ means a component of a product or of an AI system which fulfils a safety function for that product or AI system, or the failure or malfunctioning of which endangers the health and safety of persons or property;",
+   "article": 3,
+   "id": "Art.3(14)"
+  },
+  {
+   "anchor": "p-article-3-14a",
+   "depth": 0,
+   "label": "14a.",
+   "status": "amended",
+   "text": "‘micro, small and medium-sized enterprise’ or ‘SME’ means a micro, small or medium-sized enterprise as defined in Article 2 of the Annex to Recommendation 2003/361/EC;",
+   "original_text": "Not present before the amendment.",
+   "article": 3,
+   "id": "Art.3(14a)"
+  },
+  {
+   "anchor": "p-article-3-14b",
+   "depth": 0,
+   "label": "14b.",
+   "status": "amended",
+   "text": "‘small mid-cap enterprise’ or ‘SMC’ means a small mid-cap enterprise as defined in point (2) of the Annex to Recommendation (EU) 2025/1099;",
+   "original_text": "Not present before the amendment.",
+   "article": 3,
+   "id": "Art.3(14b)"
+  },
+  {
+   "anchor": "p-article-3-15",
+   "depth": 0,
+   "label": "15.",
+   "status": "original",
+   "text": "‘instructions for use’ means the information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(15)"
+  },
+  {
+   "anchor": "p-article-3-16",
+   "depth": 0,
+   "label": "16.",
+   "status": "original",
+   "text": "‘recall of an AI system’ means any measure aiming to achieve the return to the provider or taking out of service or disabling the use of an AI system made available to deployers;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(16)"
+  },
+  {
+   "anchor": "p-article-3-17",
+   "depth": 0,
+   "label": "17.",
+   "status": "original",
+   "text": "‘withdrawal of an AI system’ means any measure aiming to prevent an AI system in the supply chain being made available on the market;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(17)"
+  },
+  {
+   "anchor": "p-article-3-18",
+   "depth": 0,
+   "label": "18.",
+   "status": "original",
+   "text": "‘performance of an AI system’ means the ability of an AI system to achieve its intended purpose;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(18)"
+  },
+  {
+   "anchor": "p-article-3-19",
+   "depth": 0,
+   "label": "19.",
+   "status": "original",
+   "text": "‘notifying authority’ means the national authority responsible for setting up and carrying out the necessary procedures for the assessment, designation and notification of conformity assessment bodies and for their monitoring;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(19)"
+  },
+  {
+   "anchor": "p-article-3-20",
+   "depth": 0,
+   "label": "20.",
+   "status": "original",
+   "text": "‘conformity assessment’ means the process of demonstrating whether the requirements set out in Chapter III, Section 2 relating to a high-risk AI system have been fulfilled;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(20)"
+  },
+  {
+   "anchor": "p-article-3-21",
+   "depth": 0,
+   "label": "21.",
+   "status": "original",
+   "text": "‘conformity assessment body’ means a body that performs third-party conformity assessment activities, including testing, certification and inspection;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(21)"
+  },
+  {
+   "anchor": "p-article-3-22",
+   "depth": 0,
+   "label": "22.",
+   "status": "original",
+   "text": "‘notified body’ means a conformity assessment body notified in accordance with this Regulation and other relevant Union harmonisation legislation;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(22)"
+  },
+  {
+   "anchor": "p-article-3-23",
+   "depth": 0,
+   "label": "23.",
+   "status": "original",
+   "text": "‘substantial modification’ means a change to an AI system after its placing on the market or putting into service which is not foreseen or planned in the initial conformity assessment carried out by the provider and as a result of which the compliance of the AI system with the requirements set out in Chapter III, Section 2 is affected or results in a modification to the intended purpose for which the AI system has been assessed;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(23)"
+  },
+  {
+   "anchor": "p-article-3-24",
+   "depth": 0,
+   "label": "24.",
+   "status": "original",
+   "text": "‘CE marking’ means a marking by which a provider indicates that an AI system is in conformity with the requirements set out in Chapter III, Section 2 and other applicable Union harmonisation legislation providing for its affixing;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(24)"
+  },
+  {
+   "anchor": "p-article-3-25",
+   "depth": 0,
+   "label": "25.",
+   "status": "original",
+   "text": "‘post-market monitoring system’ means all activities carried out by providers of AI systems to collect and review experience gained from the use of AI systems they place on the market or put into service for the purpose of identifying any need to immediately apply any necessary corrective or preventive actions;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(25)"
+  },
+  {
+   "anchor": "p-article-3-26",
+   "depth": 0,
+   "label": "26.",
+   "status": "original",
+   "text": "‘market surveillance authority’ means the national authority carrying out the activities and taking the measures pursuant to Regulation (EU) 2019/1020;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(26)"
+  },
+  {
+   "anchor": "p-article-3-27",
+   "depth": 0,
+   "label": "27.",
+   "status": "original",
+   "text": "‘harmonised standard’ means a harmonised standard as defined in Article 2(1), point (c), of Regulation (EU) No 1025/2012;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(27)"
+  },
+  {
+   "anchor": "p-article-3-28",
+   "depth": 0,
+   "label": "28.",
+   "status": "original",
+   "text": "‘common specification’ means a set of technical specifications as defined in Article 2, point (4) of Regulation (EU) No 1025/2012, providing means to comply with certain requirements established under this Regulation;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(28)"
+  },
+  {
+   "anchor": "p-article-3-29",
+   "depth": 0,
+   "label": "29.",
+   "status": "original",
+   "text": "‘training data’ means data used for training an AI system through fitting its learnable parameters;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(29)"
+  },
+  {
+   "anchor": "p-article-3-30",
+   "depth": 0,
+   "label": "30.",
+   "status": "original",
+   "text": "‘validation data’ means data used for providing an evaluation of the trained AI system and for tuning its non-learnable parameters and its learning process in order, inter alia, to prevent underfitting or overfitting;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(30)"
+  },
+  {
+   "anchor": "p-article-3-31",
+   "depth": 0,
+   "label": "31.",
+   "status": "original",
+   "text": "‘validation data set’ means a separate data set or part of the training data set, either as a fixed or variable split;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(31)"
+  },
+  {
+   "anchor": "p-article-3-32",
+   "depth": 0,
+   "label": "32.",
+   "status": "original",
+   "text": "‘testing data’ means data used for providing an independent evaluation of the AI system in order to confirm the expected performance of that system before its placing on the market or putting into service;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(32)"
+  },
+  {
+   "anchor": "p-article-3-33",
+   "depth": 0,
+   "label": "33.",
+   "status": "original",
+   "text": "‘input data’ means data provided to or directly acquired by an AI system on the basis of which the system produces an output;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(33)"
+  },
+  {
+   "anchor": "p-article-3-34",
+   "depth": 0,
+   "label": "34.",
+   "status": "original",
+   "text": "‘biometric data’ means personal data resulting from specific technical processing relating to the physical, physiological or behavioural characteristics of a natural person, such as facial images or dactyloscopic data;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(34)"
+  },
+  {
+   "anchor": "p-article-3-35",
+   "depth": 0,
+   "label": "35.",
+   "status": "original",
+   "text": "‘biometric identification’ means the automated recognition of physical, physiological, behavioural, or psychological human features for the purpose of establishing the identity of a natural person by comparing biometric data of that individual to biometric data of individuals stored in a database;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(35)"
+  },
+  {
+   "anchor": "p-article-3-36",
+   "depth": 0,
+   "label": "36.",
+   "status": "original",
+   "text": "‘biometric verification’ means the automated, one-to-one verification, including authentication, of the identity of natural persons by comparing their biometric data to previously provided biometric data;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(36)"
+  },
+  {
+   "anchor": "p-article-3-37",
+   "depth": 0,
+   "label": "37.",
+   "status": "original",
+   "text": "‘special categories of personal data’ means the categories of personal data referred to in Article 9(1) of Regulation (EU) 2016/679, Article 10 of Directive (EU) 2016/680 and Article 10(1) of Regulation (EU) 2018/1725;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(37)"
+  },
+  {
+   "anchor": "p-article-3-38",
+   "depth": 0,
+   "label": "38.",
+   "status": "original",
+   "text": "‘sensitive operational data’ means operational data related to activities of prevention, detection, investigation or prosecution of criminal offences, the disclosure of which could jeopardise the integrity of criminal proceedings;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(38)"
+  },
+  {
+   "anchor": "p-article-3-39",
+   "depth": 0,
+   "label": "39.",
+   "status": "original",
+   "text": "‘emotion recognition system’ means an AI system for the purpose of identifying or inferring emotions or intentions of natural persons on the basis of their biometric data;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(39)"
+  },
+  {
+   "anchor": "p-article-3-40",
+   "depth": 0,
+   "label": "40.",
+   "status": "original",
+   "text": "‘biometric categorisation system’ means an AI system for the purpose of assigning natural persons to specific categories on the basis of their biometric data, unless it is ancillary to another commercial service and strictly necessary for objective technical reasons;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(40)"
+  },
+  {
+   "anchor": "p-article-3-41",
+   "depth": 0,
+   "label": "41.",
+   "status": "original",
+   "text": "‘remote biometric identification system’ means an AI system for the purpose of identifying natural persons, without their active involvement, typically at a distance through the comparison of a person’s biometric data with the biometric data contained in a reference database;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(41)"
+  },
+  {
+   "anchor": "p-article-3-42",
+   "depth": 0,
+   "label": "42.",
+   "status": "original",
+   "text": "‘real-time remote biometric identification system’ means a remote biometric identification system, whereby the capturing of biometric data, the comparison and the identification all occur without a significant delay, comprising not only instant identification, but also limited short delays in order to avoid circumvention;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(42)"
+  },
+  {
+   "anchor": "p-article-3-43",
+   "depth": 0,
+   "label": "43.",
+   "status": "original",
+   "text": "‘post-remote biometric identification system’ means a remote biometric identification system other than a real-time remote biometric identification system;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(43)"
+  },
+  {
+   "anchor": "p-article-3-44",
+   "depth": 0,
+   "label": "44.",
+   "status": "original",
+   "text": "‘publicly accessible space’ means any publicly or privately owned physical place accessible to an undetermined number of natural persons, regardless of whether certain conditions for access may apply, and regardless of the potential capacity restrictions;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(44)"
+  },
+  {
+   "anchor": "p-article-3-45",
+   "depth": 0,
+   "label": "45.",
+   "status": "original",
+   "text": "‘law enforcement authority’ means:",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(45)"
+  },
+  {
+   "anchor": "p-article-3-45.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "any public authority competent for the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security; or",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(45)(a)"
+  },
+  {
+   "anchor": "p-article-3-45.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "any other body or entity entrusted by Member State law to exercise public authority and public powers for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(45)(b)"
+  },
+  {
+   "anchor": "p-article-3-46",
+   "depth": 0,
+   "label": "46.",
+   "status": "original",
+   "text": "‘law enforcement’ means activities carried out by law enforcement authorities or on their behalf for the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including safeguarding against and preventing threats to public security;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(46)"
+  },
+  {
+   "anchor": "p-article-3-47",
+   "depth": 0,
+   "label": "47.",
+   "status": "original",
+   "text": "‘AI Office’ means the Commission’s function of contributing to the implementation, monitoring and supervision of AI systems and general-purpose AI models, and AI governance, provided for in Commission Decision of 24 January 2024; references in this Regulation to the AI Office shall be construed as references to the Commission;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(47)"
+  },
+  {
+   "anchor": "p-article-3-48",
+   "depth": 0,
+   "label": "48.",
+   "status": "original",
+   "text": "‘national competent authority’ means a notifying authority or a market surveillance authority; as regards AI systems put into service or used by Union institutions, agencies, offices and bodies, references to national competent authorities or market surveillance authorities in this Regulation shall be construed as references to the European Data Protection Supervisor;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(48)"
+  },
+  {
+   "anchor": "p-article-3-49",
+   "depth": 0,
+   "label": "49.",
+   "status": "original",
+   "text": "‘serious incident’ means an incident or malfunctioning of an AI system that directly or indirectly leads to any of the following:",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(49)"
+  },
+  {
+   "anchor": "p-article-3-49.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "the death of a person, or serious harm to a person’s health;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(49)(a)"
+  },
+  {
+   "anchor": "p-article-3-49.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "a serious and irreversible disruption of the management or operation of critical infrastructure;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(49)(b)"
+  },
+  {
+   "anchor": "p-article-3-49.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "the infringement of obligations under Union law intended to protect fundamental rights;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(49)(c)"
+  },
+  {
+   "anchor": "p-article-3-49.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "serious harm to property or the environment;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(49)(d)"
+  },
+  {
+   "anchor": "p-article-3-50",
+   "depth": 0,
+   "label": "50.",
+   "status": "original",
+   "text": "‘personal data’ means personal data as defined in Article 4, point (1), of Regulation (EU) 2016/679;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(50)"
+  },
+  {
+   "anchor": "p-article-3-51",
+   "depth": 0,
+   "label": "51.",
+   "status": "original",
+   "text": "‘non-personal data’ means data other than personal data as defined in Article 4, point (1), of Regulation (EU) 2016/679;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(51)"
+  },
+  {
+   "anchor": "p-article-3-52",
+   "depth": 0,
+   "label": "52.",
+   "status": "original",
+   "text": "‘profiling’ means profiling as defined in Article 4, point (4), of Regulation (EU) 2016/679;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(52)"
+  },
+  {
+   "anchor": "p-article-3-53",
+   "depth": 0,
+   "label": "53.",
+   "status": "original",
+   "text": "‘real-world testing plan’ means a document that describes the objectives, methodology, geographical, population and temporal scope, monitoring, organisation and conduct of testing in real-world conditions;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(53)"
+  },
+  {
+   "anchor": "p-article-3-54",
+   "depth": 0,
+   "label": "54.",
+   "status": "original",
+   "text": "‘sandbox plan’ means a document agreed between the participating provider and the competent authority describing the objectives, conditions, timeframe, methodology and requirements for the activities carried out within the sandbox;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(54)"
+  },
+  {
+   "anchor": "p-article-3-55",
+   "depth": 0,
+   "label": "55.",
+   "status": "original",
+   "text": "‘AI regulatory sandbox’ means a controlled framework set up by a competent authority which offers providers or prospective providers of AI systems the possibility to develop, train, validate and test, where appropriate in real-world conditions, an innovative AI system, pursuant to a sandbox plan for a limited time under regulatory supervision;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(55)"
+  },
+  {
+   "anchor": "p-article-3-56",
+   "depth": 0,
+   "label": "56.",
+   "status": "original",
+   "text": "‘AI literacy’ means skills, knowledge and understanding that allow providers, deployers and affected persons, taking into account their respective rights and obligations in the context of this Regulation, to make an informed deployment of AI systems, as well as to gain awareness about the opportunities and risks of AI and possible harm it can cause;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(56)"
+  },
+  {
+   "anchor": "p-article-3-57",
+   "depth": 0,
+   "label": "57.",
+   "status": "original",
+   "text": "‘testing in real-world conditions’ means the temporary testing of an AI system for its intended purpose in real-world conditions outside a laboratory or otherwise simulated environment, with a view to gathering reliable and robust data and to assessing and verifying the conformity of the AI system with the requirements of this Regulation and it does not qualify as placing the AI system on the market or putting it into service within the meaning of this Regulation, provided that all the conditions laid down in Article 57 or 60 are fulfilled;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(57)"
+  },
+  {
+   "anchor": "p-article-3-58",
+   "depth": 0,
+   "label": "58.",
+   "status": "original",
+   "text": "‘subject’, for the purpose of real-world testing, means a natural person who participates in testing in real-world conditions;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(58)"
+  },
+  {
+   "anchor": "p-article-3-59",
+   "depth": 0,
+   "label": "59.",
+   "status": "original",
+   "text": "‘informed consent’ means a subject’s freely given, specific, unambiguous and voluntary expression of his or her willingness to participate in a particular testing in real-world conditions, after having been informed of all aspects of the testing that are relevant to the subject’s decision to participate;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(59)"
+  },
+  {
+   "anchor": "p-article-3-60",
+   "depth": 0,
+   "label": "60.",
+   "status": "original",
+   "text": "‘deep fake’ means AI-generated or manipulated image, audio or video content that resembles existing persons, objects, places, entities or events and would falsely appear to a person to be authentic or truthful;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(60)"
+  },
+  {
+   "anchor": "p-article-3-61",
+   "depth": 0,
+   "label": "61.",
+   "status": "original",
+   "text": "‘widespread infringement’ means any act or omission contrary to Union law protecting the interest of individuals, which:",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(61)"
+  },
+  {
+   "anchor": "p-article-3-61.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "has harmed or is likely to harm the collective interests of individuals residing in at least two Member States other than the Member State in which:",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(61)(a)"
+  },
+  {
+   "anchor": "p-article-3-61.a.i",
+   "depth": 2,
+   "label": "(i)",
+   "status": "original",
+   "text": "the act or omission originated or took place;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(61)(a)(i)"
+  },
+  {
+   "anchor": "p-article-3-61.a.ii",
+   "depth": 2,
+   "label": "(ii)",
+   "status": "original",
+   "text": "the provider concerned, or, where applicable, its authorised representative is located or established; or",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(61)(a)(ii)"
+  },
+  {
+   "anchor": "p-article-3-61.a.iii",
+   "depth": 2,
+   "label": "(iii)",
+   "status": "original",
+   "text": "the deployer is established, when the infringement is committed by the deployer;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(61)(a)(iii)"
+  },
+  {
+   "anchor": "p-article-3-61.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "has caused, causes or is likely to cause harm to the collective interests of individuals and has common features, including the same unlawful practice or the same interest being infringed, and is occurring concurrently, committed by the same operator, in at least three Member States;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(61)(b)"
+  },
+  {
+   "anchor": "p-article-3-62",
+   "depth": 0,
+   "label": "62.",
+   "status": "original",
+   "text": "‘critical infrastructure’ means critical infrastructure as defined in Article 2, point (4), of Directive (EU) 2022/2557;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(62)"
+  },
+  {
+   "anchor": "p-article-3-63",
+   "depth": 0,
+   "label": "63.",
+   "status": "original",
+   "text": "‘general-purpose AI model’ means an AI model, including where such an AI model is trained with a large amount of data using self-supervision at scale, that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market and that can be integrated into a variety of downstream systems or applications, except AI models that are used for research, development or prototyping activities before they are placed on the market;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(63)"
+  },
+  {
+   "anchor": "p-article-3-64",
+   "depth": 0,
+   "label": "64.",
+   "status": "original",
+   "text": "‘high-impact capabilities’ means capabilities that match or exceed the capabilities recorded in the most advanced general-purpose AI models;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(64)"
+  },
+  {
+   "anchor": "p-article-3-65",
+   "depth": 0,
+   "label": "65.",
+   "status": "original",
+   "text": "‘systemic risk’ means a risk that is specific to the high-impact capabilities of general-purpose AI models, having a significant impact on the Union market due to their reach, or due to actual or reasonably foreseeable negative effects on public health, safety, public security, fundamental rights, or the society as a whole, that can be propagated at scale across the value chain;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(65)"
+  },
+  {
+   "anchor": "p-article-3-66",
+   "depth": 0,
+   "label": "66.",
+   "status": "original",
+   "text": "‘general-purpose AI system’ means an AI system which is based on a general-purpose AI model and which has the capability to serve a variety of purposes, both for direct use as well as for integration in other AI systems;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(66)"
+  },
+  {
+   "anchor": "p-article-3-67",
+   "depth": 0,
+   "label": "67.",
+   "status": "original",
+   "text": "‘floating-point operation’ means any mathematical operation or assignment involving floating-point numbers, which are a subset of the real numbers typically represented on computers by an integer of fixed precision scaled by an integer exponent of a fixed base;",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(67)"
+  },
+  {
+   "anchor": "p-article-3-68",
+   "depth": 0,
+   "label": "68.",
+   "status": "original",
+   "text": "‘downstream provider’ means a provider of an AI system, including a general-purpose AI system, which integrates an AI model, regardless of whether the AI model is provided by themselves and vertically integrated or provided by another entity based on contractual relations.",
+   "original_text": null,
+   "article": 3,
+   "id": "Art.3(68)"
+  },
+  {
+   "anchor": "p-article-6-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "Irrespective of whether an AI system is placed on the market or put into service independently of the products referred to in points (a) and (b), that AI system shall be considered to be high-risk where both of the following conditions are fulfilled:",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(1)"
+  },
+  {
+   "anchor": "p-article-6-1.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "the AI system is intended to be used as a safety component of a product, or the AI system is itself a product, covered by the Union harmonisation legislation listed in Annex I;",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(1)(a)"
+  },
+  {
+   "anchor": "p-article-6-1.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "the product whose safety component pursuant to point (a) is the AI system, or the AI system itself as a product, is required to undergo a third-party conformity assessment, with a view to the placing on the market or the putting into service of that product pursuant to the Union harmonisation legislation listed in Annex I.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(1)(b)"
+  },
+  {
+   "anchor": "p-article-6-1a",
+   "depth": 0,
+   "label": "1a.",
+   "status": "amended",
+   "text": "For the purposes of this Regulation, including paragraph 1 of this Article, AI systems that are solely used for non-safety related aspects of user assistance, performance optimisation, service efficiency, automation or convenience or quality control shall not qualify as safety components.",
+   "original_text": "Not present before the amendment.",
+   "article": 6,
+   "id": "Art.6(1a)"
+  },
+  {
+   "anchor": "p-article-6-1b",
+   "depth": 0,
+   "label": "1b.",
+   "status": "amended",
+   "text": "Notwithstanding paragraph 1a, AI systems the failure or malfunctioning of which would endanger health and safety shall qualify as safety components.",
+   "original_text": "Not present before the amendment.",
+   "article": 6,
+   "id": "Art.6(1b)"
+  },
+  {
+   "anchor": "p-article-6-1c",
+   "depth": 0,
+   "label": "1c.",
+   "status": "amended",
+   "text": "A product that is required to undergo a third-party conformity assessment solely due to risks other than risks to health and safety, in particular risks relating to the distribution of radio spectrum or electromagnetic interference that do not affect health and safety, shall not be considered as fulfilling the condition in paragraph 1, point (b).",
+   "original_text": "Not present before the amendment.",
+   "article": 6,
+   "id": "Art.6(1c)"
+  },
+  {
+   "anchor": "p-article-6-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "In addition to the high-risk AI systems referred to in paragraph 1, AI systems referred to in Annex III shall be considered to be high-risk.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(2)"
+  },
+  {
+   "anchor": "p-article-6-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "By derogation from paragraph 2, an AI system referred to in Annex III shall not be considered to be high-risk where it does not pose a significant risk of harm to the health, safety or fundamental rights of natural persons, including by not materially influencing the outcome of decision making.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(3)"
+  },
+  {
+   "anchor": "p-article-6-3",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "The first subparagraph shall apply where any of the following conditions is fulfilled:",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(3)"
+  },
+  {
+   "anchor": "p-article-6-3.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "the AI system is intended to perform a narrow procedural task;",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(3)(a)"
+  },
+  {
+   "anchor": "p-article-6-3.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "the AI system is intended to improve the result of a previously completed human activity;",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(3)(b)"
+  },
+  {
+   "anchor": "p-article-6-3.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "the AI system is intended to detect decision-making patterns or deviations from prior decision-making patterns and is not meant to replace or influence the previously completed human assessment, without proper human review; or",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(3)(c)"
+  },
+  {
+   "anchor": "p-article-6-3.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "the AI system is intended to perform a preparatory task to an assessment relevant for the purposes of the use cases listed in Annex III.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(3)(d)"
+  },
+  {
+   "anchor": "p-article-6-3",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "Notwithstanding the first subparagraph, an AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(3)"
+  },
+  {
+   "anchor": "p-article-6-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "A provider who considers that an AI system referred to in Annex III is not high-risk shall document its assessment before that system is placed on the market or put into service. Such provider shall be subject to the registration obligation set out in Article 49(2). Upon request of national competent authorities, the provider shall provide the documentation of the assessment.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(4)"
+  },
+  {
+   "anchor": "p-article-6-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "The Commission shall, after consulting the European Artificial Intelligence Board (the ‘Board’), and no later than 2 February 2026, provide guidelines specifying the practical implementation of this Article in line with Article 96 together with a comprehensive list of practical examples of use cases of AI systems that are high-risk and not high-risk.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(5)"
+  },
+  {
+   "anchor": "p-article-6-6",
+   "depth": 0,
+   "label": "6.",
+   "status": "original",
+   "text": "The Commission is empowered to adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by adding new conditions to those laid down therein, or by modifying them, where there is concrete and reliable evidence of the existence of AI systems that fall under the scope of Annex III, but do not pose a significant risk of harm to the health, safety or fundamental rights of natural persons.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(6)"
+  },
+  {
+   "anchor": "p-article-6-7",
+   "depth": 0,
+   "label": "7.",
+   "status": "original",
+   "text": "The Commission shall adopt delegated acts in accordance with Article 97 in order to amend paragraph 3, second subparagraph, of this Article by deleting any of the conditions laid down therein, where there is concrete and reliable evidence that this is necessary to maintain the level of protection of health, safety and fundamental rights provided for by this Regulation.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(7)"
+  },
+  {
+   "anchor": "p-article-6-8",
+   "depth": 0,
+   "label": "8.",
+   "status": "original",
+   "text": "Any amendment to the conditions laid down in paragraph 3, second subparagraph, adopted in accordance with paragraphs 6 and 7 of this Article shall not decrease the overall level of protection of health, safety and fundamental rights provided for by this Regulation and shall ensure consistency with the delegated acts adopted pursuant to Article 7(1), and take account of market and technological developments.",
+   "original_text": null,
+   "article": 6,
+   "id": "Art.6(8)"
+  },
+  {
+   "anchor": "p-article-9-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "A risk management system shall be established, implemented, documented and maintained in relation to high-risk AI systems.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(1)"
+  },
+  {
+   "anchor": "p-article-9-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "The risk management system shall be understood as a continuous iterative process planned and run throughout the entire lifecycle of a high-risk AI system, requiring regular systematic review and updating. It shall comprise the following steps:",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(2)"
+  },
+  {
+   "anchor": "p-article-9-2.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "the identification and analysis of the known and the reasonably foreseeable risks that the high-risk AI system can pose to health, safety or fundamental rights when the high-risk AI system is used in accordance with its intended purpose;",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(2)(a)"
+  },
+  {
+   "anchor": "p-article-9-2.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "the estimation and evaluation of the risks that may emerge when the high-risk AI system is used in accordance with its intended purpose, and under conditions of reasonably foreseeable misuse;",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(2)(b)"
+  },
+  {
+   "anchor": "p-article-9-2.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "the evaluation of other risks possibly arising, based on the analysis of data gathered from the post-market monitoring system referred to in Article 72;",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(2)(c)"
+  },
+  {
+   "anchor": "p-article-9-2.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "the adoption of appropriate and targeted risk management measures designed to address the risks identified pursuant to point (a).",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(2)(d)"
+  },
+  {
+   "anchor": "p-article-9-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "The risks referred to in this Article shall concern only those which may be reasonably mitigated or eliminated through the development or design of the high-risk AI system, or the provision of adequate technical information.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(3)"
+  },
+  {
+   "anchor": "p-article-9-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "The risk management measures referred to in paragraph 2, point (d), shall give due consideration to the effects and possible interaction resulting from the combined application of the requirements set out in this Section, with a view to minimising risks more effectively while achieving an appropriate balance in implementing the measures to fulfil those requirements.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(4)"
+  },
+  {
+   "anchor": "p-article-9-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "The risk management measures referred to in paragraph 2, point (d), shall be such that the relevant residual risk associated with each hazard, as well as the overall residual risk of the high-risk AI systems is judged to be acceptable.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(5)"
+  },
+  {
+   "anchor": "p-article-9-5",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "In identifying the most appropriate risk management measures, the following shall be ensured:",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(5)"
+  },
+  {
+   "anchor": "p-article-9-5.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "elimination or reduction of risks identified and evaluated pursuant to paragraph 2 in as far as technically feasible through adequate design and development of the high-risk AI system;",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(5)(a)"
+  },
+  {
+   "anchor": "p-article-9-5.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "where appropriate, implementation of adequate mitigation and control measures addressing risks that cannot be eliminated;",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(5)(b)"
+  },
+  {
+   "anchor": "p-article-9-5.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "provision of information required pursuant to Article 13 and, where appropriate, training to deployers.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(5)(c)"
+  },
+  {
+   "anchor": "p-article-9-5",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "With a view to eliminating or reducing risks related to the use of the high-risk AI system, due consideration shall be given to the technical knowledge, experience, education, the training to be expected by the deployer, and the presumable context in which the system is intended to be used.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(5)"
+  },
+  {
+   "anchor": "p-article-9-6",
+   "depth": 0,
+   "label": "6.",
+   "status": "original",
+   "text": "High-risk AI systems shall be tested for the purpose of identifying the most appropriate and targeted risk management measures. Testing shall ensure that high-risk AI systems perform consistently for their intended purpose and that they are in compliance with the requirements set out in this Section.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(6)"
+  },
+  {
+   "anchor": "p-article-9-7",
+   "depth": 0,
+   "label": "7.",
+   "status": "original",
+   "text": "Testing procedures may include testing in real-world conditions in accordance with Article 60.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(7)"
+  },
+  {
+   "anchor": "p-article-9-8",
+   "depth": 0,
+   "label": "8.",
+   "status": "original",
+   "text": "The testing of high-risk AI systems shall be performed, as appropriate, at any time throughout the development process, and, in any event, prior to their being placed on the market or put into service. Testing shall be carried out against prior defined metrics and probabilistic thresholds that are appropriate to the intended purpose of the high-risk AI system.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(8)"
+  },
+  {
+   "anchor": "p-article-9-9",
+   "depth": 0,
+   "label": "9.",
+   "status": "original",
+   "text": "When implementing the risk management system as provided for in paragraphs 1 to 7, providers shall give consideration to whether in view of its intended purpose the high-risk AI system is likely to have an adverse impact on persons under the age of 18 and, as appropriate, other vulnerable groups.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(9)"
+  },
+  {
+   "anchor": "p-article-9-10",
+   "depth": 0,
+   "label": "10.",
+   "status": "original",
+   "text": "For providers of high-risk AI systems that are subject to requirements regarding internal risk management processes under other relevant provisions of Union law, the aspects provided in paragraphs 1 to 9 may be part of, or combined with, the risk management procedures established pursuant to that law.",
+   "original_text": null,
+   "article": 9,
+   "id": "Art.9(10)"
+  },
+  {
+   "anchor": "p-article-10-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "amended",
+   "text": "High-risk AI systems which make use of techniques involving the training of AI models with data shall be developed on the basis of training, validation and testing data sets that meet the quality criteria referred to in paragraphs 2, 3 and 4 of this Article and in Article 4a(1) whenever such data sets are used.",
+   "original_text": "High-risk AI systems which make use of techniques involving the training of AI models with data shall be developed on the basis of training, validation and testing data sets that meet the quality criteria referred to in paragraphs 2 to 5 whenever such data sets are used.",
+   "article": 10,
+   "id": "Art.10(1)"
+  },
+  {
+   "anchor": "p-article-10-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "Training, validation and testing data sets shall be subject to data governance and management practices appropriate for the intended purpose of the high-risk AI system. Those practices shall concern in particular:",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)"
+  },
+  {
+   "anchor": "p-article-10-2.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "the relevant design choices;",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)(a)"
+  },
+  {
+   "anchor": "p-article-10-2.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "data collection processes and the origin of data, and in the case of personal data, the original purpose of the data collection;",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)(b)"
+  },
+  {
+   "anchor": "p-article-10-2.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "relevant data-preparation processing operations, such as annotation, labelling, cleaning, updating, enrichment and aggregation;",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)(c)"
+  },
+  {
+   "anchor": "p-article-10-2.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "the formulation of assumptions, in particular with respect to the information that the data are supposed to measure and represent;",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)(d)"
+  },
+  {
+   "anchor": "p-article-10-2.e",
+   "depth": 1,
+   "label": "(e)",
+   "status": "original",
+   "text": "an assessment of the availability, quantity and suitability of the data sets that are needed;",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)(e)"
+  },
+  {
+   "anchor": "p-article-10-2.f",
+   "depth": 1,
+   "label": "(f)",
+   "status": "original",
+   "text": "examination in view of possible biases that are likely to affect the health and safety of persons, have a negative impact on fundamental rights or lead to discrimination prohibited under Union law, especially where data outputs influence inputs for future operations;",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)(f)"
+  },
+  {
+   "anchor": "p-article-10-2.g",
+   "depth": 1,
+   "label": "(g)",
+   "status": "original",
+   "text": "appropriate measures to detect, prevent and mitigate possible biases identified according to point (f);",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)(g)"
+  },
+  {
+   "anchor": "p-article-10-2.h",
+   "depth": 1,
+   "label": "(h)",
+   "status": "original",
+   "text": "the identification of relevant data gaps or shortcomings that prevent compliance with this Regulation, and how those gaps and shortcomings can be addressed.",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(2)(h)"
+  },
+  {
+   "anchor": "p-article-10-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "Training, validation and testing data sets shall be relevant, sufficiently representative, and to the best extent possible, free of errors and complete in view of the intended purpose. They shall have the appropriate statistical properties, including, where applicable, as regards the persons or groups of persons in relation to whom the high-risk AI system is intended to be used. Those characteristics of the data sets may be met at the level of individual data sets or at the level of a combination thereof.",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(3)"
+  },
+  {
+   "anchor": "p-article-10-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "Data sets shall take into account, to the extent required by the intended purpose, the characteristics or elements that are particular to the specific geographical, contextual, behavioural or functional setting within which the high-risk AI system is intended to be used.",
+   "original_text": null,
+   "article": 10,
+   "id": "Art.10(4)"
+  },
+  {
+   "anchor": "p-article-10-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "amended",
+   "text": "Not present after the amendment.",
+   "original_text": "To the extent that it is strictly necessary for the purpose of ensuring bias detection and correction in relation to the high-risk AI systems in accordance with paragraph (2), points (f) and (g) of this Article, the providers of such systems may exceptionally process special categories of personal data, subject to appropriate safeguards for the fundamental rights and freedoms of natural persons. In addition to the provisions set out in Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, all the following conditions must be met in order for such processing to occur:",
+   "article": 10,
+   "id": "Art.10(5)"
+  },
+  {
+   "anchor": "p-article-10-5.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "amended",
+   "text": "Not present after the amendment.",
+   "original_text": "the bias detection and correction cannot be effectively fulfilled by processing other data, including synthetic or anonymised data;",
+   "article": 10,
+   "id": "Art.10(5)(a)"
+  },
+  {
+   "anchor": "p-article-10-5.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "amended",
+   "text": "Not present after the amendment.",
+   "original_text": "the special categories of personal data are subject to technical limitations on the re-use of the personal data, and state-of-the-art security and privacy-preserving measures, including pseudonymisation;",
+   "article": 10,
+   "id": "Art.10(5)(b)"
+  },
+  {
+   "anchor": "p-article-10-5.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "amended",
+   "text": "Not present after the amendment.",
+   "original_text": "the special categories of personal data are subject to measures to ensure that the personal data processed are secured, protected, subject to suitable safeguards, including strict controls and documentation of the access, to avoid misuse and ensure that only authorised persons have access to those personal data with appropriate confidentiality obligations;",
+   "article": 10,
+   "id": "Art.10(5)(c)"
+  },
+  {
+   "anchor": "p-article-10-5.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "amended",
+   "text": "Not present after the amendment.",
+   "original_text": "the special categories of personal data are not to be transmitted, transferred or otherwise accessed by other parties;",
+   "article": 10,
+   "id": "Art.10(5)(d)"
+  },
+  {
+   "anchor": "p-article-10-5.e",
+   "depth": 1,
+   "label": "(e)",
+   "status": "amended",
+   "text": "Not present after the amendment.",
+   "original_text": "the special categories of personal data are deleted once the bias has been corrected or the personal data has reached the end of its retention period, whichever comes first;",
+   "article": 10,
+   "id": "Art.10(5)(e)"
+  },
+  {
+   "anchor": "p-article-10-5.f",
+   "depth": 1,
+   "label": "(f)",
+   "status": "amended",
+   "text": "Not present after the amendment.",
+   "original_text": "the records of processing activities pursuant to Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680 include the reasons why the processing of special categories of personal data was strictly necessary to detect and correct biases, and why that objective could not be achieved by processing other data.",
+   "article": 10,
+   "id": "Art.10(5)(f)"
+  },
+  {
+   "anchor": "p-article-10-6",
+   "depth": 0,
+   "label": "6.",
+   "status": "amended",
+   "text": "For the development of high-risk AI systems not using techniques involving the training of AI models, paragraphs 2, 3 and 4 of this Article and Article 4a(1) shall apply only to the testing data sets.",
+   "original_text": "For the development of high-risk AI systems not using techniques involving the training of AI models, paragraphs 2 to 5 apply only to the testing data sets.",
+   "article": 10,
+   "id": "Art.10(6)"
+  },
+  {
+   "anchor": "p-article-11-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "The technical documentation of a high-risk AI system shall be drawn up before that system is placed on the market or put into service and shall be kept up-to date.",
+   "original_text": null,
+   "article": 11,
+   "id": "Art.11(1)"
+  },
+  {
+   "anchor": "p-article-11-1",
+   "depth": 0,
+   "label": "",
+   "status": "amended",
+   "text": "That technical documentation shall be drawn up in such a way as to demonstrate that the high-risk AI system complies with the requirements set out in this Section and to provide national competent authorities and notified bodies with the necessary information in a clear and comprehensive form to assess the compliance of the AI system with those requirements. It shall contain, at a minimum, the elements set out in Annex IV. SMEs, including start-ups, and SMCs, may provide the elements of the technical documentation specified in Annex IV in a simplified manner. To that end, the Commission shall establish a simplified technical documentation form targeted at the needs of SMEs, including start-ups, and SMCs. Where an SME, including a start-up, or an SMC, opts to provide the information required in Annex IV in a simplified manner, it shall use the form referred to in this paragraph. Notified bodies shall accept the form for the purposes of the conformity assessment.",
+   "original_text": "The technical documentation shall be drawn up in such a way as to demonstrate that the high-risk AI system complies with the requirements set out in this Section and to provide national competent authorities and notified bodies with the necessary information in a clear and comprehensive form to assess the compliance of the AI system with those requirements. It shall contain, at a minimum, the elements set out in Annex IV. SMEs, including start-ups, may provide the elements of the technical documentation specified in Annex IV in a simplified manner. To that end, the Commission shall establish a simplified technical documentation form targeted at the needs of small and microenterprises. Where an SME, including a start-up, opts to provide the information required in Annex IV in a simplified manner, it shall use the form referred to in this paragraph. Notified bodies shall accept the form for the purposes of the conformity assessment.",
+   "article": 11,
+   "id": "Art.11(1)"
+  },
+  {
+   "anchor": "p-article-11-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "Where a high-risk AI system related to a product covered by the Union harmonisation legislation listed in Section A of Annex I is placed on the market or put into service, a single set of technical documentation shall be drawn up containing all the information set out in paragraph 1, as well as the information required under those legal acts.",
+   "original_text": null,
+   "article": 11,
+   "id": "Art.11(2)"
+  },
+  {
+   "anchor": "p-article-11-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "The Commission is empowered to adopt delegated acts in accordance with Article 97 in order to amend Annex IV, where necessary, to ensure that, in light of technical progress, the technical documentation provides all the information necessary to assess the compliance of the system with the requirements set out in this Section.",
+   "original_text": null,
+   "article": 11,
+   "id": "Art.11(3)"
+  },
+  {
+   "anchor": "p-article-12-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system.",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(1)"
+  },
+  {
+   "anchor": "p-article-12-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "In order to ensure a level of traceability of the functioning of a high-risk AI system that is appropriate to the intended purpose of the system, logging capabilities shall enable the recording of events relevant for:",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(2)"
+  },
+  {
+   "anchor": "p-article-12-2.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "identifying situations that may result in the high-risk AI system presenting a risk within the meaning of Article 79(1) or in a substantial modification;",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(2)(a)"
+  },
+  {
+   "anchor": "p-article-12-2.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "facilitating the post-market monitoring referred to in Article 72; and",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(2)(b)"
+  },
+  {
+   "anchor": "p-article-12-2.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "monitoring the operation of high-risk AI systems referred to in Article 26(5).",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(2)(c)"
+  },
+  {
+   "anchor": "p-article-12-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "For high-risk AI systems referred to in point 1 (a), of Annex III, the logging capabilities shall provide, at a minimum:",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(3)"
+  },
+  {
+   "anchor": "p-article-12-3.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "recording of the period of each use of the system (start date and time and end date and time of each use);",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(3)(a)"
+  },
+  {
+   "anchor": "p-article-12-3.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "the reference database against which input data has been checked by the system;",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(3)(b)"
+  },
+  {
+   "anchor": "p-article-12-3.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "the input data for which the search has led to a match;",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(3)(c)"
+  },
+  {
+   "anchor": "p-article-12-3.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "the identification of the natural persons involved in the verification of the results, as referred to in Article 14(5).",
+   "original_text": null,
+   "article": 12,
+   "id": "Art.12(3)(d)"
+  },
+  {
+   "anchor": "p-article-13-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "High-risk AI systems shall be designed and developed in such a way as to ensure that their operation is sufficiently transparent to enable deployers to interpret a system’s output and use it appropriately. An appropriate type and degree of transparency shall be ensured with a view to achieving compliance with the relevant obligations of the provider and deployer set out in Section 3.",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(1)"
+  },
+  {
+   "anchor": "p-article-13-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "High-risk AI systems shall be accompanied by instructions for use in an appropriate digital format or otherwise that include concise, complete, correct and clear information that is relevant, accessible and comprehensible to deployers.",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(2)"
+  },
+  {
+   "anchor": "p-article-13-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "The instructions for use shall contain at least the following information:",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)"
+  },
+  {
+   "anchor": "p-article-13-3.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "the identity and the contact details of the provider and, where applicable, of its authorised representative;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(a)"
+  },
+  {
+   "anchor": "p-article-13-3.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "the characteristics, capabilities and limitations of performance of the high-risk AI system, including:",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(b)"
+  },
+  {
+   "anchor": "p-article-13-3.b.i",
+   "depth": 2,
+   "label": "(i)",
+   "status": "original",
+   "text": "its intended purpose;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(b)(i)"
+  },
+  {
+   "anchor": "p-article-13-3.b.ii",
+   "depth": 2,
+   "label": "(ii)",
+   "status": "original",
+   "text": "the level of accuracy, including its metrics, robustness and cybersecurity referred to in Article 15 against which the high-risk AI system has been tested and validated and which can be expected, and any known and foreseeable circumstances that may have an impact on that expected level of accuracy, robustness and cybersecurity;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(b)(ii)"
+  },
+  {
+   "anchor": "p-article-13-3.b.iii",
+   "depth": 2,
+   "label": "(iii)",
+   "status": "original",
+   "text": "any known or foreseeable circumstance, related to the use of the high-risk AI system in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, which may lead to risks to the health and safety or fundamental rights referred to in Article 9(2);",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(b)(iii)"
+  },
+  {
+   "anchor": "p-article-13-3.b.iv",
+   "depth": 2,
+   "label": "(iv)",
+   "status": "original",
+   "text": "where applicable, the technical capabilities and characteristics of the high-risk AI system to provide information that is relevant to explain its output;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(b)(iv)"
+  },
+  {
+   "anchor": "p-article-13-3.b.v",
+   "depth": 2,
+   "label": "(v)",
+   "status": "original",
+   "text": "when appropriate, its performance regarding specific persons or groups of persons on which the system is intended to be used;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(b)(v)"
+  },
+  {
+   "anchor": "p-article-13-3.b.vi",
+   "depth": 2,
+   "label": "(vi)",
+   "status": "original",
+   "text": "when appropriate, specifications for the input data, or any other relevant information in terms of the training, validation and testing data sets used, taking into account the intended purpose of the high-risk AI system;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(b)(vi)"
+  },
+  {
+   "anchor": "p-article-13-3.b.vii",
+   "depth": 2,
+   "label": "(vii)",
+   "status": "original",
+   "text": "where applicable, information to enable deployers to interpret the output of the high-risk AI system and use it appropriately;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(b)(vii)"
+  },
+  {
+   "anchor": "p-article-13-3.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "the changes to the high-risk AI system and its performance which have been pre-determined by the provider at the moment of the initial conformity assessment, if any;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(c)"
+  },
+  {
+   "anchor": "p-article-13-3.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "the human oversight measures referred to in Article 14, including the technical measures put in place to facilitate the interpretation of the outputs of the high-risk AI systems by the deployers;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(d)"
+  },
+  {
+   "anchor": "p-article-13-3.e",
+   "depth": 1,
+   "label": "(e)",
+   "status": "original",
+   "text": "the computational and hardware resources needed, the expected lifetime of the high-risk AI system and any necessary maintenance and care measures, including their frequency, to ensure the proper functioning of that AI system, including as regards software updates;",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(e)"
+  },
+  {
+   "anchor": "p-article-13-3.f",
+   "depth": 1,
+   "label": "(f)",
+   "status": "original",
+   "text": "where relevant, a description of the mechanisms included within the high-risk AI system that allows deployers to properly collect, store and interpret the logs in accordance with Article 12.",
+   "original_text": null,
+   "article": 13,
+   "id": "Art.13(3)(f)"
+  },
+  {
+   "anchor": "p-article-14-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "High-risk AI systems shall be designed and developed in such a way, including with appropriate human-machine interface tools, that they can be effectively overseen by natural persons during the period in which they are in use.",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(1)"
+  },
+  {
+   "anchor": "p-article-14-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "Human oversight shall aim to prevent or minimise the risks to health, safety or fundamental rights that may emerge when a high-risk AI system is used in accordance with its intended purpose or under conditions of reasonably foreseeable misuse, in particular where such risks persist despite the application of other requirements set out in this Section.",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(2)"
+  },
+  {
+   "anchor": "p-article-14-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "The oversight measures shall be commensurate with the risks, level of autonomy and context of use of the high-risk AI system, and shall be ensured through either one or both of the following types of measures:",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(3)"
+  },
+  {
+   "anchor": "p-article-14-3.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "measures identified and built, when technically feasible, into the high-risk AI system by the provider before it is placed on the market or put into service;",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(3)(a)"
+  },
+  {
+   "anchor": "p-article-14-3.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "measures identified by the provider before placing the high-risk AI system on the market or putting it into service and that are appropriate to be implemented by the deployer.",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(3)(b)"
+  },
+  {
+   "anchor": "p-article-14-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "For the purpose of implementing paragraphs 1, 2 and 3, the high-risk AI system shall be provided to the deployer in such a way that natural persons to whom human oversight is assigned are enabled, as appropriate and proportionate:",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(4)"
+  },
+  {
+   "anchor": "p-article-14-4.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "to properly understand the relevant capacities and limitations of the high-risk AI system and be able to duly monitor its operation, including in view of detecting and addressing anomalies, dysfunctions and unexpected performance;",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(4)(a)"
+  },
+  {
+   "anchor": "p-article-14-4.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "to remain aware of the possible tendency of automatically relying or over-relying on the output produced by a high-risk AI system (automation bias), in particular for high-risk AI systems used to provide information or recommendations for decisions to be taken by natural persons;",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(4)(b)"
+  },
+  {
+   "anchor": "p-article-14-4.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "to correctly interpret the high-risk AI system’s output, taking into account, for example, the interpretation tools and methods available;",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(4)(c)"
+  },
+  {
+   "anchor": "p-article-14-4.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "to decide, in any particular situation, not to use the high-risk AI system or to otherwise disregard, override or reverse the output of the high-risk AI system;",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(4)(d)"
+  },
+  {
+   "anchor": "p-article-14-4.e",
+   "depth": 1,
+   "label": "(e)",
+   "status": "original",
+   "text": "to intervene in the operation of the high-risk AI system or interrupt the system through a ‘stop’ button or a similar procedure that allows the system to come to a halt in a safe state.",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(4)(e)"
+  },
+  {
+   "anchor": "p-article-14-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "For high-risk AI systems referred to in point 1(a) of Annex III, the measures referred to in paragraph 3 of this Article shall be such as to ensure that, in addition, no action or decision is taken by the deployer on the basis of the identification resulting from the system unless that identification has been separately verified and confirmed by at least two natural persons with the necessary competence, training and authority.",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(5)"
+  },
+  {
+   "anchor": "p-article-14-5",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "The requirement for a separate verification by at least two natural persons shall not apply to high-risk AI systems used for the purposes of law enforcement, migration, border control or asylum, where Union or national law considers the application of this requirement to be disproportionate.",
+   "original_text": null,
+   "article": 14,
+   "id": "Art.14(5)"
+  },
+  {
+   "anchor": "p-article-15-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "High-risk AI systems shall be designed and developed in such a way that they achieve an appropriate level of accuracy, robustness, and cybersecurity, and that they perform consistently in those respects throughout their lifecycle.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(1)"
+  },
+  {
+   "anchor": "p-article-15-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "To address the technical aspects of how to measure the appropriate levels of accuracy and robustness set out in paragraph 1 and any other relevant performance metrics, the Commission shall, in cooperation with relevant stakeholders and organisations such as metrology and benchmarking authorities, encourage, as appropriate, the development of benchmarks and measurement methodologies.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(2)"
+  },
+  {
+   "anchor": "p-article-15-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "The levels of accuracy and the relevant accuracy metrics of high-risk AI systems shall be declared in the accompanying instructions of use.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(3)"
+  },
+  {
+   "anchor": "p-article-15-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "High-risk AI systems shall be as resilient as possible regarding errors, faults or inconsistencies that may occur within the system or the environment in which the system operates, in particular due to their interaction with natural persons or other systems. Technical and organisational measures shall be taken in this regard.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(4)"
+  },
+  {
+   "anchor": "p-article-15-4",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "The robustness of high-risk AI systems may be achieved through technical redundancy solutions, which may include backup or fail-safe plans.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(4)"
+  },
+  {
+   "anchor": "p-article-15-4",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "High-risk AI systems that continue to learn after being placed on the market or put into service shall be developed in such a way as to eliminate or reduce as far as possible the risk of possibly biased outputs influencing input for future operations (feedback loops), and as to ensure that any such feedback loops are duly addressed with appropriate mitigation measures.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(4)"
+  },
+  {
+   "anchor": "p-article-15-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "High-risk AI systems shall be resilient against attempts by unauthorised third parties to alter their use, outputs or performance by exploiting system vulnerabilities.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(5)"
+  },
+  {
+   "anchor": "p-article-15-5",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "The technical solutions aiming to ensure the cybersecurity of high-risk AI systems shall be appropriate to the relevant circumstances and the risks.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(5)"
+  },
+  {
+   "anchor": "p-article-15-5",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "The technical solutions to address AI specific vulnerabilities shall include, where appropriate, measures to prevent, detect, respond to, resolve and control for attacks trying to manipulate the training data set (data poisoning), or pre-trained components used in training (model poisoning), inputs designed to cause the AI model to make a mistake (adversarial examples or model evasion), confidentiality attacks or model flaws.",
+   "original_text": null,
+   "article": 15,
+   "id": "Art.15(5)"
+  },
+  {
+   "anchor": "p-article-17-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "Providers of high-risk AI systems shall put a quality management system in place that ensures compliance with this Regulation. That system shall be documented in a systematic and orderly manner in the form of written policies, procedures and instructions, and shall include at least the following aspects:",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)"
+  },
+  {
+   "anchor": "p-article-17-1.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "a strategy for regulatory compliance, including compliance with conformity assessment procedures and procedures for the management of modifications to the high-risk AI system;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(a)"
+  },
+  {
+   "anchor": "p-article-17-1.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "techniques, procedures and systematic actions to be used for the design, design control and design verification of the high-risk AI system;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(b)"
+  },
+  {
+   "anchor": "p-article-17-1.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "techniques, procedures and systematic actions to be used for the development, quality control and quality assurance of the high-risk AI system;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(c)"
+  },
+  {
+   "anchor": "p-article-17-1.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "examination, test and validation procedures to be carried out before, during and after the development of the high-risk AI system, and the frequency with which they have to be carried out;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(d)"
+  },
+  {
+   "anchor": "p-article-17-1.e",
+   "depth": 1,
+   "label": "(e)",
+   "status": "original",
+   "text": "technical specifications, including standards, to be applied and, where the relevant harmonised standards are not applied in full or do not cover all of the relevant requirements set out in Section 2, the means to be used to ensure that the high-risk AI system complies with those requirements;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(e)"
+  },
+  {
+   "anchor": "p-article-17-1.f",
+   "depth": 1,
+   "label": "(f)",
+   "status": "original",
+   "text": "systems and procedures for data management, including data acquisition, data collection, data analysis, data labelling, data storage, data filtration, data mining, data aggregation, data retention and any other operation regarding the data that is performed before and for the purpose of the placing on the market or the putting into service of high-risk AI systems;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(f)"
+  },
+  {
+   "anchor": "p-article-17-1.g",
+   "depth": 1,
+   "label": "(g)",
+   "status": "original",
+   "text": "the risk management system referred to in Article 9;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(g)"
+  },
+  {
+   "anchor": "p-article-17-1.h",
+   "depth": 1,
+   "label": "(h)",
+   "status": "original",
+   "text": "the setting-up, implementation and maintenance of a post-market monitoring system, in accordance with Article 72;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(h)"
+  },
+  {
+   "anchor": "p-article-17-1.i",
+   "depth": 1,
+   "label": "(i)",
+   "status": "original",
+   "text": "procedures related to the reporting of a serious incident in accordance with Article 73;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(i)"
+  },
+  {
+   "anchor": "p-article-17-1.j",
+   "depth": 1,
+   "label": "(j)",
+   "status": "original",
+   "text": "the handling of communication with national competent authorities, other relevant authorities, including those providing or supporting the access to data, notified bodies, other operators, customers or other interested parties;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(j)"
+  },
+  {
+   "anchor": "p-article-17-1.k",
+   "depth": 1,
+   "label": "(k)",
+   "status": "original",
+   "text": "systems and procedures for record-keeping of all relevant documentation and information;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(k)"
+  },
+  {
+   "anchor": "p-article-17-1.l",
+   "depth": 1,
+   "label": "(l)",
+   "status": "original",
+   "text": "resource management, including security-of-supply related measures;",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(l)"
+  },
+  {
+   "anchor": "p-article-17-1.m",
+   "depth": 1,
+   "label": "(m)",
+   "status": "original",
+   "text": "an accountability framework setting out the responsibilities of the management and other staff with regard to all the aspects listed in this paragraph.",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(1)(m)"
+  },
+  {
+   "anchor": "p-article-17-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "amended",
+   "text": "‘The implementation of the aspects referred to in paragraph 1 shall be proportionate to the size of the provider’s organisation, in particular, if the provider is an SME, including a start-up, or an SMC. Providers shall, in any event, respect the degree of rigour and the level of protection required to ensure the compliance of their high-risk AI systems with this Regulation.",
+   "original_text": "The implementation of the aspects referred to in paragraph 1 shall be proportionate to the size of the provider’s organisation. Providers shall, in any event, respect the degree of rigour and the level of protection required to ensure the compliance of their high-risk AI systems with this Regulation.",
+   "article": 17,
+   "id": "Art.17(2)"
+  },
+  {
+   "anchor": "p-article-17-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "Providers of high-risk AI systems that are subject to obligations regarding quality management systems or an equivalent function under relevant sectoral Union law may include the aspects listed in paragraph 1 as part of the quality management systems pursuant to that law.",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(3)"
+  },
+  {
+   "anchor": "p-article-17-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "For providers that are financial institutions subject to requirements regarding their internal governance, arrangements or processes under Union financial services law, the obligation to put in place a quality management system, with the exception of paragraph 1, points (g), (h) and (i) of this Article, shall be deemed to be fulfilled by complying with the rules on internal governance arrangements or processes pursuant to the relevant Union financial services law. To that end, any harmonised standards referred to in Article 40 shall be taken into account.",
+   "original_text": null,
+   "article": 17,
+   "id": "Art.17(4)"
+  },
+  {
+   "anchor": "p-article-26-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "Deployers of high-risk AI systems shall take appropriate technical and organisational measures to ensure they use such systems in accordance with the instructions for use accompanying the systems, pursuant to paragraphs 3 and 6.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(1)"
+  },
+  {
+   "anchor": "p-article-26-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "Deployers shall assign human oversight to natural persons who have the necessary competence, training and authority, as well as the necessary support.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(2)"
+  },
+  {
+   "anchor": "p-article-26-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "The obligations set out in paragraphs 1 and 2, are without prejudice to other deployer obligations under Union or national law and to the deployer’s freedom to organise its own resources and activities for the purpose of implementing the human oversight measures indicated by the provider.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(3)"
+  },
+  {
+   "anchor": "p-article-26-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "Without prejudice to paragraphs 1 and 2, to the extent the deployer exercises control over the input data, that deployer shall ensure that input data is relevant and sufficiently representative in view of the intended purpose of the high-risk AI system.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(4)"
+  },
+  {
+   "anchor": "p-article-26-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "Deployers shall monitor the operation of the high-risk AI system on the basis of the instructions for use and, where relevant, inform providers in accordance with Article 72. Where deployers have reason to consider that the use of the high-risk AI system in accordance with the instructions may result in that AI system presenting a risk within the meaning of Article 79(1), they shall, without undue delay, inform the provider or distributor and the relevant market surveillance authority, and shall suspend the use of that system. Where deployers have identified a serious incident, they shall also immediately inform first the provider, and then the importer or distributor and the relevant market surveillance authorities of that incident. If the deployer is not able to reach the provider, Article 73 shall apply mutatis mutandis. This obligation shall not cover sensitive operational data of deployers of AI systems which are law enforcement authorities.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(5)"
+  },
+  {
+   "anchor": "p-article-26-5",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "For deployers that are financial institutions subject to requirements regarding their internal governance, arrangements or processes under Union financial services law, the monitoring obligation set out in the first subparagraph shall be deemed to be fulfilled by complying with the rules on internal governance arrangements, processes and mechanisms pursuant to the relevant financial service law.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(5)"
+  },
+  {
+   "anchor": "p-article-26-6",
+   "depth": 0,
+   "label": "6.",
+   "status": "original",
+   "text": "Deployers of high-risk AI systems shall keep the logs automatically generated by that high-risk AI system to the extent such logs are under their control, for a period appropriate to the intended purpose of the high-risk AI system, of at least six months, unless provided otherwise in applicable Union or national law, in particular in Union law on the protection of personal data.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(6)"
+  },
+  {
+   "anchor": "p-article-26-6",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "Deployers that are financial institutions subject to requirements regarding their internal governance, arrangements or processes under Union financial services law shall maintain the logs as part of the documentation kept pursuant to the relevant Union financial service law.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(6)"
+  },
+  {
+   "anchor": "p-article-26-7",
+   "depth": 0,
+   "label": "7.",
+   "status": "original",
+   "text": "Before putting into service or using a high-risk AI system at the workplace, deployers who are employers shall inform workers’ representatives and the affected workers that they will be subject to the use of the high-risk AI system. This information shall be provided, where applicable, in accordance with the rules and procedures laid down in Union and national law and practice on information of workers and their representatives.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(7)"
+  },
+  {
+   "anchor": "p-article-26-8",
+   "depth": 0,
+   "label": "8.",
+   "status": "original",
+   "text": "Deployers of high-risk AI systems that are public authorities, or Union institutions, bodies, offices or agencies shall comply with the registration obligations referred to in Article 49. When such deployers find that the high-risk AI system that they envisage using has not been registered in the EU database referred to in Article 71, they shall not use that system and shall inform the provider or the distributor.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(8)"
+  },
+  {
+   "anchor": "p-article-26-9",
+   "depth": 0,
+   "label": "9.",
+   "status": "original",
+   "text": "Where applicable, deployers of high-risk AI systems shall use the information provided under Article 13 of this Regulation to comply with their obligation to carry out a data protection impact assessment under Article 35 of Regulation (EU) 2016/679 or Article 27 of Directive (EU) 2016/680.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(9)"
+  },
+  {
+   "anchor": "p-article-26-10",
+   "depth": 0,
+   "label": "10.",
+   "status": "original",
+   "text": "Without prejudice to Directive (EU) 2016/680, in the framework of an investigation for the targeted search of a person suspected or convicted of having committed a criminal offence, the deployer of a high-risk AI system for post-remote biometric identification shall request an authorisation, ex ante, or without undue delay and no later than 48 hours, by a judicial authority or an administrative authority whose decision is binding and subject to judicial review, for the use of that system, except when it is used for the initial identification of a potential suspect based on objective and verifiable facts directly linked to the offence. Each use shall be limited to what is strictly necessary for the investigation of a specific criminal offence.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(10)"
+  },
+  {
+   "anchor": "p-article-26-10",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "If the authorisation requested pursuant to the first subparagraph is rejected, the use of the post-remote biometric identification system linked to that requested authorisation shall be stopped with immediate effect and the personal data linked to the use of the high-risk AI system for which the authorisation was requested shall be deleted.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(10)"
+  },
+  {
+   "anchor": "p-article-26-10",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "In no case shall such high-risk AI system for post-remote biometric identification be used for law enforcement purposes in an untargeted way, without any link to a criminal offence, a criminal proceeding, a genuine and present or genuine and foreseeable threat of a criminal offence, or the search for a specific missing person. It shall be ensured that no decision that produces an adverse legal effect on a person may be taken by the law enforcement authorities based solely on the output of such post-remote biometric identification systems.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(10)"
+  },
+  {
+   "anchor": "p-article-26-10",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "This paragraph is without prejudice to Article 9 of Regulation (EU) 2016/679 and Article 10 of Directive (EU) 2016/680 for the processing of biometric data.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(10)"
+  },
+  {
+   "anchor": "p-article-26-10",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "Regardless of the purpose or deployer, each use of such high-risk AI systems shall be documented in the relevant police file and shall be made available to the relevant market surveillance authority and the national data protection authority upon request, excluding the disclosure of sensitive operational data related to law enforcement. This subparagraph shall be without prejudice to the powers conferred by Directive (EU) 2016/680 on supervisory authorities.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(10)"
+  },
+  {
+   "anchor": "p-article-26-10",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "Deployers shall submit annual reports to the relevant market surveillance and national data protection authorities on their use of post-remote biometric identification systems, excluding the disclosure of sensitive operational data related to law enforcement. The reports may be aggregated to cover more than one deployment.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(10)"
+  },
+  {
+   "anchor": "p-article-26-10",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "Member States may introduce, in accordance with Union law, more restrictive laws on the use of post-remote biometric identification systems.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(10)"
+  },
+  {
+   "anchor": "p-article-26-11",
+   "depth": 0,
+   "label": "11.",
+   "status": "original",
+   "text": "Without prejudice to Article 50 of this Regulation, deployers of high-risk AI systems referred to in Annex III that make decisions or assist in making decisions related to natural persons shall inform the natural persons that they are subject to the use of the high-risk AI system. For high-risk AI systems used for law enforcement purposes Article 13 of Directive (EU) 2016/680 shall apply.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(11)"
+  },
+  {
+   "anchor": "p-article-26-12",
+   "depth": 0,
+   "label": "12.",
+   "status": "original",
+   "text": "Deployers shall cooperate with the relevant competent authorities in any action those authorities take in relation to the high-risk AI system in order to implement this Regulation.",
+   "original_text": null,
+   "article": 26,
+   "id": "Art.26(12)"
+  },
+  {
+   "anchor": "p-article-43-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "For high-risk AI systems listed in point 1 of Annex III, where, in demonstrating the compliance of a high-risk AI system with the requirements set out in Section 2, the provider has applied harmonised standards referred to in Article 40, or, where applicable, common specifications referred to in Article 41, the provider shall opt for one of the following conformity assessment procedures based on:",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)"
+  },
+  {
+   "anchor": "p-article-43-1.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "the internal control referred to in Annex VI; or",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)(a)"
+  },
+  {
+   "anchor": "p-article-43-1.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "the assessment of the quality management system and the assessment of the technical documentation, with the involvement of a notified body, referred to in Annex VII.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)(b)"
+  },
+  {
+   "anchor": "p-article-43-1",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "In demonstrating the compliance of a high-risk AI system with the requirements set out in Section 2, the provider shall follow the conformity assessment procedure set out in Annex VII where:",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)"
+  },
+  {
+   "anchor": "p-article-43-1.a",
+   "depth": 1,
+   "label": "(a)",
+   "status": "original",
+   "text": "harmonised standards referred to in Article 40 do not exist, and common specifications referred to in Article 41 are not available;",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)(a)"
+  },
+  {
+   "anchor": "p-article-43-1.b",
+   "depth": 1,
+   "label": "(b)",
+   "status": "original",
+   "text": "the provider has not applied, or has applied only part of, the harmonised standard;",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)(b)"
+  },
+  {
+   "anchor": "p-article-43-1.c",
+   "depth": 1,
+   "label": "(c)",
+   "status": "original",
+   "text": "the common specifications referred to in point (a) exist, but the provider has not applied them;",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)(c)"
+  },
+  {
+   "anchor": "p-article-43-1.d",
+   "depth": 1,
+   "label": "(d)",
+   "status": "original",
+   "text": "one or more of the harmonised standards referred to in point (a) has been published with a restriction, and only on the part of the standard that was restricted.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)(d)"
+  },
+  {
+   "anchor": "p-article-43-1",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "For the purposes of the conformity assessment procedure referred to in Annex VII, the provider may choose any of the notified bodies. However, where the high-risk AI system is intended to be put into service by law enforcement, immigration or asylum authorities or by Union institutions, bodies, offices or agencies, the market surveillance authority referred to in Article 74(8) or (9), as applicable, shall act as a notified body.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(1)"
+  },
+  {
+   "anchor": "p-article-43-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "For high-risk AI systems referred to in points 2 to 8 of Annex III, providers shall follow the conformity assessment procedure based on internal control as referred to in Annex VI, which does not provide for the involvement of a notified body.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(2)"
+  },
+  {
+   "anchor": "p-article-43-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "amended",
+   "text": "For high-risk AI systems covered by the Union harmonisation legislation listed in Section A of Annex I, the provider of the system shall follow the relevant conformity assessment procedure as required in accordance with the relevant Union harmonisation legislation. The requirements set out in Section 2 of this Chapter shall apply to those high-risk AI systems and shall be part of that assessment. Assessment of the quality management system set out in Article 17 shall also be undertaken, and points 3, 4.3, 4.4. and 4.5, the fifth paragraph of point 4.6 and point 5 of Annex VII shall apply.",
+   "original_text": "For high-risk AI systems covered by the Union harmonisation legislation listed in Section A of Annex I, the provider shall follow the relevant conformity assessment procedure as required under those legal acts. The requirements set out in Section 2 of this Chapter shall apply to those high-risk AI systems and shall be part of that assessment. Points 4.3., 4.4., 4.5. and the fifth paragraph of point 4.6 of Annex VII shall also apply.",
+   "article": 43,
+   "id": "Art.43(3)"
+  },
+  {
+   "anchor": "p-article-43-3",
+   "depth": 0,
+   "label": "",
+   "status": "amended",
+   "text": "For the purposes of that conformity assessment, notified bodies which have been notified under the Union harmonisation legislation listed in Section A of Annex I shall have the power to assess the conformity of high-risk AI systems with the requirements set out in Section 2 of this Chapter, provided that the compliance of those notified bodies with the requirements laid down in Article 31(4), (5), (10) and (11) has been assessed in the context of the notification procedure in accordance with the relevant Union harmonisation legislation, which is evidenced through the assessment as part of the existing notification. Without prejudice to Article 28, such notified bodies which have been notified under the Union harmonisation legislation in Section A of Annex I, shall apply for designation in accordance with Section 4 of this Chapter by 28 January 2028.",
+   "original_text": "Not present before the amendment.",
+   "article": 43,
+   "id": "Art.43(3)"
+  },
+  {
+   "anchor": "p-article-43-3",
+   "depth": 0,
+   "label": "",
+   "status": "amended",
+   "text": "Where Union harmonisation legislation listed in Section A of Annex I provides the product manufacturer with an option to rely on a conformity assessment that does not involve a third-party, provided that that manufacturer has applied harmonised standards to ensure compliance with all the relevant requirements, that manufacturer may use that option only if it has also applied harmonised standards or, where applicable, common specifications referred to in Article 41, covering all requirements set out in Section 2 of this Chapter. The classification of a product as a high-risk AI system in accordance with Article 6(1) does not affect the choice of the conformity assessment procedure provided to the manufacturers of products covered by Union harmonisation legislation listed in Section A of Annex I, including, where applicable, an option to rely on harmonised standards. The manufacturers of such products are not required to choose a conformity assessment procedure involving third-party conformity assessment only because the product includes a high-risk AI system as a safety component, if this is not required by the Union harmonisation legislation listed in Section A of Annex I.",
+   "original_text": "Not present before the amendment.",
+   "article": 43,
+   "id": "Art.43(3)"
+  },
+  {
+   "anchor": "p-article-43-3",
+   "depth": 0,
+   "label": "",
+   "status": "amended",
+   "text": "Where a high-risk AI system is both covered by the Union harmonisation legislation listed in Section A of Annex I and it falls within one of the categories listed in Annex III, the provider of that system shall follow the relevant conformity assessment procedure as required pursuant to the relevant Union harmonisation legislation listed in Section A of Annex I.",
+   "original_text": "Not present before the amendment.",
+   "article": 43,
+   "id": "Art.43(3)"
+  },
+  {
+   "anchor": "p-article-43-3",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "For the purposes of that assessment, notified bodies which have been notified under those legal acts shall be entitled to control the conformity of the high-risk AI systems with the requirements set out in Section 2, provided that the compliance of those notified bodies with requirements laid down in Article 31(4), (5), (10) and (11) has been assessed in the context of the notification procedure under those legal acts.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(3)"
+  },
+  {
+   "anchor": "p-article-43-3",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "Where a legal act listed in Section A of Annex I enables the product manufacturer to opt out from a third-party conformity assessment, provided that that manufacturer has applied all harmonised standards covering all the relevant requirements, that manufacturer may use that option only if it has also applied harmonised standards or, where applicable, common specifications referred to in Article 41, covering all requirements set out in Section 2 of this Chapter.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(3)"
+  },
+  {
+   "anchor": "p-article-43-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "High-risk AI systems that have already been subject to a conformity assessment procedure shall undergo a new conformity assessment procedure in the event of a substantial modification, regardless of whether the modified system is intended to be further distributed or continues to be used by the current deployer.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(4)"
+  },
+  {
+   "anchor": "p-article-43-4",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "For high-risk AI systems that continue to learn after being placed on the market or put into service, changes to the high-risk AI system and its performance that have been pre-determined by the provider at the moment of the initial conformity assessment and are part of the information contained in the technical documentation referred to in point 2(f) of Annex IV, shall not constitute a substantial modification.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(4)"
+  },
+  {
+   "anchor": "p-article-43-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "The Commission is empowered to adopt delegated acts in accordance with Article 97 in order to amend Annexes VI and VII by updating them in light of technical progress.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(5)"
+  },
+  {
+   "anchor": "p-article-43-6",
+   "depth": 0,
+   "label": "6.",
+   "status": "original",
+   "text": "The Commission is empowered to adopt delegated acts in accordance with Article 97 in order to amend paragraphs 1 and 2 of this Article in order to subject high-risk AI systems referred to in points 2 to 8 of Annex III to the conformity assessment procedure referred to in Annex VII or parts thereof. The Commission shall adopt such delegated acts taking into account the effectiveness of the conformity assessment procedure based on internal control referred to in Annex VI in preventing or minimising the risks to health and safety and protection of fundamental rights posed by such systems, as well as the availability of adequate capacities and resources among notified bodies.",
+   "original_text": null,
+   "article": 43,
+   "id": "Art.43(6)"
+  },
+  {
+   "anchor": "p-article-50-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.",
+   "original_text": null,
+   "article": 50,
+   "id": "Art.50(1)"
+  },
+  {
+   "anchor": "p-article-50-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated. Providers shall ensure their technical solutions are effective, interoperable, robust and reliable as far as this is technically feasible, taking into account the specificities and limitations of various types of content, the costs of implementation and the generally acknowledged state of the art, as may be reflected in relevant technical standards. This obligation shall not apply to the extent the AI systems perform an assistive function for standard editing or do not substantially alter the input data provided by the deployer or the semantics thereof, or where authorised by law to detect, prevent, investigate or prosecute criminal offences.",
+   "original_text": null,
+   "article": 50,
+   "id": "Art.50(2)"
+  },
+  {
+   "anchor": "p-article-50-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto of the operation of the system, and shall process the personal data in accordance with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, as applicable. This obligation shall not apply to AI systems used for biometric categorisation and emotion recognition, which are permitted by law to detect, prevent or investigate criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, and in accordance with Union law.",
+   "original_text": null,
+   "article": 50,
+   "id": "Art.50(3)"
+  },
+  {
+   "anchor": "p-article-50-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence. Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work.",
+   "original_text": null,
+   "article": 50,
+   "id": "Art.50(4)"
+  },
+  {
+   "anchor": "p-article-50-4",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest shall disclose that the text has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offences or where the AI-generated content has undergone a process of human review or editorial control and where a natural or legal person holds editorial responsibility for the publication of the content.",
+   "original_text": null,
+   "article": 50,
+   "id": "Art.50(4)"
+  },
+  {
+   "anchor": "p-article-50-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements.",
+   "original_text": null,
+   "article": 50,
+   "id": "Art.50(5)"
+  },
+  {
+   "anchor": "p-article-50-6",
+   "depth": 0,
+   "label": "6.",
+   "status": "original",
+   "text": "Paragraphs 1 to 4 shall not affect the requirements and obligations set out in Chapter III, and shall be without prejudice to other transparency obligations laid down in Union or national law for deployers of AI systems.",
+   "original_text": null,
+   "article": 50,
+   "id": "Art.50(6)"
+  },
+  {
+   "anchor": "p-article-50-7",
+   "depth": 0,
+   "label": "7.",
+   "status": "amended",
+   "text": "The Commission shall encourage and facilitate the drawing up of codes of practice at Union level to facilitate the effective implementation of the obligations regarding the detection, marking and labelling of artificially generated or manipulated content. The Commission, taking utmost account of the opinion of the Board, shall assess whether adherence to those codes of practice is adequate to ensure compliance with the obligations laid down in paragraphs 2 and 4 of this Article, in accordance with the procedure laid down in Article 56(6). If it deems the code of practice to be inadequate, the Commission may adopt an implementing act specifying common rules for the implementation of those obligations in accordance with the examination procedure laid down in Article 98(2).",
+   "original_text": "The AI Office shall encourage and facilitate the drawing up of codes of practice at Union level to facilitate the effective implementation of the obligations regarding the detection and labelling of artificially generated or manipulated content. The Commission may adopt implementing acts to approve those codes of practice in accordance with the procedure laid down in Article 56 (6). If it deems the code is not adequate, the Commission may adopt an implementing act specifying common rules for the implementation of those obligations in accordance with the examination procedure laid down in Article 98(2).",
+   "article": 50,
+   "id": "Art.50(7)"
+  },
+  {
+   "anchor": "p-article-72-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "Providers shall establish and document a post-market monitoring system in a manner that is proportionate to the nature of the AI technologies and the risks of the high-risk AI system.",
+   "original_text": null,
+   "article": 72,
+   "id": "Art.72(1)"
+  },
+  {
+   "anchor": "p-article-72-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "The post-market monitoring system shall actively and systematically collect, document and analyse relevant data which may be provided by deployers or which may be collected through other sources on the performance of high-risk AI systems throughout their lifetime, and which allow the provider to evaluate the continuous compliance of AI systems with the requirements set out in Chapter III, Section 2. Where relevant, post-market monitoring shall include an analysis of the interaction with other AI systems. This obligation shall not cover sensitive operational data of deployers which are law-enforcement authorities.",
+   "original_text": null,
+   "article": 72,
+   "id": "Art.72(2)"
+  },
+  {
+   "anchor": "p-article-72-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "amended",
+   "text": "The post-market monitoring system shall be based on a post-market monitoring plan. The post-market monitoring plan shall be part of the technical documentation referred to in Annex IV. The Commission, taking utmost account of the opinion of the Board, shall adopt guidance, including a template, on the post-market monitoring plan by 2 September 2027.",
+   "original_text": "The post-market monitoring system shall be based on a post-market monitoring plan. The post-market monitoring plan shall be part of the technical documentation referred to in Annex IV. The Commission shall adopt an implementing act laying down detailed provisions establishing a template for the post-market monitoring plan and the list of elements to be included in the plan by 2 February 2026. That implementing act shall be adopted in accordance with the examination procedure referred to in Article 98(2).",
+   "article": 72,
+   "id": "Art.72(3)"
+  },
+  {
+   "anchor": "p-article-72-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "For high-risk AI systems covered by the Union harmonisation legislation listed in Section A of Annex I, where a post-market monitoring system and plan are already established under that legislation, in order to ensure consistency, avoid duplications and minimise additional burdens, providers shall have a choice of integrating, as appropriate, the necessary elements described in paragraphs 1, 2 and 3 using the template referred in paragraph 3 into systems and plans already existing under that legislation, provided that it achieves an equivalent level of protection.",
+   "original_text": null,
+   "article": 72,
+   "id": "Art.72(4)"
+  },
+  {
+   "anchor": "p-article-72-4",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "The first subparagraph of this paragraph shall also apply to high-risk AI systems referred to in point 5 of Annex III placed on the market or put into service by financial institutions that are subject to requirements under Union financial services law regarding their internal governance, arrangements or processes.",
+   "original_text": null,
+   "article": 72,
+   "id": "Art.72(4)"
+  },
+  {
+   "anchor": "p-article-73-1",
+   "depth": 0,
+   "label": "1.",
+   "status": "original",
+   "text": "Providers of high-risk AI systems placed on the Union market shall report any serious incident to the market surveillance authorities of the Member States where that incident occurred.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(1)"
+  },
+  {
+   "anchor": "p-article-73-2",
+   "depth": 0,
+   "label": "2.",
+   "status": "original",
+   "text": "The report referred to in paragraph 1 shall be made immediately after the provider has established a causal link between the AI system and the serious incident or the reasonable likelihood of such a link, and, in any event, not later than 15 days after the provider or, where applicable, the deployer, becomes aware of the serious incident.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(2)"
+  },
+  {
+   "anchor": "p-article-73-2",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "The period for the reporting referred to in the first subparagraph shall take account of the severity of the serious incident.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(2)"
+  },
+  {
+   "anchor": "p-article-73-3",
+   "depth": 0,
+   "label": "3.",
+   "status": "original",
+   "text": "Notwithstanding paragraph 2 of this Article, in the event of a widespread infringement or a serious incident as defined in Article 3, point (49)(b), the report referred to in paragraph 1 of this Article shall be provided immediately, and not later than two days after the provider or, where applicable, the deployer becomes aware of that incident.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(3)"
+  },
+  {
+   "anchor": "p-article-73-4",
+   "depth": 0,
+   "label": "4.",
+   "status": "original",
+   "text": "Notwithstanding paragraph 2, in the event of the death of a person, the report shall be provided immediately after the provider or the deployer has established, or as soon as it suspects, a causal relationship between the high-risk AI system and the serious incident, but not later than 10 days after the date on which the provider or, where applicable, the deployer becomes aware of the serious incident.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(4)"
+  },
+  {
+   "anchor": "p-article-73-5",
+   "depth": 0,
+   "label": "5.",
+   "status": "original",
+   "text": "Where necessary to ensure timely reporting, the provider or, where applicable, the deployer, may submit an initial report that is incomplete, followed by a complete report.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(5)"
+  },
+  {
+   "anchor": "p-article-73-6",
+   "depth": 0,
+   "label": "6.",
+   "status": "original",
+   "text": "Following the reporting of a serious incident pursuant to paragraph 1, the provider shall, without delay, perform the necessary investigations in relation to the serious incident and the AI system concerned. This shall include a risk assessment of the incident, and corrective action.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(6)"
+  },
+  {
+   "anchor": "p-article-73-6",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "The provider shall cooperate with the competent authorities, and where relevant with the notified body concerned, during the investigations referred to in the first subparagraph, and shall not perform any investigation which involves altering the AI system concerned in a way which may affect any subsequent evaluation of the causes of the incident, prior to informing the competent authorities of such action.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(6)"
+  },
+  {
+   "anchor": "p-article-73-7",
+   "depth": 0,
+   "label": "7.",
+   "status": "original",
+   "text": "Upon receiving a notification related to a serious incident referred to in Article 3, point (49)(c), the relevant market surveillance authority shall inform the national public authorities or bodies referred to in Article 77(1). The Commission shall develop dedicated guidance to facilitate compliance with the obligations set out in paragraph 1 of this Article. That guidance shall be issued by 2 August 2025, and shall be assessed regularly.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(7)"
+  },
+  {
+   "anchor": "p-article-73-8",
+   "depth": 0,
+   "label": "8.",
+   "status": "original",
+   "text": "The market surveillance authority shall take appropriate measures, as provided for in Article 19 of Regulation (EU) 2019/1020, within seven days from the date it received the notification referred to in paragraph 1 of this Article, and shall follow the notification procedures as provided in that Regulation.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(8)"
+  },
+  {
+   "anchor": "p-article-73-9",
+   "depth": 0,
+   "label": "9.",
+   "status": "original",
+   "text": "For high-risk AI systems referred to in Annex III that are placed on the market or put into service by providers that are subject to Union legislative instruments laying down reporting obligations equivalent to those set out in this Regulation, the notification of serious incidents shall be limited to those referred to in Article 3, point (49)(c).",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(9)"
+  },
+  {
+   "anchor": "p-article-73-10",
+   "depth": 0,
+   "label": "10.",
+   "status": "original",
+   "text": "For high-risk AI systems which are safety components of devices, or are themselves devices, covered by Regulations (EU) 2017/745 and (EU) 2017/746, the notification of serious incidents shall be limited to those referred to in Article 3, point (49)(c) of this Regulation, and shall be made to the national competent authority chosen for that purpose by the Member States where the incident occurred.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(10)"
+  },
+  {
+   "anchor": "p-article-73-11",
+   "depth": 0,
+   "label": "11.",
+   "status": "original",
+   "text": "National competent authorities shall immediately notify the Commission of any serious incident, whether or not they have taken action on it, in accordance with Article 20 of Regulation (EU) 2019/1020.",
+   "original_text": null,
+   "article": 73,
+   "id": "Art.73(11)"
+  },
+  {
+   "anchor": "p-article-113-0",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union.",
+   "original_text": null,
+   "article": 113,
+   "id": "Art.113"
+  },
+  {
+   "anchor": "p-article-113-0",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "It shall apply from 2 August 2026.",
+   "original_text": null,
+   "article": 113,
+   "id": "Art.113"
+  },
+  {
+   "anchor": "p-article-113-0",
+   "depth": 0,
+   "label": "",
+   "status": "original",
+   "text": "However:",
+   "original_text": null,
+   "article": 113,
+   "id": "Art.113"
+  },
+  {
+   "anchor": "p-article-113-0.a",
+   "depth": 0,
+   "label": "(a)",
+   "status": "amended",
+   "text": "Chapters I and II shall apply from 2 February 2025, with the exception of Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) which shall apply from 2 December 2026;",
+   "original_text": "Chapters I and II shall apply from 2 February 2025;",
+   "article": 113,
+   "id": "Art.113((a))"
+  },
+  {
+   "anchor": "p-article-113-0.b",
+   "depth": 0,
+   "label": "(b)",
+   "status": "original",
+   "text": "Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 shall apply from 2 August 2025, with the exception of Article 101;",
+   "original_text": null,
+   "article": 113,
+   "id": "Art.113((b))"
+  },
+  {
+   "anchor": "p-article-113-0.c",
+   "depth": 0,
+   "label": "(c)",
+   "status": "amended",
+   "text": "Chapter III, Sections 1, 2, and 3, with the exception of Article 6(5), shall apply from:",
+   "original_text": "Article 6(1) and the corresponding obligations in this Regulation shall apply from 2 August 2027.",
+   "article": 113,
+   "id": "Art.113((c))"
+  },
+  {
+   "anchor": "p-article-113-0.c.i",
+   "depth": 1,
+   "label": "(i)",
+   "status": "amended",
+   "text": "2 December 2027 as regards AI systems classified as high-risk pursuant to Article 6(2) and Annex III; and",
+   "original_text": "Not present before the amendment.",
+   "article": 113,
+   "id": "Art.113((c))(i)"
+  },
+  {
+   "anchor": "p-article-113-0.c.ii",
+   "depth": 1,
+   "label": "(ii)",
+   "status": "amended",
+   "text": "2 August 2028 as regards AI systems classified as high-risk pursuant to Article 6(1) and Annex I;",
+   "original_text": "Not present before the amendment.",
+   "article": 113,
+   "id": "Art.113((c))(ii)"
+  },
+  {
+   "anchor": "p-article-113-0.d",
+   "depth": 0,
+   "label": "(d)",
+   "status": "amended",
+   "text": "Articles 102 to 110 shall apply from 27 July 2026.",
+   "original_text": "Not present before the amendment.",
+   "article": 113,
+   "id": "Art.113((d))"
+  }
+ ]
+}

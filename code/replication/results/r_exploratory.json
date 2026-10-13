@@ -1,0 +1,94 @@
+{
+ "sanitiser_operating_curve": [
+  {
+   "validation_quantile": 0.995,
+   "threshold": 5.808258056640625,
+   "clean_removal": 0.005507096124079829,
+   "clean_removal_ucb95": 0.005642956579428186,
+   "poison_detection": 0.35169614380979997,
+   "poison_detection_lcb95": 0.24507479911859853,
+   "traces_with_majority_removed": 8
+  },
+  {
+   "validation_quantile": 0.99,
+   "threshold": 4.299466133117676,
+   "clean_removal": 0.011107450748611417,
+   "clean_removal_ucb95": 0.011299046915760424,
+   "poison_detection": 0.4091040881414903,
+   "poison_detection_lcb95": 0.27719223849910046,
+   "traces_with_majority_removed": 9
+  },
+  {
+   "validation_quantile": 0.98,
+   "threshold": 3.379051685333252,
+   "clean_removal": 0.02163597210480802,
+   "clean_removal_ucb95": 0.02190118985500584,
+   "poison_detection": 0.44737605102928385,
+   "poison_detection_lcb95": 0.3136718195952212,
+   "traces_with_majority_removed": 10
+  },
+  {
+   "validation_quantile": 0.97,
+   "threshold": 2.8879966735839844,
+   "clean_removal": 0.030996945481322865,
+   "clean_removal_ucb95": 0.031312493302907016,
+   "poison_detection": 0.471440997390548,
+   "poison_detection_lcb95": 0.33682031217398917,
+   "traces_with_majority_removed": 11
+  },
+  {
+   "validation_quantile": 0.96,
+   "threshold": 2.5516445636749268,
+   "clean_removal": 0.04016292381143858,
+   "clean_removal_ucb95": 0.04052013941748067,
+   "poison_detection": 0.4894172223832995,
+   "poison_detection_lcb95": 0.354440133512513,
+   "traces_with_majority_removed": 11
+  },
+  {
+   "validation_quantile": 0.95,
+   "threshold": 2.300449848175049,
+   "clean_removal": 0.04932647984284126,
+   "clean_removal_ucb95": 0.04972025100139991,
+   "poison_detection": 0.5039141780226153,
+   "poison_detection_lcb95": 0.370154179061013,
+   "traces_with_majority_removed": 11
+  }
+ ],
+ "hai2204_with_on_delay_post_hoc": {
+  "baseline_s0": {
+   "detected": 26,
+   "attacks": 58,
+   "false_alarms": 6,
+   "normal_hours": 95.95833333333334,
+   "far_ucb95": 0.12341185221801428,
+   "val_episodes": 1,
+   "far_per_h": 0.06252713851498046,
+   "recall": 0.4482758620689655,
+   "recall_cp95": [
+    0.31743761123346276,
+    0.5845767454831223
+   ]
+  },
+  "hardened_s0": {
+   "detected": 35,
+   "attacks": 58,
+   "false_alarms": 10,
+   "normal_hours": 95.95833333333334,
+   "far_ucb95": 0.17676650527890822,
+   "val_episodes": 1,
+   "far_per_h": 0.10421189752496743,
+   "recall": 0.603448275862069,
+   "recall_cp95": [
+    0.46641454546464967,
+    0.7295434947971613
+   ]
+  }
+ },
+ "note": "exploratory; not part of the frozen plan",
+ "meta": {
+  "script": "r10_exploratory.py",
+  "runtime_s": 29.734814643859863,
+  "finished_utc": "2026-10-13T04:23:06Z"
+ }
+}

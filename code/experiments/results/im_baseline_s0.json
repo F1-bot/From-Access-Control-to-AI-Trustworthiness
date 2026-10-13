@@ -1,0 +1,13 @@
+{
+ "tag": "baseline_s0",
+ "sha256": {
+  "model": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087",
+  "prep": "d0700a7e1f3108f5f8fbc4815692bdcf7a9d07e2fd5f8bdfc293ef4b2b01a568",
+  "chanvar": "c4ecb50e35b4ac45b7a05703cc84139abc16b7b09a5abe6a549bee233c23bfaa",
+  "aibom": "313b93720c8d8a8cfdca13d5a8a53bfdd48e0d3a6199788e2d15b45852b6b407"
+ },
+ "signature_valid": true,
+ "tamper_detected": true,
+ "serialization": "safetensors (no code execution on load)",
+ "aibom": "baseline_s0.cdx.json"
+}

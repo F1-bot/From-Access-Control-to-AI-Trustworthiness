@@ -1,0 +1,188 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.6",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-13T04:14:43Z",
+  "component": {
+   "type": "machine-learning-model",
+   "name": "hai2103-gru-forecaster-baseline_s0",
+   "version": "1.0",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "bf619ab377cb92a170ac93362cf759fd2070bfd555edcf33bfce06a50be62c06"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "model",
+   "name": "hai2103-gru-forecaster-baseline_s0",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "bf619ab377cb92a170ac93362cf759fd2070bfd555edcf33bfce06a50be62c06"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "task": "time-series forecasting residual anomaly detection",
+     "architectureFamily": "GRU (2 layers, 128 units) + MLP head",
+     "datasets": [
+      {
+       "ref": "hai-21.03"
+      }
+     ],
+     "inputs": [
+      {
+       "format": "60 s x 57 standardised channels"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "next-sample prediction; anomaly score; alarm"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "event recall (50 attacks)",
+       "value": "0.88"
+      },
+      {
+       "type": "false alarms per hour",
+       "value": "0.05541900358684106"
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "advisory attack detection for ICS operators (human-on-the-loop)"
+     ],
+     "technicalLimitations": [
+      "validated only on HAI 21.03; drift to other campaigns must be monitored"
+     ]
+    }
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "hai-21.03",
+   "name": "HAI 21.03",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "hai-21.03/test1.csv.gz",
+     "contents": {
+      "attachment": {
+       "content": "532de41bed372206941609d05b763958f59abecfd63c8c123649f823452e445e",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-21.03/test2.csv.gz",
+     "contents": {
+      "attachment": {
+       "content": "c5572e0ed19906107ceb56c4b4f40e165153fc7ba87b3506230d53d2478c29bb",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-21.03/test3.csv.gz",
+     "contents": {
+      "attachment": {
+       "content": "bff835894baff0c73871bc01ece4f5cf759d455a049e808b012128767420caaf",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-21.03/test4.csv.gz",
+     "contents": {
+      "attachment": {
+       "content": "51380fd28fd985b94a10cae3d8b80926becb3af9f233f2d3a38ab8be9482a482",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-21.03/test5.csv.gz",
+     "contents": {
+      "attachment": {
+       "content": "f0d59308b167ed95d0e81fb3e27c906682c9b21d3dba0ab4c4d696565df35179",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-21.03/train1.csv.gz",
+     "contents": {
+      "attachment": {
+       "content": "fdd0162315b32817ba665e2cc8990eb09c47c4edc29683a86b11dc9df062b3a9",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-21.03/train2.csv.gz",
+     "contents": {
+      "attachment": {
+       "content": "c330af06a24f5fe3df864dddc0e9cbbbfd27db2e005bd32dc8ab3eb2ab356337",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-21.03/train3.csv.gz",
+     "contents": {
+      "attachment": {
+       "content": "de09120c617bad5f4f3cab86705137fe7ced4b1123fb67ffdf67fd645f3d1b8f",
+       "contentType": "text/csv"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "name": "torch",
+   "version": "2.6.0+cu124"
+  },
+  {
+   "type": "library",
+   "name": "numpy",
+   "version": "1.26.4"
+  },
+  {
+   "type": "library",
+   "name": "safetensors",
+   "version": "0.7.0"
+  },
+  {
+   "type": "platform",
+   "name": "python",
+   "version": "3.10.6"
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "model",
+   "dependsOn": [
+    "hai-21.03"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "description": "IP-2 re-examination: oracle/query/degeneracy documentation and dependent-data recomputation of E4b fidelity upper bounds.",
+ "victim": "baseline_s0",
+ "documentation": {
+  "oracle_e4b": {
+   "definition": "victim UNSMOOTHED one-step point score s_t > theta_pt",
+   "theta_pt": 22.535218513482864,
+   "note": "point threshold = 99.9th percentile of validation POINT scores"
+  },
+  "oracle_deployed": {
+   "definition": "10-s causally SMOOTHED score tilde_s_t > theta with 30-s episode merging",
+   "theta_smoothed": 19.623428543382843,
+   "note": "deployed alarm uses the smoothed score and merges episodes < 30 s apart; E4b labels single windows by the unsmoothed point score, a different and noisier target"
+  },
+  "threshold_gap": {
+   "theta_pt": 22.535218513482864,
+   "theta_smoothed": 19.623428543382843,
+   "ratio": 1.1483833451255845
+  },
+  "query_distribution": {
+   "source": "train5 (historian) windows of length W+1",
+   "perturbation": "50% of queries get synthetic bursts: on a random 10-30% of channels, the last k in [1,20] samples get additive N(0, sigma) noise, sigma in [0.5,3.0] SD",
+   "comment": "synthetic bursts, NOT process-consistent manipulations; the attacker eval distribution is ~50% victim-positive by construction, unlike ~3.8% operationally"
+  },
+  "degeneracy": {
+   "runs": [
+    {
+     "interface": "score",
+     "Q": 1000,
+     "seed": 0,
+     "balanced": 0.4988826369522218,
+     "agree_pos": 0.9695652173913043,
+     "agree_neg": 0.028200056513139306,
+     "surrogate_pred_pos_rate": 0.9717160728855044,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "score",
+     "Q": 1000,
+     "seed": 1,
+     "balanced": 0.5123864106375746,
+     "agree_pos": 0.9985507246376811,
+     "agree_neg": 0.02622209663746821,
+     "surrogate_pred_pos_rate": 0.9747076420995376,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "score",
+     "Q": 1000,
+     "seed": 2,
+     "balanced": 0.5029386832438542,
+     "agree_pos": 1.0,
+     "agree_neg": 0.005877366487708392,
+     "surrogate_pred_pos_rate": 0.9943432145771008,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "score",
+     "Q": 3000,
+     "seed": 0,
+     "balanced": 0.7633987329590362,
+     "agree_pos": 0.5768115942028985,
+     "agree_neg": 0.9499858717151738,
+     "surrogate_pred_pos_rate": 0.06978515093826487,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "score",
+     "Q": 3000,
+     "seed": 1,
+     "balanced": 0.7433750629630085,
+     "agree_pos": 0.5304347826086957,
+     "agree_neg": 0.9563153433173213,
+     "surrogate_pred_pos_rate": 0.06195267881425076,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "score",
+     "Q": 3000,
+     "seed": 2,
+     "balanced": 0.7688932024521788,
+     "agree_pos": 0.591304347826087,
+     "agree_neg": 0.9464820570782707,
+     "surrogate_pred_pos_rate": 0.07370138700027194,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "score",
+     "Q": 10000,
+     "seed": 0,
+     "balanced": 0.7536794967873509,
+     "agree_pos": 0.5521739130434783,
+     "agree_neg": 0.9551850805312235,
+     "surrogate_pred_pos_rate": 0.06385640467772638,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "score",
+     "Q": 10000,
+     "seed": 1,
+     "balanced": 0.7783919145259244,
+     "agree_pos": 0.6028985507246377,
+     "agree_neg": 0.953885278327211,
+     "surrogate_pred_pos_rate": 0.06701115039434326,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "score",
+     "Q": 10000,
+     "seed": 2,
+     "balanced": 0.775525306010459,
+     "agree_pos": 0.5884057971014492,
+     "agree_neg": 0.9626448149194687,
+     "surrogate_pred_pos_rate": 0.05803644275224371,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "score",
+     "Q": 30000,
+     "seed": 0,
+     "balanced": 0.5558298626894521,
+     "agree_pos": 0.12318840579710146,
+     "agree_neg": 0.9884713195818028,
+     "surrogate_pred_pos_rate": 0.015719336415556142,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "score",
+     "Q": 30000,
+     "seed": 1,
+     "balanced": 0.6839291783890479,
+     "agree_pos": 0.6275362318840579,
+     "agree_neg": 0.7403221248940378,
+     "surrogate_pred_pos_rate": 0.2734838183301605,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "score",
+     "Q": 30000,
+     "seed": 2,
+     "balanced": 0.6203289638029248,
+     "agree_pos": 0.2594202898550725,
+     "agree_neg": 0.9812376377507771,
+     "surrogate_pred_pos_rate": 0.027794397606744584,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "score",
+     "Q": 100000,
+     "seed": 0,
+     "balanced": 0.6860602970625453,
+     "agree_pos": 0.8217391304347826,
+     "agree_neg": 0.550381463690308,
+     "surrogate_pred_pos_rate": 0.463584443840087,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "score",
+     "Q": 100000,
+     "seed": 1,
+     "balanced": 0.4646350602602061,
+     "agree_pos": 0.9043478260869565,
+     "agree_neg": 0.02492229443345578,
+     "surrogate_pred_pos_rate": 0.9724231710633668,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "score",
+     "Q": 100000,
+     "seed": 2,
+     "balanced": 0.4940528111191649,
+     "agree_pos": 0.9202898550724637,
+     "agree_neg": 0.06781576716586607,
+     "surrogate_pred_pos_rate": 0.9317378297525156,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 1000,
+     "seed": 0,
+     "balanced": 0.5089573325798248,
+     "agree_pos": 1.0,
+     "agree_neg": 0.01791466515964962,
+     "surrogate_pred_pos_rate": 0.9827576828936633,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "label",
+     "Q": 1000,
+     "seed": 1,
+     "balanced": 0.5083977296460558,
+     "agree_pos": 0.9869565217391304,
+     "agree_neg": 0.029838937552981067,
+     "surrogate_pred_pos_rate": 0.9707914060375306,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "label",
+     "Q": 1000,
+     "seed": 2,
+     "balanced": 0.5224658156934531,
+     "agree_pos": 0.9956521739130435,
+     "agree_neg": 0.04927945747386267,
+     "surrogate_pred_pos_rate": 0.9524068534131085,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "label",
+     "Q": 3000,
+     "seed": 0,
+     "balanced": 0.5058773664877084,
+     "agree_pos": 1.0,
+     "agree_neg": 0.011754732975416784,
+     "surrogate_pred_pos_rate": 0.9886864291542018,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "label",
+     "Q": 3000,
+     "seed": 1,
+     "balanced": 0.5218742705505117,
+     "agree_pos": 0.991304347826087,
+     "agree_neg": 0.05244419327493642,
+     "surrogate_pred_pos_rate": 0.9491977155289638,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 3000,
+     "seed": 2,
+     "balanced": 0.5244237093095159,
+     "agree_pos": 0.9985507246376811,
+     "agree_neg": 0.050296693981350664,
+     "surrogate_pred_pos_rate": 0.9515365787326625,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "label",
+     "Q": 10000,
+     "seed": 0,
+     "balanced": 0.7625215507533037,
+     "agree_pos": 0.8463768115942029,
+     "agree_neg": 0.6786662899124046,
+     "surrogate_pred_pos_rate": 0.3410388903997824,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 10000,
+     "seed": 1,
+     "balanced": 0.6833364046995999,
+     "agree_pos": 0.8927536231884058,
+     "agree_neg": 0.473919186210794,
+     "surrogate_pred_pos_rate": 0.5398422627141691,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 10000,
+     "seed": 2,
+     "balanced": 0.703526952262778,
+     "agree_pos": 0.9231884057971015,
+     "agree_neg": 0.48386549872845436,
+     "surrogate_pred_pos_rate": 0.5314114767473485,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 30000,
+     "seed": 0,
+     "balanced": 0.47567969335479193,
+     "agree_pos": 0.9130434782608695,
+     "agree_neg": 0.038315908448714325,
+     "surrogate_pred_pos_rate": 0.9598585803644275,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": true
+    },
+    {
+     "interface": "label",
+     "Q": 30000,
+     "seed": 1,
+     "balanced": 0.7080572175059687,
+     "agree_pos": 0.7014492753623188,
+     "agree_neg": 0.7146651596496185,
+     "surrogate_pred_pos_rate": 0.3009518629317378,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 30000,
+     "seed": 2,
+     "balanced": 0.6495669373564137,
+     "agree_pos": 0.7217391304347827,
+     "agree_neg": 0.5773947442780446,
+     "surrogate_pred_pos_rate": 0.4338319282023389,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 100000,
+     "seed": 0,
+     "balanced": 0.8335780188459034,
+     "agree_pos": 0.7782608695652173,
+     "agree_neg": 0.8888951681265894,
+     "surrogate_pred_pos_rate": 0.1361435953222736,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 100000,
+     "seed": 1,
+     "balanced": 0.8485464247249079,
+     "agree_pos": 0.8405797101449275,
+     "agree_neg": 0.8565131393048884,
+     "surrogate_pred_pos_rate": 0.16964917051944522,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    },
+    {
+     "interface": "label",
+     "Q": 100000,
+     "seed": 2,
+     "balanced": 0.7841998681360083,
+     "agree_pos": 0.8333333333333334,
+     "agree_neg": 0.7350664029386832,
+     "surrogate_pred_pos_rate": 0.28626597769921136,
+     "victim_pos_rate": 0.03753059559423443,
+     "near_degenerate": false
+    }
+   ],
+   "comment": "on operational test windows several surrogates collapse to near-constant predictions; balanced agreement near 0.5 then reflects a degenerate classifier, not fidelity"
+  },
+  "victim_pos_rate_test_eval_e4b": 0.03753059559423443
+ },
+ "recompute": {
+  "budget": 10000,
+  "block_s": 600,
+  "B": 2000,
+  "stride": 1,
+  "n_test_windows": 360956,
+  "victim_pos_rate_all_windows": 0.0053524529305510925,
+  "n_pos": 1932,
+  "n_neg": 359024,
+  "runs": [
+   {
+    "interface": "label",
+    "Q": 10000,
+    "seed": 0,
+    "balanced": 0.6498826684435567,
+    "agree_pos": 0.5916149068322981,
+    "agree_neg": 0.7081504300548153,
+    "naive_cp_ucb95": 0.6616378356233111,
+    "moving_block_ucb95": 0.6787281854194679,
+    "file_cluster_ucb95": 0.6923548841388167,
+    "mbb_valid_reps": 2000,
+    "fcb_valid_reps": 1000
+   },
+   {
+    "interface": "label",
+    "Q": 10000,
+    "seed": 1,
+    "balanced": 0.6201539194782228,
+    "agree_pos": 0.7308488612836439,
+    "agree_neg": 0.5094589776728018,
+    "naive_cp_ucb95": 0.6308087450239742,
+    "moving_block_ucb95": 0.6423941080019132,
+    "file_cluster_ucb95": 0.6574114273937899,
+    "mbb_valid_reps": 2000,
+    "fcb_valid_reps": 1000
+   },
+   {
+    "interface": "label",
+    "Q": 10000,
+    "seed": 2,
+    "balanced": 0.6175551295635916,
+    "agree_pos": 0.7401656314699793,
+    "agree_neg": 0.494944627657204,
+    "naive_cp_ucb95": 0.6280922228737547,
+    "moving_block_ucb95": 0.6391608760631334,
+    "file_cluster_ucb95": 0.6464141010791646,
+    "mbb_valid_reps": 2000,
+    "fcb_valid_reps": 1000
+   },
+   {
+    "interface": "score",
+    "Q": 10000,
+    "seed": 0,
+    "balanced": 0.6607231434068734,
+    "agree_pos": 0.3447204968944099,
+    "agree_neg": 0.9767257899193369,
+    "naive_cp_ucb95": 0.671806026226941,
+    "moving_block_ucb95": 0.7059055773396877,
+    "file_cluster_ucb95": 0.7044342337663262,
+    "mbb_valid_reps": 2000,
+    "fcb_valid_reps": 1000
+   },
+   {
+    "interface": "score",
+    "Q": 10000,
+    "seed": 1,
+    "balanced": 0.6768476010692711,
+    "agree_pos": 0.3778467908902691,
+    "agree_neg": 0.9758484112482732,
+    "naive_cp_ucb95": 0.6881228851294572,
+    "moving_block_ucb95": 0.7217764543657875,
+    "file_cluster_ucb95": 0.719706684596082,
+    "mbb_valid_reps": 2000,
+    "fcb_valid_reps": 1000
+   },
+   {
+    "interface": "score",
+    "Q": 10000,
+    "seed": 2,
+    "balanced": 0.6733073151300369,
+    "agree_pos": 0.36594202898550726,
+    "agree_neg": 0.9806726012745666,
+    "naive_cp_ucb95": 0.6844954585051982,
+    "moving_block_ucb95": 0.7176654778166894,
+    "file_cluster_ucb95": 0.7172032920880557,
+    "mbb_valid_reps": 2000,
+    "fcb_valid_reps": 1000
+   }
+  ],
+  "stored_e4b_cp_ucb95_same_configs": [
+   {
+    "interface": "score",
+    "Q": 10000,
+    "seed": 0,
+    "test_balanced": 0.7536794967873509,
+    "test_cp_ucb95": 0.7739486290639753
+   },
+   {
+    "interface": "score",
+    "Q": 10000,
+    "seed": 1,
+    "test_balanced": 0.7783919145259244,
+    "test_cp_ucb95": 0.7982767066098035
+   },
+   {
+    "interface": "score",
+    "Q": 10000,
+    "seed": 2,
+    "test_balanced": 0.775525306010459,
+    "test_cp_ucb95": 0.7953974331423992
+   },
+   {
+    "interface": "label",
+    "Q": 10000,
+    "seed": 0,
+    "test_balanced": 0.7625215507533037,
+    "test_cp_ucb95": 0.7790120405436022
+   },
+   {
+    "interface": "label",
+    "Q": 10000,
+    "seed": 1,
+    "test_balanced": 0.6833364046995999,
+    "test_cp_ucb95": 0.6980771827420454
+   },
+   {
+    "interface": "label",
+    "Q": 10000,
+    "seed": 2,
+    "test_balanced": 0.703526952262778,
+    "test_cp_ucb95": 0.7165976798335214
+   }
+  ]
+ },
+ "runtime_s": 169.77907419204712,
+ "versions": {
+  "python": "3.10.6",
+  "numpy": "1.26.4",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "platform": "Windows-10-10.0.19045-SP0"
+ }
+}

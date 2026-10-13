@@ -1,0 +1,2457 @@
+{
+ "plan_sha256": "da8704e640f427f885627b25fd175527b6c468ec12717675e8fceeae04b21783",
+ "reference_profile": "{ID-3, IR-2, IV-3, IE-2, IP-2, IO-2, IM-2}",
+ "by_alpha": {
+  "0.1": {
+   "baseline_s0": {
+    "tests": {
+     "ID-3.pdet": {
+      "estimate": 0.35169614380979997,
+      "lcb": 0.2693987375586487,
+      "ucb": 0.4580175333762127,
+      "tau": 0.8,
+      "decision": "reject",
+      "method": "percentile cluster bootstrap over the poisoned traces",
+      "clean_removal": {
+       "k": 4547,
+       "n": 825662,
+       "estimate": 0.005507096124079829,
+       "lcb": 0.005402974290820866,
+       "ucb": 0.005612940137768635,
+       "tau": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      }
+     },
+     "ID-3.pdeg": {
+      "estimate": 0.16666666666666666,
+      "lcb": -0.02697827927491961,
+      "ucb": 0.28736363038954793,
+      "tau": 0.1,
+      "decision": "inconclusive",
+      "method": "paired exact bound",
+      "n10": 5,
+      "n01": 0,
+      "n": 30
+     },
+     "IV-3.drift": {
+      "decision": "inconclusive",
+      "tpr": {
+       "estimate": 1.0,
+       "lcb": 0.949267549612196,
+       "ucb": 1.0,
+       "tau": 0.9,
+       "decision": "accept",
+       "method": "effective-n CP, deff 6.31",
+       "k": 279,
+       "n": 279
+      },
+      "fpr": {
+       "estimate": 0.0,
+       "lcb": 0.0,
+       "ucb": 0.09584381626455551,
+       "tau": 0.05,
+       "decision": "inconclusive",
+       "method": "effective-n CP, deff 2.63",
+       "k": 0,
+       "n": 60
+      }
+     },
+     "IM-2.sig": {
+      "decision": "accept",
+      "tests": {
+       "i_original": "accept",
+       "ii_one_byte": "reject",
+       "iii_foreign_key": "reject",
+       "iv_anchor_replaced": "reject"
+      }
+     },
+     "IV-1.report": {
+      "decision": "reported",
+      "recall": 0.88,
+      "far_per_h": 0.05541900358684106
+     },
+     "IV-2.recall": {
+      "estimate": 0.88,
+      "lcb": 0.7888844426034636,
+      "ucb": 0.940397679058709,
+      "tau": 0.5,
+      "decision": "accept",
+      "method": "effective-n CP, design effect 1.20",
+      "exact": {
+       "k": 44,
+       "n": 50,
+       "estimate": 0.88,
+       "lcb": 0.7988690410511186,
+       "ucb": 0.9357395872790089,
+       "tau": 0.5,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "deff": 1.196969696969697,
+      "k": 44,
+      "n": 50
+     },
+     "IV-2.far": {
+      "estimate": 0.05541900358684106,
+      "lcb": 0.029112508036401523,
+      "ucb": 0.09727949030781848,
+      "tau": 0.25,
+      "decision": "accept",
+      "method": "exact Poisson; dispersion X2/df = 0.91",
+      "exact": {
+       "count": 6,
+       "exposure_h": 108.26611111111112,
+       "estimate": 0.05541900358684106,
+       "lcb": 0.029112508036401523,
+       "ucb": 0.09727949030781848,
+       "tau": 0.25,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "dispersion": 0.9135262627577241,
+      "count": 6,
+      "hours": 108.26611111111112
+     },
+     "IO-2.load": {
+      "count": 57,
+      "exposure_h": 111.66805555555555,
+      "estimate": 0.5104414124202435,
+      "lcb": 0.4259392231196332,
+      "ucb": 0.6084910395740367,
+      "tau": 6.0,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "IE-2.xfid": {
+      "decision": "inconclusive",
+      "absolute": {
+       "k": 33,
+       "n": 44,
+       "estimate": 0.75,
+       "lcb": 0.647181722166289,
+       "ucb": 0.8344633278029164,
+       "tau": 0.6,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "constant": {
+       "k": 30,
+       "n": 44,
+       "estimate": 0.6818181818181818,
+       "lcb": 0.5754502549048702,
+       "ucb": 0.7749580276720195,
+       "tau": 0.6,
+       "decision": "inconclusive",
+       "naive": "accept"
+      },
+      "comparison": {
+       "b": 3,
+       "c": 0,
+       "deff": 1.0,
+       "p_dependence_robust": 0.125,
+       "p_independent": 0.125,
+       "decision": "inconclusive",
+       "decision_independent_units": "inconclusive"
+      }
+     },
+     "IR-1.transfer": {
+      "decision": "reported",
+      "k": 0,
+      "n": 44
+     },
+     "IR-1.query": {
+      "decision": "reported",
+      "k_max": 0,
+      "n": 44
+     },
+     "IR-2.asr": {
+      "k": 5,
+      "n": 44,
+      "estimate": 0.11363636363636363,
+      "lcb": 0.056317070831583015,
+      "ucb": 0.2006269098924779,
+      "tau": 0.2,
+      "decision": "inconclusive",
+      "naive": "accept",
+      "planned_pgd_ball": 1,
+      "planned_pgd_eps0.5": 0,
+      "improved_by_eps": {
+       "0.1": 2,
+       "0.25": 3,
+       "0.5": 5
+      },
+      "greedy_by_eps": {
+       "0.1": 1,
+       "0.25": 1,
+       "0.5": 2
+      },
+      "unbounded": 9
+     },
+     "IP-2.ext": {
+      "decision": "accept",
+      "max_ucb95": 0.8548335964745882,
+      "estimates": [
+       0.5483230063958212,
+       0.5314835019365991,
+       0.8338096842107934
+      ],
+      "attacker_distribution": [
+       0.9699184277414501,
+       0.9600015296367266,
+       0.9559588025708498
+      ]
+     }
+    },
+    "results": {
+     "demonstrated": {
+      "own": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "formatted": "{ID-1, IR-1, IV-2, IE-1}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IR": [
+        1,
+        2
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IP": [
+        0,
+        2
+       ],
+       "IO": [
+        0,
+        2
+       ],
+       "IM": [
+        0,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": false
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": false,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": false,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": false
+       },
+       "IO-1": {
+        "IO-1.1": false,
+        "IO-1.2": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": false
+       }
+      }
+     },
+     "conditional": {
+      "own": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 2,
+       "IM": 2
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 1,
+       "IM": 2
+      },
+      "formatted": "{ID-1, IR-1, IV-2, IE-1, IP-2, IO-1, IM-2}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IR": [
+        1,
+        2
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IO": [
+        1,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": true
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": false,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": true,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": true
+       },
+       "IP-2": {
+        "IP-2.1a": true,
+        "IP-2.1b": true,
+        "IP-2.2": true
+       },
+       "IO-1": {
+        "IO-1.1": true,
+        "IO-1.2": true
+       },
+       "IO-2": {
+        "IO-2.1": true,
+        "IO-2.2a": true,
+        "IO-2.2b": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": true
+       },
+       "IM-2": {
+        "IM-2.1": true,
+        "IM-2.2": true
+       }
+      }
+     }
+    }
+   },
+   "hardened_s0": {
+    "tests": {
+     "ID-3.pdet": {
+      "estimate": 0.35169614380979997,
+      "lcb": 0.2693987375586487,
+      "ucb": 0.4580175333762127,
+      "tau": 0.8,
+      "decision": "reject",
+      "method": "percentile cluster bootstrap over the poisoned traces",
+      "clean_removal": {
+       "k": 4547,
+       "n": 825662,
+       "estimate": 0.005507096124079829,
+       "lcb": 0.005402974290820866,
+       "ucb": 0.005612940137768635,
+       "tau": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      }
+     },
+     "ID-3.pdeg": {
+      "decision": "not evaluated",
+      "note": "the drill trained the baseline recipe only"
+     },
+     "IV-3.drift": {
+      "decision": "inconclusive",
+      "tpr": {
+       "estimate": 1.0,
+       "lcb": 0.949267549612196,
+       "ucb": 1.0,
+       "tau": 0.9,
+       "decision": "accept",
+       "method": "effective-n CP, deff 6.31",
+       "k": 279,
+       "n": 279
+      },
+      "fpr": {
+       "estimate": 0.0,
+       "lcb": 0.0,
+       "ucb": 0.09584381626455551,
+       "tau": 0.05,
+       "decision": "inconclusive",
+       "method": "effective-n CP, deff 2.63",
+       "k": 0,
+       "n": 60
+      }
+     },
+     "IM-2.sig": {
+      "decision": "accept",
+      "tests": {
+       "i_original": "accept",
+       "ii_one_byte": "reject",
+       "iii_foreign_key": "reject",
+       "iv_anchor_replaced": "reject"
+      }
+     },
+     "IV-1.report": {
+      "decision": "reported",
+      "recall": 0.9,
+      "far_per_h": 0.02770950179342053
+     },
+     "IV-2.recall": {
+      "estimate": 0.9,
+      "lcb": 0.800833062136515,
+      "ucb": 0.9591446515327761,
+      "tau": 0.5,
+      "decision": "accept",
+      "method": "effective-n CP, design effect 1.44",
+      "exact": {
+       "k": 45,
+       "n": 50,
+       "estimate": 0.9,
+       "lcb": 0.8223818723826234,
+       "ucb": 0.9505543583578656,
+       "tau": 0.5,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "deff": 1.4444444444444442,
+      "k": 45,
+      "n": 50
+     },
+     "IV-2.far": {
+      "estimate": 0.02770950179342053,
+      "lcb": 0.010179227063197053,
+      "ucb": 0.061707056803763136,
+      "tau": 0.25,
+      "decision": "accept",
+      "method": "exact Poisson; dispersion X2/df = 0.92",
+      "exact": {
+       "count": 3,
+       "exposure_h": 108.26611111111112,
+       "estimate": 0.02770950179342053,
+       "lcb": 0.010179227063197053,
+       "ucb": 0.061707056803763136,
+       "tau": 0.25,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "dispersion": 0.9153574879227052,
+      "count": 3,
+      "hours": 108.26611111111112
+     },
+     "IO-2.load": {
+      "count": 52,
+      "exposure_h": 111.66805555555555,
+      "estimate": 0.4656658499272397,
+      "lcb": 0.3850616523095195,
+      "ucb": 0.5598528541115457,
+      "tau": 6.0,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "IE-2.xfid": {
+      "decision": "accept",
+      "absolute": {
+       "k": 34,
+       "n": 45,
+       "estimate": 0.7555555555555555,
+       "lcb": 0.6544801563000484,
+       "ucb": 0.8382857195883265,
+       "tau": 0.6,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "constant": {
+       "k": 30,
+       "n": 45,
+       "estimate": 0.6666666666666666,
+       "lcb": 0.5611584493678212,
+       "ucb": 0.7603465198236994,
+       "tau": 0.6,
+       "decision": "inconclusive",
+       "naive": "accept"
+      },
+      "comparison": {
+       "b": 4,
+       "c": 0,
+       "deff": 1.0,
+       "p_dependence_robust": 0.0625,
+       "p_independent": 0.0625,
+       "decision": "accept",
+       "decision_independent_units": "accept"
+      }
+     },
+     "IR-1.transfer": {
+      "decision": "reported",
+      "k": 1,
+      "n": 45,
+      "hardening_aware": 1
+     },
+     "IR-1.query": {
+      "decision": "reported",
+      "k_max": 0,
+      "n": 45
+     },
+     "IR-2.asr": {
+      "k": 2,
+      "n": 45,
+      "estimate": 0.044444444444444446,
+      "lcb": 0.01188057285159425,
+      "ucb": 0.11397524740661451,
+      "tau": 0.2,
+      "decision": "accept",
+      "naive": "accept",
+      "planned_pgd_ball": 2,
+      "planned_pgd_eps0.5": 2,
+      "improved_by_eps": {
+       "0.1": 0,
+       "0.25": 0,
+       "0.5": 2
+      },
+      "greedy_by_eps": {
+       "0.1": 0,
+       "0.25": 0,
+       "0.5": 1
+      },
+      "unbounded": 13
+     },
+     "IP-2.ext": {
+      "decision": "accept",
+      "max_ucb95": 0.7929984187965575,
+      "estimates": [
+       0.5025126986985958,
+       0.749143915388252,
+       0.7313637869846328
+      ],
+      "attacker_distribution": [
+       0.9549379467789962,
+       0.9518964984063052,
+       0.9464906323678806
+      ]
+     }
+    },
+    "results": {
+     "demonstrated": {
+      "own": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "formatted": "{ID-1, IR-2, IV-2, IE-1}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IP": [
+        0,
+        2
+       ],
+       "IO": [
+        0,
+        2
+       ],
+       "IM": [
+        0,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": false
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": true,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": false,
+        "IE-2.2": true
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": false
+       },
+       "IO-1": {
+        "IO-1.1": false,
+        "IO-1.2": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": false
+       }
+      }
+     },
+     "conditional": {
+      "own": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 2,
+       "IP": 2,
+       "IO": 2,
+       "IM": 2
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 2,
+       "IP": 2,
+       "IO": 2,
+       "IM": 2
+      },
+      "formatted": "{ID-1, IR-2, IV-2, IE-2, IP-2, IO-2, IM-2}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IV": [
+        2,
+        3
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": true
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": true,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": true,
+        "IE-2.2": true
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": true
+       },
+       "IP-2": {
+        "IP-2.1a": true,
+        "IP-2.1b": true,
+        "IP-2.2": true
+       },
+       "IO-1": {
+        "IO-1.1": true,
+        "IO-1.2": true
+       },
+       "IO-2": {
+        "IO-2.1": true,
+        "IO-2.2a": true,
+        "IO-2.2b": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": true
+       },
+       "IM-2": {
+        "IM-2.1": true,
+        "IM-2.2": true
+       }
+      }
+     }
+    }
+   }
+  },
+  "0.05": {
+   "baseline_s0": {
+    "tests": {
+     "ID-3.pdet": {
+      "estimate": 0.35169614380979997,
+      "lcb": 0.24507479911859853,
+      "ucb": 0.4580175333762127,
+      "tau": 0.8,
+      "decision": "reject",
+      "method": "percentile cluster bootstrap over the poisoned traces",
+      "clean_removal": {
+       "k": 4547,
+       "n": 825662,
+       "estimate": 0.005507096124079829,
+       "lcb": 0.005373810051612656,
+       "ucb": 0.005642956579428186,
+       "tau": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      }
+     },
+     "ID-3.pdeg": {
+      "estimate": 0.16666666666666666,
+      "lcb": -0.059281611753956305,
+      "ucb": 0.318971181947315,
+      "tau": 0.1,
+      "decision": "inconclusive",
+      "method": "paired exact bound",
+      "n10": 5,
+      "n01": 0,
+      "n": 30
+     },
+     "IV-3.drift": {
+      "decision": "inconclusive",
+      "tpr": {
+       "estimate": 1.0,
+       "lcb": 0.9345056593136869,
+       "ucb": 1.0,
+       "tau": 0.9,
+       "decision": "accept",
+       "method": "effective-n CP, deff 6.31",
+       "k": 279,
+       "n": 279
+      },
+      "fpr": {
+       "estimate": 0.0,
+       "lcb": 0.0,
+       "ucb": 0.1228549337595112,
+       "tau": 0.05,
+       "decision": "inconclusive",
+       "method": "effective-n CP, deff 2.63",
+       "k": 0,
+       "n": 60
+      }
+     },
+     "IM-2.sig": {
+      "decision": "accept",
+      "tests": {
+       "i_original": "accept",
+       "ii_one_byte": "reject",
+       "iii_foreign_key": "reject",
+       "iv_anchor_replaced": "reject"
+      }
+     },
+     "IV-1.report": {
+      "decision": "reported",
+      "recall": 0.88,
+      "far_per_h": 0.05541900358684106
+     },
+     "IV-2.recall": {
+      "estimate": 0.88,
+      "lcb": 0.764286395424844,
+      "ucb": 0.9514339411533099,
+      "tau": 0.5,
+      "decision": "accept",
+      "method": "effective-n CP, design effect 1.20",
+      "exact": {
+       "k": 44,
+       "n": 50,
+       "estimate": 0.88,
+       "lcb": 0.7768300102995561,
+       "ucb": 0.9464285971598693,
+       "tau": 0.5,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "deff": 1.196969696969697,
+      "k": 44,
+      "n": 50
+     },
+     "IV-2.far": {
+      "estimate": 0.05541900358684106,
+      "lcb": 0.0241351122468474,
+      "ucb": 0.10938229452304517,
+      "tau": 0.25,
+      "decision": "accept",
+      "method": "exact Poisson; dispersion X2/df = 0.91",
+      "exact": {
+       "count": 6,
+       "exposure_h": 108.26611111111112,
+       "estimate": 0.05541900358684106,
+       "lcb": 0.0241351122468474,
+       "ucb": 0.10938229452304517,
+       "tau": 0.25,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "dispersion": 0.9135262627577241,
+      "count": 6,
+      "hours": 108.26611111111112
+     },
+     "IO-2.load": {
+      "count": 57,
+      "exposure_h": 111.66805555555555,
+      "estimate": 0.5104414124202435,
+      "lcb": 0.40455218324026554,
+      "ucb": 0.6364316067468007,
+      "tau": 6.0,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "IE-2.xfid": {
+      "decision": "inconclusive",
+      "absolute": {
+       "k": 33,
+       "n": 44,
+       "estimate": 0.75,
+       "lcb": 0.6202944705712414,
+       "ucb": 0.8530180544916668,
+       "tau": 0.6,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "constant": {
+       "k": 30,
+       "n": 44,
+       "estimate": 0.6818181818181818,
+       "lcb": 0.5480741892559373,
+       "ucb": 0.7962988360365515,
+       "tau": 0.6,
+       "decision": "inconclusive",
+       "naive": "accept"
+      },
+      "comparison": {
+       "b": 3,
+       "c": 0,
+       "deff": 1.0,
+       "p_dependence_robust": 0.125,
+       "p_independent": 0.125,
+       "decision": "inconclusive",
+       "decision_independent_units": "inconclusive"
+      }
+     },
+     "IR-1.transfer": {
+      "decision": "reported",
+      "k": 0,
+      "n": 44
+     },
+     "IR-1.query": {
+      "decision": "reported",
+      "k_max": 0,
+      "n": 44
+     },
+     "IR-2.asr": {
+      "k": 5,
+      "n": 44,
+      "estimate": 0.11363636363636363,
+      "lcb": 0.04585888416865986,
+      "ucb": 0.22420316312943261,
+      "tau": 0.2,
+      "decision": "inconclusive",
+      "naive": "accept",
+      "planned_pgd_ball": 1,
+      "planned_pgd_eps0.5": 0,
+      "improved_by_eps": {
+       "0.1": 2,
+       "0.25": 3,
+       "0.5": 5
+      },
+      "greedy_by_eps": {
+       "0.1": 1,
+       "0.25": 1,
+       "0.5": 2
+      },
+      "unbounded": 9
+     },
+     "IP-2.ext": {
+      "decision": "accept",
+      "max_ucb95": 0.8548335964745882,
+      "estimates": [
+       0.5483230063958212,
+       0.5314835019365991,
+       0.8338096842107934
+      ],
+      "attacker_distribution": [
+       0.9699184277414501,
+       0.9600015296367266,
+       0.9559588025708498
+      ]
+     }
+    },
+    "results": {
+     "demonstrated": {
+      "own": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "formatted": "{ID-1, IR-1, IV-2, IE-1}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IR": [
+        1,
+        2
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IP": [
+        0,
+        2
+       ],
+       "IO": [
+        0,
+        2
+       ],
+       "IM": [
+        0,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": false
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": false,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": false,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": false
+       },
+       "IO-1": {
+        "IO-1.1": false,
+        "IO-1.2": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": false
+       }
+      }
+     },
+     "conditional": {
+      "own": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 2,
+       "IM": 2
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 1,
+       "IM": 2
+      },
+      "formatted": "{ID-1, IR-1, IV-2, IE-1, IP-2, IO-1, IM-2}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IR": [
+        1,
+        2
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IO": [
+        1,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": true
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": false,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": true,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": true
+       },
+       "IP-2": {
+        "IP-2.1a": true,
+        "IP-2.1b": true,
+        "IP-2.2": true
+       },
+       "IO-1": {
+        "IO-1.1": true,
+        "IO-1.2": true
+       },
+       "IO-2": {
+        "IO-2.1": true,
+        "IO-2.2a": true,
+        "IO-2.2b": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": true
+       },
+       "IM-2": {
+        "IM-2.1": true,
+        "IM-2.2": true
+       }
+      }
+     }
+    }
+   },
+   "hardened_s0": {
+    "tests": {
+     "ID-3.pdet": {
+      "estimate": 0.35169614380979997,
+      "lcb": 0.24507479911859853,
+      "ucb": 0.4580175333762127,
+      "tau": 0.8,
+      "decision": "reject",
+      "method": "percentile cluster bootstrap over the poisoned traces",
+      "clean_removal": {
+       "k": 4547,
+       "n": 825662,
+       "estimate": 0.005507096124079829,
+       "lcb": 0.005373810051612656,
+       "ucb": 0.005642956579428186,
+       "tau": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      }
+     },
+     "ID-3.pdeg": {
+      "decision": "not evaluated",
+      "note": "the drill trained the baseline recipe only"
+     },
+     "IV-3.drift": {
+      "decision": "inconclusive",
+      "tpr": {
+       "estimate": 1.0,
+       "lcb": 0.9345056593136869,
+       "ucb": 1.0,
+       "tau": 0.9,
+       "decision": "accept",
+       "method": "effective-n CP, deff 6.31",
+       "k": 279,
+       "n": 279
+      },
+      "fpr": {
+       "estimate": 0.0,
+       "lcb": 0.0,
+       "ucb": 0.1228549337595112,
+       "tau": 0.05,
+       "decision": "inconclusive",
+       "method": "effective-n CP, deff 2.63",
+       "k": 0,
+       "n": 60
+      }
+     },
+     "IM-2.sig": {
+      "decision": "accept",
+      "tests": {
+       "i_original": "accept",
+       "ii_one_byte": "reject",
+       "iii_foreign_key": "reject",
+       "iv_anchor_replaced": "reject"
+      }
+     },
+     "IV-1.report": {
+      "decision": "reported",
+      "recall": 0.9,
+      "far_per_h": 0.02770950179342053
+     },
+     "IV-2.recall": {
+      "estimate": 0.9,
+      "lcb": 0.7740768167445969,
+      "ucb": 0.9686571561626427,
+      "tau": 0.5,
+      "decision": "accept",
+      "method": "effective-n CP, design effect 1.44",
+      "exact": {
+       "k": 45,
+       "n": 50,
+       "estimate": 0.9,
+       "lcb": 0.8011669974835816,
+       "ucb": 0.9597634095978854,
+       "tau": 0.5,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "deff": 1.4444444444444442,
+      "k": 45,
+      "n": 50
+     },
+     "IV-2.far": {
+      "estimate": 0.02770950179342053,
+      "lcb": 0.007552607540551398,
+      "ucb": 0.07161665315543957,
+      "tau": 0.25,
+      "decision": "accept",
+      "method": "exact Poisson; dispersion X2/df = 0.92",
+      "exact": {
+       "count": 3,
+       "exposure_h": 108.26611111111112,
+       "estimate": 0.02770950179342053,
+       "lcb": 0.007552607540551398,
+       "ucb": 0.07161665315543957,
+       "tau": 0.25,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "dispersion": 0.9153574879227052,
+      "count": 3,
+      "hours": 108.26611111111112
+     },
+     "IO-2.load": {
+      "count": 52,
+      "exposure_h": 111.66805555555555,
+      "estimate": 0.4656658499272397,
+      "lcb": 0.36477650815045787,
+      "ucb": 0.5867007247424476,
+      "tau": 6.0,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "IE-2.xfid": {
+      "decision": "inconclusive",
+      "absolute": {
+       "k": 34,
+       "n": 45,
+       "estimate": 0.7555555555555555,
+       "lcb": 0.6279835773733459,
+       "ucb": 0.8564480782724002,
+       "tau": 0.6,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "constant": {
+       "k": 30,
+       "n": 45,
+       "estimate": 0.6666666666666666,
+       "lcb": 0.5340622572811529,
+       "ucb": 0.7820353548376151,
+       "tau": 0.6,
+       "decision": "inconclusive",
+       "naive": "accept"
+      },
+      "comparison": {
+       "b": 4,
+       "c": 0,
+       "deff": 1.0,
+       "p_dependence_robust": 0.0625,
+       "p_independent": 0.0625,
+       "decision": "inconclusive",
+       "decision_independent_units": "inconclusive"
+      }
+     },
+     "IR-1.transfer": {
+      "decision": "reported",
+      "k": 1,
+      "n": 45,
+      "hardening_aware": 1
+     },
+     "IR-1.query": {
+      "decision": "reported",
+      "k_max": 0,
+      "n": 45
+     },
+     "IR-2.asr": {
+      "k": 2,
+      "n": 45,
+      "estimate": 0.044444444444444446,
+      "lcb": 0.007954410677339242,
+      "ucb": 0.13337564609192865,
+      "tau": 0.2,
+      "decision": "accept",
+      "naive": "accept",
+      "planned_pgd_ball": 2,
+      "planned_pgd_eps0.5": 2,
+      "improved_by_eps": {
+       "0.1": 0,
+       "0.25": 0,
+       "0.5": 2
+      },
+      "greedy_by_eps": {
+       "0.1": 0,
+       "0.25": 0,
+       "0.5": 1
+      },
+      "unbounded": 13
+     },
+     "IP-2.ext": {
+      "decision": "accept",
+      "max_ucb95": 0.7929984187965575,
+      "estimates": [
+       0.5025126986985958,
+       0.749143915388252,
+       0.7313637869846328
+      ],
+      "attacker_distribution": [
+       0.9549379467789962,
+       0.9518964984063052,
+       0.9464906323678806
+      ]
+     }
+    },
+    "results": {
+     "demonstrated": {
+      "own": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "formatted": "{ID-1, IR-2, IV-2, IE-1}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IP": [
+        0,
+        2
+       ],
+       "IO": [
+        0,
+        2
+       ],
+       "IM": [
+        0,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": false
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": true,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": false,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": false
+       },
+       "IO-1": {
+        "IO-1.1": false,
+        "IO-1.2": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": false
+       }
+      }
+     },
+     "conditional": {
+      "own": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 2,
+       "IM": 2
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 1,
+       "IM": 2
+      },
+      "formatted": "{ID-1, IR-2, IV-2, IE-1, IP-2, IO-1, IM-2}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IO": [
+        1,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": true
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": true,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": true,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": true
+       },
+       "IP-2": {
+        "IP-2.1a": true,
+        "IP-2.1b": true,
+        "IP-2.2": true
+       },
+       "IO-1": {
+        "IO-1.1": true,
+        "IO-1.2": true
+       },
+       "IO-2": {
+        "IO-2.1": true,
+        "IO-2.2a": true,
+        "IO-2.2b": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": true
+       },
+       "IM-2": {
+        "IM-2.1": true,
+        "IM-2.2": true
+       }
+      }
+     }
+    }
+   }
+  },
+  "0.01": {
+   "baseline_s0": {
+    "tests": {
+     "ID-3.pdet": {
+      "estimate": 0.35169614380979997,
+      "lcb": 0.20491334978979128,
+      "ucb": 0.4580175333762127,
+      "tau": 0.8,
+      "decision": "reject",
+      "method": "percentile cluster bootstrap over the poisoned traces",
+      "clean_removal": {
+       "k": 4547,
+       "n": 825662,
+       "estimate": 0.005507096124079829,
+       "lcb": 0.005319385324034504,
+       "ucb": 0.005699548442171185,
+       "tau": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      }
+     },
+     "ID-3.pdeg": {
+      "estimate": 0.16666666666666666,
+      "lcb": -0.12407216631700947,
+      "ucb": 0.38080465587741225,
+      "tau": 0.1,
+      "decision": "inconclusive",
+      "method": "paired exact bound",
+      "n10": 5,
+      "n01": 0,
+      "n": 30
+     },
+     "IV-3.drift": {
+      "decision": "inconclusive",
+      "tpr": {
+       "estimate": 1.0,
+       "lcb": 0.9011088807467428,
+       "ucb": 1.0,
+       "tau": 0.9,
+       "decision": "accept",
+       "method": "effective-n CP, deff 6.31",
+       "k": 279,
+       "n": 279
+      },
+      "fpr": {
+       "estimate": 0.0,
+       "lcb": 0.0,
+       "ucb": 0.18250159541295713,
+       "tau": 0.05,
+       "decision": "inconclusive",
+       "method": "effective-n CP, deff 2.63",
+       "k": 0,
+       "n": 60
+      }
+     },
+     "IM-2.sig": {
+      "decision": "accept",
+      "tests": {
+       "i_original": "accept",
+       "ii_one_byte": "reject",
+       "iii_foreign_key": "reject",
+       "iv_anchor_replaced": "reject"
+      }
+     },
+     "IV-1.report": {
+      "decision": "reported",
+      "recall": 0.88,
+      "far_per_h": 0.05541900358684106
+     },
+     "IV-2.recall": {
+      "estimate": 0.88,
+      "lcb": 0.7151716227839674,
+      "ucb": 0.9681725918599159,
+      "tau": 0.5,
+      "decision": "accept",
+      "method": "effective-n CP, design effect 1.20",
+      "exact": {
+       "k": 44,
+       "n": 50,
+       "estimate": 0.88,
+       "lcb": 0.7328544623722767,
+       "ucb": 0.9630831991956906,
+       "tau": 0.5,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "deff": 1.196969696969697,
+      "k": 44,
+      "n": 50
+     },
+     "IV-2.far": {
+      "estimate": 0.05541900358684106,
+      "lcb": 0.016489781215749018,
+      "ucb": 0.1345815299062778,
+      "tau": 0.25,
+      "decision": "accept",
+      "method": "exact Poisson; dispersion X2/df = 0.91",
+      "exact": {
+       "count": 6,
+       "exposure_h": 108.26611111111112,
+       "estimate": 0.05541900358684106,
+       "lcb": 0.016489781215749018,
+       "ucb": 0.1345815299062778,
+       "tau": 0.25,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "dispersion": 0.9135262627577241,
+      "count": 6,
+      "hours": 108.26611111111112
+     },
+     "IO-2.load": {
+      "count": 57,
+      "exposure_h": 111.66805555555555,
+      "estimate": 0.5104414124202435,
+      "lcb": 0.3664263958188767,
+      "ucb": 0.6910831394112683,
+      "tau": 6.0,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "IE-2.xfid": {
+      "decision": "inconclusive",
+      "absolute": {
+       "k": 33,
+       "n": 44,
+       "estimate": 0.75,
+       "lcb": 0.568794055409945,
+       "ucb": 0.8843460326854256,
+       "tau": 0.6,
+       "decision": "inconclusive",
+       "naive": "accept"
+      },
+      "constant": {
+       "k": 30,
+       "n": 44,
+       "estimate": 0.6818181818181818,
+       "lcb": 0.4964653507548359,
+       "ucb": 0.8332633022694865,
+       "tau": 0.6,
+       "decision": "inconclusive",
+       "naive": "accept"
+      },
+      "comparison": {
+       "b": 3,
+       "c": 0,
+       "deff": 1.0,
+       "p_dependence_robust": 0.125,
+       "p_independent": 0.125,
+       "decision": "inconclusive",
+       "decision_independent_units": "inconclusive"
+      }
+     },
+     "IR-1.transfer": {
+      "decision": "reported",
+      "k": 0,
+      "n": 44
+     },
+     "IR-1.query": {
+      "decision": "reported",
+      "k_max": 0,
+      "n": 44
+     },
+     "IR-2.asr": {
+      "k": 5,
+      "n": 44,
+      "estimate": 0.11363636363636363,
+      "lcb": 0.03001617303653806,
+      "ucb": 0.27140566941080274,
+      "tau": 0.2,
+      "decision": "inconclusive",
+      "naive": "accept",
+      "planned_pgd_ball": 1,
+      "planned_pgd_eps0.5": 0,
+      "improved_by_eps": {
+       "0.1": 2,
+       "0.25": 3,
+       "0.5": 5
+      },
+      "greedy_by_eps": {
+       "0.1": 1,
+       "0.25": 1,
+       "0.5": 2
+      },
+      "unbounded": 9
+     },
+     "IP-2.ext": {
+      "decision": "accept",
+      "max_ucb95": 0.8548335964745882,
+      "estimates": [
+       0.5483230063958212,
+       0.5314835019365991,
+       0.8338096842107934
+      ],
+      "attacker_distribution": [
+       0.9699184277414501,
+       0.9600015296367266,
+       0.9559588025708498
+      ]
+     }
+    },
+    "results": {
+     "demonstrated": {
+      "own": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "formatted": "{ID-1, IR-1, IV-2, IE-1}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IR": [
+        1,
+        2
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IP": [
+        0,
+        2
+       ],
+       "IO": [
+        0,
+        2
+       ],
+       "IM": [
+        0,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": false
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": false,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": false,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": false
+       },
+       "IO-1": {
+        "IO-1.1": false,
+        "IO-1.2": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": false
+       }
+      }
+     },
+     "conditional": {
+      "own": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 2,
+       "IM": 2
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 1,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 1,
+       "IM": 2
+      },
+      "formatted": "{ID-1, IR-1, IV-2, IE-1, IP-2, IO-1, IM-2}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IR": [
+        1,
+        2
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IO": [
+        1,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": true
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": false,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": true,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": true
+       },
+       "IP-2": {
+        "IP-2.1a": true,
+        "IP-2.1b": true,
+        "IP-2.2": true
+       },
+       "IO-1": {
+        "IO-1.1": true,
+        "IO-1.2": true
+       },
+       "IO-2": {
+        "IO-2.1": true,
+        "IO-2.2a": true,
+        "IO-2.2b": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": true
+       },
+       "IM-2": {
+        "IM-2.1": true,
+        "IM-2.2": true
+       }
+      }
+     }
+    }
+   },
+   "hardened_s0": {
+    "tests": {
+     "ID-3.pdet": {
+      "estimate": 0.35169614380979997,
+      "lcb": 0.20491334978979128,
+      "ucb": 0.4580175333762127,
+      "tau": 0.8,
+      "decision": "reject",
+      "method": "percentile cluster bootstrap over the poisoned traces",
+      "clean_removal": {
+       "k": 4547,
+       "n": 825662,
+       "estimate": 0.005507096124079829,
+       "lcb": 0.005319385324034504,
+       "ucb": 0.005699548442171185,
+       "tau": 0.05,
+       "decision": "accept",
+       "naive": "accept"
+      }
+     },
+     "ID-3.pdeg": {
+      "decision": "not evaluated",
+      "note": "the drill trained the baseline recipe only"
+     },
+     "IV-3.drift": {
+      "decision": "inconclusive",
+      "tpr": {
+       "estimate": 1.0,
+       "lcb": 0.9011088807467428,
+       "ucb": 1.0,
+       "tau": 0.9,
+       "decision": "accept",
+       "method": "effective-n CP, deff 6.31",
+       "k": 279,
+       "n": 279
+      },
+      "fpr": {
+       "estimate": 0.0,
+       "lcb": 0.0,
+       "ucb": 0.18250159541295713,
+       "tau": 0.05,
+       "decision": "inconclusive",
+       "method": "effective-n CP, deff 2.63",
+       "k": 0,
+       "n": 60
+      }
+     },
+     "IM-2.sig": {
+      "decision": "accept",
+      "tests": {
+       "i_original": "accept",
+       "ii_one_byte": "reject",
+       "iii_foreign_key": "reject",
+       "iv_anchor_replaced": "reject"
+      }
+     },
+     "IV-1.report": {
+      "decision": "reported",
+      "recall": 0.9,
+      "far_per_h": 0.02770950179342053
+     },
+     "IV-2.recall": {
+      "estimate": 0.9,
+      "lcb": 0.7201385976876682,
+      "ucb": 0.9820433660088199,
+      "tau": 0.5,
+      "decision": "accept",
+      "method": "effective-n CP, design effect 1.44",
+      "exact": {
+       "k": 45,
+       "n": 50,
+       "estimate": 0.9,
+       "lcb": 0.7584473562535243,
+       "ucb": 0.9736902057417738,
+       "tau": 0.5,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "deff": 1.4444444444444442,
+      "k": 45,
+      "n": 50
+     },
+     "IV-2.far": {
+      "estimate": 0.02770950179342053,
+      "lcb": 0.004027531427916438,
+      "ucb": 0.09278173393078222,
+      "tau": 0.25,
+      "decision": "accept",
+      "method": "exact Poisson; dispersion X2/df = 0.92",
+      "exact": {
+       "count": 3,
+       "exposure_h": 108.26611111111112,
+       "estimate": 0.02770950179342053,
+       "lcb": 0.004027531427916438,
+       "ucb": 0.09278173393078222,
+       "tau": 0.25,
+       "decision": "accept",
+       "naive": "accept"
+      },
+      "dispersion": 0.9153574879227052,
+      "count": 3,
+      "hours": 108.26611111111112
+     },
+     "IO-2.load": {
+      "count": 52,
+      "exposure_h": 111.66805555555555,
+      "estimate": 0.4656658499272397,
+      "lcb": 0.3287109575739225,
+      "ucb": 0.6393074587745895,
+      "tau": 6.0,
+      "decision": "accept",
+      "naive": "accept"
+     },
+     "IE-2.xfid": {
+      "decision": "inconclusive",
+      "absolute": {
+       "k": 34,
+       "n": 45,
+       "estimate": 0.7555555555555555,
+       "lcb": 0.577150454948771,
+       "ucb": 0.8870919494718079,
+       "tau": 0.6,
+       "decision": "inconclusive",
+       "naive": "accept"
+      },
+      "constant": {
+       "k": 30,
+       "n": 45,
+       "estimate": 0.6666666666666666,
+       "lcb": 0.483130307231866,
+       "ucb": 0.8198308705658449,
+       "tau": 0.6,
+       "decision": "inconclusive",
+       "naive": "accept"
+      },
+      "comparison": {
+       "b": 4,
+       "c": 0,
+       "deff": 1.0,
+       "p_dependence_robust": 0.0625,
+       "p_independent": 0.0625,
+       "decision": "inconclusive",
+       "decision_independent_units": "inconclusive"
+      }
+     },
+     "IR-1.transfer": {
+      "decision": "reported",
+      "k": 1,
+      "n": 45,
+      "hardening_aware": 1
+     },
+     "IR-1.query": {
+      "decision": "reported",
+      "k_max": 0,
+      "n": 45
+     },
+     "IR-2.asr": {
+      "k": 2,
+      "n": 45,
+      "estimate": 0.044444444444444446,
+      "lcb": 0.003332963256785951,
+      "ucb": 0.17398828869954092,
+      "tau": 0.2,
+      "decision": "accept",
+      "naive": "accept",
+      "planned_pgd_ball": 2,
+      "planned_pgd_eps0.5": 2,
+      "improved_by_eps": {
+       "0.1": 0,
+       "0.25": 0,
+       "0.5": 2
+      },
+      "greedy_by_eps": {
+       "0.1": 0,
+       "0.25": 0,
+       "0.5": 1
+      },
+      "unbounded": 13
+     },
+     "IP-2.ext": {
+      "decision": "accept",
+      "max_ucb95": 0.7929984187965575,
+      "estimates": [
+       0.5025126986985958,
+       0.749143915388252,
+       0.7313637869846328
+      ],
+      "attacker_distribution": [
+       0.9549379467789962,
+       0.9518964984063052,
+       0.9464906323678806
+      ]
+     }
+    },
+    "results": {
+     "demonstrated": {
+      "own": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 0,
+       "IO": 0,
+       "IM": 0
+      },
+      "formatted": "{ID-1, IR-2, IV-2, IE-1}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IP": [
+        0,
+        2
+       ],
+       "IO": [
+        0,
+        2
+       ],
+       "IM": [
+        0,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": false
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": true,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": false,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": false
+       },
+       "IO-1": {
+        "IO-1.1": false,
+        "IO-1.2": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": false
+       }
+      }
+     },
+     "conditional": {
+      "own": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 2,
+       "IM": 2
+      },
+      "rating": {
+       "ID": 1,
+       "IR": 2,
+       "IV": 2,
+       "IE": 1,
+       "IP": 2,
+       "IO": 1,
+       "IM": 2
+      },
+      "formatted": "{ID-1, IR-2, IV-2, IE-1, IP-2, IO-1, IM-2}",
+      "gaps": {
+       "ID": [
+        1,
+        3
+       ],
+       "IV": [
+        2,
+        3
+       ],
+       "IE": [
+        1,
+        2
+       ],
+       "IO": [
+        1,
+        2
+       ]
+      },
+      "requirements": {
+       "ID-1": {
+        "ID-1.1": true,
+        "ID-1.2": true,
+        "ID-1.3": true
+       },
+       "ID-2": {
+        "ID-2.1": true,
+        "ID-2.2": false,
+        "ID-2.3": true
+       },
+       "IR-1": {
+        "IR-1.1": true,
+        "IR-1.2": true
+       },
+       "IR-2": {
+        "IR-2.1": true,
+        "IR-2.2": true
+       },
+       "IV-1": {
+        "IV-1.1": true,
+        "IV-1.2": true
+       },
+       "IV-2": {
+        "IV-2.1": true,
+        "IV-2.2": true
+       },
+       "IV-3": {
+        "IV-3.1": false,
+        "IV-3.2": true
+       },
+       "IE-1": {
+        "IE-1.1": true,
+        "IE-1.2": true
+       },
+       "IE-2": {
+        "IE-2.1": true,
+        "IE-2.2": false
+       },
+       "IP-1": {
+        "IP-1.1": true,
+        "IP-1.2": true
+       },
+       "IP-2": {
+        "IP-2.1a": true,
+        "IP-2.1b": true,
+        "IP-2.2": true
+       },
+       "IO-1": {
+        "IO-1.1": true,
+        "IO-1.2": true
+       },
+       "IO-2": {
+        "IO-2.1": true,
+        "IO-2.2a": true,
+        "IO-2.2b": true
+       },
+       "IM-1": {
+        "IM-1.1": true,
+        "IM-1.2": true
+       },
+       "IM-2": {
+        "IM-2.1": true,
+        "IM-2.2": true
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "meta": {
+  "script": "r9_assess.py",
+  "runtime_s": 0.15821218490600586,
+  "finished_utc": "2026-10-13T04:54:08Z"
+ }
+}

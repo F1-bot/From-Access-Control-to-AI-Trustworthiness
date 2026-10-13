@@ -1,0 +1,95 @@
+# AI-specific requirement rows added to the six assurance dimensions of ND TZI 2.5-004-99
+# (Section 10). The seven hierarchical levels G-1..G-7 are kept; the rows below apply whenever an
+# AI component lies inside the evaluation boundary. Markers as in the standard:
+# '-' absent, '+' appears, '=' retained, '+*' strengthened (automation required).
+alpha_by_guarantee: {1: 0.10, 2: 0.10, 3: 0.10, 4: 0.05, 5: 0.05, 6: 0.01, 7: 0.01}
+evidence_style: ['-', show, show, show, demonstrate, demonstrate, prove]
+dimensions:
+  architecture:
+    rows:
+      - id: AR-AI-1
+        text: The TCB description identifies every AI component in the evaluation boundary (models, data pipelines, inference services, guardrails, agent orchestrators), its interfaces and the I-services it implements.
+        marks: ['+', '=', '=', '=', '=', '=', '=']
+        analogue: AR-1
+      - id: AR-AI-2
+        text: Security-critical functions do not depend solely on a learned component; independent non-learned safeguards (limits, interlocks, rule-based checks) bound the consequences of model errors.
+        marks: ['-', '-', '-', '+', '=', '=', '=']
+        analogue: AR-3
+      - id: AR-AI-3
+        text: Untrusted inputs (user content, retrieved documents, sensor streams, tool outputs) are architecturally separated from instructions and privileged control paths; models execute in an isolated domain.
+        marks: ['-', '-', '-', '-', '+', '=', '=']
+        analogue: AR-5
+  development_environment:
+    rows:
+      - id: DE-AI-1
+        text: The AI life-cycle stages (data acquisition, preparation, training, evaluation, deployment, monitoring, retirement) are defined with documented procedures and exit criteria.
+        marks: ['+', '=', '=', '=', '=', '=', '=']
+        analogue: DE-1
+      - id: DE-AI-2
+        text: Configuration management additionally covers datasets and their manifests, feature definitions, training code, hyper-parameters, random seeds, model artefacts, evaluation results and the AI bill of materials; an automated model registry is required from G-4.
+        marks: ['+', '=', '=', '+*', '=', '=', '=']
+        analogue: DE-4
+      - id: DE-AI-3
+        text: Training is reproducible; re-training from the recorded configuration reproduces the declared metrics within a declared tolerance.
+        marks: ['-', '-', '-', '+', '=', '=', '=']
+        analogue: DE-5
+      - id: DE-AI-4
+        text: Training and evaluation infrastructure (compute, data stores, pipelines) is protected by technical, physical, organisational and personnel measures against unauthorised modification of data, code and artefacts.
+        marks: ['-', '-', '-', '-', '-', '+', '=']
+        analogue: DE-7
+  development_sequence:
+    rows:
+      - id: DS-AI-1
+        text: The functional specification declares the intended purpose, operational domain, performance metrics with acceptance thresholds and the threat model (perturbation set, attacker knowledge, query and poisoning budgets) for every claimed I-service level.
+        marks: ['+', '=', '=', '=', '=', '=', '=']
+        analogue: DS-1
+      - id: DS-AI-2
+        text: Evaluation data are sequestered from development data and the evaluation plan (metrics, thresholds, alpha, sample sizes) is fixed before final testing.
+        marks: ['-', '-', '+', '=', '=', '=', '=']
+        analogue: DS-5
+      - id: DS-AI-3
+        text: Correspondence between declared AI properties and evidence is shown (G-2 to G-4), demonstrated with the results of evaluator replication and independent red-teaming (G-5, G-6) and proved by formal verification of critical properties (G-7).
+        marks: ['-', '+', '=', '=', '+', '=', '+']
+        analogue: correspondence
+  operational_environment:
+    rows:
+      - id: OE-AI-1
+        text: A post-deployment monitoring plan defines performance, drift and incident indicators with thresholds, responsibilities and serious-incident reporting.
+        marks: ['-', '+', '=', '=', '=', '=', '=']
+        analogue: OE-1
+      - id: OE-AI-2
+        text: The deployed model and configuration are verified (digest or signature) to be identical to the evaluated artefacts before activation.
+        marks: ['-', '-', '+', '=', '=', '=', '=']
+        analogue: OE-2
+      - id: OE-AI-3
+        text: Model changes follow controlled change management; pre-determined changes are declared, substantial modifications trigger re-evaluation, and updates are distributed with versioning and rollback.
+        marks: ['-', '-', '-', '+', '=', '=', '=']
+        analogue: OE-3
+  documentation:
+    rows:
+      - id: DO-AI-1
+        text: Model or system card, datasheets, an evaluation report (metrics with confidence bounds, alpha and n), the declared operational domain and limitations, and instructions for use including oversight measures.
+        marks: ['+', '=', '=', '=', '=', '=', '=']
+        analogue: DO-1
+  testing:
+    rows:
+      - id: TE-AI-1
+        text: The test programme covers every claimed I-service level with statistically justified sample sizes (n >= n_min(alpha_G, delta)) and records seeds and data versions so that results can be reproduced.
+        marks: ['+', '=', '=', '=', '=', '=', '=']
+        analogue: TE-1
+      - id: TE-AI-2
+        text: AI-specific weaknesses found in testing are remediated and covered by regression tests before release.
+        marks: ['-', '+', '=', '=', '=', '=', '=']
+        analogue: TE-3
+      - id: TE-AI-3
+        text: The developer performs adaptive adversarial testing (evasion, poisoning, extraction, injection drills) within the declared threat model.
+        marks: ['-', '-', '-', '+', '=', '=', '=']
+        analogue: TE-4
+      - id: TE-AI-4
+        text: The evaluation body replicates a sample of the developer's acceptance tests (G-1, G-2) and, from G-3, all acceptance tests on sequestered data under its control.
+        marks: ['+', '=', '+', '=', '=', '=', '=']
+        analogue: TE-2
+      - id: TE-AI-5
+        text: The evaluation body performs independent adaptive red-teaming (evasion, poisoning, extraction, injection) assuming a moderate (G-5) or high (G-6, G-7) attack potential.
+        marks: ['-', '-', '-', '-', '+', '+', '=']
+        analogue: TE-4

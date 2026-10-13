@@ -1,0 +1,308 @@
+{
+ "poison_source": "test2",
+ "poison_traces": 20,
+ "poison_windows_per_replica": 3449,
+ "replicas": 3,
+ "beta": 0.01,
+ "clean_windows": 825662,
+ "evaluation_attacks": [
+  "A101",
+  "A102",
+  "A103",
+  "A104",
+  "A105",
+  "A301",
+  "A302",
+  "A303",
+  "A304",
+  "A305",
+  "A306",
+  "A307",
+  "A308",
+  "A401",
+  "A402",
+  "A403",
+  "A404",
+  "A405",
+  "A501",
+  "A502",
+  "A503",
+  "A504",
+  "A505",
+  "A506",
+  "A507",
+  "A508",
+  "A509",
+  "A510",
+  "A511",
+  "A512"
+ ],
+ "screening": {
+  "threshold": 5.808258056640625,
+  "poison_windows": 10347,
+  "poison_removed": 3639,
+  "pooled_fraction": 0.35169614380979997,
+  "trace_mean_fraction": 0.39371076330354127,
+  "cluster_bootstrap": {
+   "B": 10000,
+   "seed": 0,
+   "pooled_ci95": [
+    0.2253915362606656,
+    0.4735228686045944
+   ],
+   "pooled_lcb95_one_sided": 0.24507479911859853,
+   "pooled_lcb_one_sided_by_alpha": {
+    "0.1": 0.2693987375586487,
+    "0.05": 0.24507479911859853,
+    "0.01": 0.20491334978979128
+   },
+   "pooled_ucb95_one_sided": 0.4580175333762127
+  },
+  "max_attainable_lcb_traces": 0.8608916593317348,
+  "clean_removed": 4547,
+  "clean_windows": 825662,
+  "clean_removal_rate": 0.005507096124079829,
+  "per_trace": [
+   {
+    "attack_id": "A201",
+    "primitives": [
+     "AP22"
+    ],
+    "windows": 249,
+    "removed": 108,
+    "fraction": 0.43373493975903615
+   },
+   {
+    "attack_id": "A202",
+    "primitives": [
+     "AP02"
+    ],
+    "windows": 1266,
+    "removed": 762,
+    "fraction": 0.6018957345971564
+   },
+   {
+    "attack_id": "A203",
+    "primitives": [
+     "AP15"
+    ],
+    "windows": 51,
+    "removed": 33,
+    "fraction": 0.6470588235294118
+   },
+   {
+    "attack_id": "A204",
+    "primitives": [
+     "AP07"
+    ],
+    "windows": 777,
+    "removed": 285,
+    "fraction": 0.3667953667953668
+   },
+   {
+    "attack_id": "A205",
+    "primitives": [
+     "AP05"
+    ],
+    "windows": 369,
+    "removed": 0,
+    "fraction": 0.0
+   },
+   {
+    "attack_id": "A206",
+    "primitives": [
+     "AP09"
+    ],
+    "windows": 768,
+    "removed": 204,
+    "fraction": 0.265625
+   },
+   {
+    "attack_id": "A207",
+    "primitives": [
+     "AP21"
+    ],
+    "windows": 204,
+    "removed": 114,
+    "fraction": 0.5588235294117647
+   },
+   {
+    "attack_id": "A208",
+    "primitives": [
+     "AP12"
+    ],
+    "windows": 783,
+    "removed": 378,
+    "fraction": 0.4827586206896552
+   },
+   {
+    "attack_id": "A209",
+    "primitives": [
+     "AP11"
+    ],
+    "windows": 597,
+    "removed": 237,
+    "fraction": 0.3969849246231156
+   },
+   {
+    "attack_id": "A210",
+    "primitives": [
+     "AP04"
+    ],
+    "windows": 1263,
+    "removed": 6,
+    "fraction": 0.004750593824228029
+   },
+   {
+    "attack_id": "A211",
+    "primitives": [
+     "AP20"
+    ],
+    "windows": 135,
+    "removed": 84,
+    "fraction": 0.6222222222222222
+   },
+   {
+    "attack_id": "A212",
+    "primitives": [
+     "AP17"
+    ],
+    "windows": 456,
+    "removed": 261,
+    "fraction": 0.5723684210526315
+   },
+   {
+    "attack_id": "A213",
+    "primitives": [
+     "AP14"
+    ],
+    "windows": 762,
+    "removed": 435,
+    "fraction": 0.5708661417322834
+   },
+   {
+    "attack_id": "A214",
+    "primitives": [
+     "AP03"
+    ],
+    "windows": 456,
+    "removed": 0,
+    "fraction": 0.0
+   },
+   {
+    "attack_id": "A215",
+    "primitives": [
+     "AP19"
+    ],
+    "windows": 453,
+    "removed": 189,
+    "fraction": 0.41721854304635764
+   },
+   {
+    "attack_id": "A216",
+    "primitives": [
+     "AP10"
+    ],
+    "windows": 195,
+    "removed": 159,
+    "fraction": 0.8153846153846154
+   },
+   {
+    "attack_id": "A217",
+    "primitives": [
+     "AP23"
+    ],
+    "windows": 552,
+    "removed": 105,
+    "fraction": 0.19021739130434784
+   },
+   {
+    "attack_id": "A218",
+    "primitives": [
+     "AP08"
+    ],
+    "windows": 297,
+    "removed": 258,
+    "fraction": 0.8686868686868687
+   },
+   {
+    "attack_id": "A219",
+    "primitives": [
+     "AP24"
+    ],
+    "windows": 357,
+    "removed": 9,
+    "fraction": 0.025210084033613446
+   },
+   {
+    "attack_id": "A220",
+    "primitives": [
+     "AP25"
+    ],
+    "windows": 357,
+    "removed": 12,
+    "fraction": 0.03361344537815126
+   }
+  ]
+ },
+ "degradation": {
+  "n": 30,
+  "n10_clean_only": 5,
+  "n01_poisoned_only": 0,
+  "recall_clean": 0.9666666666666667,
+  "recall_poisoned": 0.8,
+  "degradation_estimate": 0.16666666666666666,
+  "ucb95": 0.318971181947315,
+  "attacks_lost": [
+   "A104",
+   "A304",
+   "A405",
+   "A501",
+   "A506"
+  ],
+  "attacks_gained": [],
+  "recall_sharing_poisoned_primitive": {
+   "clean": 0.9583333333333334,
+   "poisoned": 0.7916666666666666,
+   "n": 24
+  },
+  "theta_clean": 15.403125412464401,
+  "theta_poisoned": 15.914543254375623,
+  "false_alarms_clean": 3,
+  "false_alarms_poisoned": 5,
+  "rule": "majority vote of three seeds per pipeline",
+  "single_seed_0": {
+   "n10": 1,
+   "n01": 0,
+   "ucb95": 0.14859606865911315
+  },
+  "per_seed_recall": {
+   "0": {
+    "clean": 0.9666666666666667,
+    "poisoned": 0.9333333333333333
+   },
+   "1": {
+    "clean": 0.9666666666666667,
+    "poisoned": 0.8333333333333334
+   },
+   "2": {
+    "clean": 0.9666666666666667,
+    "poisoned": 0.7333333333333333
+   }
+  }
+ },
+ "meta": {
+  "script": "r6_e3.py",
+  "runtime_s": 410.9899802207947,
+  "finished_utc": "2026-10-13T04:21:34Z",
+  "versions": {
+   "python": "3.10.6",
+   "numpy": "1.26.4",
+   "scipy": "1.15.3",
+   "pandas": "2.3.3",
+   "torch": "2.6.0+cu124",
+   "cuda": "12.4",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  }
+ }
+}

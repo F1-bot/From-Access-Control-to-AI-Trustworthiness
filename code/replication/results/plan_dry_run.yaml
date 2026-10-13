@@ -1,0 +1,780 @@
+title: Confirmatory replication of the HAI case study on HAI 21.03 (final procedure, frozen before test data were read)
+reference_profile: 3.CDI.ICS/G-4
+alpha_G: 0.05
+alphas_reported:
+- 0.1
+- 0.05
+- 0.01
+beta: 0.2
+delta: 0.2
+thresholds:
+  recall: 0.5
+  far: 0.25
+  load: 6.0
+  asr: 0.2
+  pdet: 0.8
+  pdet_fpr: 0.05
+  pdeg: 0.1
+  ext: 0.9
+  xfid: 0.6
+  drift_tpr: 0.9
+  drift_fpr: 0.05
+data:
+  campaign: HAI 21.03
+  train:
+  - train1.csv
+  - train2.csv
+  - train3 (first 80%)
+  validation: last 20% of train3
+  test:
+  - test1.csv
+  - test2.csv
+  - test3.csv
+  - test4.csv
+  - test5.csv
+  attack_schedule: data/processed/hai2103_attacks.csv (technical documentation, aligned with the label column)
+  test_normal_hours_e1: 108.26611111111112
+  test_hours_total: 111.66805555555555
+  attacks: 50
+detectors:
+  recipe: as the rated 22.04 detectors (GRU forecaster, W = 60 s, 12 epochs x 250,000 windows)
+  rated:
+  - baseline_s0
+  - hardened_s0
+  variability:
+  - baseline_s0
+  - baseline_s1
+  - baseline_s2
+  - baseline_s3
+  - baseline_s4
+  channels:
+  - P1_B2004
+  - P1_B2016
+  - P1_B3004
+  - P1_B3005
+  - P1_B4002
+  - P1_B4005
+  - P1_B400B
+  - P1_B4022
+  - P1_FCV01D
+  - P1_FCV01Z
+  - P1_FCV02D
+  - P1_FCV02Z
+  - P1_FCV03D
+  - P1_FCV03Z
+  - P1_FT01
+  - P1_FT01Z
+  - P1_FT02
+  - P1_FT02Z
+  - P1_FT03
+  - P1_FT03Z
+  - P1_LCV01D
+  - P1_LCV01Z
+  - P1_LIT01
+  - P1_PCV01D
+  - P1_PCV01Z
+  - P1_PCV02Z
+  - P1_PIT01
+  - P1_PIT02
+  - P1_TIT01
+  - P1_TIT02
+  - P2_24Vdc
+  - P2_CO_rpm
+  - P2_HILout
+  - P2_SIT01
+  - P2_SIT02
+  - P2_VT01
+  - P2_VXT02
+  - P2_VXT03
+  - P2_VYT02
+  - P2_VYT03
+  - P3_FIT01
+  - P3_LCP01D
+  - P3_LCV01D
+  - P3_LIT01
+  - P3_PIT01
+  - P4_HT_FD
+  - P4_HT_LD
+  - P4_HT_PO
+  - P4_HT_PS
+  - P4_LD
+  - P4_ST_FD
+  - P4_ST_GOV
+  - P4_ST_LD
+  - P4_ST_PO
+  - P4_ST_PS
+  - P4_ST_PT01
+  - P4_ST_TT01
+alarm_logic:
+  smoothing_s: 10
+  merge_gap_s: 30
+  on_delay_s: 20
+  definition: exceedances of theta closer than 30 s form an episode; an alarm is raised once the episode has lasted 20 s and ends with it
+  on_delay_rule: smallest on-delay in 10-s steps with which both rated HAI 22.04 detectors met the false-alarm requirement at their planned thresholds on the 22.04
+    test data (ISA-18.2 on-delay)
+  pilot_hai2204:
+    '1':
+      baseline_s0:
+        detected: 38
+        attacks: 58
+        false_alarms: 48
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.6362539363082209
+        val_episodes: 4
+      hardened_s0:
+        detected: 36
+        attacks: 58
+        false_alarms: 26
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.37596117846473165
+        val_episodes: 3
+    '10':
+      baseline_s0:
+        detected: 36
+        attacks: 58
+        false_alarms: 32
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.4479283062504436
+        val_episodes: 3
+      hardened_s0:
+        detected: 36
+        attacks: 58
+        false_alarms: 18
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.2781600032460409
+        val_episodes: 1
+    '20':
+      baseline_s0:
+        detected: 26
+        attacks: 58
+        false_alarms: 6
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.12341185221801428
+        val_episodes: 1
+      hardened_s0:
+        detected: 35
+        attacks: 58
+        false_alarms: 10
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.17676650527890822
+        val_episodes: 1
+    '30':
+      baseline_s0:
+        detected: 23
+        attacks: 58
+        false_alarms: 4
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.09539055867967944
+        val_episodes: 0
+      hardened_s0:
+        detected: 33
+        attacks: 58
+        false_alarms: 6
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.12341185221801428
+        val_episodes: 1
+    '40':
+      baseline_s0:
+        detected: 20
+        attacks: 58
+        false_alarms: 0
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.031219094470384602
+        val_episodes: 0
+      hardened_s0:
+        detected: 33
+        attacks: 58
+        false_alarms: 3
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.080802325953272
+        val_episodes: 1
+    '50':
+      baseline_s0:
+        detected: 15
+        attacks: 58
+        false_alarms: 0
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.031219094470384602
+        val_episodes: 0
+      hardened_s0:
+        detected: 30
+        attacks: 58
+        false_alarms: 1
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.049436712306284776
+        val_episodes: 1
+    '60':
+      baseline_s0:
+        detected: 10
+        attacks: 58
+        false_alarms: 0
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.031219094470384602
+        val_episodes: 0
+      hardened_s0:
+        detected: 22
+        attacks: 58
+        false_alarms: 1
+        normal_hours: 95.95833333333334
+        far_ucb95: 0.049436712306284776
+        val_episodes: 0
+operating_points:
+  rule: 99.9th percentile of the smoothed validation score, raised to the smallest threshold with at most floor(lambda* x T_val) validation alarm episodes (alarm
+    logic with the on-delay) if its validation rate exceeds lambda*
+  lambda_star_per_h: 0.1410290784212544
+  baseline_s0:
+    theta: 18.012214903831914
+    theta_99.9: 18.012214903831914
+    rule_applied: 99.9th percentile kept (validation rate with the on-delay <= lambda*)
+    val_hours: 26.600277777777777
+    on_delay_s: 20
+    val_episodes_99.9_without_on_delay: 6
+    val_episodes_99.9: 1
+    val_episodes: 1
+    pilot_far_per_h: 0.037593592381031944
+    pilot_p_accept_far: 0.9999999328055785
+    pilot_p_accept_far_99.9: 0.9999999328055785
+    pilot_p_accept_far_99.9_without_on_delay: 0.1118609186741543
+  baseline_s1:
+    theta: 18.06340238809668
+    theta_99.9: 18.06340238809668
+    rule_applied: 99.9th percentile kept (validation rate with the on-delay <= lambda*)
+    val_hours: 26.600277777777777
+    on_delay_s: 20
+    val_episodes_99.9_without_on_delay: 6
+    val_episodes_99.9: 1
+    val_episodes: 1
+    pilot_far_per_h: 0.037593592381031944
+    pilot_p_accept_far: 0.9999999328055785
+    pilot_p_accept_far_99.9: 0.9999999328055785
+    pilot_p_accept_far_99.9_without_on_delay: 0.1118609186741543
+  baseline_s2:
+    theta: 19.62764747619638
+    theta_99.9: 19.62764747619638
+    rule_applied: 99.9th percentile kept (validation rate with the on-delay <= lambda*)
+    val_hours: 26.600277777777777
+    on_delay_s: 20
+    val_episodes_99.9_without_on_delay: 6
+    val_episodes_99.9: 1
+    val_episodes: 1
+    pilot_far_per_h: 0.037593592381031944
+    pilot_p_accept_far: 0.9999999328055785
+    pilot_p_accept_far_99.9: 0.9999999328055785
+    pilot_p_accept_far_99.9_without_on_delay: 0.1118609186741543
+  baseline_s3:
+    theta: 18.36849811077185
+    theta_99.9: 18.36849811077185
+    rule_applied: 99.9th percentile kept (validation rate with the on-delay <= lambda*)
+    val_hours: 26.600277777777777
+    on_delay_s: 20
+    val_episodes_99.9_without_on_delay: 6
+    val_episodes_99.9: 1
+    val_episodes: 1
+    pilot_far_per_h: 0.037593592381031944
+    pilot_p_accept_far: 0.9999999328055785
+    pilot_p_accept_far_99.9: 0.9999999328055785
+    pilot_p_accept_far_99.9_without_on_delay: 0.1118609186741543
+  baseline_s4:
+    theta: 16.82416635513314
+    theta_99.9: 16.82416635513314
+    rule_applied: 99.9th percentile kept (validation rate with the on-delay <= lambda*)
+    val_hours: 26.600277777777777
+    on_delay_s: 20
+    val_episodes_99.9_without_on_delay: 6
+    val_episodes_99.9: 1
+    val_episodes: 1
+    pilot_far_per_h: 0.037593592381031944
+    pilot_p_accept_far: 0.9999999328055785
+    pilot_p_accept_far_99.9: 0.9999999328055785
+    pilot_p_accept_far_99.9_without_on_delay: 0.1118609186741543
+  hardened_s0:
+    theta: 15.68723079681418
+    theta_99.9: 15.68723079681418
+    rule_applied: 99.9th percentile kept (validation rate with the on-delay <= lambda*)
+    val_hours: 26.600277777777777
+    on_delay_s: 20
+    val_episodes_99.9_without_on_delay: 8
+    val_episodes_99.9: 2
+    val_episodes: 2
+    pilot_far_per_h: 0.07518718476206389
+    pilot_p_accept_far: 0.9992051049013384
+    pilot_p_accept_far_99.9: 0.9992051049013384
+    pilot_p_accept_far_99.9_without_on_delay: 0.004000876392427646
+procedure:
+  IV-2: 'event recall >= 0.50: exact Clopper-Pearson and effective-n bound with the dependency-graph design effect over attack primitives (decision on the latter);
+    false alarms <= 0.25/h: exact Poisson bound, dispersion check and quasi-Poisson widening'
+  IO-2: alarms per hour over the test period <= 6, exact Poisson bound
+  IE-2: 'process localisation (sum rule) >= 0.60 and superiority over the constant explainer ''P1'' (most frequently targeted process in the schedule): exact one-sided
+    McNemar test with the dependency-graph design effect of the paired differences'
+  IR-2: 'TM-A, success over the ball eps <= 0.5 (0.1, 0.25, 0.5) with the strongest attack: union of the planned PGD (60 steps), the improved PGD (5 restarts, 200
+    steps, greedy warm start) and greedy prediction replay; both PGD variants minimise the smoothed score (as planned) and the improved PGD is also run with an objective
+    adapted to the on-delay (minimum of the smoothed score over every 20-s window); concealment is judged with the deployed alarm logic; detected attacks as units;
+    unbounded ceiling (eps = 5) reported'
+  IR-1: greedy transfer from a surrogate trained on historical normal data; hardening-aware surrogate for the hardened variant; query-based chain (score and label
+    interfaces, Q = 1e3, 1e4, 1e5); reported without threshold
+  IP-2: label-only extraction at Q = 1e4, seeds 0-2, 1-D CNN surrogate; fidelity (balanced agreement) on all time-ordered operational test windows with moving-block
+    (600 s) and test-file cluster bootstrap bounds; attacker distribution reported
+  ID-3: 'poisoning drill, simple replication, beta = 1%; planned sanitiser (trusted model on train1, seed 100, 99.5th percentile of its validation window scores);
+    detection with the poisoned traces as units (percentile cluster bootstrap, B = 10000) and clean removal <= 0.05; degradation: poisoned versus clean pipeline with
+    the same recipe, three seeds each, an attack detected by a pipeline if at least two of its models detect it; exact paired bound'
+  IV-3: 'hourly operating-envelope monitor: share of the readings of the channels shared with HAI 22.04 that lie outside the range of the clean training data; threshold
+    fixed under parameters/drift_monitor; positives = full hours of the HAI 22.04 training files; negatives = hours of the 21.03 test files with more than 90% normal
+    seconds (E5 mask); requirement TPR >= 0.90 and FPR <= 0.05; exact bounds with an effective sample size n/deff, deff = (1 + rho)/(1 - rho) from the lag-1 autocorrelation
+    of the hourly statistic within files (at least 1)'
+  IM-2: 'Ed25519 signature over a release manifest, verified against a trust anchor pinned outside the envelope; tests: original, one modified byte, foreign-key re-signature,
+    replaced anchor'
+  ratings: evidence classes as in the 22.04 study, file replication_evidence.yaml (SHA-256 aef6de8f434b895eaed3333fa3f27b8b8ce08914adf50b8d9c0b816c4d3556d6); demonstrated
+    and conditional ratings
+design_changes_required_by_the_check:
+- item: alarm on-delay
+  reason: the false-alarm failure of the 22.04 study was foreseeable from the validation data; most false alarms there were fleeting (median 10 s); a 20-s on-delay
+    met the requirement for both 22.04 detectors
+  on_delay_s: 20
+- item: operating point
+  reason: the 99.9th percentile is kept only if its validation false-alarm rate predicts acceptance with probability >= 0.8
+- item: drift monitor
+  reason: daily windows are not decidable (1 in-distribution day; 59 needed); with hourly windows the PSI monitor of the 22.04 plan (threshold 0.25) flags 1.00 of
+    the in-distribution training hours, so it is replaced by an operating-envelope monitor calibrated by leave-one-file-out
+  psi_pilot_fpr_training_hours: 1.0
+  envelope_threshold: 0.04492630385487528
+  calibration:
+    lofo_hours: 229
+    lofo_max: 0.04492630385487528
+    validation_hours: 26
+    validation_max: 0.0020975056689342404
+  drift_pilot_hai2305:
+    hours: 249
+    tpr: 1.0
+    min_statistic: 0.08537262872628726
+    channels: 41
+- item: poisoning drill
+  reason: at least 14 traces are needed for a decidable detection test; windows without attack samples cap window-level detection
+  poison_source: test2
+  poison_traces: 20
+  poison_segment: attack interval with the W-second input history
+  poison_windows_per_replica: 3449
+  evaluation_attacks: 30
+  evaluation_attacks_sharing_a_poisoned_primitive: 24
+- item: degradation measurement
+  reason: with single models, training noise alone predicts acceptance with probability 0.55; a three-seed majority vote per pipeline separates the effect of poisoning
+    from training noise
+parameters:
+  constant_explainer: P1
+  target_process_shares:
+    P1: 0.68
+    P2: 0.44
+    P3: 0.16
+  sanitiser:
+    model: results/models/sanitiser_trusted.safetensors
+    threshold: 5.808258056640625
+    sha256: b672f734314736254951a31e65a01ccfbc0d5026624da152dc525c695684a520
+    clean_removal_pre_test: 0.005507096124079829
+  drift_monitor:
+    channels:
+    - P1_B2004
+    - P1_B2016
+    - P1_B3004
+    - P1_B3005
+    - P1_B4002
+    - P1_B4005
+    - P1_B400B
+    - P1_B4022
+    - P1_FCV01D
+    - P1_FCV01Z
+    - P1_FCV02D
+    - P1_FCV02Z
+    - P1_FCV03D
+    - P1_FCV03Z
+    - P1_FT01
+    - P1_FT01Z
+    - P1_FT02
+    - P1_FT02Z
+    - P1_FT03
+    - P1_FT03Z
+    - P1_LCV01D
+    - P1_LCV01Z
+    - P1_LIT01
+    - P1_PCV01D
+    - P1_PCV01Z
+    - P1_PCV02Z
+    - P1_PIT01
+    - P1_PIT02
+    - P1_TIT01
+    - P1_TIT02
+    - P2_24Vdc
+    - P2_SIT01
+    - P2_VT01
+    - P3_FIT01
+    - P3_LCP01D
+    - P3_LCV01D
+    - P3_LIT01
+    - P3_PIT01
+    - P4_HT_FD
+    - P4_HT_PO
+    - P4_HT_PS
+    - P4_LD
+    - P4_ST_FD
+    - P4_ST_GOV
+    - P4_ST_LD
+    - P4_ST_PO
+    - P4_ST_PS
+    - P4_ST_PT01
+    - P4_ST_TT01
+    lo:
+    - -3.5440664291381836
+    - -3.2699761390686035
+    - -2.181199789047241
+    - -2.794395685195923
+    - -1.5613222122192383
+    - -1.434880256652832
+    - -1.4693480730056763
+    - -2.7684173583984375
+    - -1.2710140943527222
+    - -1.260114073753357
+    - -0.656593382358551
+    - -0.6639498472213745
+    - -1.9470112323760986
+    - -1.9545494318008423
+    - -7.690723419189453
+    - -11.602210998535156
+    - -1.2685744762420654
+    - -1.4693586826324463
+    - -2.85264253616333
+    - -3.1957573890686035
+    - -3.4419033527374268
+    - -3.9420902729034424
+    - -3.0787229537963867
+    - -1.7908589839935303
+    - -1.7964282035827637
+    - -0.7920233011245728
+    - -7.25643253326416
+    - -0.6353713274002075
+    - -1.7005168199539185
+    - -1.2651653289794922
+    - -4.837324619293213
+    - -6.7136945724487305
+    - -2.384127140045166
+    - -0.66184401512146
+    - -0.895268440246582
+    - -1.0850812196731567
+    - -1.9080182313919067
+    - -0.585059642791748
+    - -24.368289947509766
+    - -1.0791550874710083
+    - -0.43027201294898987
+    - -2.2269914150238037
+    - -31.915504455566406
+    - -2.8550498485565186
+    - -2.69808030128479
+    - -2.865168809890747
+    - -0.4302719533443451
+    - -7.566878318786621
+    - -3.304433584213257
+    hi:
+    - 0.46628209948539734
+    - 4.868647575378418
+    - 2.8828558921813965
+    - 0.9952440857887268
+    - 2.313175678253174
+    - 0.9358387589454651
+    - 0.9042341113090515
+    - 3.856949806213379
+    - 1.0399012565612793
+    - 1.0433299541473389
+    - 1.5521117448806763
+    - 1.79116952419281
+    - 2.3666038513183594
+    - 2.3937063217163086
+    - 5.923238754272461
+    - 4.0700907707214355
+    - 0.9826300144195557
+    - 0.9042372107505798
+    - 1.2954763174057007
+    - 1.2275851964950562
+    - 4.2653961181640625
+    - 3.9692883491516113
+    - 3.539839506149292
+    - 1.3687313795089722
+    - 1.3237955570220947
+    - 2.044071912765503
+    - 16.575881958007812
+    - 3.7291948795318604
+    - 2.171205759048462
+    - 3.2059683799743652
+    - 5.298402786254883
+    - 8.481781959533691
+    - 2.0306005477905273
+    - 2.4116649627685547
+    - 1.7994685173034668
+    - 1.649450659751892
+    - 1.4641478061676025
+    - 2.7991840839385986
+    - 14.469943046569824
+    - 1.677159070968628
+    - 2.324108839035034
+    - 2.204641819000244
+    - 30.678260803222656
+    - 4.866815567016602
+    - 4.428091049194336
+    - 4.835620403289795
+    - 2.324108839035034
+    - 15.711464881896973
+    - 0.8348257541656494
+    threshold: 0.04492630385487528
+  poison_source_file: test2
+  beta_poison: 0.01
+  planning_design_effect: 2.230127041742287
+  planning_recall: 0.6551724137931034
+feasibility_check:
+- test: IV-2 event recall
+  kind: proportion
+  tau: 0.5
+  direction: '>='
+  alpha: 0.05
+  units: attacks (planning design effect of the 22.04 study)
+  n: 50
+  deff: 2.230127041742287
+  n_eff: 22.420247395833332
+  best_bound: 0.8749248595941987
+  decidable: true
+  delta: 0.2
+  n_min: 42
+  power_at_delta: 0.4941762564453793
+  min_detectable_margin: 0.278
+  flags:
+  - underpowered
+  verdict: underpowered
+- test: IV-2 false-alarm rate (baseline_s0)
+  kind: rate
+  tau: 0.25
+  direction: <=
+  alpha: 0.05
+  units: hours
+  exposure: 108.26611111111112
+  best_bound: 0.02767008293555068
+  decidable: true
+  max_rate_at_power: 0.1410290784212544
+  pilot: 0.037593592381031944
+  p_accept_at_pilot: 0.9999999328055785
+  flags: []
+  verdict: feasible
+- test: IV-2 false-alarm rate (hardened_s0)
+  kind: rate
+  tau: 0.25
+  direction: <=
+  alpha: 0.05
+  units: hours
+  exposure: 108.26611111111112
+  best_bound: 0.02767008293555068
+  decidable: true
+  max_rate_at_power: 0.1410290784212544
+  pilot: 0.07518718476206389
+  p_accept_at_pilot: 0.9992051049013384
+  flags: []
+  verdict: feasible
+- test: IO-2 operator workload
+  kind: rate
+  tau: 6.0
+  direction: <=
+  alpha: 0.05
+  units: hours
+  exposure: 111.66805555555555
+  best_bound: 0.026827119525365015
+  decidable: true
+  max_rate_at_power: 5.434120737049862
+  pilot: 0.07518718476206389
+  p_accept_at_pilot: 1.0
+  flags: []
+  verdict: feasible
+- test: IE-2 localisation
+  kind: proportion
+  tau: 0.6
+  direction: '>='
+  alpha: 0.05
+  units: detected attacks (planning recall 0.655)
+  n: 33
+  deff: 1.0
+  n_eff: 33.0
+  best_bound: 0.9132188107085251
+  decidable: true
+  trivial_baseline: 0.68
+  threshold_admissible: false
+  delta: 0.2
+  n_min: 39
+  power_at_delta: 0.7999636233708031
+  min_detectable_margin: 0.201
+  flags:
+  - inadmissible threshold
+  - underpowered
+  verdict: inadmissible threshold
+- test: IR-2 attack success
+  kind: proportion
+  tau: 0.2
+  direction: <=
+  alpha: 0.05
+  units: detected attacks (planning recall 0.655)
+  n: 33
+  deff: 1.0
+  n_eff: 33.0
+  best_bound: 0.08678118929147494
+  decidable: true
+  delta: 0.2
+  n_min: 14
+  power_at_delta: 1.0
+  min_detectable_margin: 0.154
+  flags: []
+  verdict: feasible
+- test: ID-3 poison detection
+  kind: proportion
+  tau: 0.8
+  direction: '>='
+  alpha: 0.05
+  units: poisoned traces
+  n: 20
+  deff: 1.0
+  n_eff: 20.0
+  best_bound: 0.8608916593317348
+  decidable: true
+  delta: 0.2
+  n_min: 14
+  power_at_delta: 1.0
+  min_detectable_margin: 0.189
+  flags: []
+  verdict: feasible
+- test: ID-3 clean removal
+  kind: proportion
+  tau: 0.05
+  direction: <=
+  alpha: 0.05
+  units: clean training windows; pilot = removal by the planned sanitiser (pre-test)
+  n: 825662
+  deff: 1.0
+  n_eff: 825662.0
+  best_bound: 3.62827263322707e-06
+  decidable: true
+  min_detectable_margin: 0.001
+  pilot: 0.005507096124079829
+  p_accept_at_pilot: 1.0
+  flags: []
+  verdict: feasible
+- test: ID-3 recall degradation
+  kind: proportion
+  tau: 0.1
+  direction: <=
+  alpha: 0.05
+  units: attacks; pilot = loss rate of the 22.04 drill
+  n: 30
+  deff: 1.0
+  n_eff: 30.0
+  best_bound: 0.09503385285530419
+  decidable: true
+  delta: 0.2
+  n_min: 29
+  power_at_delta: 1.0
+  min_detectable_margin: 0.093
+  pilot: 0.0196078431372549
+  p_accept_at_pilot: 0.552070888979912
+  flags:
+  - low predicted acceptance
+  verdict: low predicted acceptance
+- test: IV-3 drift TPR (days)
+  kind: proportion
+  tau: 0.9
+  direction: '>='
+  alpha: 0.05
+  units: days
+  n: 11
+  deff: 1.0
+  n_eff: 11.0
+  best_bound: 0.7615958096191473
+  decidable: false
+  delta: 0.2
+  n_min: 29
+  power_at_delta: 0.0
+  min_detectable_margin: null
+  flags:
+  - not decidable
+  verdict: not decidable
+- test: IV-3 drift FPR (days)
+  kind: proportion
+  tau: 0.05
+  direction: <=
+  alpha: 0.05
+  units: days
+  n: 1
+  deff: 1.0
+  n_eff: 1.0
+  best_bound: 0.95
+  decidable: false
+  delta: 0.2
+  n_min: 59
+  power_at_delta: 0.0
+  min_detectable_margin: null
+  flags:
+  - not decidable
+  verdict: not decidable
+- test: IV-3 drift FPR (hours, PSI > 0.25)
+  kind: proportion
+  tau: 0.05
+  direction: <=
+  alpha: 0.05
+  units: hours; pilot = training hours
+  n: 60
+  deff: 1.0
+  n_eff: 60.0
+  best_bound: 0.04870291331009746
+  decidable: true
+  delta: 0.2
+  n_min: 59
+  power_at_delta: 1.0
+  min_detectable_margin: 0.047
+  pilot: 1.0
+  p_accept_at_pilot: 0.0
+  flags:
+  - low predicted acceptance
+  verdict: low predicted acceptance
+- test: IV-3 drift TPR (hours, envelope monitor)
+  kind: proportion
+  tau: 0.9
+  direction: '>='
+  alpha: 0.05
+  units: hours; pilot = HAI 23.05 hours
+  n: 279
+  deff: 1.0
+  n_eff: 279.0
+  best_bound: 0.9893200483592067
+  decidable: true
+  delta: 0.2
+  n_min: 29
+  power_at_delta: 1.0
+  min_detectable_margin: 0.042
+  pilot: 1.0
+  p_accept_at_pilot: 1.0
+  flags: []
+  verdict: feasible
+- test: IV-3 drift FPR (hours, envelope monitor)
+  kind: proportion
+  tau: 0.05
+  direction: <=
+  alpha: 0.05
+  units: hours; pilot = leave-one-file-out training hours (calibration sample)
+  n: 60
+  deff: 1.0
+  n_eff: 60.0
+  best_bound: 0.04870291331009746
+  decidable: true
+  delta: 0.2
+  n_min: 59
+  power_at_delta: 1.0
+  min_detectable_margin: 0.047
+  pilot: 0.0
+  p_accept_at_pilot: 1.0
+  flags: []
+  verdict: feasible
+pre_freeze_access:
+- training files of HAI 21.03 (all columns)
+- label column of the HAI 21.03 test files
+- column names of the 22.04 training files
+- HAI 23.05 training files (drift pilot)
+- result files of the 22.04 study
+- the column names and the first data row of the 21.03 test1 file, read once on 2026-10-13 while counting tags

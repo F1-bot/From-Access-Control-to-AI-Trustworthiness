@@ -1,0 +1,49 @@
+# Mapping of MITRE ATLAS mitigations (release 2026.09) to services and assurance rows of the
+# criteria. F = the service/row explicitly requires the measure at some level (full);
+# P = the service/row contributes to or partially implements the measure (partial).
+# Codes: legacy services (KD, KA, ..., NP); AI services (ID, IR, IV, IE, IB, IP, IO, IM, IA);
+# assurance rows prefixed with 'G:' (legacy: G:TE-4 etc.; AI rows: G:TE-AI-3 etc.).
+# Mitigations that are organisational publication policies (M0000, M0001) are outside the scope
+# of product evaluation criteria and are deliberately left unmapped.
+source: MITRE ATLAS data release 2026.09 (format 6.0.0), github.com/mitre-atlas/atlas-data
+mitigations:
+  AML.M0000: {map: {}, rationale: "Publication policy of the organisation; not a property of the evaluated system."}
+  AML.M0001: {map: {}, rationale: "Release policy for model artefacts; organisational, outside product evaluation."}
+  AML.M0002: {map: {IP: F, IR: P}, rationale: "Output minimisation is required by IP-1; reducing score fidelity also hampers black-box optimisation (IR)."}
+  AML.M0003: {map: {IR: F}, rationale: "Adversarial training / certified robustness are the subject of IR-2 and IR-3."}
+  AML.M0004: {map: {DR: F, IP: P, IA: P}, rationale: "Per-identity quotas are legacy DR-1; IP-2 and IA-1 require query/iteration limits that rely on them."}
+  AML.M0005: {map: {KA: F, CA: F, KD: P, CD: P, ID: P, IM: P}, rationale: "Access control on model registries and training data at rest is administrative confidentiality and integrity; ID-2/IM-2 restrict modification of datasets and artefacts."}
+  AML.M0006: {map: {IR: P, "G:AR-AI-2": P}, rationale: "Ensembles are one way to meet IR-2/IR-3 and to avoid sole reliance on one learned component."}
+  AML.M0007: {map: {ID: F}, rationale: "Statistical screening of training data is required by ID-3."}
+  AML.M0008: {map: {IV: F, IM: P, IP: P}, rationale: "Drift monitoring is IV-3/IV-4; backdoor scanning is IM-3; leakage testing is IP-2."}
+  AML.M0009: {map: {IR: P, "G:AR-AI-2": P, DS: P}, rationale: "Independent sensors bound the impact of a spoofed input (non-learned safeguards, redundancy)."}
+  AML.M0010: {map: {IR: P}, rationale: "Input restoration is a robustness mitigation evaluated under IR-2 adaptive attacks."}
+  AML.M0011: {map: {IM: F, NC: P}, rationale: "IM-2 prohibits code-executing serialisation formats; TCB integrity limits untrusted code loading."}
+  AML.M0012: {map: {KV: P, KA: P}, rationale: "Encryption of exchanged objects is KV; at-rest encryption supports administrative confidentiality."}
+  AML.M0013: {map: {CV: F, IM: F, NA: P}, rationale: "Digital signatures on exchanged software are CV-1; signed model artefacts are IM-2; signatures provide origin non-repudiation (NA)."}
+  AML.M0014: {map: {IM: F, ID: F, CV: P, NC: P}, rationale: "Digest verification of models (IM-2) and dataset manifests (ID-1/ID-2); integrity checks during exchange and of the TCB."}
+  AML.M0015: {map: {IR: F, NR: P}, rationale: "Runtime adversarial-input detection is IR-4; detections are signalled through audit alarms (NR-3)."}
+  AML.M0016: {map: {IM: F, "G:TE-3": P}, rationale: "IM-1 vulnerability monitoring and IM-2 artefact scanning; legacy testing requires elimination of found weaknesses."}
+  AML.M0017: {map: {IP: P, "G:AR-AI-3": P}, rationale: "Serving models centrally limits white-box exposure (IP-1 exposure minimisation, isolation of model execution)."}
+  AML.M0018: {map: {IO: P, "G:DO-1": P}, rationale: "Operator training against automation bias (IO-2) and user guidance (documentation)."}
+  AML.M0019: {map: {NI: F, KA: P, NR: P, IP: P}, rationale: "Authentication before model access is NI; query monitoring and access policy support confidentiality and IP-1/IP-2."}
+  AML.M0020: {map: {IR: P, IA: P, IP: P, IV: P}, rationale: "Guardrails contribute to injection resistance (IR-3), mediation of unsafe tool requests (IA-2), leakage prevention (IP) and unsupported-claim filtering (IV-4)."}
+  AML.M0021: {map: {IR: P, IV: P}, rationale: "System-level behavioural guidelines are weak, non-enforced controls; partial support for IR and IV."}
+  AML.M0022: {map: {IR: P, IV: P, IB: P}, rationale: "Alignment fine-tuning reduces jailbreak success, confabulation and harmful bias but gives no enforced guarantee."}
+  AML.M0023: {map: {IM: F, ID: P}, rationale: "The AI bill of materials is required by IM-1 and records dataset provenance."}
+  AML.M0024: {map: {NR: F, IA: P, IE: P}, rationale: "Logging inputs, outputs and agent steps is registration (NR-2..NR-5); IA-1 and IE-2 require actions and explanations to be logged."}
+  AML.M0025: {map: {ID: F}, rationale: "Dataset provenance records are required by ID-1 (documentation) and ID-4 (attestation)."}
+  AML.M0026: {map: {IA: F, "NO": P, KA: P}, rationale: "Least-privilege agent permissions are IA-2; role separation and administrative access control support them."}
+  AML.M0027: {map: {IA: F, "NO": P, KA: P}, rationale: "Delegated, lifecycle-managed agent identity is IA-2."}
+  AML.M0028: {map: {IA: F, KA: P}, rationale: "Tool permissions with delegated access are IA-2."}
+  AML.M0029: {map: {IO: F, IA: F}, rationale: "Human approval of agent actions is IO-2 and the high-impact-action rule of IA-2."}
+  AML.M0030: {map: {IA: F, IR: P}, rationale: "Untrusted content must not trigger privileged actions (IA-2); architectural separation of instructions (IR-3)."}
+  AML.M0031: {map: {IA: P, ID: P, CO: P}, rationale: "Agent memory is mutable state whose integrity, isolation, audit and recovery relate to data integrity, mediation and rollback."}
+  AML.M0032: {map: {IA: F, NC: P, "G:AR-AI-3": P}, rationale: "Enforced boundaries and isolated execution for agent components (IA-2 sandboxing, IA-3 mediation); domain separation of the TCB."}
+  AML.M0033: {map: {IA: P, IR: P}, rationale: "Schema validation and sanitisation of tool inputs/outputs support mediation and injection resistance."}
+  AML.M0034: {map: {IR: P, NI: P}, rationale: "Deepfake detection hardens inputs and multi-factor identification against synthetic media."}
+  AML.M0035: {map: {"G:TE-AI-3": F, "G:TE-AI-5": F, "G:TE-4": P, IR: P}, rationale: "Red-teaming is an assurance activity (developer adaptive testing TE-AI-3, independent adaptive red-teaming TE-AI-5); legacy penetration testing covers it partially."}
+  AML.M0036: {map: {DR: F, IA: P}, rationale: "Resource limits are legacy DR; agent iteration and spending limits are IA-1."}
+  AML.M0037: {map: {IA: F, "NO": P}, rationale: "Pre-authorised maximum authority under complete mediation is IA-2/IA-3."}
+  AML.M0038: {map: {IA: P, IO: P}, rationale: "Objective-drift detection supports policy enforcement (IA-3) and human oversight."}
+  AML.M0039: {map: {NR: P}, rationale: "Decoys raise high-confidence alarms (NR-3/NR-5); no AI-specific service is required."}

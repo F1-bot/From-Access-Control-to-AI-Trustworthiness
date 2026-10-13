@@ -1,0 +1,3409 @@
+{
+ "plan_sha256": "da8704e640f427f885627b25fd175527b6c468ec12717675e8fceeae04b21783",
+ "constant_explainer": "P1",
+ "test_hours_total": 111.66805555555555,
+ "variants": {
+  "baseline_s0": {
+   "theta": 18.012214903831914,
+   "aggregate": {
+    "events_detected": 44,
+    "events": 50,
+    "event_recall": 0.88,
+    "false_alarms": 6,
+    "normal_hours": 108.26611111111112,
+    "far_per_h": 0.05541900358684106,
+    "alarms_per_h": 0.5104414124202435,
+    "point_precision": 0.0,
+    "point_recall": 0.0,
+    "point_f1": 0.0,
+    "ttd_median_s": 29.0,
+    "ttd_p90_s": 106.80000000000001,
+    "detected_vector": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   "ttd": [
+    102,
+    43,
+    116,
+    25,
+    29,
+    66,
+    87,
+    20,
+    50,
+    null,
+    41,
+    49,
+    108,
+    116,
+    null,
+    30,
+    50,
+    42,
+    null,
+    29,
+    19,
+    168,
+    25,
+    null,
+    null,
+    7,
+    34,
+    104,
+    34,
+    19,
+    25,
+    27,
+    18,
+    165,
+    20,
+    69,
+    27,
+    19,
+    64,
+    27,
+    23,
+    17,
+    23,
+    17,
+    28,
+    18,
+    null,
+    29,
+    17,
+    30
+   ],
+   "recall_design_effect": 1.196969696969697,
+   "dispersion": {
+    "hourly_counts": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "hourly_exposure_h": [
+     0.913333,
+     1.0,
+     0.956111,
+     0.986389,
+     0.944167,
+     0.966667,
+     0.958611,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.000278,
+     0.943611,
+     1.0,
+     0.866111,
+     0.985,
+     0.993611,
+     0.911389,
+     0.949167,
+     1.0,
+     0.912222,
+     1.0,
+     0.875278,
+     1.0,
+     0.928056,
+     1.0,
+     0.866389,
+     1.0,
+     0.970833,
+     1.0,
+     0.941111,
+     0.912778,
+     1.0,
+     0.941111,
+     1.0,
+     1.0,
+     0.906667,
+     0.932222,
+     1.0,
+     0.955833,
+     1.0,
+     1.0,
+     0.950278,
+     0.950278,
+     1.0,
+     0.000278,
+     0.983333,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.946667,
+     1.0,
+     0.866389,
+     1.0,
+     1.0,
+     0.930833,
+     1.0,
+     0.953889,
+     0.96,
+     1.0,
+     0.919722,
+     0.9975,
+     0.952778,
+     1.0,
+     0.9125,
+     1.0,
+     1.0,
+     0.000278,
+     0.896111,
+     0.910556,
+     1.0,
+     0.950278,
+     0.96,
+     0.911667,
+     1.0,
+     1.0,
+     0.95,
+     1.0,
+     1.0,
+     0.000278,
+     0.918889,
+     1.0,
+     0.911667,
+     1.0,
+     1.0,
+     0.912222,
+     0.95,
+     0.926944,
+     1.0,
+     0.940833,
+     1.0,
+     1.0,
+     0.961389,
+     1.0,
+     0.969167,
+     0.916389,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.860556,
+     0.910556,
+     0.666944
+    ],
+    "dispersion_x2_over_df": 0.9135262627577241
+   },
+   "alarms_total": 57,
+   "explanation": {
+    "n_detected": 44,
+    "k_model": 33,
+    "k_constant": 30,
+    "b_model_only": 3,
+    "c_constant_only": 0,
+    "deff_pairs": 1.0,
+    "p_one_sided_independent": 0.125,
+    "p_reverse_independent": 1.0,
+    "p_one_sided_dependence_robust": 0.125,
+    "p_reverse_dependence_robust": 1.0,
+    "model_only_attacks": [
+     "A305",
+     "A507",
+     "A511"
+    ],
+    "constant_only_attacks": [],
+    "random_expected_accuracy": 0.4585326953748007,
+    "tag_top5_hits": 20,
+    "tag_top5_chance_rate": 0.10769433915366933,
+    "records": [
+     {
+      "attack_id": "A101",
+      "test_file": "test1",
+      "primitives": [
+       "AP01"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P2_SIT02",
+       "P2_SIT01",
+       "P4_HT_PO",
+       "P3_LCV01D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A102",
+      "test_file": "test1",
+      "primitives": [
+       "AP06"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03Z",
+       "P1_FT03Z",
+       "P1_FCV03D",
+       "P1_LCV01D",
+       "P1_FT01Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A103",
+      "test_file": "test1",
+      "primitives": [
+       "AP13"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P1_LIT01",
+       "P4_ST_PT01",
+       "P1_FT01",
+       "P1_PCV01D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A104",
+      "test_file": "test1",
+      "primitives": [
+       "AP18"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B3005",
+       "P1_B4005",
+       "P1_TIT02",
+       "P2_VYT02",
+       "P2_SIT02"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A105",
+      "test_file": "test1",
+      "primitives": [
+       "AP16"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_PCV01D",
+       "P3_LCV01D",
+       "P1_LIT01",
+       "P1_B4002",
+       "P2_VT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A201",
+      "test_file": "test2",
+      "primitives": [
+       "AP22"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B4005",
+       "P1_B4002",
+       "P1_PCV01D",
+       "P3_LCV01D",
+       "P2_VXT02"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A202",
+      "test_file": "test2",
+      "primitives": [
+       "AP02"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P1_PIT01",
+       "P1_LIT01",
+       "P2_SIT02",
+       "P2_SIT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A203",
+      "test_file": "test2",
+      "primitives": [
+       "AP15"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P1_FT01Z",
+       "P1_LCV01Z",
+       "P1_FT01",
+       "P4_ST_PT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A204",
+      "test_file": "test2",
+      "primitives": [
+       "AP07"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P4_ST_PT01",
+       "P1_FT01Z",
+       "P1_FCV03D",
+       "P1_FT03Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A206",
+      "test_file": "test2",
+      "primitives": [
+       "AP09"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_FCV03Z",
+       "P1_PIT02",
+       "P1_FT02Z",
+       "P4_HT_LD"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A207",
+      "test_file": "test2",
+      "primitives": [
+       "AP21"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B4005",
+       "P1_PCV01D",
+       "P1_B4002",
+       "P3_LCV01D",
+       "P3_LIT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A208",
+      "test_file": "test2",
+      "primitives": [
+       "AP12"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LCV01D",
+       "P1_LIT01",
+       "P1_FT01Z",
+       "P1_LCV01Z",
+       "P1_FT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A209",
+      "test_file": "test2",
+      "primitives": [
+       "AP11"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P4_ST_PT01",
+       "P1_LIT01",
+       "P1_FT01Z",
+       "P1_PCV01D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A211",
+      "test_file": "test2",
+      "primitives": [
+       "AP20"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P2_SIT02",
+       "P2_CO_rpm",
+       "P2_SIT01",
+       "P1_B4005",
+       "P1_PCV01Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A212",
+      "test_file": "test2",
+      "primitives": [
+       "AP17"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B4002",
+       "P1_B2004",
+       "P1_B3004",
+       "P3_LCV01D",
+       "P1_TIT02"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A213",
+      "test_file": "test2",
+      "primitives": [
+       "AP14"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FT01Z",
+       "P1_LIT01",
+       "P4_ST_PT01",
+       "P1_FCV03Z",
+       "P1_FCV03D"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A215",
+      "test_file": "test2",
+      "primitives": [
+       "AP19"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_PCV01Z",
+       "P1_FCV03D",
+       "P1_TIT02",
+       "P2_VXT02",
+       "P2_VT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A216",
+      "test_file": "test2",
+      "primitives": [
+       "AP10"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_FCV03Z",
+       "P1_FT03",
+       "P1_FT03Z",
+       "P1_LCV01D"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A217",
+      "test_file": "test2",
+      "primitives": [
+       "AP23"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B4005",
+       "P1_PCV01D",
+       "P1_B4002",
+       "P1_B2004",
+       "P1_FCV03D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A218",
+      "test_file": "test2",
+      "primitives": [
+       "AP08"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_PIT01",
+       "P1_FCV03Z",
+       "P4_ST_PT01",
+       "P1_FT01Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A301",
+      "test_file": "test3",
+      "primitives": [
+       "AP15",
+       "AP06"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P4_ST_PT01",
+       "P1_LCV01Z",
+       "P1_PCV01D",
+       "P1_FT01Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A302",
+      "test_file": "test3",
+      "primitives": [
+       "AP02",
+       "AP06"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P1_PCV01D",
+       "P1_PIT01",
+       "P1_FT01Z",
+       "P1_FT03Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A303",
+      "test_file": "test3",
+      "primitives": [
+       "AP03",
+       "AP13"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P1_LIT01",
+       "P1_FT01Z",
+       "P4_ST_PT01",
+       "P1_FT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A304",
+      "test_file": "test3",
+      "primitives": [
+       "AP16",
+       "AP21"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B4005",
+       "P3_LCV01D",
+       "P1_B3004",
+       "P1_PCV01D",
+       "P1_B2004"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A305",
+      "test_file": "test3",
+      "primitives": [
+       "AP18",
+       "AP22"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P2",
+      "process_hit": true,
+      "constant_hit": false,
+      "top_tags": [
+       "P2_VT01",
+       "P2_SIT02",
+       "P2_SIT01",
+       "P2_CO_rpm",
+       "P2_VYT03"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A306",
+      "test_file": "test3",
+      "primitives": [
+       "AP01",
+       "AP16"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV01D",
+       "P1_B4002",
+       "P3_LCV01D",
+       "P2_VT01",
+       "P1_LIT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A307",
+      "test_file": "test3",
+      "primitives": [
+       "AP08",
+       "AP21"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_B4005",
+       "P1_FCV03Z",
+       "P1_B3004",
+       "P1_PCV01D"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A308",
+      "test_file": "test3",
+      "primitives": [
+       "AP14",
+       "AP20"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LIT01",
+       "P1_FT01Z",
+       "P2_CO_rpm",
+       "P2_SIT02",
+       "P2_SIT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A401",
+      "test_file": "test4",
+      "primitives": [
+       "AP03",
+       "AP12"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P1_LIT01",
+       "P1_FT01Z",
+       "P1_LCV01D",
+       "P1_FCV03Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A402",
+      "test_file": "test4",
+      "primitives": [
+       "AP07",
+       "AP25"
+      ],
+      "target_processes": [
+       "P1",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P1_FT03Z",
+       "P1_FCV03D",
+       "P1_LCV01D",
+       "P1_FT03"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.6140350877192983
+     },
+     {
+      "attack_id": "A403",
+      "test_file": "test4",
+      "primitives": [
+       "AP12",
+       "AP25"
+      ],
+      "target_processes": [
+       "P1",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LIT01",
+       "P1_FT01Z",
+       "P4_ST_PT01",
+       "P1_LCV01D",
+       "P2_VT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.6140350877192983
+     },
+     {
+      "attack_id": "A404",
+      "test_file": "test4",
+      "primitives": [
+       "AP19",
+       "AP14"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LIT01",
+       "P1_FCV03D",
+       "P1_LCV01D",
+       "P1_PCV01Z",
+       "P1_FCV02Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A405",
+      "test_file": "test4",
+      "primitives": [
+       "AP20",
+       "AP25"
+      ],
+      "target_processes": [
+       "P2",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B4005",
+       "P2_SIT02",
+       "P2_SIT01",
+       "P2_CO_rpm",
+       "P1_B4002"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.2631578947368421
+     },
+     {
+      "attack_id": "A501",
+      "test_file": "test5",
+      "primitives": [
+       "AP03",
+       "AP22"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_B4005",
+       "P1_PCV01D",
+       "P1_B4002",
+       "P1_B2004",
+       "P3_LIT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A502",
+      "test_file": "test5",
+      "primitives": [
+       "AP09",
+       "AP18"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_B3005",
+       "P1_TIT02",
+       "P1_PCV01D",
+       "P1_FCV03Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A503",
+      "test_file": "test5",
+      "primitives": [
+       "AP12",
+       "AP18"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_B3004",
+       "P1_B3005",
+       "P1_LIT01",
+       "P1_LCV01D",
+       "P2_SIT02"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A504",
+      "test_file": "test5",
+      "primitives": [
+       "AP08",
+       "AP25"
+      ],
+      "target_processes": [
+       "P1",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03Z",
+       "P1_FCV03D",
+       "P1_PIT01",
+       "P1_FT01Z",
+       "P1_FT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.6140350877192983
+     },
+     {
+      "attack_id": "A505",
+      "test_file": "test5",
+      "primitives": [
+       "AP11",
+       "AP20"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LIT01",
+       "P2_SIT02",
+       "P2_SIT01",
+       "P2_CO_rpm",
+       "P1_B4005"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A506",
+      "test_file": "test5",
+      "primitives": [
+       "AP19",
+       "AP25"
+      ],
+      "target_processes": [
+       "P2",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_PCV01Z",
+       "P1_TIT02",
+       "P1_B3004",
+       "P1_B2004"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.2631578947368421
+     },
+     {
+      "attack_id": "A507",
+      "test_file": "test5",
+      "primitives": [
+       "AP20",
+       "AP21"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P2",
+      "process_hit": true,
+      "constant_hit": false,
+      "top_tags": [
+       "P2_VXT03",
+       "P2_VYT03",
+       "P2_VXT02",
+       "P2_VYT02",
+       "P1_B4005"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A508",
+      "test_file": "test5",
+      "primitives": [
+       "AP10",
+       "AP15"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_FCV03Z",
+       "P1_PIT01",
+       "P1_FT01Z",
+       "P1_LCV01Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A510",
+      "test_file": "test5",
+      "primitives": [
+       "AP11",
+       "AP14"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LIT01",
+       "P1_LCV01D",
+       "P1_FT01Z",
+       "P1_LCV01Z",
+       "P1_B4005"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A511",
+      "test_file": "test5",
+      "primitives": [
+       "AP23",
+       "AP25"
+      ],
+      "target_processes": [
+       "P2",
+       "P3"
+      ],
+      "top_process": "P2",
+      "process_hit": true,
+      "constant_hit": false,
+      "top_tags": [
+       "P2_VT01",
+       "P2_SIT02",
+       "P2_SIT01",
+       "P2_CO_rpm",
+       "P2_VYT03"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.2631578947368421
+     },
+     {
+      "attack_id": "A512",
+      "test_file": "test5",
+      "primitives": [
+       "AP06",
+       "AP09"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P1_PIT01",
+       "P1_FCV03D",
+       "P1_FCV03Z",
+       "P4_ST_PT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.5263157894736842
+     }
+    ]
+   }
+  },
+  "baseline_s1": {
+   "theta": 18.06340238809668,
+   "aggregate": {
+    "events_detected": 42,
+    "events": 50,
+    "event_recall": 0.84,
+    "false_alarms": 7,
+    "normal_hours": 108.26611111111112,
+    "far_per_h": 0.06465550418464791,
+    "alarms_per_h": 0.5193965249188442,
+    "point_precision": 0.0,
+    "point_recall": 0.0,
+    "point_f1": 0.0,
+    "ttd_median_s": 29.0,
+    "ttd_p90_s": 103.8,
+    "detected_vector": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   "ttd": [
+    102,
+    42,
+    117,
+    25,
+    28,
+    66,
+    87,
+    20,
+    50,
+    null,
+    41,
+    null,
+    100,
+    116,
+    null,
+    31,
+    51,
+    42,
+    null,
+    29,
+    19,
+    null,
+    25,
+    null,
+    null,
+    7,
+    34,
+    104,
+    34,
+    20,
+    27,
+    25,
+    18,
+    165,
+    20,
+    67,
+    28,
+    19,
+    127,
+    26,
+    22,
+    17,
+    24,
+    17,
+    30,
+    18,
+    null,
+    29,
+    17,
+    30
+   ]
+  },
+  "baseline_s2": {
+   "theta": 19.62764747619638,
+   "aggregate": {
+    "events_detected": 42,
+    "events": 50,
+    "event_recall": 0.84,
+    "false_alarms": 9,
+    "normal_hours": 108.26611111111112,
+    "far_per_h": 0.08312850538026159,
+    "alarms_per_h": 0.5104414124202435,
+    "point_precision": 0.0,
+    "point_recall": 0.0,
+    "point_f1": 0.0,
+    "ttd_median_s": 30.0,
+    "ttd_p90_s": 115.8,
+    "detected_vector": [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   "ttd": [
+    102,
+    null,
+    114,
+    28,
+    30,
+    66,
+    87,
+    20,
+    50,
+    null,
+    43,
+    49,
+    170,
+    116,
+    null,
+    null,
+    49,
+    119,
+    null,
+    29,
+    19,
+    168,
+    26,
+    null,
+    null,
+    7,
+    34,
+    104,
+    35,
+    31,
+    27,
+    29,
+    20,
+    274,
+    20,
+    79,
+    29,
+    19,
+    64,
+    27,
+    26,
+    17,
+    28,
+    17,
+    34,
+    18,
+    null,
+    29,
+    17,
+    30
+   ]
+  },
+  "baseline_s3": {
+   "theta": 18.36849811077185,
+   "aggregate": {
+    "events_detected": 44,
+    "events": 50,
+    "event_recall": 0.88,
+    "false_alarms": 9,
+    "normal_hours": 108.26611111111112,
+    "far_per_h": 0.08312850538026159,
+    "alarms_per_h": 0.5552169749132474,
+    "point_precision": 0.0,
+    "point_recall": 0.0,
+    "point_f1": 0.0,
+    "ttd_median_s": 29.5,
+    "ttd_p90_s": 101.10000000000001,
+    "detected_vector": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   "ttd": [
+    102,
+    43,
+    40,
+    24,
+    29,
+    66,
+    87,
+    20,
+    50,
+    null,
+    42,
+    49,
+    99,
+    116,
+    null,
+    30,
+    50,
+    42,
+    null,
+    30,
+    19,
+    168,
+    26,
+    null,
+    null,
+    7,
+    34,
+    104,
+    33,
+    19,
+    26,
+    29,
+    19,
+    165,
+    20,
+    67,
+    28,
+    19,
+    64,
+    26,
+    22,
+    17,
+    26,
+    17,
+    29,
+    18,
+    null,
+    29,
+    17,
+    30
+   ]
+  },
+  "baseline_s4": {
+   "theta": 16.82416635513314,
+   "aggregate": {
+    "events_detected": 44,
+    "events": 50,
+    "event_recall": 0.88,
+    "false_alarms": 7,
+    "normal_hours": 108.26611111111112,
+    "far_per_h": 0.06465550418464791,
+    "alarms_per_h": 0.5462618624146466,
+    "point_precision": 0.0,
+    "point_recall": 0.0,
+    "point_f1": 0.0,
+    "ttd_median_s": 26.5,
+    "ttd_p90_s": 102.7,
+    "detected_vector": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   "ttd": [
+    102,
+    43,
+    38,
+    23,
+    27,
+    66,
+    87,
+    20,
+    50,
+    null,
+    41,
+    49,
+    109,
+    115,
+    null,
+    25,
+    48,
+    41,
+    null,
+    26,
+    19,
+    168,
+    25,
+    null,
+    null,
+    7,
+    34,
+    103,
+    33,
+    17,
+    24,
+    25,
+    17,
+    140,
+    20,
+    18,
+    27,
+    19,
+    64,
+    25,
+    20,
+    17,
+    21,
+    17,
+    26,
+    18,
+    null,
+    28,
+    17,
+    30
+   ]
+  },
+  "hardened_s0": {
+   "theta": 15.68723079681418,
+   "aggregate": {
+    "events_detected": 45,
+    "events": 50,
+    "event_recall": 0.9,
+    "false_alarms": 3,
+    "normal_hours": 108.26611111111112,
+    "far_per_h": 0.02770950179342053,
+    "alarms_per_h": 0.4656658499272397,
+    "point_precision": 0.0,
+    "point_recall": 0.0,
+    "point_f1": 0.0,
+    "ttd_median_s": 29.0,
+    "ttd_p90_s": 60.80000000000001,
+    "detected_vector": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   "ttd": [
+    88,
+    37,
+    37,
+    25,
+    31,
+    66,
+    87,
+    20,
+    51,
+    null,
+    46,
+    49,
+    56,
+    41,
+    null,
+    29,
+    53,
+    41,
+    null,
+    28,
+    19,
+    168,
+    29,
+    null,
+    24,
+    7,
+    34,
+    24,
+    36,
+    18,
+    27,
+    31,
+    20,
+    46,
+    26,
+    24,
+    28,
+    26,
+    64,
+    28,
+    22,
+    23,
+    24,
+    23,
+    28,
+    18,
+    null,
+    31,
+    23,
+    34
+   ],
+   "recall_design_effect": 1.4444444444444442,
+   "dispersion": {
+    "hourly_counts": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "hourly_exposure_h": [
+     0.913333,
+     1.0,
+     0.956111,
+     0.986389,
+     0.944167,
+     0.966667,
+     0.958611,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.000278,
+     0.943611,
+     1.0,
+     0.866111,
+     0.985,
+     0.993611,
+     0.911389,
+     0.949167,
+     1.0,
+     0.912222,
+     1.0,
+     0.875278,
+     1.0,
+     0.928056,
+     1.0,
+     0.866389,
+     1.0,
+     0.970833,
+     1.0,
+     0.941111,
+     0.912778,
+     1.0,
+     0.941111,
+     1.0,
+     1.0,
+     0.906667,
+     0.932222,
+     1.0,
+     0.955833,
+     1.0,
+     1.0,
+     0.950278,
+     0.950278,
+     1.0,
+     0.000278,
+     0.983333,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.946667,
+     1.0,
+     0.866389,
+     1.0,
+     1.0,
+     0.930833,
+     1.0,
+     0.953889,
+     0.96,
+     1.0,
+     0.919722,
+     0.9975,
+     0.952778,
+     1.0,
+     0.9125,
+     1.0,
+     1.0,
+     0.000278,
+     0.896111,
+     0.910556,
+     1.0,
+     0.950278,
+     0.96,
+     0.911667,
+     1.0,
+     1.0,
+     0.95,
+     1.0,
+     1.0,
+     0.000278,
+     0.918889,
+     1.0,
+     0.911667,
+     1.0,
+     1.0,
+     0.912222,
+     0.95,
+     0.926944,
+     1.0,
+     0.940833,
+     1.0,
+     1.0,
+     0.961389,
+     1.0,
+     0.969167,
+     0.916389,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.860556,
+     0.910556,
+     0.666944
+    ],
+    "dispersion_x2_over_df": 0.9153574879227052
+   },
+   "alarms_total": 52,
+   "explanation": {
+    "n_detected": 45,
+    "k_model": 34,
+    "k_constant": 30,
+    "b_model_only": 4,
+    "c_constant_only": 0,
+    "deff_pairs": 1.0,
+    "p_one_sided_independent": 0.0625,
+    "p_reverse_independent": 1.0,
+    "p_one_sided_dependence_robust": 0.0625,
+    "p_reverse_dependence_robust": 1.0,
+    "model_only_attacks": [
+     "A220",
+     "A305",
+     "A507",
+     "A511"
+    ],
+    "constant_only_attacks": [],
+    "random_expected_accuracy": 0.4502923976608188,
+    "tag_top5_hits": 19,
+    "tag_top5_chance_rate": 0.10530113161692112,
+    "records": [
+     {
+      "attack_id": "A101",
+      "test_file": "test1",
+      "primitives": [
+       "AP01"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P1_FCV02Z",
+       "P1_FT01Z",
+       "P4_ST_PS",
+       "P4_ST_PO"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A102",
+      "test_file": "test1",
+      "primitives": [
+       "AP06"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_B3005",
+       "P1_FT03Z",
+       "P1_FT03",
+       "P1_FT01Z",
+       "P1_PIT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A103",
+      "test_file": "test1",
+      "primitives": [
+       "AP13"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FT01",
+       "P1_B3005",
+       "P1_FT03",
+       "P1_B3004",
+       "P3_LIT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A104",
+      "test_file": "test1",
+      "primitives": [
+       "AP18"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B2016",
+       "P1_FT03",
+       "P1_B4022",
+       "P1_B3005",
+       "P1_FCV01D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A105",
+      "test_file": "test1",
+      "primitives": [
+       "AP16"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B4022",
+       "P1_B2016",
+       "P2_VT01",
+       "P1_FCV01Z",
+       "P1_FT03Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A201",
+      "test_file": "test2",
+      "primitives": [
+       "AP22"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_PCV01D",
+       "P3_LCV01D",
+       "P1_FCV03D",
+       "P1_FCV03Z",
+       "P1_TIT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A202",
+      "test_file": "test2",
+      "primitives": [
+       "AP02"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P4_ST_PO",
+       "P4_ST_PS",
+       "P1_FCV01D",
+       "P1_PIT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A203",
+      "test_file": "test2",
+      "primitives": [
+       "AP15"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P1_LCV01D",
+       "P1_FT01Z",
+       "P1_FT01",
+       "P4_ST_PT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A204",
+      "test_file": "test2",
+      "primitives": [
+       "AP07"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LIT01",
+       "P1_FT03",
+       "P1_PIT01",
+       "P1_B3005",
+       "P1_FCV03Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A206",
+      "test_file": "test2",
+      "primitives": [
+       "AP09"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_FCV03Z",
+       "P1_FT03",
+       "P1_B3004",
+       "P1_B4002"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A207",
+      "test_file": "test2",
+      "primitives": [
+       "AP21"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P3_LCV01D",
+       "P1_PCV01D",
+       "P1_B400B",
+       "P4_HT_PS",
+       "P1_FCV03D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A208",
+      "test_file": "test2",
+      "primitives": [
+       "AP12"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FT01",
+       "P1_FCV03Z",
+       "P1_FCV03D",
+       "P3_LIT01",
+       "P1_B3005"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A209",
+      "test_file": "test2",
+      "primitives": [
+       "AP11"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_B3004",
+       "P1_LIT01",
+       "P1_FCV03D",
+       "P1_FT01",
+       "P1_B3005"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A211",
+      "test_file": "test2",
+      "primitives": [
+       "AP20"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P2_CO_rpm",
+       "P2_SIT01",
+       "P2_SIT02",
+       "P1_B4022"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A212",
+      "test_file": "test2",
+      "primitives": [
+       "AP17"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P2_VT01",
+       "P2_VYT02",
+       "P2_VXT02",
+       "P4_HT_PO",
+       "P1_FT03Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A213",
+      "test_file": "test2",
+      "primitives": [
+       "AP14"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FT01",
+       "P1_FCV03Z",
+       "P1_B3005",
+       "P1_FCV03D",
+       "P3_LIT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A215",
+      "test_file": "test2",
+      "primitives": [
+       "AP19"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P1_B4002",
+       "P1_PCV01Z",
+       "P1_FT03",
+       "P1_FT02",
+       "P2_CO_rpm"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A216",
+      "test_file": "test2",
+      "primitives": [
+       "AP10"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_FCV03Z",
+       "P1_FT03",
+       "P1_FT03Z",
+       "P1_LCV01D"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A217",
+      "test_file": "test2",
+      "primitives": [
+       "AP23"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P3_LCV01D",
+       "P1_PCV01D",
+       "P1_FCV03D",
+       "P4_HT_PS",
+       "P3_LIT01"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A218",
+      "test_file": "test2",
+      "primitives": [
+       "AP08"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LIT01",
+       "P1_B3004",
+       "P1_FCV03D",
+       "P1_FT03",
+       "P1_FT03Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A220",
+      "test_file": "test2",
+      "primitives": [
+       "AP25"
+      ],
+      "target_processes": [
+       "P3"
+      ],
+      "top_process": "P3",
+      "process_hit": true,
+      "constant_hit": false,
+      "top_tags": [
+       "P3_LCV01D",
+       "P4_HT_PO",
+       "P4_HT_LD",
+       "P1_TIT01",
+       "P4_LD"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.08771929824561403
+     },
+     {
+      "attack_id": "A301",
+      "test_file": "test3",
+      "primitives": [
+       "AP15",
+       "AP06"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PIT01",
+       "P1_B3005",
+       "P1_LCV01D",
+       "P4_ST_PT01",
+       "P1_FT01Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A302",
+      "test_file": "test3",
+      "primitives": [
+       "AP02",
+       "AP06"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P1_B3005",
+       "P1_FT03Z",
+       "P1_FT03",
+       "P1_LIT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A303",
+      "test_file": "test3",
+      "primitives": [
+       "AP03",
+       "AP13"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_B2004",
+       "P1_B3004",
+       "P1_LCV01D",
+       "P1_PCV02Z",
+       "P3_LIT01"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A304",
+      "test_file": "test3",
+      "primitives": [
+       "AP16",
+       "AP21"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P3_LCV01D",
+       "P1_PCV02Z",
+       "P1_FCV03D",
+       "P1_PCV01D",
+       "P4_HT_PS"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A305",
+      "test_file": "test3",
+      "primitives": [
+       "AP18",
+       "AP22"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P2",
+      "process_hit": true,
+      "constant_hit": false,
+      "top_tags": [
+       "P2_VT01",
+       "P2_SIT01",
+       "P2_SIT02",
+       "P2_CO_rpm",
+       "P2_VYT03"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A306",
+      "test_file": "test3",
+      "primitives": [
+       "AP01",
+       "AP16"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_B4022",
+       "P1_B2016",
+       "P2_VT01",
+       "P1_FT03Z",
+       "P1_FCV01Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A307",
+      "test_file": "test3",
+      "primitives": [
+       "AP08",
+       "AP21"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV01D",
+       "P3_LCV01D",
+       "P1_FCV03D",
+       "P3_LIT01",
+       "P1_B400B"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A308",
+      "test_file": "test3",
+      "primitives": [
+       "AP14",
+       "AP20"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_B3005",
+       "P1_FT01",
+       "P1_FCV03D",
+       "P1_FT03",
+       "P1_FCV03Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A401",
+      "test_file": "test4",
+      "primitives": [
+       "AP03",
+       "AP12"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LCV01D",
+       "P1_LCV01Z",
+       "P3_LIT01",
+       "P1_FCV03D",
+       "P1_FT03"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A402",
+      "test_file": "test4",
+      "primitives": [
+       "AP07",
+       "AP25"
+      ],
+      "target_processes": [
+       "P1",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P3_LCV01D",
+       "P1_PIT01",
+       "P1_FT01Z",
+       "P1_B3005",
+       "P1_B4002"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.6140350877192983
+     },
+     {
+      "attack_id": "A403",
+      "test_file": "test4",
+      "primitives": [
+       "AP12",
+       "AP25"
+      ],
+      "target_processes": [
+       "P1",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FT01",
+       "P3_LCV01D",
+       "P1_B3005",
+       "P1_FCV03D",
+       "P1_LCV01D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.6140350877192983
+     },
+     {
+      "attack_id": "A404",
+      "test_file": "test4",
+      "primitives": [
+       "AP19",
+       "AP14"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LCV01D",
+       "P1_FCV03D",
+       "P1_B3005",
+       "P1_FT01",
+       "P1_FT03"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A405",
+      "test_file": "test4",
+      "primitives": [
+       "AP20",
+       "AP25"
+      ],
+      "target_processes": [
+       "P2",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P3_LCV01D",
+       "P1_PCV02Z",
+       "P2_CO_rpm",
+       "P2_SIT01",
+       "P2_SIT02"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.2631578947368421
+     },
+     {
+      "attack_id": "A501",
+      "test_file": "test5",
+      "primitives": [
+       "AP03",
+       "AP22"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P3_LCV01D",
+       "P1_PCV01D",
+       "P1_B400B",
+       "P4_HT_PS",
+       "P1_FCV03D"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A502",
+      "test_file": "test5",
+      "primitives": [
+       "AP09",
+       "AP18"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_B2016",
+       "P1_FT03",
+       "P1_B3004",
+       "P1_FT02Z",
+       "P1_B4022"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A503",
+      "test_file": "test5",
+      "primitives": [
+       "AP12",
+       "AP18"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FT03",
+       "P1_LCV01D",
+       "P4_ST_PS",
+       "P1_B3005",
+       "P1_B400B"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A504",
+      "test_file": "test5",
+      "primitives": [
+       "AP08",
+       "AP25"
+      ],
+      "target_processes": [
+       "P1",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P3_LCV01D",
+       "P1_FT03Z",
+       "P1_B3004",
+       "P1_FT01Z",
+       "P1_FT03"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.6140350877192983
+     },
+     {
+      "attack_id": "A505",
+      "test_file": "test5",
+      "primitives": [
+       "AP11",
+       "AP20"
+      ],
+      "target_processes": [
+       "P1",
+       "P2"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LCV01D",
+       "P1_B3005",
+       "P1_FCV03D",
+       "P1_FT03",
+       "P1_FCV03Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.7017543859649122
+     },
+     {
+      "attack_id": "A506",
+      "test_file": "test5",
+      "primitives": [
+       "AP19",
+       "AP25"
+      ],
+      "target_processes": [
+       "P2",
+       "P3"
+      ],
+      "top_process": "P1",
+      "process_hit": false,
+      "constant_hit": false,
+      "top_tags": [
+       "P3_LCV01D",
+       "P1_B4002",
+       "P1_FT02",
+       "P1_FT03",
+       "P1_PCV01Z"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 1,
+      "random_hit_probability": 0.2631578947368421
+     },
+     {
+      "attack_id": "A507",
+      "test_file": "test5",
+      "primitives": [
+       "AP20",
+       "AP21"
+      ],
+      "target_processes": [
+       "P2"
+      ],
+      "top_process": "P2",
+      "process_hit": true,
+      "constant_hit": false,
+      "top_tags": [
+       "P2_VXT03",
+       "P2_VYT03",
+       "P2_VXT02",
+       "P2_VYT02",
+       "P3_LCV01D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.17543859649122806
+     },
+     {
+      "attack_id": "A508",
+      "test_file": "test5",
+      "primitives": [
+       "AP10",
+       "AP15"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_FCV03D",
+       "P1_LCV01D",
+       "P1_PIT01",
+       "P1_FT01Z",
+       "P1_FCV03Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 2,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A510",
+      "test_file": "test5",
+      "primitives": [
+       "AP11",
+       "AP14"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_LCV01D",
+       "P1_FT03Z",
+       "P1_FT01",
+       "P1_B3005",
+       "P1_FCV03Z"
+      ],
+      "tag_hit_at5": true,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.5263157894736842
+     },
+     {
+      "attack_id": "A511",
+      "test_file": "test5",
+      "primitives": [
+       "AP23",
+       "AP25"
+      ],
+      "target_processes": [
+       "P2",
+       "P3"
+      ],
+      "top_process": "P2",
+      "process_hit": true,
+      "constant_hit": false,
+      "top_tags": [
+       "P2_VT01",
+       "P2_SIT02",
+       "P2_SIT01",
+       "P2_CO_rpm",
+       "P3_LCV01D"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 0,
+      "random_hit_probability": 0.2631578947368421
+     },
+     {
+      "attack_id": "A512",
+      "test_file": "test5",
+      "primitives": [
+       "AP06",
+       "AP09"
+      ],
+      "target_processes": [
+       "P1"
+      ],
+      "top_process": "P1",
+      "process_hit": true,
+      "constant_hit": true,
+      "top_tags": [
+       "P1_PCV02Z",
+       "P1_PIT01",
+       "P4_ST_PT01",
+       "P4_ST_PO",
+       "P4_ST_PS"
+      ],
+      "tag_hit_at5": false,
+      "n_target_channels": 3,
+      "random_hit_probability": 0.5263157894736842
+     }
+    ]
+   }
+  }
+ },
+ "baseline_seeds": {
+  "recall_mean": 0.8640000000000001,
+  "recall_sd": 0.021908902300206663,
+  "far_mean": 0.07019740454333201,
+  "far_sd": 0.012392065926548125,
+  "recall_range": [
+   0.84,
+   0.88
+  ]
+ },
+ "meta": {
+  "script": "r3_e1.py",
+  "runtime_s": 20.78006649017334,
+  "finished_utc": "2026-10-13T04:14:15Z",
+  "versions": {
+   "python": "3.10.6",
+   "numpy": "1.26.4",
+   "scipy": "1.15.3",
+   "pandas": "2.3.3",
+   "torch": "2.6.0+cu124",
+   "cuda": "12.4",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  }
+ }
+}

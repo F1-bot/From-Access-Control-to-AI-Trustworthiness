@@ -1,0 +1,75 @@
+# Pre-specified evaluation plan for the HAI case study, fixed and time-stamped internally BEFORE any model was trained
+# or evaluated (not registered with a third party). Date fixed: 2026-10-11. This is the amended copy: the plan text is
+# unchanged and the deviations are logged under 'changes'. The original file is preregistration_original_2026-10-11.yaml.
+system: "ML-based attack/anomaly detector for an industrial control system (HAI 22.04 testbed: boiler P1, turbine P2, water treatment P3, HIL P4)"
+reference_profile: "3.CDI.ICS (critical-infrastructure detector), assurance level G-4"
+assurance_level: 4
+alpha: 0.05            # alpha_G for G-4 (one-sided)
+data:
+  train: [train1, train2, train3, train4, train5, train6]   # normal operation only
+  validation: "last 20% (time-contiguous) of train6 -> threshold calibration only"
+  test: [test1, test2, test3, test4]                          # 58 labelled attacks, sequestered until final evaluation
+  drift_target: "HAI 23.05 normal data (same configuration as 22.04, later collection campaign)"
+operating_point:
+  rule: "alarm threshold = 99.9th percentile of the smoothed validation score (point FPR approx. 1e-3), fixed before testing"
+  alarm_merge_gap_s: 30
+  detection_tolerance_s: 60       # alarm overlapping [attack start, attack end + 60 s] counts as detection
+thresholds:                        # acceptance thresholds tau (assignment parameters of the security target)
+  IV-2: {event_recall: ">= 0.50", false_alarm_rate_per_h: "<= 0.25"}
+  IO-2: {alerts_per_operator_hour: "<= 6"}          # EEMUA 191 / ISA-18.2 benchmark: about one alarm per 10 min
+  IR-2: {attack_success_rate: "<= 0.20", threat_model: "attacker adds bounded perturbation (L_inf <= 0.5 SD) to all sensor channels of the attacked process(es) during the attack; white-box, adaptive (PGD)"}
+  ID-3: {poison_detection_rate: ">= 0.80 at clean-sample removal rate <= 0.05", recall_degradation: "<= 0.10 (absolute) at poisoning budget 1%"}
+  IP-2: {extraction_fidelity: "<= 0.90 at query budget Q = 10000 (label-only interface)"}
+  IE-2: {process_localisation_accuracy: ">= 0.60"}
+  IV-3: {drift_detection: "daily drift alarm TPR >= 0.90 with daily FPR <= 0.05"}
+changes:   # deviations from the plan above, each decided after an earlier result had been seen; original file:
+           # preregistration_original_2026-10-11.yaml (SHA-256 dc3dac97a7ca3a5b39a3ebd320281c9485a3df3c6531656a572c98cd662a9610).
+           # Decisions under the planned and the final procedure: results/case_assessment_v2.json
+  - id: D1
+    item: "IR-2 attack"
+    planned: "white-box adaptive PGD within L_inf <= 0.5 SD (TM-A)"
+    change: "attack success over the whole ball (eps in {0.1, 0.25, 0.5}) with the strongest attack: union of the planned PGD, an improved PGD (restarts, warm start, step schedule) and greedy prediction replay"
+    reason: "the planned PGD success fell with the budget (5, 4, 0, 0 of 38), the signature of a failed optimiser; adaptive-attack guidance requires the strongest available attack"
+    date: "2026-10-12 (greedy attack after E2 at 07:13; improved PGD and nested aggregation 09:20)"
+  - id: D2
+    item: "IP-2 evaluation distribution"
+    planned: "fidelity <= 0.90 at Q = 10^4, label-only; distribution not named"
+    change: "surrogates retrained after the first ones proved under-trained (E4b); operational test windows named as the evaluation distribution; attacker's query distribution reported; dependent-data bounds; extraction against the deployed alarm (E4c) exploratory"
+    reason: "the plan left the distribution open; fidelity on the task distribution is the conventional definition"
+    date: "2026-10-12 (E4b after E4 at 07:20; dependent-data bounds and E4c 09:43-09:48)"
+  - id: D3
+    item: "ID-3 evaluation units"
+    planned: "poison detection rate >= 0.80 (window level), degradation <= 0.10"
+    change: "poison detection bounded with the 7 source traces as units; exact paired bound for degradation; cross-fitted sanitisers (E3b, E3c) exploratory"
+    reason: "10,308 windows are replicas of 7 traces and are not independent"
+    date: "2026-10-12 (E3b after E3 at 07:18; trace-level units and E3c 09:39-09:44)"
+  - id: D4
+    item: "IV-3"
+    planned: "daily drift alarm TPR >= 0.90 with daily FPR <= 0.05"
+    change: "none to the decision; hourly monitors exploratory; drift re-estimated with a detector retrained on the 60 channels shared by both campaigns (E5b)"
+    reason: "only one in-distribution day exists, so the daily test cannot be passed; E5 had imputed eight renamed tags"
+    date: "2026-10-12 (hourly monitors with E5 at 07:55; E5b retrained on shared channels 09:10)"
+  - id: D5
+    item: "IE-2 trivial baseline"
+    planned: "process-localisation accuracy >= 0.60"
+    change: "the explainer must also beat the best constant explainer (exact one-sided McNemar test at alpha_G)"
+    reason: "a constant 'P1' explainer reaches 0.79, above the planned threshold"
+    date: "2026-10-12 (E1b trivial explainers 09:03)"
+  - id: D6
+    item: "margin delta"
+    planned: "not declared"
+    change: "delta = 0.2 declared for proportion requirements"
+    reason: "TE-AI-1 requires n >= n_min(alpha_G, delta)"
+    date: "2026-10-12 (revision)"
+  - id: D7
+    item: "dependence of evaluation units"
+    planned: "exact binomial and Poisson bounds"
+    change: "cluster-robust bound for event recall and for the paired comparison with the constant explainer (shared attack primitives); dispersion check and quasi-Poisson widening of hourly false-alarm counts"
+    reason: "attacks reuse primitives; Section 3.4 requires cluster or block bounds for dependent units"
+    date: "2026-10-12 (cluster bootstrap 09:12; dispersion check 09:00; dependence-robust McNemar test in the revision)"
+  - id: D8
+    item: "IM-2 verification"
+    planned: "signature and tamper test (v1)"
+    change: "verification against a trust anchor pinned outside the envelope (v2) with negative tests"
+    reason: "the v1 verifier accepted a model re-signed with a foreign key"
+    date: "2026-10-12 (im2_sign_v2 09:15)"

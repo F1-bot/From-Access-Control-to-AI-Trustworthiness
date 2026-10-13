@@ -1,0 +1,208 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.6",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-12T04:10:06Z",
+  "component": {
+   "type": "machine-learning-model",
+   "name": "hai-gru-forecaster-baseline_s0",
+   "version": "1.0",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "model",
+   "name": "hai-gru-forecaster-baseline_s0",
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "task": "time-series forecasting residual anomaly detection",
+     "architectureFamily": "GRU (2 layers, 128 units) + MLP head",
+     "datasets": [
+      {
+       "ref": "hai-22.04"
+      }
+     ],
+     "inputs": [
+      {
+       "format": "60 s x 68 standardised channels"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "next-sample prediction; anomaly score; alarm"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "event recall (58 attacks)",
+       "value": "0.6551724137931034"
+      },
+      {
+       "type": "false alarms per hour",
+       "value": "0.5002171081198437"
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "advisory attack detection for ICS operators (human-on-the-loop)"
+     ],
+     "technicalLimitations": [
+      "validated only on HAI 22.04; drift to other campaigns must be monitored"
+     ]
+    }
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "hai-22.04",
+   "name": "HAI 22.04",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "hai-22.04/test1.csv",
+     "contents": {
+      "attachment": {
+       "content": "19627f5dac40c3a5039e7468cfd6c6e4ccd37a85055671e8c349b6bce5f50ed1",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/test2.csv",
+     "contents": {
+      "attachment": {
+       "content": "b2ba5d6665deee1c86870a3970417b51a3e640a2cc18b9f8de2d6d8a21979923",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/test3.csv",
+     "contents": {
+      "attachment": {
+       "content": "f253f1c78a4a4654d843f8f670a24caa7a72ac91e4418b4505009822b3c55940",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/test4.csv",
+     "contents": {
+      "attachment": {
+       "content": "2d2e99ed3364d75d27ab84f0a6523496f7295decf363c90b8a1b9b84e1070376",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/train1.csv",
+     "contents": {
+      "attachment": {
+       "content": "63383690ffc5344ba68a019c7000854a4d341a22d743ac035f5207072a197b33",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/train2.csv",
+     "contents": {
+      "attachment": {
+       "content": "f496991bbef4a6ef5881505aa242fe05cc500b4d5c4cea0d2cf1cf79e4e99285",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/train3.csv",
+     "contents": {
+      "attachment": {
+       "content": "4910c49dc07cce238e05c449972a30b7588139ef92d36067f32aadd820e63de7",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/train4.csv",
+     "contents": {
+      "attachment": {
+       "content": "81a1c3a8e1726c92c9253602b8628b72d0508a9c260ff21109433ad2b82687bf",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/train5.csv",
+     "contents": {
+      "attachment": {
+       "content": "298468467991e73689b61f3cd3975ca21685ef8ba5b5ced4d6a7874f304d9cf7",
+       "contentType": "text/csv"
+      }
+     }
+    },
+    {
+     "type": "dataset",
+     "name": "hai-22.04/train6.csv",
+     "contents": {
+      "attachment": {
+       "content": "717b37b7b88b40885cb6994c9fe00d08a941ec0c3c73801e378f84e846ae35d4",
+       "contentType": "text/csv"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "name": "torch",
+   "version": "2.6.0+cu124"
+  },
+  {
+   "type": "library",
+   "name": "numpy",
+   "version": "1.26.4"
+  },
+  {
+   "type": "library",
+   "name": "safetensors",
+   "version": "0.7.0"
+  },
+  {
+   "type": "platform",
+   "name": "python",
+   "version": "3.10.6"
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "model",
+   "dependsOn": [
+    "hai-22.04"
+   ]
+  }
+ ]
+}

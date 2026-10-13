@@ -1,0 +1,1497 @@
+{
+ "script": "decision_sensitivity.py",
+ "started_utc": "2026-10-12T06:17:46Z",
+ "finished_utc": "2026-10-12T06:17:46Z",
+ "runtime_s": 0.02172112464904785,
+ "versions": {
+  "python": "3.10.6",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "pandas": "2.3.3"
+ },
+ "settings": {
+  "alphas": [
+   0.1,
+   0.05,
+   0.01
+  ],
+  "equality_tolerance": 1e-12,
+  "three_way_rule": "accept if the (1-alpha) bound clears tau; reject if the opposite (1-alpha) bound violates tau (strictly); inconclusive otherwise",
+  "joint_rule": "accept iff all components accept; reject iff any component rejects"
+ },
+ "inputs": {
+  "case_assessment": "results/case_assessment.json",
+  "pgd": "results/e2_evasion.json (TM-A, eps 0.5)",
+  "extraction": "results/e4b_extract.json (label-only, Q = 10000, seeds 0-2)",
+  "drift": "results/e5_drift.json (daily PSI rule)",
+  "poisoning": "results/e3_poison_beta0.01.json"
+ },
+ "outcome_table": [
+  {
+   "variant": "baseline_s0",
+   "test": "IV-2",
+   "level": "requirement",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "reject",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "reject"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IV-2/recall>=0.50",
+   "level": "component",
+   "naive": "accept",
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IV-2/FAR<=0.25/h",
+   "level": "component",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "reject",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "reject"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IO-2",
+   "level": "requirement",
+   "naive": "accept",
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "accept",
+   "three_way_0.01": "accept"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IE-2",
+   "level": "requirement",
+   "naive": "accept",
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "accept",
+   "three_way_0.01": "accept"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IR-2_union_PGD_or_greedy",
+   "level": "requirement",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IR-2_literal_PGD_only",
+   "level": "requirement",
+   "naive": "accept",
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "accept",
+   "three_way_0.01": "accept"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IP-2_operational_test_windows",
+   "level": "requirement",
+   "naive": "accept",
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "accept",
+   "three_way_0.01": "accept"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IP-2_attacker_query_distribution",
+   "level": "requirement",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "reject",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "reject"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IV-3_daily_PSI_monitor",
+   "level": "requirement",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IV-3_daily_PSI_monitor/TPR>=0.90",
+   "level": "component",
+   "naive": "accept",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IV-3_daily_PSI_monitor/FPR<=0.05",
+   "level": "component",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-2",
+   "level": "requirement",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-2/recall>=0.50",
+   "level": "component",
+   "naive": "accept",
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-2/FAR<=0.25/h",
+   "level": "component",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IO-2",
+   "level": "requirement",
+   "naive": "accept",
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "accept",
+   "three_way_0.01": "accept"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IE-2",
+   "level": "requirement",
+   "naive": "accept",
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "accept",
+   "three_way_0.01": "accept"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IR-2_union_PGD_or_greedy",
+   "level": "requirement",
+   "naive": "accept",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IR-2_literal_PGD_only",
+   "level": "requirement",
+   "naive": "accept",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IP-2_operational_test_windows",
+   "status": "not evaluated for this variant"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IP-2_attacker_query_distribution",
+   "status": "not evaluated for this variant"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-3_daily_PSI_monitor",
+   "level": "requirement",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-3_daily_PSI_monitor/TPR>=0.90",
+   "level": "component",
+   "naive": "accept",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-3_daily_PSI_monitor/FPR<=0.05",
+   "level": "component",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "ID-3_poison_screening_beta1pct",
+   "level": "requirement",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "reject",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "reject"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "ID-3_poison_screening_beta1pct/poison_detection>=0.80",
+   "level": "component",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "reject",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "reject"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "ID-3_poison_screening_beta1pct/clean_removal<=0.05",
+   "level": "component",
+   "naive": "reject",
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "reject",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "reject"
+  }
+ ],
+ "decision_changes": [
+  {
+   "variant": "baseline_s0",
+   "test": "IV-2/recall>=0.50",
+   "naive": "accept",
+   "bound_rule_changes_with_alpha": true,
+   "three_way_changes_with_alpha": true,
+   "naive_differs_from_bound_rule_at_alpha": [
+    0.01
+   ],
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IV-3_daily_PSI_monitor",
+   "naive": "reject",
+   "bound_rule_changes_with_alpha": false,
+   "three_way_changes_with_alpha": true,
+   "naive_differs_from_bound_rule_at_alpha": [],
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IV-3_daily_PSI_monitor/TPR>=0.90",
+   "naive": "accept",
+   "bound_rule_changes_with_alpha": false,
+   "three_way_changes_with_alpha": false,
+   "naive_differs_from_bound_rule_at_alpha": [
+    0.1,
+    0.05,
+    0.01
+   ],
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "baseline_s0",
+   "test": "IV-3_daily_PSI_monitor/FPR<=0.05",
+   "naive": "reject",
+   "bound_rule_changes_with_alpha": false,
+   "three_way_changes_with_alpha": true,
+   "naive_differs_from_bound_rule_at_alpha": [],
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-2/recall>=0.50",
+   "naive": "accept",
+   "bound_rule_changes_with_alpha": true,
+   "three_way_changes_with_alpha": true,
+   "naive_differs_from_bound_rule_at_alpha": [
+    0.01
+   ],
+   "bound_rule_0.1": "accept",
+   "three_way_0.1": "accept",
+   "bound_rule_0.05": "accept",
+   "three_way_0.05": "accept",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IR-2_union_PGD_or_greedy",
+   "naive": "accept",
+   "bound_rule_changes_with_alpha": false,
+   "three_way_changes_with_alpha": false,
+   "naive_differs_from_bound_rule_at_alpha": [
+    0.1,
+    0.05,
+    0.01
+   ],
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IR-2_literal_PGD_only",
+   "naive": "accept",
+   "bound_rule_changes_with_alpha": false,
+   "three_way_changes_with_alpha": false,
+   "naive_differs_from_bound_rule_at_alpha": [
+    0.1,
+    0.05,
+    0.01
+   ],
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-3_daily_PSI_monitor",
+   "naive": "reject",
+   "bound_rule_changes_with_alpha": false,
+   "three_way_changes_with_alpha": true,
+   "naive_differs_from_bound_rule_at_alpha": [],
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-3_daily_PSI_monitor/TPR>=0.90",
+   "naive": "accept",
+   "bound_rule_changes_with_alpha": false,
+   "three_way_changes_with_alpha": false,
+   "naive_differs_from_bound_rule_at_alpha": [
+    0.1,
+    0.05,
+    0.01
+   ],
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "inconclusive",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  },
+  {
+   "variant": "hardened_s0",
+   "test": "IV-3_daily_PSI_monitor/FPR<=0.05",
+   "naive": "reject",
+   "bound_rule_changes_with_alpha": false,
+   "three_way_changes_with_alpha": true,
+   "naive_differs_from_bound_rule_at_alpha": [],
+   "bound_rule_0.1": "not accepted",
+   "three_way_0.1": "reject",
+   "bound_rule_0.05": "not accepted",
+   "three_way_0.05": "inconclusive",
+   "bound_rule_0.01": "not accepted",
+   "three_way_0.01": "inconclusive"
+  }
+ ],
+ "implied_levels": {
+  "baseline_s0": {
+   "levels": {
+    "naive": {
+     "IV": 1,
+     "IO": 2,
+     "IE": 2,
+     "IR (union)": 1,
+     "IR (literal PGD)": 2,
+     "IP": 2
+    },
+    "bound_0.1": {
+     "IV": 1,
+     "IO": 2,
+     "IE": 2,
+     "IR (union)": 1,
+     "IR (literal PGD)": 2,
+     "IP": 2
+    },
+    "bound_0.05": {
+     "IV": 1,
+     "IO": 2,
+     "IE": 2,
+     "IR (union)": 1,
+     "IR (literal PGD)": 2,
+     "IP": 2
+    },
+    "bound_0.01": {
+     "IV": 1,
+     "IO": 2,
+     "IE": 2,
+     "IR (union)": 1,
+     "IR (literal PGD)": 2,
+     "IP": 2
+    }
+   },
+   "three_way_outcomes": {
+    "three_way_0.1": {
+     "IV-2": "reject",
+     "IO-2": "accept",
+     "IE-2": "accept",
+     "IR-2 (union)": "inconclusive",
+     "IR-2 (literal PGD)": "accept",
+     "IP-2": "accept",
+     "IV-3": "reject"
+    },
+    "three_way_0.05": {
+     "IV-2": "reject",
+     "IO-2": "accept",
+     "IE-2": "accept",
+     "IR-2 (union)": "inconclusive",
+     "IR-2 (literal PGD)": "accept",
+     "IP-2": "accept",
+     "IV-3": "inconclusive"
+    },
+    "three_way_0.01": {
+     "IV-2": "reject",
+     "IO-2": "accept",
+     "IE-2": "accept",
+     "IR-2 (union)": "inconclusive",
+     "IR-2 (literal PGD)": "accept",
+     "IP-2": "accept",
+     "IV-3": "inconclusive"
+    }
+   }
+  },
+  "hardened_s0": {
+   "levels": {
+    "naive": {
+     "IV": 1,
+     "IO": 2,
+     "IE": 2,
+     "IR (union)": 2,
+     "IR (literal PGD)": 2,
+     "IP": "IP-2 evidence from baseline victim: 2"
+    },
+    "bound_0.1": {
+     "IV": 1,
+     "IO": 2,
+     "IE": 2,
+     "IR (union)": 1,
+     "IR (literal PGD)": 1,
+     "IP": "IP-2 evidence from baseline victim: 2"
+    },
+    "bound_0.05": {
+     "IV": 1,
+     "IO": 2,
+     "IE": 2,
+     "IR (union)": 1,
+     "IR (literal PGD)": 1,
+     "IP": "IP-2 evidence from baseline victim: 2"
+    },
+    "bound_0.01": {
+     "IV": 1,
+     "IO": 2,
+     "IE": 2,
+     "IR (union)": 1,
+     "IR (literal PGD)": 1,
+     "IP": "IP-2 evidence from baseline victim: 2"
+    }
+   },
+   "three_way_outcomes": {
+    "three_way_0.1": {
+     "IV-2": "inconclusive",
+     "IO-2": "accept",
+     "IE-2": "accept",
+     "IR-2 (union)": "inconclusive",
+     "IR-2 (literal PGD)": "inconclusive",
+     "IP-2": "accept",
+     "IV-3": "reject"
+    },
+    "three_way_0.05": {
+     "IV-2": "inconclusive",
+     "IO-2": "accept",
+     "IE-2": "accept",
+     "IR-2 (union)": "inconclusive",
+     "IR-2 (literal PGD)": "inconclusive",
+     "IP-2": "accept",
+     "IV-3": "inconclusive"
+    },
+    "three_way_0.01": {
+     "IV-2": "inconclusive",
+     "IO-2": "accept",
+     "IE-2": "accept",
+     "IR-2 (union)": "inconclusive",
+     "IR-2 (literal PGD)": "inconclusive",
+     "IP-2": "accept",
+     "IV-3": "inconclusive"
+    }
+   }
+  }
+ },
+ "per_variant_tests": {
+  "baseline_s0": {
+   "IV-2": {
+    "components": {
+     "recall>=0.50": {
+      "type": "proportion",
+      "k": 38,
+      "n": 58,
+      "estimate": 0.6551724137931034,
+      "tau": 0.5,
+      "direction": ">=",
+      "naive": "accept",
+      "by_alpha": {
+       "0.1": {
+        "lcb": 0.563407234258005,
+        "ucb": 0.7384862243786459,
+        "bound_rule": "accept",
+        "three_way": "accept",
+        "boundary_case": false
+       },
+       "0.05": {
+        "lcb": 0.5395567799220093,
+        "ucb": 0.7584238801456535,
+        "bound_rule": "accept",
+        "three_way": "accept",
+        "boundary_case": false
+       },
+       "0.01": {
+        "lcb": 0.4946675850974924,
+        "ucb": 0.7937257149106678,
+        "bound_rule": "not accepted",
+        "three_way": "inconclusive",
+        "boundary_case": false
+       }
+      }
+     },
+     "FAR<=0.25/h": {
+      "type": "poisson_rate",
+      "count": 48,
+      "exposure_h": 95.95833333333334,
+      "estimate": 0.5002171081198437,
+      "tau": 0.25,
+      "direction": "<=",
+      "naive": "reject",
+      "by_alpha": {
+       "0.1": {
+        "lcb": 0.4102062546123724,
+        "ucb": 0.6060718977824407,
+        "bound_rule": "not accepted",
+        "three_way": "reject",
+        "boundary_case": false
+       },
+       "0.05": {
+        "lcb": 0.3876710468749679,
+        "ucb": 0.6362539363082209,
+        "bound_rule": "not accepted",
+        "three_way": "reject",
+        "boundary_case": false
+       },
+       "0.01": {
+        "lcb": 0.3477027041599606,
+        "ucb": 0.6954876543099519,
+        "bound_rule": "not accepted",
+        "three_way": "reject",
+        "boundary_case": false
+       }
+      }
+     }
+    },
+    "naive": "reject",
+    "by_alpha": {
+     "0.1": {
+      "bound_rule": "not accepted",
+      "three_way": "reject"
+     },
+     "0.05": {
+      "bound_rule": "not accepted",
+      "three_way": "reject"
+     },
+     "0.01": {
+      "bound_rule": "not accepted",
+      "three_way": "reject"
+     }
+    }
+   },
+   "IO-2": {
+    "type": "poisson_rate",
+    "count": 102,
+    "exposure_h": 100.333,
+    "estimate": 1.0166146731384489,
+    "tau": 6.0,
+    "direction": "<=",
+    "naive": "accept",
+    "by_alpha": {
+     "0.1": {
+      "lcb": 0.8899358015350428,
+      "ucb": 1.1581595005825218,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.05": {
+      "lcb": 0.8569007138609537,
+      "ucb": 1.1984325751228038,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.01": {
+      "lcb": 0.7971896356420602,
+      "ucb": 1.2764406742092578,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     }
+    }
+   },
+   "IE-2": {
+    "type": "proportion",
+    "k": 37,
+    "n": 38,
+    "estimate": 0.9736842105263158,
+    "tau": 0.6,
+    "direction": ">=",
+    "naive": "accept",
+    "by_alpha": {
+     "0.1": {
+      "lcb": 0.9014532912183572,
+      "ucb": 0.9972311950816519,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.05": {
+      "lcb": 0.8811458772994392,
+      "ucb": 0.998651087065512,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.01": {
+      "lcb": 0.8377183911733689,
+      "ucb": 0.9997355524499585,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     }
+    }
+   },
+   "IR-2_union_PGD_or_greedy": {
+    "type": "proportion",
+    "k": 9,
+    "n": 38,
+    "estimate": 0.23684210526315788,
+    "tau": 0.2,
+    "direction": "<=",
+    "naive": "reject",
+    "by_alpha": {
+     "0.1": {
+      "lcb": 0.1482783704254296,
+      "ucb": 0.3479816240962266,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     },
+     "0.05": {
+      "lcb": 0.12949772490069086,
+      "ucb": 0.37690642691332116,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     },
+     "0.01": {
+      "lcb": 0.09838293003025902,
+      "ucb": 0.43241220545027925,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     }
+    }
+   },
+   "IR-2_literal_PGD_only": {
+    "type": "proportion",
+    "k": 0,
+    "n": 38,
+    "estimate": 0.0,
+    "tau": 0.2,
+    "direction": "<=",
+    "naive": "accept",
+    "by_alpha": {
+     "0.1": {
+      "lcb": 0.0,
+      "ucb": 0.05879503273193324,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.05": {
+      "lcb": 0.0,
+      "ucb": 0.07580765168296455,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.01": {
+      "lcb": 0.0,
+      "ucb": 0.11413320958991735,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     }
+    }
+   }
+  },
+  "hardened_s0": {
+   "IV-2": {
+    "components": {
+     "recall>=0.50": {
+      "type": "proportion",
+      "k": 36,
+      "n": 58,
+      "estimate": 0.6206896551724138,
+      "tau": 0.5,
+      "direction": ">=",
+      "naive": "accept",
+      "by_alpha": {
+       "0.1": {
+        "lcb": 0.5282461285743318,
+        "ucb": 0.7065742039371876,
+        "bound_rule": "accept",
+        "three_way": "accept",
+        "boundary_case": false
+       },
+       "0.05": {
+        "lcb": 0.5043899603088324,
+        "ucb": 0.7273902688002601,
+        "bound_rule": "accept",
+        "three_way": "accept",
+        "boundary_case": false
+       },
+       "0.01": {
+        "lcb": 0.45977759327492945,
+        "ucb": 0.7645499228255015,
+        "bound_rule": "not accepted",
+        "three_way": "inconclusive",
+        "boundary_case": false
+       }
+      }
+     },
+     "FAR<=0.25/h": {
+      "type": "poisson_rate",
+      "count": 26,
+      "exposure_h": 95.95833333333334,
+      "estimate": 0.2709509335649153,
+      "tau": 0.25,
+      "direction": "<=",
+      "naive": "reject",
+      "by_alpha": {
+       "0.1": {
+        "lcb": 0.20547139306776527,
+        "ucb": 0.3526154728151671,
+        "bound_rule": "not accepted",
+        "three_way": "inconclusive",
+        "boundary_case": false
+       },
+       "0.05": {
+        "lcb": 0.18985893132188433,
+        "ucb": 0.37596117846473165,
+        "bound_rule": "not accepted",
+        "three_way": "inconclusive",
+        "boundary_case": false
+       },
+       "0.01": {
+        "lcb": 0.16280854158100658,
+        "ucb": 0.42241652751869957,
+        "bound_rule": "not accepted",
+        "three_way": "inconclusive",
+        "boundary_case": false
+       }
+      }
+     }
+    },
+    "naive": "reject",
+    "by_alpha": {
+     "0.1": {
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive"
+     },
+     "0.05": {
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive"
+     },
+     "0.01": {
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive"
+     }
+    }
+   },
+   "IO-2": {
+    "type": "poisson_rate",
+    "count": 79,
+    "exposure_h": 100.333,
+    "estimate": 0.7873780311562497,
+    "tau": 6.0,
+    "direction": "<=",
+    "naive": "accept",
+    "by_alpha": {
+     "0.1": {
+      "lcb": 0.6761967271757775,
+      "ucb": 0.9135109248563338,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.05": {
+      "lcb": 0.6475476730402976,
+      "ucb": 0.9494207116001642,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.01": {
+      "lcb": 0.5960483546419492,
+      "ucb": 1.0192563493087294,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     }
+    }
+   },
+   "IE-2": {
+    "type": "proportion",
+    "k": 36,
+    "n": 36,
+    "estimate": 1.0,
+    "tau": 0.6,
+    "direction": ">=",
+    "naive": "accept",
+    "by_alpha": {
+     "0.1": {
+      "lcb": 0.9380418666398143,
+      "ucb": 1.0,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.05": {
+      "lcb": 0.9201534904801056,
+      "ucb": 1.0,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     },
+     "0.01": {
+      "lcb": 0.879922543569107,
+      "ucb": 1.0,
+      "bound_rule": "accept",
+      "three_way": "accept",
+      "boundary_case": false
+     }
+    }
+   },
+   "IR-2_union_PGD_or_greedy": {
+    "type": "proportion",
+    "k": 6,
+    "n": 36,
+    "estimate": 0.16666666666666666,
+    "tau": 0.2,
+    "direction": "<=",
+    "naive": "accept",
+    "by_alpha": {
+     "0.1": {
+      "lcb": 0.08995793918554294,
+      "ucb": 0.27422923045968045,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     },
+     "0.05": {
+      "lcb": 0.07516516931350616,
+      "ucb": 0.30267742362657557,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     },
+     "0.01": {
+      "lcb": 0.051979614318060544,
+      "ucb": 0.35843185159436497,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     }
+    }
+   },
+   "IR-2_literal_PGD_only": {
+    "type": "proportion",
+    "k": 6,
+    "n": 36,
+    "estimate": 0.16666666666666666,
+    "tau": 0.2,
+    "direction": "<=",
+    "naive": "accept",
+    "by_alpha": {
+     "0.1": {
+      "lcb": 0.08995793918554294,
+      "ucb": 0.27422923045968045,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     },
+     "0.05": {
+      "lcb": 0.07516516931350616,
+      "ucb": 0.30267742362657557,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     },
+     "0.01": {
+      "lcb": 0.051979614318060544,
+      "ucb": 0.35843185159436497,
+      "bound_rule": "not accepted",
+      "three_way": "inconclusive",
+      "boundary_case": false
+     }
+    }
+   }
+  }
+ },
+ "shared_tests": {
+  "IP-2_operational_test_windows": {
+   "type": "balanced_agreement_max_over_seeds",
+   "distribution": "test_dist",
+   "tau": 0.9,
+   "direction": "<=",
+   "estimate_max_over_seeds": 0.7625215507533037,
+   "naive": "accept",
+   "seeds": [
+    {
+     "seed": 0,
+     "tp": 584,
+     "n_pos": 690,
+     "tn": 12009,
+     "n_neg": 17695,
+     "estimate": 0.7625215507533037,
+     "stored_ucb95": 0.7790120405436022,
+     "recomputed_ucb95": 0.7790120405436022,
+     "reproduces_stored": true,
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.7474088208199795,
+       "ucb": 0.7764984574384881,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      },
+      "0.05": {
+       "lcb": 0.7445008107189643,
+       "ucb": 0.7790120405436022,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      },
+      "0.01": {
+       "lcb": 0.7387262068494842,
+       "ucb": 0.7838227442796124,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "tp": 616,
+     "n_pos": 690,
+     "tn": 8386,
+     "n_neg": 17695,
+     "estimate": 0.6833364046995999,
+     "stored_ucb95": 0.6980771827420454,
+     "recomputed_ucb95": 0.6980771827420454,
+     "reproduces_stored": true,
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.6695534309573961,
+       "ucb": 0.6958512892200723,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      },
+      "0.05": {
+       "lcb": 0.6668887496417486,
+       "ucb": 0.6980771827420454,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      },
+      "0.01": {
+       "lcb": 0.6615763827373964,
+       "ucb": 0.7023183386072944,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "tp": 637,
+     "n_pos": 690,
+     "tn": 8562,
+     "n_neg": 17695,
+     "estimate": 0.703526952262778,
+     "stored_ucb95": 0.7165976798335214,
+     "recomputed_ucb95": 0.7165976798335214,
+     "reproduces_stored": true,
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.6910312282795803,
+       "ucb": 0.7146451059748686,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      },
+      "0.05": {
+       "lcb": 0.6886037108543098,
+       "ucb": 0.7165976798335214,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      },
+      "0.01": {
+       "lcb": 0.6837437337918151,
+       "ucb": 0.7202993937236457,
+       "bound_rule": "accept",
+       "three_way": "accept"
+      }
+     }
+    }
+   ],
+   "by_alpha": {
+    "0.1": {
+     "bound_rule": "accept",
+     "three_way": "accept",
+     "max_ucb": 0.7764984574384881,
+     "max_lcb": 0.7474088208199795
+    },
+    "0.05": {
+     "bound_rule": "accept",
+     "three_way": "accept",
+     "max_ucb": 0.7790120405436022,
+     "max_lcb": 0.7445008107189643
+    },
+    "0.01": {
+     "bound_rule": "accept",
+     "three_way": "accept",
+     "max_ucb": 0.7838227442796124,
+     "max_lcb": 0.7387262068494842
+    }
+   },
+   "scope": "victim baseline_s0 only (E4 was not run against the hardened variant)"
+  },
+  "IP-2_attacker_query_distribution": {
+   "type": "balanced_agreement_max_over_seeds",
+   "distribution": "attacker_dist",
+   "tau": 0.9,
+   "direction": "<=",
+   "estimate_max_over_seeds": 0.9701025597010255,
+   "naive": "reject",
+   "seeds": [
+    {
+     "seed": 0,
+     "tp": 9446,
+     "n_pos": 10001,
+     "tn": 9956,
+     "n_neg": 9999,
+     "estimate": 0.9701025597010255,
+     "stored_ucb95": 0.9728993030837602,
+     "recomputed_ucb95": 0.9728993030837602,
+     "reproduces_stored": true,
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.9675255115348541,
+       "ucb": 0.972470974086761,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      },
+      "0.05": {
+       "lcb": 0.9670246015773228,
+       "ucb": 0.9728993030837602,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      },
+      "0.01": {
+       "lcb": 0.9660269440433062,
+       "ucb": 0.9737193490445628,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      }
+     }
+    },
+    {
+     "seed": 1,
+     "tp": 9405,
+     "n_pos": 10001,
+     "tn": 9954,
+     "n_neg": 9999,
+     "estimate": 0.9679527546795275,
+     "stored_ucb95": 0.9708411644920729,
+     "recomputed_ucb95": 0.9708411644920729,
+     "reproduces_stored": true,
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.9652999453325843,
+       "ucb": 0.9703980526931817,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      },
+      "0.05": {
+       "lcb": 0.964784613111012,
+       "ucb": 0.9708411644920729,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      },
+      "0.01": {
+       "lcb": 0.9637588765080192,
+       "ucb": 0.9716901509711944,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      }
+     }
+    },
+    {
+     "seed": 2,
+     "tp": 9380,
+     "n_pos": 10001,
+     "tn": 9885,
+     "n_neg": 9999,
+     "estimate": 0.9632525346325254,
+     "stored_ucb95": 0.9665721630087211,
+     "recomputed_ucb95": 0.9665721630087211,
+     "reproduces_stored": true,
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.9602420871893649,
+       "ucb": 0.9660597655757537,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      },
+      "0.05": {
+       "lcb": 0.9596585727616189,
+       "ucb": 0.9665721630087211,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      },
+      "0.01": {
+       "lcb": 0.9585000199808711,
+       "ucb": 0.9675563953266408,
+       "bound_rule": "not accepted",
+       "three_way": "reject"
+      }
+     }
+    }
+   ],
+   "by_alpha": {
+    "0.1": {
+     "bound_rule": "not accepted",
+     "three_way": "reject",
+     "max_ucb": 0.972470974086761,
+     "max_lcb": 0.9675255115348541
+    },
+    "0.05": {
+     "bound_rule": "not accepted",
+     "three_way": "reject",
+     "max_ucb": 0.9728993030837602,
+     "max_lcb": 0.9670246015773228
+    },
+    "0.01": {
+     "bound_rule": "not accepted",
+     "three_way": "reject",
+     "max_ucb": 0.9737193490445628,
+     "max_lcb": 0.9660269440433062
+    }
+   },
+   "scope": "victim baseline_s0 only; secondary distribution reported in the table footer"
+  },
+  "IV-3_daily_PSI_monitor": {
+   "components": {
+    "TPR>=0.90": {
+     "type": "proportion",
+     "k": 9,
+     "n": 9,
+     "estimate": 1.0,
+     "tau": 0.9,
+     "direction": ">=",
+     "naive": "accept",
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.7742636826811271,
+       "ucb": 1.0,
+       "bound_rule": "not accepted",
+       "three_way": "inconclusive",
+       "boundary_case": false
+      },
+      "0.05": {
+       "lcb": 0.7168711644368865,
+       "ucb": 1.0,
+       "bound_rule": "not accepted",
+       "three_way": "inconclusive",
+       "boundary_case": false
+      },
+      "0.01": {
+       "lcb": 0.599484250318941,
+       "ucb": 1.0,
+       "bound_rule": "not accepted",
+       "three_way": "inconclusive",
+       "boundary_case": false
+      }
+     }
+    },
+    "FPR<=0.05": {
+     "type": "proportion",
+     "k": 1,
+     "n": 1,
+     "estimate": 1.0,
+     "tau": 0.05,
+     "direction": "<=",
+     "naive": "reject",
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.1,
+       "ucb": 1.0,
+       "bound_rule": "not accepted",
+       "three_way": "reject",
+       "boundary_case": false
+      },
+      "0.05": {
+       "lcb": 0.05,
+       "ucb": 1.0,
+       "bound_rule": "not accepted",
+       "three_way": "inconclusive",
+       "boundary_case": true
+      },
+      "0.01": {
+       "lcb": 0.01,
+       "ucb": 1.0,
+       "bound_rule": "not accepted",
+       "three_way": "inconclusive",
+       "boundary_case": false
+      }
+     }
+    }
+   },
+   "naive": "reject",
+   "by_alpha": {
+    "0.1": {
+     "bound_rule": "not accepted",
+     "three_way": "reject"
+    },
+    "0.05": {
+     "bound_rule": "not accepted",
+     "three_way": "inconclusive"
+    },
+    "0.01": {
+     "bound_rule": "not accepted",
+     "three_way": "inconclusive"
+    }
+   },
+   "scope": "model-independent (PSI of input channels), identical for both variants"
+  }
+ },
+ "additional_tests_for_completeness": {
+  "ID-3_poison_screening_beta1pct": {
+   "components": {
+    "poison_detection>=0.80": {
+     "type": "proportion",
+     "k": 1794,
+     "n": 10308,
+     "estimate": 0.1740395809080326,
+     "tau": 0.8,
+     "direction": ">=",
+     "naive": "reject",
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.16925115852256925,
+       "ucb": 0.1789193765763179,
+       "bound_rule": "not accepted",
+       "three_way": "reject",
+       "boundary_case": false
+      },
+      "0.05": {
+       "lcb": 0.16791717173557794,
+       "ucb": 0.18029847816997474,
+       "bound_rule": "not accepted",
+       "three_way": "reject",
+       "boundary_case": false
+      },
+      "0.01": {
+       "lcb": 0.16543006416052847,
+       "ucb": 0.18290021394531406,
+       "bound_rule": "not accepted",
+       "three_way": "reject",
+       "boundary_case": false
+      }
+     }
+    },
+    "clean_removal<=0.05": {
+     "type": "proportion",
+     "k": 185603,
+     "n": 952202,
+     "estimate": 0.19491977542580252,
+     "tau": 0.05,
+     "direction": "<=",
+     "naive": "reject",
+     "by_alpha": {
+      "0.1": {
+       "lcb": 0.19439945032689654,
+       "ucb": 0.1954410167925338,
+       "bound_rule": "not accepted",
+       "three_way": "reject",
+       "boundary_case": false
+      },
+      "0.05": {
+       "lcb": 0.19425219175138012,
+       "ucb": 0.19558872984605746,
+       "bound_rule": "not accepted",
+       "three_way": "reject",
+       "boundary_case": false
+      },
+      "0.01": {
+       "lcb": 0.19397611153215258,
+       "ucb": 0.19586596675905313,
+       "bound_rule": "not accepted",
+       "three_way": "reject",
+       "boundary_case": false
+      }
+     }
+    }
+   },
+   "naive": "reject",
+   "by_alpha": {
+    "0.1": {
+     "bound_rule": "not accepted",
+     "three_way": "reject"
+    },
+    "0.05": {
+     "bound_rule": "not accepted",
+     "three_way": "reject"
+    },
+    "0.01": {
+     "bound_rule": "not accepted",
+     "three_way": "reject"
+    }
+   },
+   "scope": "baseline pipeline only; units are overlapping training windows, which are NOT independent, so the bounds are far too narrow; included only because the decision is unambiguous (estimates 0.174 and 0.195)",
+   "not_reanalysed": "recall degradation <= 0.10 (paired comparison of clean and poisoned detectors) is not re-analysed here"
+  }
+ },
+ "boundary_cases": [
+  {
+   "scope": "shared",
+   "test": "IV-3_daily_PSI_monitor/FPR<=0.05",
+   "alpha": "0.05",
+   "lcb": 0.05,
+   "ucb": 1.0,
+   "tau": 0.05,
+   "three_way": "inconclusive"
+  }
+ ],
+ "generated_by": "decision_sensitivity.py"
+}

@@ -1,0 +1,266 @@
+{
+ "description": "IR-1 extraction-then-transfer chain (ATLAS AML.T0005->T0043->T0015); transfer ASR with exact one-sided 95% bounds.",
+ "eps": 0.5,
+ "tau_ir2_reference": 0.2,
+ "victims": {
+  "baseline_s0": {
+   "theta_smoothed": 19.623428543382843,
+   "theta_point": 22.535218513482864,
+   "n_detected": 38,
+   "runs": [
+    {
+     "interface": "score",
+     "Q": 1000,
+     "query_pos_rate": 0.488,
+     "balanced_agreement": 0.512105201760297,
+     "agree_pos": 0.9971711456859972,
+     "agree_neg": 0.027039257834596674,
+     "n_eval": 18385,
+     "victim_pos": 707,
+     "transfer_k": 0,
+     "transfer_n": 38,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07580765168296455
+    },
+    {
+     "interface": "score",
+     "Q": 10000,
+     "query_pos_rate": 0.506,
+     "balanced_agreement": 0.7299323846531373,
+     "agree_pos": 0.49646393210749645,
+     "agree_neg": 0.9634008371987781,
+     "n_eval": 18385,
+     "victim_pos": 707,
+     "transfer_k": 0,
+     "transfer_n": 38,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07580765168296455
+    },
+    {
+     "interface": "score",
+     "Q": 100000,
+     "query_pos_rate": 0.49865,
+     "balanced_agreement": 0.5591480664721556,
+     "agree_pos": 0.413012729844413,
+     "agree_neg": 0.7052834030998982,
+     "n_eval": 18385,
+     "victim_pos": 707,
+     "transfer_k": 0,
+     "transfer_n": 38,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07580765168296455
+    },
+    {
+     "interface": "label",
+     "Q": 1000,
+     "query_pos_rate": 0.504,
+     "balanced_agreement": 0.7623846387353974,
+     "agree_pos": 0.6237623762376238,
+     "agree_neg": 0.9010069012331712,
+     "n_eval": 18385,
+     "victim_pos": 707,
+     "transfer_k": 0,
+     "transfer_n": 38,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07580765168296455
+    },
+    {
+     "interface": "label",
+     "Q": 10000,
+     "query_pos_rate": 0.4993,
+     "balanced_agreement": 0.7554352391908497,
+     "agree_pos": 0.7227722772277227,
+     "agree_neg": 0.7880982011539767,
+     "n_eval": 18385,
+     "victim_pos": 707,
+     "transfer_k": 0,
+     "transfer_n": 38,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07580765168296455
+    },
+    {
+     "interface": "label",
+     "Q": 100000,
+     "query_pos_rate": 0.5003,
+     "balanced_agreement": 0.543454829943098,
+     "agree_pos": 0.7963224893917963,
+     "agree_neg": 0.2905871704943998,
+     "n_eval": 18385,
+     "victim_pos": 707,
+     "transfer_k": 0,
+     "transfer_n": 38,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07580765168296455
+    }
+   ]
+  },
+  "hardened_s0": {
+   "theta_smoothed": 7.22991242408742,
+   "theta_point": 8.13810000038117,
+   "n_detected": 36,
+   "runs": [
+    {
+     "interface": "score",
+     "Q": 1000,
+     "query_pos_rate": 0.482,
+     "balanced_agreement": 0.5738330875120801,
+     "agree_pos": 0.9065058164584231,
+     "agree_neg": 0.24116035856573706,
+     "n_eval": 18385,
+     "victim_pos": 2321,
+     "transfer_k": 0,
+     "transfer_n": 36,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07984650951989439
+    },
+    {
+     "interface": "score",
+     "Q": 10000,
+     "query_pos_rate": 0.5003,
+     "balanced_agreement": 0.670348375455524,
+     "agree_pos": 0.35545023696682465,
+     "agree_neg": 0.9852465139442231,
+     "n_eval": 18385,
+     "victim_pos": 2321,
+     "transfer_k": 0,
+     "transfer_n": 36,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07984650951989439
+    },
+    {
+     "interface": "score",
+     "Q": 100000,
+     "query_pos_rate": 0.49318,
+     "balanced_agreement": 0.6948618038616753,
+     "agree_pos": 0.4179233089185696,
+     "agree_neg": 0.9718002988047809,
+     "n_eval": 18385,
+     "victim_pos": 2321,
+     "transfer_k": 0,
+     "transfer_n": 36,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07984650951989439
+    },
+    {
+     "interface": "label",
+     "Q": 1000,
+     "query_pos_rate": 0.496,
+     "balanced_agreement": 0.49735588827370397,
+     "agree_pos": 0.988797931925894,
+     "agree_neg": 0.005913844621513944,
+     "n_eval": 18385,
+     "victim_pos": 2321,
+     "transfer_k": 0,
+     "transfer_n": 36,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07984650951989439
+    },
+    {
+     "interface": "label",
+     "Q": 10000,
+     "query_pos_rate": 0.4938,
+     "balanced_agreement": 0.6882881684163819,
+     "agree_pos": 0.5829383886255924,
+     "agree_neg": 0.7936379482071713,
+     "n_eval": 18385,
+     "victim_pos": 2321,
+     "transfer_k": 0,
+     "transfer_n": 36,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07984650951989439
+    },
+    {
+     "interface": "label",
+     "Q": 100000,
+     "query_pos_rate": 0.49479,
+     "balanced_agreement": 0.6876650549890055,
+     "agree_pos": 0.5010771219302025,
+     "agree_neg": 0.8742529880478087,
+     "n_eval": 18385,
+     "victim_pos": 2321,
+     "transfer_k": 0,
+     "transfer_n": 36,
+     "transfer_asr": 0.0,
+     "transfer_lcb95": 0.0,
+     "transfer_ucb95": 0.07984650951989439
+    }
+   ]
+  }
+ },
+ "stored_e4_extract_baseline": [
+  {
+   "interface": "score",
+   "Q": 1000,
+   "transfer_k": 0,
+   "transfer_n": 38,
+   "transfer_asr": 0.0,
+   "transfer_lcb95": 0.0,
+   "transfer_ucb95": 0.07580765168296455
+  },
+  {
+   "interface": "score",
+   "Q": 10000,
+   "transfer_k": 0,
+   "transfer_n": 38,
+   "transfer_asr": 0.0,
+   "transfer_lcb95": 0.0,
+   "transfer_ucb95": 0.07580765168296455
+  },
+  {
+   "interface": "score",
+   "Q": 100000,
+   "transfer_k": 0,
+   "transfer_n": 38,
+   "transfer_asr": 0.0,
+   "transfer_lcb95": 0.0,
+   "transfer_ucb95": 0.07580765168296455
+  },
+  {
+   "interface": "label",
+   "Q": 1000,
+   "transfer_k": 0,
+   "transfer_n": 38,
+   "transfer_asr": 0.0,
+   "transfer_lcb95": 0.0,
+   "transfer_ucb95": 0.07580765168296455
+  },
+  {
+   "interface": "label",
+   "Q": 10000,
+   "transfer_k": 0,
+   "transfer_n": 38,
+   "transfer_asr": 0.0,
+   "transfer_lcb95": 0.0,
+   "transfer_ucb95": 0.07580765168296455
+  },
+  {
+   "interface": "label",
+   "Q": 100000,
+   "transfer_k": 0,
+   "transfer_n": 38,
+   "transfer_asr": 0.0,
+   "transfer_lcb95": 0.0,
+   "transfer_ucb95": 0.07580765168296455
+  }
+ ],
+ "runtime_s": 232.7972960472107,
+ "versions": {
+  "python": "3.10.6",
+  "numpy": "1.26.4",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "platform": "Windows-10-10.0.19045-SP0"
+ }
+}

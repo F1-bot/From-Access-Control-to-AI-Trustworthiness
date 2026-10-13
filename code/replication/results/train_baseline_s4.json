@@ -1,0 +1,154 @@
+{
+ "tag": "baseline_s4",
+ "seed": 4,
+ "corrupt": 0.0,
+ "recipe": {
+  "epochs": 12,
+  "per_epoch": 250000
+ },
+ "n_features": 57,
+ "features": [
+  "P1_B2004",
+  "P1_B2016",
+  "P1_B3004",
+  "P1_B3005",
+  "P1_B4002",
+  "P1_B4005",
+  "P1_B400B",
+  "P1_B4022",
+  "P1_FCV01D",
+  "P1_FCV01Z",
+  "P1_FCV02D",
+  "P1_FCV02Z",
+  "P1_FCV03D",
+  "P1_FCV03Z",
+  "P1_FT01",
+  "P1_FT01Z",
+  "P1_FT02",
+  "P1_FT02Z",
+  "P1_FT03",
+  "P1_FT03Z",
+  "P1_LCV01D",
+  "P1_LCV01Z",
+  "P1_LIT01",
+  "P1_PCV01D",
+  "P1_PCV01Z",
+  "P1_PCV02Z",
+  "P1_PIT01",
+  "P1_PIT02",
+  "P1_TIT01",
+  "P1_TIT02",
+  "P2_24Vdc",
+  "P2_CO_rpm",
+  "P2_HILout",
+  "P2_SIT01",
+  "P2_SIT02",
+  "P2_VT01",
+  "P2_VXT02",
+  "P2_VXT03",
+  "P2_VYT02",
+  "P2_VYT03",
+  "P3_FIT01",
+  "P3_LCP01D",
+  "P3_LCV01D",
+  "P3_LIT01",
+  "P3_PIT01",
+  "P4_HT_FD",
+  "P4_HT_LD",
+  "P4_HT_PO",
+  "P4_HT_PS",
+  "P4_LD",
+  "P4_ST_FD",
+  "P4_ST_GOV",
+  "P4_ST_LD",
+  "P4_ST_PO",
+  "P4_ST_PS",
+  "P4_ST_PT01",
+  "P4_ST_TT01"
+ ],
+ "train_windows": 825662,
+ "val_seconds": 95761,
+ "val_hours": 26.600277777777777,
+ "thetas_by_quantile": {
+  "0.995": 3.9682256519794463,
+  "0.999": 16.82416635513314,
+  "0.9995": 30.69723377227933
+ },
+ "val_episodes_by_quantile": {
+  "0.995": 25,
+  "0.999": 6,
+  "0.9995": 5
+ },
+ "train_log": [
+  {
+   "epoch": 0,
+   "train_mse": 0.09965251255400327,
+   "val_mse": 0.08552921080525769
+  },
+  {
+   "epoch": 1,
+   "train_mse": 0.0819484570500802,
+   "val_mse": 0.0850322602416871
+  },
+  {
+   "epoch": 2,
+   "train_mse": 0.08098349689829107,
+   "val_mse": 0.08211424183704769
+  },
+  {
+   "epoch": 3,
+   "train_mse": 0.07857241882961624,
+   "val_mse": 0.0805784221179034
+  },
+  {
+   "epoch": 4,
+   "train_mse": 0.0772337832925271,
+   "val_mse": 0.07783292823497744
+  },
+  {
+   "epoch": 5,
+   "train_mse": 0.07569898692320805,
+   "val_mse": 0.07786532077636846
+  },
+  {
+   "epoch": 6,
+   "train_mse": 0.07492646669246712,
+   "val_mse": 0.07654769512423838
+  },
+  {
+   "epoch": 7,
+   "train_mse": 0.07361915102418588,
+   "val_mse": 0.07696184517354354
+  },
+  {
+   "epoch": 8,
+   "train_mse": 0.07363596747116166,
+   "val_mse": 0.0747687982158921
+  },
+  {
+   "epoch": 9,
+   "train_mse": 0.0731249457111164,
+   "val_mse": 0.07502500094513455
+  },
+  {
+   "epoch": 10,
+   "train_mse": 0.07296737566286204,
+   "val_mse": 0.07481533987420859
+  },
+  {
+   "epoch": 11,
+   "train_mse": 0.0726167060586871,
+   "val_mse": 0.07444546669978507
+  }
+ ],
+ "runtime_s": 76.79771184921265,
+ "versions": {
+  "python": "3.10.6",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "pandas": "2.3.3",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+ }
+}

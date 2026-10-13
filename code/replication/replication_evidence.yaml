@@ -1,0 +1,154 @@
+# Evidence classes for the confirmatory replication on HAI 21.03 (same requirements and classes as
+# code/experiments/case_evidence.yaml; evidence texts and the IV-3 test adapted to the replication).
+ID-1:
+- req: ID-1.1
+  status: D
+  evidence: 'Dataset scope fixed in the frozen replication plan: HAI 21.03 train1-3 and test1-5; HAI 22.04 training files as drift data'
+- req: ID-1.2
+  status: D
+  evidence: Source, licence and collection documented by the maintainers; pre-processing specified in prep.json and Section 3.7
+- req: ID-1.3
+  status: D
+  evidence: SHA-256 content manifest of every HAI 21.03 data file (data/raw/hai/MANIFEST.json); digests listed in the AI-BOM
+ID-2:
+- req: ID-2.1
+  status: D
+  evidence: All datasets used are covered by the manifest
+- req: ID-2.2
+  status: NE
+  evidence: Digests were verified at acquisition only; the evaluated pipeline does not verify them before each training or evaluation run (a retrospective check is
+    reported)
+- req: ID-2.3
+  status: A
+  evidence: Role-based modification rights and protected logging are platform or operator controls (CA-1, NR-2)
+ID-3:
+- req: ID-3.1
+  status: D
+  evidence: Data obtained over HTTPS from the maintainers' repository and verified against the Git-LFS SHA-256 object identifiers
+- req: ID-3.2
+  status: D
+  evidence: Statistical screening (trusted-subset sanitiser) applied before training in the poisoning drill (r6_e3.py)
+- req: ID-3.3
+  status: T
+  tests:
+  - ID-3.pdet
+  - ID-3.pdeg
+  evidence: Poisoning drill at beta = 1% with the 20 attacks of test2 as poisoned traces (frozen plan)
+IR-1:
+- req: IR-1.1
+  status: D
+  evidence: Threat models TM-ALL/TM-A/TM-B, L_inf budget, attacker knowledge and query budget declared in the evaluation plan and Section 3.7
+- req: IR-1.2
+  status: T
+  tests:
+  - IR-1.transfer
+  - IR-1.query
+  evidence: Transfer (surrogate) and query-based (extraction-then-transfer) black-box attacks, reported with exact CIs; no threshold at this level
+IR-2:
+- req: IR-2.1
+  status: T
+  tests:
+  - IR-2.asr
+  evidence: Adaptive white-box attacks over the declared ball (PGD as planned, improved PGD, greedy prediction replay)
+- req: IR-2.2
+  status: D
+  evidence: Hardening (input-channel corruption) documented and evaluated with adaptive white-box attacks; transfer resistance re-tested with a hardening-aware surrogate
+    (obscurity not credited)
+IV-1:
+- req: IV-1.1
+  status: D
+  evidence: Intended purpose, operational domain and metrics declared in the frozen replication plan
+- req: IV-1.2
+  status: T
+  tests:
+  - IV-1.report
+  evidence: Event recall and false-alarm rate measured on the held-out test files and reported with exact bounds
+IV-2:
+- req: IV-2.1
+  status: T
+  tests:
+  - IV-2.recall
+  - IV-2.far
+  evidence: Acceptance tests on the five held-out test files of HAI 21.03; margin delta = 0.2 declared in the frozen plan
+- req: IV-2.2
+  status: D
+  evidence: Results reported per test file and operating point; outputs are not probabilistic, so calibration does not apply
+IV-3:
+- req: IV-3.1
+  status: T
+  tests:
+  - IV-3.drift
+  evidence: Hourly drift monitor of the frozen plan (PSI against the validation reference; threshold calibrated on training hours)
+- req: IV-3.2
+  status: NA
+  evidence: No uncertainty sets are produced by the detector
+IE-1:
+- req: IE-1.1
+  status: D
+  evidence: Model card in the CycloneDX ML-BOM (purpose, limitations, metrics)
+- req: IE-1.2
+  status: NA
+  evidence: No natural-person interaction with AI-generated content; alarms are labelled as detector output in the model card
+IE-2:
+- req: IE-2.1
+  status: A
+  evidence: Per-alarm attribution is produced by the pipeline; presentation to and recording by the SOC system are operator integration
+- req: IE-2.2
+  status: T
+  tests:
+  - IE-2.xfid
+  evidence: Process-localisation accuracy of the explanations against the planned threshold and the constant explainer of the plan
+IP-1:
+- req: IP-1.1
+  status: D
+  evidence: No personal data; the declared interface returns the alarm bit only (label-only)
+- req: IP-1.2
+  status: A
+  evidence: Model-access policy is an operator control (KA-1)
+IP-2:
+- req: IP-2.1a
+  status: NA
+  evidence: 'Membership inference: training data are public process recordings without personal or confidential records (''applies'' clause of IP-2)'
+- req: IP-2.1b
+  status: T
+  tests:
+  - IP-2.ext
+  evidence: Extraction resistance at Q = 10^4, label-only, on all operational test windows with dependent-data bounds (r5_e4.py)
+- req: IP-2.2
+  status: A
+  evidence: Per-identity query quotas and logging are platform controls (DR-1, NR-2)
+IO-1:
+- req: IO-1.1
+  status: A
+  evidence: Oversight roles and the ability to override or stop belong to the operator's SOC procedures
+- req: IO-1.2
+  status: D
+  evidence: 'Model card in the ML-BOM states the oversight mode: advisory detection for ICS operators, human-on-the-loop'
+IO-2:
+- req: IO-2.1
+  status: D
+  evidence: By design the detector only raises alarms; no output takes effect without operator action
+- req: IO-2.2a
+  status: T
+  tests:
+  - IO-2.load
+  evidence: Alarm workload measured on the HAI 21.03 test campaign
+- req: IO-2.2b
+  status: A
+  evidence: Automation-bias countermeasures (operator training, uncertainty cues) are operator procedures
+IM-1:
+- req: IM-1.1
+  status: D
+  evidence: CycloneDX 1.6 AI-BOM with model card, dataset digests and library versions (r8_im2.py)
+- req: IM-1.2
+  status: A
+  evidence: Vulnerability monitoring of listed components is an operator process enabled by the ML-BOM
+IM-2:
+- req: IM-2.1
+  status: T
+  tests:
+  - IM-2.sig
+  evidence: Ed25519 signature verified against a pinned trust anchor; negative tests (modified artefact, foreign key, replaced anchor)
+- req: IM-2.2
+  status: D
+  evidence: safetensors serialisation (no code execution on load)

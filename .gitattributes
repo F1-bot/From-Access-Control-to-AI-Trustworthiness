@@ -1,0 +1,7 @@
+# Store every file byte for byte, without line-ending conversion. SHA-256 digests or signatures are recorded for the
+# frozen evaluation plans, the evidence classes, the signed releases and the data manifest, and they must stay valid
+# on every platform.
+* -text
+*.safetensors binary
+*.npz binary
+*.npy binary

@@ -1,0 +1,10 @@
+{
+ "tag": "surrogate_hardaware",
+ "seed": 2024,
+ "corrupt": 0.3,
+ "data": "train2 and the first 80% of train3",
+ "epochs": 8,
+ "per_epoch": 200000,
+ "theta_99.9": 13.202585406303418,
+ "runtime_s": 40.7438747882843
+}

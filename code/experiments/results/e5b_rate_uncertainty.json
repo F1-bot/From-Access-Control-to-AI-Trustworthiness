@@ -1,0 +1,226 @@
+{
+ "model": "e5b_shared60_s0",
+ "theta": 19.986470737433237,
+ "B": 10000,
+ "seed": 0,
+ "rates": {
+  "2204_e1": {
+   "label": "22.04 test normal, E1 convention",
+   "count": 60,
+   "exposure_h": 95.95833333333333,
+   "rate_per_h": 0.6252713851498046,
+   "ucb95_one_sided": 0.7752284618553447,
+   "ci95_two_sided": [
+    0.4771479386887427,
+    0.8048482161352323
+   ],
+   "dispersion": {
+    "n_bins": 101,
+    "total_count": 60,
+    "total_exposure_h": 95.95833333333333,
+    "rate_per_h": 0.6252713851498046,
+    "pearson_x2": 89.45991546657288,
+    "df": 100,
+    "dispersion_x2_over_df": 0.8945991546657288,
+    "p_chi2_overdispersion": 0.7659670312304707,
+    "p_monte_carlo_conditional": 0.7652117394130293,
+    "mc_B": 20000,
+    "mc_seed": 0,
+    "max_count": 3,
+    "n_bins_zero": 55
+   },
+   "phi": 0.8945991546657288,
+   "quasi_poisson_ci95": [
+    0.4771479386887427,
+    0.8048482161352323
+   ],
+   "block_bootstrap_ci95": {
+    "1": [
+     0.48100006302115506,
+     0.7805043881361059
+    ],
+    "6": [
+     0.49867438619473947,
+     0.7603596836951686
+    ],
+    "24": [
+     0.48654063262753244,
+     0.7726895153569006
+    ]
+   }
+  },
+  "2204_e5": {
+   "label": "22.04 test normal, E5 convention",
+   "count": 52,
+   "exposure_h": 82.50777777777778,
+   "rate_per_h": 0.6302436133967169,
+   "ucb95_one_sided": 0.7940551895783821,
+   "ci95_two_sided": [
+    0.4706960755270898,
+    0.8264806491884348
+   ],
+   "dispersion": {
+    "n_bins": 101,
+    "total_count": 52,
+    "total_exposure_h": 82.50777777777778,
+    "rate_per_h": 0.6302436133967169,
+    "pearson_x2": 98.967780646462,
+    "df": 100,
+    "dispersion_x2_over_df": 0.98967780646462,
+    "p_chi2_overdispersion": 0.510386511623864,
+    "p_monte_carlo_conditional": 0.49227538623068845,
+    "mc_B": 20000,
+    "mc_seed": 0,
+    "max_count": 3,
+    "n_bins_zero": 61
+   },
+   "phi": 0.98967780646462,
+   "quasi_poisson_ci95": [
+    0.4706960755270898,
+    0.8264806491884348
+   ],
+   "block_bootstrap_ci95": {
+    "1": [
+     0.4676497693857988,
+     0.8087286504498465
+    ],
+    "6": [
+     0.47133022507918154,
+     0.7986341456633956
+    ],
+    "24": [
+     0.46184663198623327,
+     0.783276817686865
+    ]
+   }
+  },
+  "2305_e1": {
+   "label": "23.05 normal training files, E1 convention",
+   "count": 2378,
+   "exposure_h": 248.93333333333334,
+   "rate_per_h": 9.552758435993573,
+   "ucb95_one_sided": 9.881329153435363,
+   "ci95_two_sided": [
+    9.172630611576515,
+    9.94459358508624
+   ],
+   "dispersion": {
+    "n_bins": 249,
+    "total_count": 2378,
+    "total_exposure_h": 248.93333333333334,
+    "rate_per_h": 9.552758435993573,
+    "pearson_x2": 626.9018707264804,
+    "df": 248,
+    "dispersion_x2_over_df": 2.5278301238970986,
+    "p_chi2_overdispersion": 1.0698975435881882e-34,
+    "p_monte_carlo_conditional": 4.999750012499375e-05,
+    "mc_B": 20000,
+    "mc_seed": 0,
+    "max_count": 23,
+    "n_bins_zero": 0
+   },
+   "phi": 2.5278301238970986,
+   "quasi_poisson_ci95": [
+    8.951989926035713,
+    10.18324052687578
+   ],
+   "block_bootstrap_ci95": {
+    "1": [
+     8.954804151322396,
+     10.16208342248803
+    ],
+    "6": [
+     8.496819551389354,
+     10.619445021968389
+    ],
+    "24": [
+     8.291817396452293,
+     10.78937942060987
+    ]
+   }
+  }
+ },
+ "ratio_2305_over_2204": {
+  "e1_convention": {
+   "ratio": 15.27777963756472,
+   "exact_conditional_poisson_ci95": [
+    11.826323690300011,
+    20.084273493310853
+   ],
+   "quasi_poisson_lognormal_ci95": [
+    11.768479517645407,
+    19.83353502073198
+   ],
+   "block_bootstrap_ci95": {
+    "1": [
+     12.09208460110025,
+     20.00541136577428
+    ],
+    "6": [
+     12.165252995748265,
+     19.54742170026377
+    ],
+    "24": [
+     11.818915044281376,
+     20.275958913465445
+    ]
+   }
+  },
+  "vs_2204_e5_convention": {
+   "ratio": 15.1572475038798,
+   "exact_conditional_poisson_ci95": [
+    11.519256570390777,
+    20.355155027681928
+   ],
+   "quasi_poisson_lognormal_ci95": [
+    11.464665389505601,
+    20.03915021402799
+   ],
+   "block_bootstrap_ci95": {
+    "1": [
+     11.686364815143554,
+     20.56284708987953
+    ],
+    "6": [
+     11.658431490918549,
+     20.52681481171757
+    ],
+    "24": [
+     11.640241606233918,
+     21.147798263517927
+    ]
+   }
+  }
+ },
+ "meta": {
+  "script": "e5b_rate_uncertainty.py",
+  "finished_local": "2026-10-12T09:12:54",
+  "runtime_s": 25.4,
+  "seeds": {
+   "bootstrap": 0,
+   "dispersion_mc": 0
+  },
+  "software": {
+   "python": "3.10.6",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "numpy": "1.26.4",
+   "scipy": "1.15.3",
+   "pandas": "2.3.3",
+   "torch": "2.6.0+cu124",
+   "cuda": "12.4",
+   "cudnn": 90100,
+   "device": "cuda",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "cudnn_deterministic_flag": false,
+   "cudnn_benchmark_flag": false,
+   "safetensors": "0.7.0",
+   "sklearn": "1.7.2"
+  },
+  "hai_lib_constants": {
+   "W": 60,
+   "SMOOTH": 10,
+   "MERGE_GAP": 30,
+   "TOL": 60
+  }
+ }
+}

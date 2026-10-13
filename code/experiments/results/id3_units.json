@@ -1,0 +1,1329 @@
+{
+ "beta": 0.01,
+ "replicas": 6,
+ "n_traces": 7,
+ "trace_ids": [
+  "A101",
+  "A102",
+  "A103",
+  "A104",
+  "A105",
+  "A106",
+  "A107"
+ ],
+ "trace_windows_per_replica": [
+  310,
+  174,
+  246,
+  174,
+  416,
+  211,
+  187
+ ],
+ "clean_windows": 952202,
+ "clean_removal": {
+  "removed": 185603,
+  "windows": 952202,
+  "fraction": 0.19491977542580252,
+  "per_array": [
+   {
+    "array": "train1",
+    "windows": 93541,
+    "removed": 700,
+    "fraction": 0.0074833495472573525
+   },
+   {
+    "array": "train2",
+    "windows": 201540,
+    "removed": 1245,
+    "fraction": 0.006177433760047633
+   },
+   {
+    "array": "train3",
+    "windows": 125940,
+    "removed": 31805,
+    "fraction": 0.2525408924884866
+   },
+   {
+    "array": "train4",
+    "windows": 86341,
+    "removed": 25191,
+    "fraction": 0.2917617354443428
+   },
+   {
+    "array": "train5",
+    "windows": 237540,
+    "removed": 125684,
+    "fraction": 0.5291066767702282
+   },
+   {
+    "array": "train6[:80%]",
+    "windows": 207300,
+    "removed": 978,
+    "fraction": 0.004717800289435601
+   }
+  ],
+  "hour_cluster_bootstrap": {
+   "n_clusters": 267,
+   "B": 10000,
+   "seed": 0,
+   "ci95": [
+    0.15996830651739316,
+    0.23186451363072605
+   ],
+   "lcb95_one_sided": 0.1654815118139799
+  },
+  "tau_fpr": 0.05
+ },
+ "sanitiser": {
+  "threshold": 5.284081227779399,
+  "reproduction_check": {
+   "threshold_stored": 5.284081227779399,
+   "threshold_retrained": 5.284081227779399,
+   "threshold_identical": true,
+   "clean_removed_stored": 185603,
+   "clean_removed_retrained": 185603,
+   "clean_removed_retrained_frog_pass": 185603,
+   "poison_removed_identical": true
+  }
+ },
+ "traces": {
+  "simple": {
+   "per_trace": [
+    {
+     "attack_id": "A101",
+     "windows": 1860,
+     "removed": 354,
+     "fraction": 0.19032258064516128,
+     "per_replica_fraction": [
+      0.19032258064516128,
+      0.19032258064516128,
+      0.19032258064516128,
+      0.19032258064516128,
+      0.19032258064516128,
+      0.19032258064516128
+     ],
+     "replicas_identical": true,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 1506,
+       "removed": 354,
+       "fraction": 0.2350597609561753
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A102",
+     "windows": 1044,
+     "removed": 252,
+     "fraction": 0.2413793103448276,
+     "per_replica_fraction": [
+      0.2413793103448276,
+      0.2413793103448276,
+      0.2413793103448276,
+      0.2413793103448276,
+      0.2413793103448276,
+      0.2413793103448276
+     ],
+     "replicas_identical": true,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 690,
+       "removed": 252,
+       "fraction": 0.3652173913043478
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A103",
+     "windows": 1476,
+     "removed": 462,
+     "fraction": 0.3130081300813008,
+     "per_replica_fraction": [
+      0.3130081300813008,
+      0.3130081300813008,
+      0.3130081300813008,
+      0.3130081300813008,
+      0.3130081300813008,
+      0.3130081300813008
+     ],
+     "replicas_identical": true,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 1122,
+       "removed": 462,
+       "fraction": 0.4117647058823529
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A104",
+     "windows": 1044,
+     "removed": 30,
+     "fraction": 0.028735632183908046,
+     "per_replica_fraction": [
+      0.028735632183908046,
+      0.028735632183908046,
+      0.028735632183908046,
+      0.028735632183908046,
+      0.028735632183908046,
+      0.028735632183908046
+     ],
+     "replicas_identical": true,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 6,
+       "fraction": 0.03333333333333333
+      },
+      "attack_containing": {
+       "windows": 690,
+       "removed": 18,
+       "fraction": 0.02608695652173913
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 6,
+       "fraction": 0.034482758620689655
+      }
+     },
+     "detected_by_baseline_s0_e1": 0
+    },
+    {
+     "attack_id": "A105",
+     "windows": 2496,
+     "removed": 684,
+     "fraction": 0.27403846153846156,
+     "per_replica_fraction": [
+      0.27403846153846156,
+      0.27403846153846156,
+      0.27403846153846156,
+      0.27403846153846156,
+      0.27403846153846156,
+      0.27403846153846156
+     ],
+     "replicas_identical": true,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 2142,
+       "removed": 684,
+       "fraction": 0.31932773109243695
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A106",
+     "windows": 1266,
+     "removed": 12,
+     "fraction": 0.009478672985781991,
+     "per_replica_fraction": [
+      0.009478672985781991,
+      0.009478672985781991,
+      0.009478672985781991,
+      0.009478672985781991,
+      0.009478672985781991,
+      0.009478672985781991
+     ],
+     "replicas_identical": true,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 912,
+       "removed": 12,
+       "fraction": 0.013157894736842105
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A107",
+     "windows": 1122,
+     "removed": 0,
+     "fraction": 0.0,
+     "per_replica_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "replicas_identical": true,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 768,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 0
+    }
+   ],
+   "pooled_fraction": 0.1740395809080326,
+   "mean_of_trace_fractions": 0.15099468396849164,
+   "median_trace_fraction": 0.19032258064516128,
+   "min_trace_fraction": 0.0,
+   "max_trace_fraction": 0.3130081300813008,
+   "poison_removed_retrained": 1794,
+   "poison_removed_stored": 1794,
+   "poison_windows": 10308,
+   "poison_windows_stored": 10308,
+   "window_level_cp_lcb95_as_reported": 0.16791717173557794,
+   "cluster_bootstrap": {
+    "B": 10000,
+    "seed": 0,
+    "method": "percentile bootstrap over the 7 source traces",
+    "pooled_ci95": [
+     0.07176391683433937,
+     0.25059952038369304
+    ],
+    "pooled_lcb95_one_sided": 0.08766233766233766,
+    "mean_ci95": [
+     0.05838481423125814,
+     0.24169970763747048
+    ],
+    "mean_lcb95_one_sided": 0.07450467047498241,
+    "n_distinct_resamples_possible": "C(13,7) = 1716"
+   },
+   "trace_level": {
+    "traces_removed_ge_0.5": {
+     "k": 0,
+     "n": 7,
+     "estimate": 0.0,
+     "lcb95_one_sided": 0.0,
+     "ucb95_one_sided": 0.34816365513116077,
+     "ci95_two_sided": [
+      0.0,
+      0.4096163972250034
+     ]
+    },
+    "traces_removed_ge_0.8": {
+     "k": 0,
+     "n": 7,
+     "estimate": 0.0,
+     "lcb95_one_sided": 0.0,
+     "ucb95_one_sided": 0.34816365513116077,
+     "ci95_two_sided": [
+      0.0,
+      0.4096163972250034
+     ]
+    }
+   },
+   "best_possible_trace_level_lcb95": 0.6518363448688391,
+   "traces_needed_for_lcb_ge_0.80_with_zero_misses": 14,
+   "phase_pooled": {
+    "pre_attack_context": {
+     "windows": 1260,
+     "removed": 6,
+     "fraction": 0.004761904761904762
+    },
+    "attack_containing": {
+     "windows": 7830,
+     "removed": 1782,
+     "fraction": 0.22758620689655173
+    },
+    "post_attack_tail": {
+     "windows": 1218,
+     "removed": 6,
+     "fraction": 0.0049261083743842365
+    }
+   },
+   "oracle_max_pdet_window_level": 0.759604190919674,
+   "oracle_note": "a sanitiser that removes exactly the windows whose input or target touches the attack interval reaches this pdet",
+   "attack_containing_cluster_bootstrap": {
+    "B": 10000,
+    "seed": 0,
+    "method": "percentile bootstrap over the 7 source traces",
+    "pooled_ci95": [
+     0.10010764262648009,
+     0.31977722242366635
+    ],
+    "pooled_lcb95_one_sided": 0.11732553552364419,
+    "mean_ci95": [
+     0.07276633902441884,
+     0.3152050293801731
+    ],
+    "mean_lcb95_one_sided": 0.09508699429154907,
+    "n_distinct_resamples_possible": "C(13,7) = 1716"
+   }
+  },
+  "frog": {
+   "per_trace": [
+    {
+     "attack_id": "A101",
+     "windows": 1860,
+     "removed": 103,
+     "fraction": 0.0553763440860215,
+     "per_replica_fraction": [
+      0.0,
+      0.0032258064516129032,
+      0.012903225806451613,
+      0.02903225806451613,
+      0.0967741935483871,
+      0.19032258064516128
+     ],
+     "replicas_identical": false,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 1506,
+       "removed": 103,
+       "fraction": 0.06839309428950863
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A102",
+     "windows": 1044,
+     "removed": 122,
+     "fraction": 0.11685823754789272,
+     "per_replica_fraction": [
+      0.04597701149425287,
+      0.04597701149425287,
+      0.06321839080459771,
+      0.12643678160919541,
+      0.1781609195402299,
+      0.2413793103448276
+     ],
+     "replicas_identical": false,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 690,
+       "removed": 122,
+       "fraction": 0.17681159420289855
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A103",
+     "windows": 1476,
+     "removed": 267,
+     "fraction": 0.18089430894308944,
+     "per_replica_fraction": [
+      0.0,
+      0.04878048780487805,
+      0.15853658536585366,
+      0.26422764227642276,
+      0.3008130081300813,
+      0.3130081300813008
+     ],
+     "replicas_identical": false,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 1122,
+       "removed": 267,
+       "fraction": 0.23796791443850268
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A104",
+     "windows": 1044,
+     "removed": 5,
+     "fraction": 0.004789272030651341,
+     "per_replica_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.028735632183908046
+     ],
+     "replicas_identical": false,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 1,
+       "fraction": 0.005555555555555556
+      },
+      "attack_containing": {
+       "windows": 690,
+       "removed": 3,
+       "fraction": 0.004347826086956522
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 1,
+       "fraction": 0.005747126436781609
+      }
+     },
+     "detected_by_baseline_s0_e1": 0
+    },
+    {
+     "attack_id": "A105",
+     "windows": 2496,
+     "removed": 375,
+     "fraction": 0.1502403846153846,
+     "per_replica_fraction": [
+      0.09375,
+      0.0985576923076923,
+      0.1201923076923077,
+      0.125,
+      0.18990384615384615,
+      0.27403846153846156
+     ],
+     "replicas_identical": false,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 2142,
+       "removed": 375,
+       "fraction": 0.17507002801120447
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A106",
+     "windows": 1266,
+     "removed": 9,
+     "fraction": 0.0071090047393364926,
+     "per_replica_fraction": [
+      0.0,
+      0.004739336492890996,
+      0.009478672985781991,
+      0.009478672985781991,
+      0.009478672985781991,
+      0.009478672985781991
+     ],
+     "replicas_identical": false,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 912,
+       "removed": 9,
+       "fraction": 0.009868421052631578
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 1
+    },
+    {
+     "attack_id": "A107",
+     "windows": 1122,
+     "removed": 0,
+     "fraction": 0.0,
+     "per_replica_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "replicas_identical": true,
+     "by_phase": {
+      "pre_attack_context": {
+       "windows": 180,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "attack_containing": {
+       "windows": 768,
+       "removed": 0,
+       "fraction": 0.0
+      },
+      "post_attack_tail": {
+       "windows": 174,
+       "removed": 0,
+       "fraction": 0.0
+      }
+     },
+     "detected_by_baseline_s0_e1": 0
+    }
+   ],
+   "pooled_fraction": 0.08546759798214978,
+   "mean_of_trace_fractions": 0.07360965028033946,
+   "median_trace_fraction": 0.0553763440860215,
+   "min_trace_fraction": 0.0,
+   "max_trace_fraction": 0.18089430894308944,
+   "poison_removed_retrained": 881,
+   "poison_removed_stored": 881,
+   "poison_windows": 10308,
+   "poison_windows_stored": 10308,
+   "window_level_cp_lcb95_as_reported": 0.08097669978095254,
+   "cluster_bootstrap": {
+    "B": 10000,
+    "seed": 0,
+    "method": "percentile bootstrap over the 7 source traces",
+    "pooled_ci95": [
+     0.028427326914259515,
+     0.13322158365261813
+    ],
+    "pooled_lcb95_one_sided": 0.036276792248726535,
+    "mean_ci95": [
+     0.02519381012343506,
+     0.1268688209915252
+    ],
+    "mean_lcb95_one_sided": 0.030608845173386256,
+    "n_distinct_resamples_possible": "C(13,7) = 1716"
+   },
+   "trace_level": {
+    "traces_removed_ge_0.5": {
+     "k": 0,
+     "n": 7,
+     "estimate": 0.0,
+     "lcb95_one_sided": 0.0,
+     "ucb95_one_sided": 0.34816365513116077,
+     "ci95_two_sided": [
+      0.0,
+      0.4096163972250034
+     ]
+    },
+    "traces_removed_ge_0.8": {
+     "k": 0,
+     "n": 7,
+     "estimate": 0.0,
+     "lcb95_one_sided": 0.0,
+     "ucb95_one_sided": 0.34816365513116077,
+     "ci95_two_sided": [
+      0.0,
+      0.4096163972250034
+     ]
+    }
+   },
+   "best_possible_trace_level_lcb95": 0.6518363448688391,
+   "traces_needed_for_lcb_ge_0.80_with_zero_misses": 14,
+   "phase_pooled": {
+    "pre_attack_context": {
+     "windows": 1260,
+     "removed": 1,
+     "fraction": 0.0007936507936507937
+    },
+    "attack_containing": {
+     "windows": 7830,
+     "removed": 879,
+     "fraction": 0.11226053639846743
+    },
+    "post_attack_tail": {
+     "windows": 1218,
+     "removed": 1,
+     "fraction": 0.0008210180623973727
+    }
+   },
+   "oracle_max_pdet_window_level": 0.759604190919674,
+   "oracle_note": "a sanitiser that removes exactly the windows whose input or target touches the attack interval reaches this pdet",
+   "attack_containing_cluster_bootstrap": {
+    "B": 10000,
+    "seed": 0,
+    "method": "percentile bootstrap over the 7 source traces",
+    "pooled_ci95": [
+     0.0393852065321806,
+     0.170410701622492
+    ],
+    "pooled_lcb95_one_sided": 0.049707602339181284,
+    "mean_ci95": [
+     0.030721100560165353,
+     0.16368406386620646
+    ],
+    "mean_lcb95_one_sided": 0.038842230939984186,
+    "n_distinct_resamples_possible": "C(13,7) = 1716"
+   }
+  }
+ },
+ "degradation": {
+  "clean_reference_models": {
+   "clean_e3_recipe": {
+    "recipe": "seed 0, 10 epochs x 200000 windows, clean training arrays (counterfactual of the E3 poisoned model)",
+    "events_detected": 34,
+    "event_recall": 0.6666666666666666,
+    "false_alarms": 45,
+    "normal_hours": 72.3375,
+    "theta": 15.685982231986333,
+    "detected_vector": [
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "baseline_s0_e1": {
+    "recipe": "E1, seed 0, 12 epochs x 250000 windows",
+    "events_detected": 33,
+    "detected_vector": [
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "e3b_clean": {
+    "recipe": "E3b, seed 0, 8 epochs x 150000 windows",
+    "events_detected": 33,
+    "detected_vector": [
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "tests": {
+   "simple/no_sanitisation/vs_clean_e3_recipe": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 1,
+    "n01_other_only": 0,
+    "n00": 17,
+    "discordant": 1,
+    "recall_clean": 0.6666666666666666,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0196078431372549,
+    "ucb95_one_sided_exact": 0.08967153829142847,
+    "lcb95_one_sided_exact_conservative": -0.06928072634180087,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 0.5,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "simple/no_sanitisation/vs_baseline_s0_e1": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 0,
+    "n01_other_only": 0,
+    "n00": 18,
+    "discordant": 0,
+    "recall_clean": 0.6470588235294118,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0,
+    "ucb95_one_sided_exact": 0.057047952360442765,
+    "lcb95_one_sided_exact_conservative": -0.06977703074953864,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 1.0,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "simple/no_sanitisation/vs_e3b_clean": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 0,
+    "n01_other_only": 0,
+    "n00": 18,
+    "discordant": 0,
+    "recall_clean": 0.6470588235294118,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0,
+    "ucb95_one_sided_exact": 0.057047952360442765,
+    "lcb95_one_sided_exact_conservative": -0.06977703074953864,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 1.0,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "simple/sanitised/vs_clean_e3_recipe": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 1,
+    "n01_other_only": 0,
+    "n00": 17,
+    "discordant": 1,
+    "recall_clean": 0.6666666666666666,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0196078431372549,
+    "ucb95_one_sided_exact": 0.08967153829142847,
+    "lcb95_one_sided_exact_conservative": -0.06928072634180087,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 0.5,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "simple/sanitised/vs_baseline_s0_e1": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 0,
+    "n01_other_only": 0,
+    "n00": 18,
+    "discordant": 0,
+    "recall_clean": 0.6470588235294118,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0,
+    "ucb95_one_sided_exact": 0.057047952360442765,
+    "lcb95_one_sided_exact_conservative": -0.06977703074953864,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 1.0,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "simple/sanitised/vs_e3b_clean": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 0,
+    "n01_other_only": 0,
+    "n00": 18,
+    "discordant": 0,
+    "recall_clean": 0.6470588235294118,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0,
+    "ucb95_one_sided_exact": 0.057047952360442765,
+    "lcb95_one_sided_exact_conservative": -0.06977703074953864,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 1.0,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "frog/no_sanitisation/vs_clean_e3_recipe": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 1,
+    "n01_other_only": 0,
+    "n00": 17,
+    "discordant": 1,
+    "recall_clean": 0.6666666666666666,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0196078431372549,
+    "ucb95_one_sided_exact": 0.08967153829142847,
+    "lcb95_one_sided_exact_conservative": -0.06928072634180087,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 0.5,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "frog/no_sanitisation/vs_baseline_s0_e1": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 0,
+    "n01_other_only": 0,
+    "n00": 18,
+    "discordant": 0,
+    "recall_clean": 0.6470588235294118,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0,
+    "ucb95_one_sided_exact": 0.057047952360442765,
+    "lcb95_one_sided_exact_conservative": -0.06977703074953864,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 1.0,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "frog/no_sanitisation/vs_e3b_clean": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 0,
+    "n01_other_only": 0,
+    "n00": 18,
+    "discordant": 0,
+    "recall_clean": 0.6470588235294118,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0,
+    "ucb95_one_sided_exact": 0.057047952360442765,
+    "lcb95_one_sided_exact_conservative": -0.06977703074953864,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 1.0,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "frog/sanitised/vs_clean_e3_recipe": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 1,
+    "n01_other_only": 0,
+    "n00": 17,
+    "discordant": 1,
+    "recall_clean": 0.6666666666666666,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0196078431372549,
+    "ucb95_one_sided_exact": 0.08967153829142847,
+    "lcb95_one_sided_exact_conservative": -0.06928072634180087,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 0.5,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "frog/sanitised/vs_baseline_s0_e1": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 0,
+    "n01_other_only": 0,
+    "n00": 18,
+    "discordant": 0,
+    "recall_clean": 0.6470588235294118,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0,
+    "ucb95_one_sided_exact": 0.057047952360442765,
+    "lcb95_one_sided_exact_conservative": -0.06977703074953864,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 1.0,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   },
+   "frog/sanitised/vs_e3b_clean": {
+    "n": 51,
+    "n11": 33,
+    "n10_clean_only": 0,
+    "n01_other_only": 0,
+    "n00": 18,
+    "discordant": 0,
+    "recall_clean": 0.6470588235294118,
+    "recall_other": 0.6470588235294118,
+    "degradation_estimate": 0.0,
+    "ucb95_one_sided_exact": 0.057047952360442765,
+    "lcb95_one_sided_exact_conservative": -0.06977703074953864,
+    "tau": 0.1,
+    "p_mcnemar_exact_one_sided": 1.0,
+    "decision": "accept",
+    "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+   }
+  },
+  "primary": {
+   "comparison": "simple/no_sanitisation vs clean_e3_recipe",
+   "n": 51,
+   "n11": 33,
+   "n10_clean_only": 1,
+   "n01_other_only": 0,
+   "n00": 17,
+   "discordant": 1,
+   "recall_clean": 0.6666666666666666,
+   "recall_other": 0.6470588235294118,
+   "degradation_estimate": 0.0196078431372549,
+   "ucb95_one_sided_exact": 0.08967153829142847,
+   "lcb95_one_sided_exact_conservative": -0.06928072634180087,
+   "tau": 0.1,
+   "p_mcnemar_exact_one_sided": 0.5,
+   "decision": "accept",
+   "method": "UCB(d) = Clopper-Pearson UCB of n10/n (d <= p10); LCB(d) = CP-LCB(n10/n, alpha/2) - CP-UCB(n01/n, alpha/2)"
+  },
+  "seed_noise_reference_e1": {
+   "pairs": [
+    {
+     "seeds": [
+      0,
+      1
+     ],
+     "n10": 0,
+     "n01": 1
+    },
+    {
+     "seeds": [
+      0,
+      2
+     ],
+     "n10": 0,
+     "n01": 0
+    },
+    {
+     "seeds": [
+      0,
+      3
+     ],
+     "n10": 1,
+     "n01": 0
+    },
+    {
+     "seeds": [
+      0,
+      4
+     ],
+     "n10": 0,
+     "n01": 0
+    },
+    {
+     "seeds": [
+      1,
+      2
+     ],
+     "n10": 1,
+     "n01": 0
+    },
+    {
+     "seeds": [
+      1,
+      3
+     ],
+     "n10": 2,
+     "n01": 0
+    },
+    {
+     "seeds": [
+      1,
+      4
+     ],
+     "n10": 1,
+     "n01": 0
+    },
+    {
+     "seeds": [
+      2,
+      3
+     ],
+     "n10": 1,
+     "n01": 0
+    },
+    {
+     "seeds": [
+      2,
+      4
+     ],
+     "n10": 0,
+     "n01": 0
+    },
+    {
+     "seeds": [
+      3,
+      4
+     ],
+     "n10": 0,
+     "n01": 1
+    }
+   ],
+   "max_discordant": 2,
+   "recall_test2_4_by_seed": {
+    "0": 0.6470588235294118,
+    "1": 0.6666666666666666,
+    "2": 0.6470588235294118,
+    "3": 0.6274509803921569,
+    "4": 0.6470588235294118
+   }
+  },
+  "poisoned_simple_retrained_check": {
+   "detected_vector": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "events_detected": 33,
+   "false_alarms": 43,
+   "identical_to_stored": true
+  }
+ },
+ "meta": {
+  "script": "id3_units.py",
+  "finished_local": "2026-10-12T09:44:14",
+  "runtime_s": 207.7,
+  "seeds": {
+   "trusted": 100,
+   "clean_model": 0,
+   "bootstrap": 0
+  },
+  "software": {
+   "python": "3.10.6",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "numpy": "1.26.4",
+   "scipy": "1.15.3",
+   "pandas": "2.3.3",
+   "torch": "2.6.0+cu124",
+   "cuda": "12.4",
+   "cudnn": 90100,
+   "device": "cuda",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "cudnn_deterministic_flag": false,
+   "cudnn_benchmark_flag": false,
+   "safetensors": "0.7.0",
+   "sklearn": "1.7.2"
+  },
+  "hai_lib_constants": {
+   "W": 60,
+   "SMOOTH": 10,
+   "MERGE_GAP": 30,
+   "TOL": 60
+  },
+  "recipe": {
+   "seed": 0,
+   "trusted_seed": 100,
+   "epochs": 10,
+   "per_epoch": 200000,
+   "source": "run_all.sh: e3_poison.py --beta 0.01 --epochs 10 --per_epoch 200000"
+  },
+  "alpha": 0.05
+ }
+}

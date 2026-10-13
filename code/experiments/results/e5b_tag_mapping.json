@@ -1,0 +1,1050 @@
+{
+ "old_tags_2204": [
+  "P1_B2004",
+  "P1_B2016",
+  "P1_B3004",
+  "P1_B3005",
+  "P1_B4002",
+  "P1_B4005",
+  "P1_B400B",
+  "P1_B4022"
+ ],
+ "new_tags_2305": [
+  "P1_PP04D",
+  "x1001_05_SETPOINT_OUT",
+  "x1001_15_ASSIGN_OUT",
+  "x1002_07_SETPOINT_OUT",
+  "x1002_08_SETPOINT_OUT",
+  "x1003_10_SETPOINT_OUT",
+  "x1003_18_SETPOINT_OUT",
+  "x1003_24_SUM_OUT"
+ ],
+ "documentation_2204": {
+  "P1_B2004": "0-10 bar, heat-exchanger outlet pressure setpoint",
+  "P1_B2016": "0-10 bar, pressure demand for thermal power output control",
+  "P1_B3004": "0-720 mm, water level setpoint (return water tank)",
+  "P1_B3005": "0-2500 l/h, discharge flowrate setpoint (return water tank)",
+  "P1_B4002": "0-100 degC, heat-exchanger outlet temperature setpoint",
+  "P1_B4005": "0-100 %, temperature PID control output",
+  "P1_B400B": "0-2500 l/h, water outflow rate setpoint (heating water tank)",
+  "P1_B4022": "0-40 degC, temperature demand for thermal power output control"
+ },
+ "n_shared_varying_channels": 58,
+ "stats_2204": {
+  "P1_B2004": {
+   "min": 0.05498,
+   "q01": 0.05498,
+   "q05": 0.05929,
+   "q25": 0.09438,
+   "median": 0.11492,
+   "q75": 0.16434,
+   "q95": 0.1925,
+   "q99": 0.19972,
+   "max": 0.19972,
+   "mean": 0.12330798264041688,
+   "sd": 0.04335726072036455,
+   "n_distinct": 1328,
+   "modal_value": 0.16678,
+   "modal_share": 0.026244471834982408,
+   "share_integer_valued": 0.0,
+   "changes_per_hour": 5.014326932841631,
+   "median_nonzero_step": 0.0025500000000000106
+  },
+  "P1_B2016": {
+   "min": 0.77193,
+   "q01": 0.86468,
+   "q05": 0.92893,
+   "q25": 1.0393,
+   "median": 1.10428,
+   "q75": 1.1718674999999998,
+   "q95": 1.27892,
+   "q99": 1.3567999,
+   "max": 1.62739,
+   "mean": 1.105594034201445,
+   "sd": 0.10444973500689911,
+   "n_distinct": 59030,
+   "modal_value": 1.10898,
+   "modal_share": 9.757049468240804e-05,
+   "share_integer_valued": 7.068882778011195e-05,
+   "changes_per_hour": 3496.3622135360147,
+   "median_nonzero_step": 0.0028600000000000847
+  },
+  "P1_B3004": {
+   "min": 392.17688,
+   "q01": 394.82541,
+   "q05": 402.14911,
+   "q25": 422.64316,
+   "median": 448.11496,
+   "q75": 476.10583,
+   "q95": 495.35974,
+   "q99": 498.11957,
+   "max": 498.11957,
+   "mean": 448.66954795727185,
+   "sd": 30.388407821539307,
+   "n_distinct": 1802,
+   "modal_value": 440.71838,
+   "modal_share": 0.01887391701728989,
+   "share_integer_valued": 0.010232954534140713,
+   "changes_per_hour": 6.455184278804702,
+   "median_nonzero_step": 2.270080000000007
+  },
+  "P1_B3005": {
+   "min": 890.04523,
+   "q01": 950.75232,
+   "q05": 960.12628,
+   "q25": 977.51953,
+   "median": 1007.83759,
+   "q75": 1030.60461,
+   "q95": 1090.53687,
+   "q99": 1121.85547,
+   "max": 1121.85547,
+   "mean": 1009.9765101432093,
+   "sd": 39.815534958413295,
+   "n_distinct": 1550,
+   "modal_value": 1030.24573,
+   "modal_share": 0.031970266885171475,
+   "share_integer_valued": 0.050302568095244735,
+   "changes_per_hour": 5.555544493141193,
+   "median_nonzero_step": 2.52771000000007
+  },
+  "P1_B4002": {
+   "min": 25.18253,
+   "q01": 25.45277,
+   "q05": 25.45277,
+   "q25": 26.92264,
+   "median": 32.0,
+   "q75": 32.18818,
+   "q95": 33.47964,
+   "q99": 33.47964,
+   "max": 33.47964,
+   "mean": 30.094778600420963,
+   "sd": 2.886615338843531,
+   "n_distinct": 480,
+   "modal_value": 32.0,
+   "modal_share": 0.2641671362661564,
+   "share_integer_valued": 0.2697794309449802,
+   "changes_per_hour": 1.8853009054143661,
+   "median_nonzero_step": 0.3490200000000012
+  },
+  "P1_B4005": {
+   "min": 0.0,
+   "q01": 0.0,
+   "q05": 0.0,
+   "q25": 18.186609999999998,
+   "median": 100.0,
+   "q75": 100.0,
+   "q95": 100.0,
+   "q99": 100.0,
+   "max": 100.0,
+   "mean": 69.14063293854451,
+   "sd": 41.88167330861208,
+   "n_distinct": 296882,
+   "modal_value": 100.0,
+   "modal_share": 0.6188289151156608,
+   "share_integer_valued": 0.6882174667115358,
+   "changes_per_hour": 1114.4314726573623,
+   "median_nonzero_step": 0.04404999999999859
+  },
+  "P1_B400B": {
+   "min": 11.12275,
+   "q01": 25.02598,
+   "q05": 32.97053,
+   "q25": 553.35132,
+   "median": 3176.86206,
+   "q75": 3184.74487,
+   "q95": 3190.0,
+   "q99": 3190.0,
+   "max": 3190.0,
+   "mean": 2202.20052452744,
+   "sd": 1329.774096505228,
+   "n_distinct": 12720,
+   "modal_value": 3190.0,
+   "modal_share": 0.09202391074490095,
+   "share_integer_valued": 0.1579636440389406,
+   "changes_per_hour": 3336.875075915819,
+   "median_nonzero_step": 4.379150000000209
+  },
+  "P1_B4022": {
+   "min": 28.15872,
+   "q01": 28.82188,
+   "q05": 29.20678,
+   "q25": 30.83306,
+   "median": 35.48735,
+   "q75": 36.02524,
+   "q95": 37.25463,
+   "q99": 37.63458,
+   "max": 38.05496,
+   "mean": 33.869057637360335,
+   "sd": 2.8971049557437287,
+   "n_distinct": 91238,
+   "modal_value": 35.70328,
+   "modal_share": 0.0002349656810719214,
+   "share_integer_valued": 0.0006670635860940141,
+   "changes_per_hour": 3498.4661519989013,
+   "median_nonzero_step": 0.009539999999997661
+  }
+ },
+ "stats_2305": {
+  "P1_PP04D": {
+   "min": 0.0,
+   "q01": 0.0,
+   "q05": 0.0,
+   "q25": 0.0,
+   "median": 1.0,
+   "q75": 1.0,
+   "q95": 1.0,
+   "q99": 1.0,
+   "max": 1.0,
+   "mean": 0.624582775546631,
+   "sd": 0.48423045343833726,
+   "n_distinct": 2,
+   "modal_value": 1.0,
+   "modal_share": 0.624582775546631,
+   "share_integer_valued": 1.0,
+   "changes_per_hour": 1.9357429718875503,
+   "median_nonzero_step": 1.0
+  },
+  "x1001_05_SETPOINT_OUT": {
+   "min": 0.05086,
+   "q01": 0.05086,
+   "q05": 0.06377,
+   "q25": 0.102,
+   "median": 0.12971,
+   "q75": 0.16836,
+   "q95": 0.19579,
+   "q99": 0.19764,
+   "max": 0.19995,
+   "mean": 0.1309794899263721,
+   "sd": 0.04132338210961058,
+   "n_distinct": 1049,
+   "modal_value": 0.1242,
+   "modal_share": 0.05609660865684962,
+   "share_integer_valued": 0.0,
+   "changes_per_hour": 4.3453815261044175,
+   "median_nonzero_step": 0.0029899999999999927
+  },
+  "x1001_15_ASSIGN_OUT": {
+   "min": 0.77841,
+   "q01": 0.87273,
+   "q05": 0.94018,
+   "q25": 1.04793,
+   "median": 1.11442,
+   "q75": 1.18073,
+   "q95": 1.29215,
+   "q99": 1.38153,
+   "max": 1.59844,
+   "mean": 1.1156140547746538,
+   "sd": 0.10591845264954193,
+   "n_distinct": 59720,
+   "modal_value": 1.09227,
+   "modal_share": 0.00011155734047300312,
+   "share_integer_valued": 4.5738509593931284e-05,
+   "changes_per_hour": 3470.8313253012047,
+   "median_nonzero_step": 0.0028600000000000847
+  },
+  "x1002_07_SETPOINT_OUT": {
+   "min": 302.3558,
+   "q01": 302.3558,
+   "q05": 304.75284,
+   "q25": 324.43817,
+   "median": 340.57462,
+   "q75": 364.79901,
+   "q95": 392.96399,
+   "q99": 398.54944,
+   "max": 398.54944,
+   "mean": 346.1527200947794,
+   "sd": 27.339911693976923,
+   "n_distinct": 1274,
+   "modal_value": 324.43817,
+   "modal_share": 0.040148371262829094,
+   "share_integer_valued": 0.011999107541276217,
+   "changes_per_hour": 5.112449799196787,
+   "median_nonzero_step": 2.049069999999972
+  },
+  "x1002_08_SETPOINT_OUT": {
+   "min": 950.62006,
+   "q01": 950.62006,
+   "q05": 955.14996,
+   "q25": 970.54089,
+   "median": 1001.93555,
+   "q75": 1024.7749,
+   "q95": 1044.14355,
+   "q99": 1049.25671,
+   "max": 1049.25671,
+   "mean": 999.6511570128289,
+   "sd": 30.10490623524193,
+   "n_distinct": 1074,
+   "modal_value": 955.69299,
+   "modal_share": 0.04887773315484159,
+   "share_integer_valued": 0.03252008032128514,
+   "changes_per_hour": 4.317269076305221,
+   "median_nonzero_step": 1.7354199999999764
+  },
+  "x1003_10_SETPOINT_OUT": {
+   "min": 6.15698,
+   "q01": 21.05352,
+   "q05": 24.03268,
+   "q25": 145.19012,
+   "median": 1351.66101,
+   "q75": 3051.36475,
+   "q95": 3161.22192,
+   "q99": 3173.35864,
+   "max": 3190.0,
+   "mean": 1535.776873581861,
+   "sd": 1267.9187415847373,
+   "n_distinct": 13100,
+   "modal_value": 25.02598,
+   "modal_share": 0.047153056671128964,
+   "share_integer_valued": 0.02751450245426149,
+   "changes_per_hour": 3337.3212851405624,
+   "median_nonzero_step": 4.965389999999985
+  },
+  "x1003_18_SETPOINT_OUT": {
+   "min": 25.13999,
+   "q01": 25.13999,
+   "q05": 25.13999,
+   "q25": 25.42054,
+   "median": 26.23464,
+   "q75": 27.24555,
+   "q95": 27.98272,
+   "q99": 28.0,
+   "max": 28.0,
+   "mean": 26.448377137684076,
+   "sd": 0.9214994537563754,
+   "n_distinct": 280,
+   "modal_value": 26.08518,
+   "modal_share": 0.20239848282016956,
+   "share_integer_valued": 0.026945560017849174,
+   "changes_per_hour": 1.1204819277108433,
+   "median_nonzero_step": 0.06497999999999848
+  },
+  "x1003_24_SUM_OUT": {
+   "min": 27.95674,
+   "q01": 28.38545,
+   "q05": 28.7406,
+   "q25": 29.40145,
+   "median": 30.20073,
+   "q75": 31.04431,
+   "q95": 31.73863,
+   "q99": 32.129,
+   "max": 33.08534,
+   "mean": 30.230495300312374,
+   "sd": 0.9783042217317945,
+   "n_distinct": 80164,
+   "modal_value": 29.88039,
+   "modal_share": 0.00019857206604194556,
+   "share_integer_valued": 0.0008043284248103526,
+   "changes_per_hour": 3463.74297188755,
+   "median_nonzero_step": 0.009540000000001214
+  }
+ },
+ "tracking_partner_2204": {
+  "P1_B2004": {
+   "channel": "P1_PIT01",
+   "corr": 0.4533090017055484,
+   "median_abs_diff_raw": 0.9858799999999999,
+   "partner_sd": 0.08885141239163266
+  },
+  "P1_B2016": {
+   "channel": "P4_ST_PO",
+   "corr": 0.9112314666495511,
+   "median_abs_diff_raw": 329.51666,
+   "partner_sd": 32.80413859760755
+  },
+  "P1_B3004": {
+   "channel": "P1_LIT01",
+   "corr": 0.9839297560413202,
+   "median_abs_diff_raw": 3.113369999999975,
+   "partner_sd": 30.937336398930015
+  },
+  "P1_B3005": {
+   "channel": "P1_FT03Z",
+   "corr": 0.9945981918650418,
+   "median_abs_diff_raw": 2.2019000000000233,
+   "partner_sd": 39.995332975367184
+  },
+  "P1_B4002": {
+   "channel": "P1_FCV01D",
+   "corr": 0.9450535464499061,
+   "median_abs_diff_raw": 61.72227,
+   "partner_sd": 40.91611186292472
+  },
+  "P1_B4005": {
+   "channel": "P1_FT02Z",
+   "corr": 0.9980937204937375,
+   "median_abs_diff_raw": 3076.86206,
+   "partner_sd": 1329.8235172043724
+  },
+  "P1_B400B": {
+   "channel": "P1_FT02Z",
+   "corr": 0.9996661050878262,
+   "median_abs_diff_raw": 3.8789099999999053,
+   "partner_sd": 1329.8235172043724
+  },
+  "P1_B4022": {
+   "channel": "P1_FCV01D",
+   "corr": 0.9398263658029509,
+   "median_abs_diff_raw": 57.888349999999996,
+   "partner_sd": 40.91611186292472
+  }
+ },
+ "tracking_partner_2305": {
+  "P1_PP04D": {
+   "channel": "P1_PP04",
+   "corr": 0.9409555308289476,
+   "median_abs_diff_raw": 32.840689999999995,
+   "partner_sd": 16.62470438717142
+  },
+  "x1001_05_SETPOINT_OUT": {
+   "channel": "P1_PIT01",
+   "corr": 0.38966706589454003,
+   "median_abs_diff_raw": 0.98698,
+   "partner_sd": 0.102690908425078
+  },
+  "x1001_15_ASSIGN_OUT": {
+   "channel": "P4_ST_PO",
+   "corr": 0.9227653830753296,
+   "median_abs_diff_raw": 329.863045,
+   "partner_sd": 33.44240620233169
+  },
+  "x1002_07_SETPOINT_OUT": {
+   "channel": "P1_LIT01",
+   "corr": 0.9755210556787607,
+   "median_abs_diff_raw": 3.978999999999985,
+   "partner_sd": 28.054278650361017
+  },
+  "x1002_08_SETPOINT_OUT": {
+   "channel": "P1_FT03Z",
+   "corr": 0.9911609769167627,
+   "median_abs_diff_raw": 2.5349199999999428,
+   "partner_sd": 30.318294317979394
+  },
+  "x1003_10_SETPOINT_OUT": {
+   "channel": "P1_FT02Z",
+   "corr": 0.999666514419915,
+   "median_abs_diff_raw": 3.127930000000106,
+   "partner_sd": 1267.7801737461773
+  },
+  "x1003_18_SETPOINT_OUT": {
+   "channel": "P2_VIBTR04",
+   "corr": 0.43399324017680463,
+   "median_abs_diff_raw": 27.52158,
+   "partner_sd": 0.37254096542412396
+  },
+  "x1003_24_SUM_OUT": {
+   "channel": "P1_TIT01",
+   "corr": 0.4006126381993345,
+   "median_abs_diff_raw": 1.0665049999999976,
+   "partner_sd": 1.3264404324712826
+  }
+ },
+ "fingerprint_similarity": {
+  "P1_B2004": {
+   "P1_PP04D": -0.0882564977745385,
+   "x1001_05_SETPOINT_OUT": 0.621288250661556,
+   "x1001_15_ASSIGN_OUT": 0.39004999577760313,
+   "x1002_07_SETPOINT_OUT": 0.12272820971546908,
+   "x1002_08_SETPOINT_OUT": -0.045123311876885966,
+   "x1003_10_SETPOINT_OUT": 0.29691729525615296,
+   "x1003_18_SETPOINT_OUT": 0.02030794645245769,
+   "x1003_24_SUM_OUT": 0.19132970410982297
+  },
+  "P1_B2016": {
+   "P1_PP04D": -0.03126886614575558,
+   "x1001_05_SETPOINT_OUT": 0.30564168453826285,
+   "x1001_15_ASSIGN_OUT": 0.9792639905833218,
+   "x1002_07_SETPOINT_OUT": -0.025830509771778528,
+   "x1002_08_SETPOINT_OUT": -0.03878091745623663,
+   "x1003_10_SETPOINT_OUT": 0.05237033262660837,
+   "x1003_18_SETPOINT_OUT": -0.06548183730373121,
+   "x1003_24_SUM_OUT": 0.49185910781409015
+  },
+  "P1_B3004": {
+   "P1_PP04D": 0.04422480203271003,
+   "x1001_05_SETPOINT_OUT": 0.053416542724644855,
+   "x1001_15_ASSIGN_OUT": 0.0030767577870030893,
+   "x1002_07_SETPOINT_OUT": 0.8253669920487139,
+   "x1002_08_SETPOINT_OUT": -0.341854401896074,
+   "x1003_10_SETPOINT_OUT": 0.03068139494794436,
+   "x1003_18_SETPOINT_OUT": 0.20868939157144095,
+   "x1003_24_SUM_OUT": 0.18095995374016205
+  },
+  "P1_B3005": {
+   "P1_PP04D": -0.01452709791757977,
+   "x1001_05_SETPOINT_OUT": 0.1526599385165192,
+   "x1001_15_ASSIGN_OUT": 0.03220256681630556,
+   "x1002_07_SETPOINT_OUT": -0.19671020141697274,
+   "x1002_08_SETPOINT_OUT": 0.939112628403302,
+   "x1003_10_SETPOINT_OUT": 0.047583526603868886,
+   "x1003_18_SETPOINT_OUT": -0.42419484977771454,
+   "x1003_24_SUM_OUT": -0.36884644474426753
+  },
+  "P1_B4002": {
+   "P1_PP04D": -0.29080162655248315,
+   "x1001_05_SETPOINT_OUT": 0.06364316524778489,
+   "x1001_15_ASSIGN_OUT": 0.044501317683183564,
+   "x1002_07_SETPOINT_OUT": -0.06944115940692909,
+   "x1002_08_SETPOINT_OUT": 0.020892190215547016,
+   "x1003_10_SETPOINT_OUT": 0.6214390843130099,
+   "x1003_18_SETPOINT_OUT": 0.44118987572081486,
+   "x1003_24_SUM_OUT": 0.40942713014417326
+  },
+  "P1_B4005": {
+   "P1_PP04D": -0.3037989569686066,
+   "x1001_05_SETPOINT_OUT": 0.07931169706034308,
+   "x1001_15_ASSIGN_OUT": 0.0596023765272645,
+   "x1002_07_SETPOINT_OUT": -0.06220380215936693,
+   "x1002_08_SETPOINT_OUT": 0.060052333761600914,
+   "x1003_10_SETPOINT_OUT": 0.6778375072243259,
+   "x1003_18_SETPOINT_OUT": 0.4275180655518938,
+   "x1003_24_SUM_OUT": 0.40486012472993443
+  },
+  "P1_B400B": {
+   "P1_PP04D": -0.3061820478126776,
+   "x1001_05_SETPOINT_OUT": 0.07727680583807678,
+   "x1001_15_ASSIGN_OUT": 0.05455012940141117,
+   "x1002_07_SETPOINT_OUT": -0.06045414258726512,
+   "x1002_08_SETPOINT_OUT": 0.05897670745452418,
+   "x1003_10_SETPOINT_OUT": 0.676288940177373,
+   "x1003_18_SETPOINT_OUT": 0.42917102472974333,
+   "x1003_24_SUM_OUT": 0.4035236698227188
+  },
+  "P1_B4022": {
+   "P1_PP04D": -0.29156603146569965,
+   "x1001_05_SETPOINT_OUT": 0.08165190960793423,
+   "x1001_15_ASSIGN_OUT": 0.1325507852446699,
+   "x1002_07_SETPOINT_OUT": -0.07410465634207809,
+   "x1002_08_SETPOINT_OUT": 0.017906434172282746,
+   "x1003_10_SETPOINT_OUT": 0.6196298052232061,
+   "x1003_18_SETPOINT_OUT": 0.4334692069676481,
+   "x1003_24_SUM_OUT": 0.45289852500720107
+  }
+ },
+ "wasserstein_over_sd2204": {
+  "P1_B2004": {
+   "P1_PP04D": 12.936741728666165,
+   "x1001_05_SETPOINT_OUT": 0.19416703868879362,
+   "x1001_15_ASSIGN_OUT": 22.886557141577892,
+   "x1002_07_SETPOINT_OUT": 7980.889530644653,
+   "x1002_08_SETPOINT_OUT": 23053.293169348923,
+   "x1003_10_SETPOINT_OUT": 35420.90262188886,
+   "x1003_18_SETPOINT_OUT": 607.1663979264378,
+   "x1003_24_SUM_OUT": 694.397709093497
+  },
+  "P1_B2016": {
+   "P1_PP04D": 4.604926651965607,
+   "x1001_05_SETPOINT_OUT": 9.330926784757827,
+   "x1001_15_ASSIGN_OUT": 0.09593112786355582,
+   "x1002_07_SETPOINT_OUT": 3303.476290429567,
+   "x1002_08_SETPOINT_OUT": 9560.056397623783,
+   "x1003_10_SETPOINT_OUT": 14693.87188778276,
+   "x1003_18_SETPOINT_OUT": 242.63141299708897,
+   "x1003_24_SUM_OUT": 278.84127701445226
+  },
+  "P1_B3004": {
+   "P1_PP04D": 14.743952114505882,
+   "x1001_05_SETPOINT_OUT": 14.760196119930965,
+   "x1001_15_ASSIGN_OUT": 14.727794743815696,
+   "x1002_07_SETPOINT_OUT": 3.3735569120117272,
+   "x1002_08_SETPOINT_OUT": 18.131292505688688,
+   "x1003_10_SETPOINT_OUT": 42.84821486839075,
+   "x1003_18_SETPOINT_OUT": 13.8941619474108,
+   "x1003_24_SUM_OUT": 13.769702952274875
+  },
+  "P1_B3005": {
+   "P1_PP04D": 25.350701578275352,
+   "x1001_05_SETPOINT_OUT": 25.363099489342687,
+   "x1001_15_ASSIGN_OUT": 25.338369789430367,
+   "x1002_07_SETPOINT_OUT": 16.672475683122492,
+   "x1002_08_SETPOINT_OUT": 0.278436939997561,
+   "x1003_10_SETPOINT_OUT": 29.039109987044828,
+   "x1003_18_SETPOINT_OUT": 24.702116291467277,
+   "x1003_24_SUM_OUT": 24.607125461752194
+  },
+  "P1_B4002": {
+   "P1_PP04D": 10.209254964487243,
+   "x1001_05_SETPOINT_OUT": 10.380261282811071,
+   "x1001_15_ASSIGN_OUT": 10.039160680274815,
+   "x1002_07_SETPOINT_OUT": 109.49086643925193,
+   "x1002_08_SETPOINT_OUT": 335.87992682153487,
+   "x1003_10_SETPOINT_OUT": 521.797201091914,
+   "x1003_18_SETPOINT_OUT": 1.2632170865186216,
+   "x1003_24_SUM_OUT": 0.6507658768747517
+  },
+  "P1_B4005": {
+   "P1_PP04D": 1.6359384011851141,
+   "x1001_05_SETPOINT_OUT": 1.64793195409099,
+   "x1001_15_ASSIGN_OUT": 1.6277553429844462,
+   "x1002_07_SETPOINT_OUT": 6.6141666975148405,
+   "x1002_08_SETPOINT_OUT": 22.217605686937794,
+   "x1003_10_SETPOINT_OUT": 35.020954387218964,
+   "x1003_18_SETPOINT_OUT": 1.2558589637945528,
+   "x1003_24_SUM_OUT": 1.2181907488123733
+  },
+  "P1_B400B": {
+   "P1_PP04D": 1.655634497603623,
+   "x1001_05_SETPOINT_OUT": 1.6560057106260528,
+   "x1001_15_ASSIGN_OUT": 1.6552652643848775,
+   "x1002_07_SETPOINT_OUT": 1.4478896463539848,
+   "x1002_08_SETPOINT_OUT": 1.2103114098932386,
+   "x1003_10_SETPOINT_OUT": 0.5011135813761636,
+   "x1003_18_SETPOINT_OUT": 1.6362418121284414,
+   "x1003_24_SUM_OUT": 1.6334837375822309
+  },
+  "P1_B4022": {
+   "P1_PP04D": 11.475061296698797,
+   "x1001_05_SETPOINT_OUT": 11.645448448373802,
+   "x1001_15_ASSIGN_OUT": 11.305582876911565,
+   "x1002_07_SETPOINT_OUT": 107.79165902713025,
+   "x1002_08_SETPOINT_OUT": 333.3610271476268,
+   "x1003_10_SETPOINT_OUT": 519.102343652298,
+   "x1003_18_SETPOINT_OUT": 2.561414551101302,
+   "x1003_24_SUM_OUT": 1.2559351987736882
+  }
+ },
+ "automatic_rule_fingerprint": {
+  "rule": "Hungarian assignment on fingerprint similarity; accept mutual best match with overlapping 1-99% ranges (fixed before inspecting the results)",
+  "pairs": [
+   {
+    "old_2204": "P1_B2004",
+    "new_2305": "x1001_05_SETPOINT_OUT",
+    "fingerprint_similarity": 0.621288250661556,
+    "margin_to_second_best": 0.2312382548839529,
+    "mutual_best": true,
+    "ranges_overlap": true,
+    "wasserstein_over_sd2204": 0.19416703868879362,
+    "same_tracking_partner": true,
+    "accepted": true
+   },
+   {
+    "old_2204": "P1_B2016",
+    "new_2305": "x1001_15_ASSIGN_OUT",
+    "fingerprint_similarity": 0.9792639905833218,
+    "margin_to_second_best": 0.48740488276923166,
+    "mutual_best": true,
+    "ranges_overlap": true,
+    "wasserstein_over_sd2204": 0.09593112786355582,
+    "same_tracking_partner": true,
+    "accepted": true
+   },
+   {
+    "old_2204": "P1_B3004",
+    "new_2305": "x1002_07_SETPOINT_OUT",
+    "fingerprint_similarity": 0.8253669920487139,
+    "margin_to_second_best": 0.6166776004772729,
+    "mutual_best": true,
+    "ranges_overlap": true,
+    "wasserstein_over_sd2204": 3.3735569120117272,
+    "same_tracking_partner": true,
+    "accepted": true
+   },
+   {
+    "old_2204": "P1_B3005",
+    "new_2305": "x1002_08_SETPOINT_OUT",
+    "fingerprint_similarity": 0.939112628403302,
+    "margin_to_second_best": 0.7864526898867827,
+    "mutual_best": true,
+    "ranges_overlap": true,
+    "wasserstein_over_sd2204": 0.278436939997561,
+    "same_tracking_partner": true,
+    "accepted": true
+   },
+   {
+    "old_2204": "P1_B4002",
+    "new_2305": "P1_PP04D",
+    "fingerprint_similarity": -0.29080162655248315,
+    "margin_to_second_best": 0.180249208592195,
+    "mutual_best": false,
+    "ranges_overlap": false,
+    "wasserstein_over_sd2204": 10.209254964487243,
+    "same_tracking_partner": false,
+    "accepted": false
+   },
+   {
+    "old_2204": "P1_B4005",
+    "new_2305": "x1003_10_SETPOINT_OUT",
+    "fingerprint_similarity": 0.6778375072243259,
+    "margin_to_second_best": 0.2503194416724321,
+    "mutual_best": true,
+    "ranges_overlap": true,
+    "wasserstein_over_sd2204": 35.020954387218964,
+    "same_tracking_partner": true,
+    "accepted": true
+   },
+   {
+    "old_2204": "P1_B400B",
+    "new_2305": "x1003_18_SETPOINT_OUT",
+    "fingerprint_similarity": 0.42917102472974333,
+    "margin_to_second_best": 0.24711791544762962,
+    "mutual_best": false,
+    "ranges_overlap": true,
+    "wasserstein_over_sd2204": 1.6362418121284414,
+    "same_tracking_partner": false,
+    "accepted": false
+   },
+   {
+    "old_2204": "P1_B4022",
+    "new_2305": "x1003_24_SUM_OUT",
+    "fingerprint_similarity": 0.45289852500720107,
+    "margin_to_second_best": 0.16673128021600503,
+    "mutual_best": false,
+    "ranges_overlap": true,
+    "wasserstein_over_sd2204": 1.2559351987736882,
+    "same_tracking_partner": false,
+    "accepted": false
+   }
+  ],
+  "verdict": "fails for the temperature group: in 22.04 P1_B4005, P1_B400B and P1_FT02Z are almost collinear (r = 0.998), so their fingerprints are indistinguishable and the rule pairs P1_B4005 (%, 0-100) with x1003_10_SETPOINT_OUT (l/h, 6-3190)"
+ },
+ "b4005_vs_b400b_2204": {
+  "corr": 0.9980345374246241,
+  "fit_B4005_eq_a_B400B_plus_b": [
+   0.03143342659251691,
+   -0.08207559119465749
+  ],
+  "r2": 0.9960729378923794,
+  "resid_sd": 2.6245684855034885
+ },
+ "evidence_classification": {
+  "proposer": "Hungarian assignment minimising the 1-Wasserstein distance in raw units (divided by the 22.04 SD)",
+  "criteria": "E1 same tracked process variable with |r| >= 0.9 in both campaigns; E2 W/SD <= 1; E3 fingerprint similarity >= 0.8; E5 change frequency and median step within a factor of 2; naming group x1001<->B2xxx, x1002<->B3xxx, x1003<->B4xxx. strong: group and >= 3 of E1,E2,E3,E5; moderate: group and 2; weak: group and <= 1; none: group inconsistent. Post hoc.",
+  "pairs": [
+   {
+    "old_2204": "P1_B2004",
+    "new_2305": "x1001_05_SETPOINT_OUT",
+    "doc_2204": "0-10 bar, heat-exchanger outlet pressure setpoint",
+    "group_consistent_name": true,
+    "E1_same_tracked_pv_abs_corr_ge_0.9": false,
+    "E2_wasserstein_over_sd_le_1": true,
+    "E3_fingerprint_ge_0.8": false,
+    "E5_same_dynamics_factor_2": true,
+    "wasserstein_over_sd2204": 0.19416703868879362,
+    "fingerprint_similarity": 0.621288250661556,
+    "changes_per_hour_ratio": 0.8665931807605292,
+    "median_step_ratio": 1.1725490196078354,
+    "range_2204": [
+     0.05498,
+     0.19972
+    ],
+    "range_2305": [
+     0.05086,
+     0.19995
+    ],
+    "evidence_score_0_4": 2,
+    "confidence": "moderate"
+   },
+   {
+    "old_2204": "P1_B2016",
+    "new_2305": "x1001_15_ASSIGN_OUT",
+    "doc_2204": "0-10 bar, pressure demand for thermal power output control",
+    "group_consistent_name": true,
+    "E1_same_tracked_pv_abs_corr_ge_0.9": true,
+    "E2_wasserstein_over_sd_le_1": true,
+    "E3_fingerprint_ge_0.8": true,
+    "E5_same_dynamics_factor_2": true,
+    "wasserstein_over_sd2204": 0.09593112786355582,
+    "fingerprint_similarity": 0.9792639905833218,
+    "changes_per_hour_ratio": 0.9926978709082348,
+    "median_step_ratio": 1.0,
+    "range_2204": [
+     0.77193,
+     1.62739
+    ],
+    "range_2305": [
+     0.77841,
+     1.59844
+    ],
+    "evidence_score_0_4": 4,
+    "confidence": "strong"
+   },
+   {
+    "old_2204": "P1_B3004",
+    "new_2305": "x1002_07_SETPOINT_OUT",
+    "doc_2204": "0-720 mm, water level setpoint (return water tank)",
+    "group_consistent_name": true,
+    "E1_same_tracked_pv_abs_corr_ge_0.9": true,
+    "E2_wasserstein_over_sd_le_1": false,
+    "E3_fingerprint_ge_0.8": true,
+    "E5_same_dynamics_factor_2": true,
+    "wasserstein_over_sd2204": 3.3735569120117272,
+    "fingerprint_similarity": 0.8253669920487139,
+    "changes_per_hour_ratio": 0.7919913016245375,
+    "median_step_ratio": 0.9026421976317863,
+    "range_2204": [
+     392.17688,
+     498.11957
+    ],
+    "range_2305": [
+     302.3558,
+     398.54944
+    ],
+    "evidence_score_0_4": 3,
+    "confidence": "strong"
+   },
+   {
+    "old_2204": "P1_B3005",
+    "new_2305": "x1002_08_SETPOINT_OUT",
+    "doc_2204": "0-2500 l/h, discharge flowrate setpoint (return water tank)",
+    "group_consistent_name": true,
+    "E1_same_tracked_pv_abs_corr_ge_0.9": true,
+    "E2_wasserstein_over_sd_le_1": true,
+    "E3_fingerprint_ge_0.8": true,
+    "E5_same_dynamics_factor_2": true,
+    "wasserstein_over_sd2204": 0.278436939997561,
+    "fingerprint_similarity": 0.939112628403302,
+    "changes_per_hour_ratio": 0.7771099811432108,
+    "median_step_ratio": 0.6865581890327325,
+    "range_2204": [
+     890.04523,
+     1121.85547
+    ],
+    "range_2305": [
+     950.62006,
+     1049.25671
+    ],
+    "evidence_score_0_4": 4,
+    "confidence": "strong"
+   },
+   {
+    "old_2204": "P1_B4002",
+    "new_2305": "x1003_18_SETPOINT_OUT",
+    "doc_2204": "0-100 degC, heat-exchanger outlet temperature setpoint",
+    "group_consistent_name": true,
+    "E1_same_tracked_pv_abs_corr_ge_0.9": false,
+    "E2_wasserstein_over_sd_le_1": false,
+    "E3_fingerprint_ge_0.8": false,
+    "E5_same_dynamics_factor_2": false,
+    "wasserstein_over_sd2204": 1.2632170865186216,
+    "fingerprint_similarity": 0.44118987572081486,
+    "changes_per_hour_ratio": 0.5943252477590971,
+    "median_step_ratio": 0.18617844249612703,
+    "range_2204": [
+     25.18253,
+     33.47964
+    ],
+    "range_2305": [
+     25.13999,
+     28.0
+    ],
+    "evidence_score_0_4": 0,
+    "confidence": "weak"
+   },
+   {
+    "old_2204": "P1_B4005",
+    "new_2305": "P1_PP04D",
+    "doc_2204": "0-100 %, temperature PID control output",
+    "group_consistent_name": false,
+    "E1_same_tracked_pv_abs_corr_ge_0.9": false,
+    "E2_wasserstein_over_sd_le_1": false,
+    "E3_fingerprint_ge_0.8": false,
+    "E5_same_dynamics_factor_2": false,
+    "wasserstein_over_sd2204": 1.6359384011851141,
+    "fingerprint_similarity": -0.3037989569686066,
+    "changes_per_hour_ratio": 0.0017369780191793852,
+    "median_step_ratio": 22.70147559591446,
+    "range_2204": [
+     0.0,
+     100.0
+    ],
+    "range_2305": [
+     0.0,
+     1.0
+    ],
+    "evidence_score_0_4": 0,
+    "confidence": "none"
+   },
+   {
+    "old_2204": "P1_B400B",
+    "new_2305": "x1003_10_SETPOINT_OUT",
+    "doc_2204": "0-2500 l/h, water outflow rate setpoint (heating water tank)",
+    "group_consistent_name": true,
+    "E1_same_tracked_pv_abs_corr_ge_0.9": true,
+    "E2_wasserstein_over_sd_le_1": true,
+    "E3_fingerprint_ge_0.8": false,
+    "E5_same_dynamics_factor_2": true,
+    "wasserstein_over_sd2204": 0.5011135813761636,
+    "fingerprint_similarity": 0.676288940177373,
+    "changes_per_hour_ratio": 1.0001337206861487,
+    "median_step_ratio": 1.1338707283376337,
+    "range_2204": [
+     11.12275,
+     3190.0
+    ],
+    "range_2305": [
+     6.15698,
+     3190.0
+    ],
+    "evidence_score_0_4": 3,
+    "confidence": "strong"
+   },
+   {
+    "old_2204": "P1_B4022",
+    "new_2305": "x1003_24_SUM_OUT",
+    "doc_2204": "0-40 degC, temperature demand for thermal power output control",
+    "group_consistent_name": true,
+    "E1_same_tracked_pv_abs_corr_ge_0.9": false,
+    "E2_wasserstein_over_sd_le_1": false,
+    "E3_fingerprint_ge_0.8": false,
+    "E5_same_dynamics_factor_2": true,
+    "wasserstein_over_sd2204": 1.2559351987736882,
+    "fingerprint_similarity": 0.45289852500720107,
+    "changes_per_hour_ratio": 0.9900747417288827,
+    "median_step_ratio": 1.0000000000003724,
+    "range_2204": [
+     28.15872,
+     38.05496
+    ],
+    "range_2305": [
+     27.95674,
+     33.08534
+    ],
+    "evidence_score_0_4": 1,
+    "confidence": "weak"
+   }
+  ]
+ },
+ "sensitivity_baseline_s0_mapped": {
+  "theta": 19.623428543382843,
+  "far_2204_e5_convention_real_inputs": {
+   "count": 41,
+   "exposure_h": 82.50777777777778,
+   "rate_per_h": 0.4969228490243344,
+   "ucb95_one_sided": 0.6447564284744217,
+   "ci95_two_sided": [
+    0.356600415874729,
+    0.6741319553599178
+   ]
+  },
+  "note": "sensitivity only (not the main result): the original 68-input detector with renamed inputs restored; tags without an accepted counterpart are imputed in 23.05 only (S1, S2), which is not a like-for-like configuration",
+  "variants": {
+   "S1_strong_moderate_mapped_rest_mean": {
+    "mapping_used": {
+     "P1_B2004": "x1001_05_SETPOINT_OUT",
+     "P1_B2016": "x1001_15_ASSIGN_OUT",
+     "P1_B3004": "x1002_07_SETPOINT_OUT",
+     "P1_B3005": "x1002_08_SETPOINT_OUT",
+     "P1_B400B": "x1003_10_SETPOINT_OUT"
+    },
+    "reconstructed": null,
+    "imputed_with_2204_mean": [
+     "P1_B4002",
+     "P1_B4005",
+     "P1_B4022"
+    ],
+    "far_2305_e5_convention": {
+     "count": 3480,
+     "exposure_h": 249.0,
+     "rate_per_h": 13.975903614457831,
+     "ucb95_one_sided": 14.371933911753006,
+     "ci95_two_sided": [
+      13.515376643363853,
+      14.448120859529293
+     ]
+    },
+    "ratio_vs_2204_e5_convention": {
+     "ratio": 28.12489633330068,
+     "ci95_two_sided": [
+      20.688303372867693,
+      39.26273106599514
+     ],
+     "p_one_sided_lambda1_gt_lambda2": 0.0
+    }
+   },
+   "S2_group_consistent_mapped_B4005_mean": {
+    "mapping_used": {
+     "P1_B2004": "x1001_05_SETPOINT_OUT",
+     "P1_B2016": "x1001_15_ASSIGN_OUT",
+     "P1_B3004": "x1002_07_SETPOINT_OUT",
+     "P1_B3005": "x1002_08_SETPOINT_OUT",
+     "P1_B4002": "x1003_18_SETPOINT_OUT",
+     "P1_B400B": "x1003_10_SETPOINT_OUT",
+     "P1_B4022": "x1003_24_SUM_OUT"
+    },
+    "reconstructed": null,
+    "imputed_with_2204_mean": [
+     "P1_B4005"
+    ],
+    "far_2305_e5_convention": {
+     "count": 3502,
+     "exposure_h": 249.0,
+     "rate_per_h": 14.06425702811245,
+     "ucb95_one_sided": 14.46151702471831,
+     "ci95_two_sided": [
+      13.602264584056055,
+      14.537939537274092
+     ]
+    },
+    "ratio_vs_2204_e5_convention": {
+     "ratio": 28.302697402074422,
+     "ci95_two_sided": [
+      20.819364914807327,
+      39.510497881952574
+     ],
+     "p_one_sided_lambda1_gt_lambda2": 0.0
+    }
+   },
+   "S3_group_consistent_mapped_B4005_from_B400B": {
+    "mapping_used": {
+     "P1_B2004": "x1001_05_SETPOINT_OUT",
+     "P1_B2016": "x1001_15_ASSIGN_OUT",
+     "P1_B3004": "x1002_07_SETPOINT_OUT",
+     "P1_B3005": "x1002_08_SETPOINT_OUT",
+     "P1_B4002": "x1003_18_SETPOINT_OUT",
+     "P1_B400B": "x1003_10_SETPOINT_OUT",
+     "P1_B4022": "x1003_24_SUM_OUT"
+    },
+    "reconstructed": "P1_B4005",
+    "imputed_with_2204_mean": [],
+    "far_2305_e5_convention": {
+     "count": 3557,
+     "exposure_h": 249.0,
+     "rate_per_h": 14.285140562248996,
+     "ucb95_one_sided": 14.685458017139432,
+     "ci95_two_sided": [
+      13.819504450259688,
+      14.762466225653268
+     ]
+    },
+    "ratio_vs_2204_e5_convention": {
+     "ratio": 28.74720007400877,
+     "ci95_two_sided": [
+      21.14701882075061,
+      40.12991487115892
+     ],
+     "p_one_sided_lambda1_gt_lambda2": 0.0
+    }
+   }
+  }
+ },
+ "meta": {
+  "script": "e5b_tag_mapping.py",
+  "finished_local": "2026-10-12T09:14:13",
+  "runtime_s": 65.5,
+  "seeds": {
+   "none": null
+  },
+  "software": {
+   "python": "3.10.6",
+   "platform": "Windows-10-10.0.19045-SP0",
+   "numpy": "1.26.4",
+   "scipy": "1.15.3",
+   "pandas": "2.3.3",
+   "torch": "2.6.0+cu124",
+   "cuda": "12.4",
+   "cudnn": 90100,
+   "device": "cuda",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+   "cudnn_deterministic_flag": false,
+   "cudnn_benchmark_flag": false,
+   "safetensors": "0.7.0",
+   "sklearn": "1.7.2"
+  },
+  "hai_lib_constants": {
+   "W": 60,
+   "SMOOTH": 10,
+   "MERGE_GAP": 30,
+   "TOL": 60
+  },
+  "subsample_for_correlations_s": 10
+ }
+}

@@ -1,0 +1,2301 @@
+{
+ "script": "cluster_bootstrap.py",
+ "started_utc": "2026-10-12T06:12:13Z",
+ "finished_utc": "2026-10-12T06:12:45Z",
+ "runtime_s": 32.82064247131348,
+ "versions": {
+  "python": "3.10.6",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "pandas": "2.3.3"
+ },
+ "settings": {
+  "alpha_one_sided": 0.05,
+  "B": 100000,
+  "seed": 20261012,
+  "nsim": 4000,
+  "bsim": 2000,
+  "sigmas": [
+   0.0,
+   0.5,
+   1.0,
+   1.5,
+   2.0,
+   3.0,
+   4.0,
+   6.0
+  ],
+  "threat_model": "TM-A",
+  "eps": 0.5,
+  "percentile_bound": "one-sided percentile bound of the bootstrap distribution (numpy linear quantile)",
+  "primitive_reading": "AP3 (A415) read as AP33; literal reading as sensitivity"
+ },
+ "summary": {
+  "baseline_s0": {
+   "event_recall": {
+    "k_n": [
+     38,
+     58
+    ],
+    "estimate": 0.6551724137931034,
+    "cp_exact": [
+     0.5395567799220093,
+     "accept"
+    ],
+    "dependency_graph_effn_cp": [
+     0.47519997632630395,
+     "not accepted"
+    ],
+    "primitive_product_percentile": [
+     0.4745762711864407,
+     "not accepted"
+    ],
+    "primitive_product_effn_cp": [
+     0.45166301424414057,
+     "not accepted"
+    ],
+    "first_primitive_cluster_percentile": [
+     0.5254237288135594,
+     "accept"
+    ],
+    "first_primitive_cluster_effn_cp": [
+     0.5081935760301677,
+     "accept"
+    ],
+    "iid_attack_percentile": [
+     0.5517241379310345,
+     "accept"
+    ],
+    "decision_differs_from_cp": [
+     "dependency_graph_effn_cp",
+     "primitive_product_percentile",
+     "primitive_product_effn_cp"
+    ],
+    "dependency_graph_deff": 2.230127041742287
+   },
+   "ir2_union": {
+    "k_n": [
+     9,
+     38
+    ],
+    "estimate": 0.23684210526315788,
+    "cp_exact": [
+     0.37690642691332116,
+     "not accepted"
+    ],
+    "dependency_graph_effn_cp": [
+     0.426084289435091,
+     "not accepted"
+    ],
+    "primitive_product_percentile": [
+     0.4358974358974359,
+     "not accepted"
+    ],
+    "primitive_product_effn_cp": [
+     0.475941287609734,
+     "not accepted"
+    ],
+    "first_primitive_cluster_percentile": [
+     0.38461538461538464,
+     "not accepted"
+    ],
+    "first_primitive_cluster_effn_cp": [
+     0.4129159012617889,
+     "not accepted"
+    ],
+    "iid_attack_percentile": [
+     0.34210526315789475,
+     "not accepted"
+    ],
+    "decision_differs_from_cp": [],
+    "dependency_graph_deff": 1.6656583988707405
+   },
+   "ie2_process": {
+    "k_n": [
+     37,
+     38
+    ],
+    "estimate": 0.9736842105263158,
+    "cp_exact": [
+     0.8811458772994392,
+     "accept"
+    ],
+    "dependency_graph_effn_cp": [
+     0.8811458772994392,
+     "accept"
+    ],
+    "primitive_product_percentile": [
+     0.9210526315789473,
+     "accept"
+    ],
+    "primitive_product_effn_cp": [
+     0.8702641071146016,
+     "accept"
+    ],
+    "first_primitive_cluster_percentile": [
+     0.926829268292683,
+     "accept"
+    ],
+    "first_primitive_cluster_effn_cp": [
+     0.8811458772994392,
+     "accept"
+    ],
+    "iid_attack_percentile": [
+     0.9210526315789473,
+     "accept"
+    ],
+    "decision_differs_from_cp": [],
+    "dependency_graph_deff": 0.9445234708392612
+   }
+  },
+  "hardened_s0": {
+   "event_recall": {
+    "k_n": [
+     36,
+     58
+    ],
+    "estimate": 0.6206896551724138,
+    "cp_exact": [
+     0.5043899603088324,
+     "accept"
+    ],
+    "dependency_graph_effn_cp": [
+     0.44650039790015256,
+     "not accepted"
+    ],
+    "primitive_product_percentile": [
+     0.4358974358974359,
+     "not accepted"
+    ],
+    "primitive_product_effn_cp": [
+     0.4205988140731242,
+     "not accepted"
+    ],
+    "first_primitive_cluster_percentile": [
+     0.48333333333333334,
+     "not accepted"
+    ],
+    "first_primitive_cluster_effn_cp": [
+     0.47007787499552056,
+     "not accepted"
+    ],
+    "iid_attack_percentile": [
+     0.5172413793103449,
+     "accept"
+    ],
+    "decision_differs_from_cp": [
+     "dependency_graph_effn_cp",
+     "primitive_product_percentile",
+     "primitive_product_effn_cp",
+     "first_primitive_cluster_percentile",
+     "first_primitive_cluster_effn_cp"
+    ],
+    "dependency_graph_deff": 2.1039707419017764
+   },
+   "ir2_union": {
+    "k_n": [
+     6,
+     36
+    ],
+    "estimate": 0.16666666666666666,
+    "cp_exact": [
+     0.30267742362657557,
+     "not accepted"
+    ],
+    "dependency_graph_effn_cp": [
+     0.37445690305509494,
+     "not accepted"
+    ],
+    "primitive_product_percentile": [
+     0.36363636363636365,
+     "not accepted"
+    ],
+    "primitive_product_effn_cp": [
+     0.43824676624718195,
+     "not accepted"
+    ],
+    "first_primitive_cluster_percentile": [
+     0.3055555555555556,
+     "not accepted"
+    ],
+    "first_primitive_cluster_effn_cp": [
+     0.3503375614659542,
+     "not accepted"
+    ],
+    "iid_attack_percentile": [
+     0.2777777777777778,
+     "not accepted"
+    ],
+    "decision_differs_from_cp": [],
+    "dependency_graph_deff": 1.9666666666666666
+   },
+   "ie2_process": {
+    "k_n": [
+     36,
+     36
+    ],
+    "estimate": 1.0,
+    "cp_exact": [
+     0.9201534904801056,
+     "accept"
+    ],
+    "dependency_graph_effn_cp": [
+     0.9201534904801056,
+     "accept"
+    ],
+    "primitive_product_percentile": [
+     1.0,
+     "accept"
+    ],
+    "primitive_product_effn_cp": [
+     0.9201534904801056,
+     "accept"
+    ],
+    "first_primitive_cluster_percentile": [
+     1.0,
+     "accept"
+    ],
+    "first_primitive_cluster_effn_cp": [
+     0.9201534904801056,
+     "accept"
+    ],
+    "iid_attack_percentile": [
+     1.0,
+     "accept"
+    ],
+    "worst_case_component_cp": [
+     0.7168711644368865,
+     "accept"
+    ],
+    "decision_differs_from_cp": [],
+    "dependency_graph_deff": null
+   }
+  }
+ },
+ "recommendation": "Across sigma in [0, 6] the one-sided coverage (nominal 0.95) in the recall-like / concealment-like settings was: exact CP 0.905-0.964 / 0.907-0.963; dependency-graph effective-n CP 0.952-0.968 / 0.938-0.968; primitive product-weight percentile 0.959-0.979 / 0.936-0.972; first-primitive cluster percentile 0.904-0.934 / 0.878-0.926; iid bootstrap 0.879-0.948 / 0.895-0.954. Recommended cluster-robust bound: the dependency-graph effective-n CP bound (close to nominal throughout); bootstrap scheme of record: the primitive product-weight bootstrap (percentile), which is valid but conservative under weak dependence. The first-primitive cluster bootstrap under-covers and is not recommended. Percentile bounds must not be used for proportions near 1 (localisation-like setting: coverage 0.55-0.64).",
+ "calibration_coverage_ranges": {
+  "recall_like_58_attacks": {
+   "cp_exact": [
+    0.9055,
+    0.96425
+   ],
+   "dependency_graph_effn_cp": [
+    0.95225,
+    0.968
+   ],
+   "primitive_product_percentile": [
+    0.95925,
+    0.979
+   ],
+   "primitive_product_effn_cp": [
+    0.981,
+    0.9915
+   ],
+   "first_primitive_cluster_percentile": [
+    0.904,
+    0.9345
+   ],
+   "first_primitive_cluster_effn_cp": [
+    0.93525,
+    0.967
+   ],
+   "iid_attack_percentile": [
+    0.87875,
+    0.94775
+   ]
+  },
+  "concealment_like_38_detected": {
+   "cp_exact": [
+    0.9075,
+    0.96325
+   ],
+   "dependency_graph_effn_cp": [
+    0.93825,
+    0.96825
+   ],
+   "primitive_product_percentile": [
+    0.93575,
+    0.972
+   ],
+   "primitive_product_effn_cp": [
+    0.979,
+    0.9935
+   ],
+   "first_primitive_cluster_percentile": [
+    0.878,
+    0.92625
+   ],
+   "first_primitive_cluster_effn_cp": [
+    0.9285,
+    0.96675
+   ],
+   "iid_attack_percentile": [
+    0.895,
+    0.954
+   ]
+  },
+  "localisation_like_38_detected": {
+   "cp_exact": [
+    1.0,
+    1.0
+   ],
+   "dependency_graph_effn_cp": [
+    1.0,
+    1.0
+   ],
+   "primitive_product_percentile": [
+    0.55175,
+    0.64225
+   ],
+   "primitive_product_effn_cp": [
+    1.0,
+    1.0
+   ],
+   "first_primitive_cluster_percentile": [
+    0.55175,
+    0.64225
+   ],
+   "first_primitive_cluster_effn_cp": [
+    1.0,
+    1.0
+   ],
+   "iid_attack_percentile": [
+    0.55175,
+    0.64225
+   ]
+  }
+ },
+ "scheme_diagnostics": {
+  "n_attacks": 58,
+  "n_primitives": 37,
+  "n_primitives_literal_AP3": 38,
+  "n_two_primitive_attacks": 25,
+  "connected_components": {
+   "n": 13,
+   "sizes": [
+    42,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "largest_share": 0.7241379310344828,
+   "kish_effective_clusters": 1.875139353400223,
+   "members": [
+    [
+     "A101",
+     "A103",
+     "A104",
+     "A105",
+     "A106",
+     "A107",
+     "A201",
+     "A202",
+     "A204",
+     "A205",
+     "A206",
+     "A207",
+     "A208",
+     "A210",
+     "A211",
+     "A212",
+     "A215",
+     "A216",
+     "A217",
+     "A301",
+     "A302",
+     "A303",
+     "A306",
+     "A307",
+     "A308",
+     "A309",
+     "A310",
+     "A403",
+     "A404",
+     "A406",
+     "A407",
+     "A408",
+     "A410",
+     "A411",
+     "A412",
+     "A413",
+     "A418",
+     "A419",
+     "A421",
+     "A422",
+     "A423",
+     "A424"
+    ],
+    [
+     "A102",
+     "A305",
+     "A402",
+     "A409"
+    ],
+    [
+     "A414",
+     "A415"
+    ],
+    [
+     "A203"
+    ],
+    [
+     "A209"
+    ],
+    [
+     "A213"
+    ],
+    [
+     "A214"
+    ],
+    [
+     "A304"
+    ],
+    [
+     "A401"
+    ],
+    [
+     "A405"
+    ],
+    [
+     "A416"
+    ],
+    [
+     "A417"
+    ],
+    [
+     "A420"
+    ]
+   ]
+  },
+  "first_primitive_clusters": 34,
+  "test_files": 4,
+  "primitive_reuse": {
+   "AP01": [
+    "A201",
+    "A216",
+    "A412",
+    "A418",
+    "A419"
+   ],
+   "AP02": [
+    "A206",
+    "A422"
+   ],
+   "AP04": [
+    "A101",
+    "A204",
+    "A306"
+   ],
+   "AP05": [
+    "A211",
+    "A308",
+    "A408"
+   ],
+   "AP08": [
+    "A216",
+    "A309",
+    "A423"
+   ],
+   "AP09": [
+    "A215",
+    "A406"
+   ],
+   "AP10": [
+    "A217",
+    "A301",
+    "A424"
+   ],
+   "AP11": [
+    "A103",
+    "A410"
+   ],
+   "AP13": [
+    "A106",
+    "A202",
+    "A407"
+   ],
+   "AP14": [
+    "A105",
+    "A418"
+   ],
+   "AP15": [
+    "A302",
+    "A306"
+   ],
+   "AP16": [
+    "A207",
+    "A301",
+    "A413"
+   ],
+   "AP17": [
+    "A303",
+    "A407",
+    "A408"
+   ],
+   "AP18": [
+    "A102",
+    "A305",
+    "A409"
+   ],
+   "AP19": [
+    "A107",
+    "A309",
+    "A406"
+   ],
+   "AP20": [
+    "A307",
+    "A412"
+   ],
+   "AP21": [
+    "A402",
+    "A409"
+   ],
+   "AP23": [
+    "A308",
+    "A411",
+    "A421",
+    "A424"
+   ],
+   "AP26": [
+    "A210",
+    "A404",
+    "A422"
+   ],
+   "AP27": [
+    "A206",
+    "A410",
+    "A413"
+   ],
+   "AP29": [
+    "A204",
+    "A423"
+   ],
+   "AP30": [
+    "A208",
+    "A421"
+   ],
+   "AP33": [
+    "A414",
+    "A415"
+   ],
+   "AP34": [
+    "A403",
+    "A411"
+   ],
+   "AP35": [
+    "A212",
+    "A310",
+    "A419"
+   ],
+   "AP37": [
+    "A104",
+    "A205",
+    "A303",
+    "A310",
+    "A404"
+   ]
+  }
+ },
+ "scheme_decision": "Connected components of the attack-primitive graph give 13 clusters, one of which holds 42 of the 58 attacks (Kish effective number of clusters 1.88); a component bootstrap would essentially resample a single unit and is reported only as a diagnostic. Test files give only 4 clusters (256 possible resamples) and are reported for completeness. The dependence is therefore handled at the primitive level, with three schemes that differ in how they treat the 25 two-primitive attacks: the product-weight bootstrap (conservative by construction: a two-primitive attack's weight has variance 3 instead of 1), the first-primitive cluster bootstrap (ignores the dependence through the second primitive) and the dependency-graph cluster-robust variance with an effective-sample-size CP bound. The calibration simulation reports their one-sided coverage under a primitive random-effects model.",
+ "inconsistent_rows_flagged": {
+  "A301": "primitive AP16 (elsewhere P1-LC-CO1, target P1_LCV01D) is listed with scenario P3-LC-CO2 and target point P2_LCV01D, a tag that does not exist",
+  "A304": "scenario P3-LC-CO2PV1 (target process P3) but target points P1_LCV01D, P1_LIT01",
+  "A305": "scenario P1-LC-CO1-ST of AP18 (elsewhere target P1_LCV01D) but target point P3_LCV01D",
+  "A306": "primitive AP04 (elsewhere P1-PC-CO1, target P1_PCV01D) is listed with target point P1_LCV01D",
+  "A415": "primitive printed as 'AP3' (read as AP33, see PRIMITIVE_FIXES)",
+  "A417": "target point printed as P1_PP04_SP; the data column is P1_PP04SP"
+ },
+ "results": {
+  "baseline_s0": {
+   "pgd_literal_TM-A_eps0.5": {
+    "pgd_literal_concealed": 0,
+    "n": 38
+   },
+   "event_recall": {
+    "k": 38,
+    "n": 58,
+    "estimate": 0.6551724137931034,
+    "direction": ">=",
+    "tau": 0.5,
+    "units_with_outcome_1": [
+     "A101",
+     "A102",
+     "A103",
+     "A105",
+     "A106",
+     "A203",
+     "A204",
+     "A206",
+     "A207",
+     "A208",
+     "A210",
+     "A211",
+     "A213",
+     "A215",
+     "A217",
+     "A301",
+     "A302",
+     "A303",
+     "A305",
+     "A306",
+     "A308",
+     "A401",
+     "A403",
+     "A404",
+     "A408",
+     "A409",
+     "A410",
+     "A411",
+     "A413",
+     "A414",
+     "A415",
+     "A417",
+     "A418",
+     "A420",
+     "A421",
+     "A422",
+     "A423",
+     "A424"
+    ],
+    "clusters": {
+     "primitives": 37,
+     "first_primitive": 34,
+     "connected_components": 13,
+     "component_sizes": [
+      42,
+      4,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "kish_effective_components": 1.875139353400223
+    },
+    "bounds": {
+     "cp_exact": {
+      "bound": 0.5395567799220093,
+      "accepted": true
+     },
+     "dependency_graph_effn_cp": {
+      "bound": 0.47519997632630395,
+      "accepted": false
+     },
+     "primitive_product_percentile": {
+      "bound": 0.4745762711864407,
+      "accepted": false
+     },
+     "primitive_product_effn_cp": {
+      "bound": 0.45166301424414057,
+      "accepted": false
+     },
+     "first_primitive_cluster_percentile": {
+      "bound": 0.5254237288135594,
+      "accepted": true
+     },
+     "first_primitive_cluster_effn_cp": {
+      "bound": 0.5081935760301677,
+      "accepted": true
+     },
+     "iid_attack_percentile": {
+      "bound": 0.5517241379310345,
+      "accepted": true
+     },
+     "iid_attack_effn_cp": {
+      "bound": 0.5394739527669588,
+      "accepted": true
+     },
+     "component_bootstrap_percentile_diagnostic": {
+      "bound": 0.5,
+      "accepted": true,
+      "clusters": 13
+     },
+     "test_file_bootstrap_exact_percentile": {
+      "bound": 0.5957446808510638,
+      "accepted": true,
+      "clusters": 4,
+      "note": "4 clusters: not a credible basis"
+     }
+    },
+    "design_effects": {
+     "dependency_graph": 2.230127041742287,
+     "primitive_product": 2.7851561359592543,
+     "first_primitive_cluster": 1.546527342525348,
+     "iid_attack": 1.0013073002358974
+    },
+    "effective_n": {
+     "dependency_graph": 26.007486979166664,
+     "primitive_product": 20.824685284663165,
+     "first_primitive_cluster": 37.50337831421132,
+     "iid_attack": 57.924275580868944
+    },
+    "bootstrap_se": {
+     "primitive_product": 0.10415726779788094,
+     "first_primitive_cluster": 0.07761463280032117,
+     "iid_attack": 0.062452308598258656
+    },
+    "bootstrap_replicates": 100000,
+    "bootstrap_replicates_dropped_zero_weight": {
+     "primitive_product": 0
+    },
+    "literal_AP3_sensitivity": {
+     "dependency_graph_effn_cp": 0.4760121643971121,
+     "primitive_product_percentile": 0.47619047619047616,
+     "primitive_product_effn_cp": 0.4531471161235468,
+     "first_primitive_cluster_percentile": 0.5263157894736842,
+     "first_primitive_cluster_effn_cp": 0.5098143344006828
+    }
+   },
+   "ir2_union": {
+    "k": 9,
+    "n": 38,
+    "estimate": 0.23684210526315788,
+    "direction": "<=",
+    "tau": 0.2,
+    "units_with_outcome_1": [
+     "A106",
+     "A204",
+     "A208",
+     "A213",
+     "A215",
+     "A217",
+     "A421",
+     "A423",
+     "A424"
+    ],
+    "clusters": {
+     "primitives": 29,
+     "first_primitive": 24,
+     "connected_components": 12,
+     "component_sizes": [
+      19,
+      5,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "kish_effective_components": 3.521951219512195
+    },
+    "bounds": {
+     "cp_exact": {
+      "bound": 0.37690642691332116,
+      "accepted": false
+     },
+     "dependency_graph_effn_cp": {
+      "bound": 0.426084289435091,
+      "accepted": false
+     },
+     "primitive_product_percentile": {
+      "bound": 0.4358974358974359,
+      "accepted": false
+     },
+     "primitive_product_effn_cp": {
+      "bound": 0.475941287609734,
+      "accepted": false
+     },
+     "first_primitive_cluster_percentile": {
+      "bound": 0.38461538461538464,
+      "accepted": false
+     },
+     "first_primitive_cluster_effn_cp": {
+      "bound": 0.4129159012617889,
+      "accepted": false
+     },
+     "iid_attack_percentile": {
+      "bound": 0.34210526315789475,
+      "accepted": false
+     },
+     "iid_attack_effn_cp": {
+      "bound": 0.37694900372967266,
+      "accepted": false
+     },
+     "component_bootstrap_percentile_diagnostic": {
+      "bound": 0.37037037037037035,
+      "accepted": false,
+      "clusters": 12
+     },
+     "test_file_bootstrap_exact_percentile": {
+      "bound": 0.4,
+      "accepted": false,
+      "clusters": 4,
+      "note": "4 clusters: not a credible basis"
+     }
+    },
+    "design_effects": {
+     "dependency_graph": 1.6656583988707405,
+     "primitive_product": 2.469594415359667,
+     "first_primitive_cluster": 1.474797893882114,
+     "iid_attack": 1.000519396936498
+    },
+    "effective_n": {
+     "dependency_graph": 22.813801452784496,
+     "primitive_product": 15.387142019620155,
+     "first_primitive_cluster": 25.766242383200392,
+     "iid_attack": 37.98027316247205
+    },
+    "bootstrap_se": {
+     "primitive_product": 0.10838212853262097,
+     "first_primitive_cluster": 0.08375507138371227,
+     "iid_attack": 0.0689854680263333
+    },
+    "bootstrap_replicates": 100000,
+    "bootstrap_replicates_dropped_zero_weight": {
+     "primitive_product": 0
+    },
+    "literal_AP3_sensitivity": {
+     "dependency_graph_effn_cp": 0.4249812450345254,
+     "primitive_product_percentile": 0.43243243243243246,
+     "primitive_product_effn_cp": 0.4746363710309275,
+     "first_primitive_cluster_percentile": 0.38235294117647056,
+     "first_primitive_cluster_effn_cp": 0.4120284454335003
+    }
+   },
+   "ie2_process": {
+    "k": 37,
+    "n": 38,
+    "estimate": 0.9736842105263158,
+    "direction": ">=",
+    "tau": 0.6,
+    "units_with_outcome_1": [
+     "A101",
+     "A102",
+     "A103",
+     "A105",
+     "A106",
+     "A203",
+     "A204",
+     "A206",
+     "A207",
+     "A208",
+     "A210",
+     "A213",
+     "A215",
+     "A217",
+     "A301",
+     "A302",
+     "A303",
+     "A305",
+     "A306",
+     "A308",
+     "A401",
+     "A403",
+     "A404",
+     "A408",
+     "A409",
+     "A410",
+     "A411",
+     "A413",
+     "A414",
+     "A415",
+     "A417",
+     "A418",
+     "A420",
+     "A421",
+     "A422",
+     "A423",
+     "A424"
+    ],
+    "clusters": {
+     "primitives": 29,
+     "first_primitive": 24,
+     "connected_components": 12,
+     "component_sizes": [
+      19,
+      5,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "kish_effective_components": 3.521951219512195
+    },
+    "bounds": {
+     "cp_exact": {
+      "bound": 0.8811458772994392,
+      "accepted": true
+     },
+     "dependency_graph_effn_cp": {
+      "bound": 0.8811458772994392,
+      "accepted": true
+     },
+     "primitive_product_percentile": {
+      "bound": 0.9210526315789473,
+      "accepted": true
+     },
+     "primitive_product_effn_cp": {
+      "bound": 0.8702641071146016,
+      "accepted": true
+     },
+     "first_primitive_cluster_percentile": {
+      "bound": 0.926829268292683,
+      "accepted": true
+     },
+     "first_primitive_cluster_effn_cp": {
+      "bound": 0.8811458772994392,
+      "accepted": true
+     },
+     "iid_attack_percentile": {
+      "bound": 0.9210526315789473,
+      "accepted": true
+     },
+     "iid_attack_effn_cp": {
+      "bound": 0.8811458772994392,
+      "accepted": true
+     },
+     "component_bootstrap_percentile_diagnostic": {
+      "bound": 0.958904109589041,
+      "accepted": true,
+      "clusters": 12
+     },
+     "test_file_bootstrap_exact_percentile": {
+      "bound": 0.9333333333333333,
+      "accepted": true,
+      "clusters": 4,
+      "note": "4 clusters: not a credible basis"
+     }
+    },
+    "design_effects": {
+     "dependency_graph": 0.9445234708392612,
+     "primitive_product": 1.1497431980242354,
+     "first_primitive_cluster": 0.8745844398511299,
+     "iid_attack": 0.9927797369919665
+    },
+    "effective_n": {
+     "dependency_graph": 38.0,
+     "primitive_product": 33.05085871810393,
+     "first_primitive_cluster": 38.0,
+     "iid_attack": 38.0
+    },
+    "bootstrap_se": {
+     "primitive_product": 0.0278436324085734,
+     "first_primitive_cluster": 0.024284341988771174,
+     "iid_attack": 0.025873305669894094
+    },
+    "bootstrap_replicates": 100000,
+    "bootstrap_replicates_dropped_zero_weight": {
+     "primitive_product": 0
+    },
+    "literal_AP3_sensitivity": {
+     "dependency_graph_effn_cp": 0.8811458772994392,
+     "primitive_product_percentile": 0.9215686274509803,
+     "primitive_product_effn_cp": 0.8712228916383615,
+     "first_primitive_cluster_percentile": 0.9285714285714286,
+     "first_primitive_cluster_effn_cp": 0.8811458772994392
+    }
+   }
+  },
+  "hardened_s0": {
+   "pgd_literal_TM-A_eps0.5": {
+    "pgd_literal_concealed": 6,
+    "n": 36
+   },
+   "event_recall": {
+    "k": 36,
+    "n": 58,
+    "estimate": 0.6206896551724138,
+    "direction": ">=",
+    "tau": 0.5,
+    "units_with_outcome_1": [
+     "A101",
+     "A102",
+     "A103",
+     "A105",
+     "A203",
+     "A204",
+     "A206",
+     "A207",
+     "A208",
+     "A210",
+     "A211",
+     "A215",
+     "A217",
+     "A301",
+     "A302",
+     "A303",
+     "A305",
+     "A306",
+     "A308",
+     "A310",
+     "A401",
+     "A403",
+     "A404",
+     "A408",
+     "A409",
+     "A410",
+     "A411",
+     "A413",
+     "A414",
+     "A415",
+     "A418",
+     "A420",
+     "A421",
+     "A422",
+     "A423",
+     "A424"
+    ],
+    "clusters": {
+     "primitives": 37,
+     "first_primitive": 34,
+     "connected_components": 13,
+     "component_sizes": [
+      42,
+      4,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "kish_effective_components": 1.875139353400223
+    },
+    "bounds": {
+     "cp_exact": {
+      "bound": 0.5043899603088324,
+      "accepted": true
+     },
+     "dependency_graph_effn_cp": {
+      "bound": 0.44650039790015256,
+      "accepted": false
+     },
+     "primitive_product_percentile": {
+      "bound": 0.4358974358974359,
+      "accepted": false
+     },
+     "primitive_product_effn_cp": {
+      "bound": 0.4205988140731242,
+      "accepted": false
+     },
+     "first_primitive_cluster_percentile": {
+      "bound": 0.48333333333333334,
+      "accepted": false
+     },
+     "first_primitive_cluster_effn_cp": {
+      "bound": 0.47007787499552056,
+      "accepted": false
+     },
+     "iid_attack_percentile": {
+      "bound": 0.5172413793103449,
+      "accepted": true
+     },
+     "iid_attack_effn_cp": {
+      "bound": 0.5043899603088324,
+      "accepted": true
+     },
+     "component_bootstrap_percentile_diagnostic": {
+      "bound": 0.35294117647058826,
+      "accepted": false,
+      "clusters": 13
+     },
+     "test_file_bootstrap_exact_percentile": {
+      "bound": 0.5526315789473685,
+      "accepted": true,
+      "clusters": 4,
+      "note": "4 clusters: not a credible basis"
+     }
+    },
+    "design_effects": {
+     "dependency_graph": 2.1039707419017764,
+     "primitive_product": 2.716316109824607,
+     "first_primitive_cluster": 1.610288422112544,
+     "iid_attack": 0.9958173269520576
+    },
+    "effective_n": {
+     "dependency_graph": 27.566923267941394,
+     "primitive_product": 21.352448557154517,
+     "first_primitive_cluster": 36.018392235540986,
+     "iid_attack": 58.0
+    },
+    "bootstrap_se": {
+     "primitive_product": 0.10500518758774977,
+     "first_primitive_cluster": 0.08084858728853714,
+     "iid_attack": 0.06357852376204777
+    },
+    "bootstrap_replicates": 100000,
+    "bootstrap_replicates_dropped_zero_weight": {
+     "primitive_product": 0
+    },
+    "literal_AP3_sensitivity": {
+     "dependency_graph_effn_cp": 0.44745100555613193,
+     "primitive_product_percentile": 0.4375,
+     "primitive_product_effn_cp": 0.42177257689555553,
+     "first_primitive_cluster_percentile": 0.4838709677419355,
+     "first_primitive_cluster_effn_cp": 0.47104799226527266
+    }
+   },
+   "ir2_union": {
+    "k": 6,
+    "n": 36,
+    "estimate": 0.16666666666666666,
+    "direction": "<=",
+    "tau": 0.2,
+    "units_with_outcome_1": [
+     "A204",
+     "A208",
+     "A217",
+     "A421",
+     "A423",
+     "A424"
+    ],
+    "clusters": {
+     "primitives": 27,
+     "first_primitive": 22,
+     "connected_components": 9,
+     "component_sizes": [
+      20,
+      5,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+     ],
+     "kish_effective_components": 2.905829596412556
+    },
+    "bounds": {
+     "cp_exact": {
+      "bound": 0.30267742362657557,
+      "accepted": false
+     },
+     "dependency_graph_effn_cp": {
+      "bound": 0.37445690305509494,
+      "accepted": false
+     },
+     "primitive_product_percentile": {
+      "bound": 0.36363636363636365,
+      "accepted": false
+     },
+     "primitive_product_effn_cp": {
+      "bound": 0.43824676624718195,
+      "accepted": false
+     },
+     "first_primitive_cluster_percentile": {
+      "bound": 0.3055555555555556,
+      "accepted": false
+     },
+     "first_primitive_cluster_effn_cp": {
+      "bound": 0.3503375614659542,
+      "accepted": false
+     },
+     "iid_attack_percentile": {
+      "bound": 0.2777777777777778,
+      "accepted": false
+     },
+     "iid_attack_effn_cp": {
+      "bound": 0.30267742362657557,
+      "accepted": false
+     },
+     "component_bootstrap_percentile_diagnostic": {
+      "bound": 0.23076923076923078,
+      "accepted": false,
+      "clusters": 9
+     },
+     "test_file_bootstrap_exact_percentile": {
+      "bound": 0.24617647058823527,
+      "accepted": false,
+      "clusters": 4,
+      "note": "4 clusters: not a credible basis"
+     }
+    },
+    "design_effects": {
+     "dependency_graph": 1.9666666666666666,
+     "primitive_product": 3.002477986785024,
+     "first_primitive_cluster": 1.6177150499796362,
+     "iid_attack": 0.9981951083310834
+    },
+    "effective_n": {
+     "dependency_graph": 18.305084745762713,
+     "primitive_product": 11.990096233327549,
+     "first_primitive_cluster": 22.25361011536189,
+     "iid_attack": 36.0
+    },
+    "bootstrap_se": {
+     "primitive_product": 0.10762729304537746,
+     "first_primitive_cluster": 0.07900116838631513,
+     "iid_attack": 0.0620569204419146
+    },
+    "bootstrap_replicates": 100000,
+    "bootstrap_replicates_dropped_zero_weight": {
+     "primitive_product": 0
+    },
+    "literal_AP3_sensitivity": {
+     "dependency_graph_effn_cp": 0.37371320050859524,
+     "primitive_product_percentile": 0.36363636363636365,
+     "primitive_product_effn_cp": 0.4357811305789998,
+     "first_primitive_cluster_percentile": 0.3055555555555556,
+     "first_primitive_cluster_effn_cp": 0.3488965730846301
+    }
+   },
+   "ie2_process": {
+    "k": 36,
+    "n": 36,
+    "estimate": 1.0,
+    "direction": ">=",
+    "tau": 0.6,
+    "units_with_outcome_1": [
+     "A101",
+     "A102",
+     "A103",
+     "A105",
+     "A203",
+     "A204",
+     "A206",
+     "A207",
+     "A208",
+     "A210",
+     "A211",
+     "A215",
+     "A217",
+     "A301",
+     "A302",
+     "A303",
+     "A305",
+     "A306",
+     "A308",
+     "A310",
+     "A401",
+     "A403",
+     "A404",
+     "A408",
+     "A409",
+     "A410",
+     "A411",
+     "A413",
+     "A414",
+     "A415",
+     "A418",
+     "A420",
+     "A421",
+     "A422",
+     "A423",
+     "A424"
+    ],
+    "clusters": {
+     "primitives": 27,
+     "first_primitive": 22,
+     "connected_components": 9,
+     "component_sizes": [
+      20,
+      5,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+     ],
+     "kish_effective_components": 2.905829596412556
+    },
+    "bounds": {
+     "cp_exact": {
+      "bound": 0.9201534904801056,
+      "accepted": true
+     },
+     "dependency_graph_effn_cp": {
+      "bound": 0.9201534904801056,
+      "accepted": true
+     },
+     "primitive_product_percentile": {
+      "bound": 1.0,
+      "accepted": true
+     },
+     "primitive_product_effn_cp": {
+      "bound": 0.9201534904801056,
+      "accepted": true
+     },
+     "first_primitive_cluster_percentile": {
+      "bound": 1.0,
+      "accepted": true
+     },
+     "first_primitive_cluster_effn_cp": {
+      "bound": 0.9201534904801056,
+      "accepted": true
+     },
+     "iid_attack_percentile": {
+      "bound": 1.0,
+      "accepted": true
+     },
+     "iid_attack_effn_cp": {
+      "bound": 0.9201534904801056,
+      "accepted": true
+     },
+     "component_bootstrap_percentile_diagnostic": {
+      "bound": 1.0,
+      "accepted": true,
+      "clusters": 9
+     },
+     "test_file_bootstrap_exact_percentile": {
+      "bound": 1.0,
+      "accepted": true,
+      "clusters": 4,
+      "note": "4 clusters: not a credible basis"
+     },
+     "worst_case_component_cp": {
+      "units": 9,
+      "bound": 0.7168711644368865,
+      "accepted": true,
+      "note": "perfect dependence within components; components independent"
+     }
+    },
+    "design_effects": {
+     "dependency_graph": null,
+     "primitive_product": null,
+     "first_primitive_cluster": null,
+     "iid_attack": null
+    },
+    "effective_n": {
+     "dependency_graph": 36.0,
+     "primitive_product": 36.0,
+     "first_primitive_cluster": 36.0,
+     "iid_attack": 36.0
+    },
+    "bootstrap_se": {
+     "primitive_product": 7.65977261718507e-18,
+     "first_primitive_cluster": 0.0,
+     "iid_attack": 0.0
+    },
+    "bootstrap_replicates": 100000,
+    "bootstrap_replicates_dropped_zero_weight": {
+     "primitive_product": 0
+    },
+    "literal_AP3_sensitivity": {
+     "dependency_graph_effn_cp": 0.9201534904801056,
+     "primitive_product_percentile": 1.0,
+     "primitive_product_effn_cp": 0.9201534904801056,
+     "first_primitive_cluster_percentile": 1.0,
+     "first_primitive_cluster_effn_cp": 0.9201534904801056
+    },
+    "note_degenerate": "all outcomes equal: every bootstrap distribution is a point mass at the estimate and the design effect is undefined, so the percentile bounds equal the estimate and the effective-n bounds fall back to n_eff = n (the exact CP bound); only the worst-case component bound reflects the dependence"
+   }
+  }
+ },
+ "calibration": {
+  "model": "y_i ~ Bernoulli(expit(b0 + sum_{p in P_i} a_p)), a_p ~ N(0, sigma^2) iid over primitives; b0 such that the design-averaged success probability equals true_mean; coverage = P(bound on the correct side of true_mean)",
+  "settings": {
+   "recall_like_58_attacks": {
+    "units": 58,
+    "true_mean": 0.6551724137931034,
+    "direction": ">=",
+    "nsim": 4000,
+    "bsim": 2000,
+    "mc_se_at_0.95": 0.0034460121880225555,
+    "by_sigma": [
+     {
+      "sigma": 0.0,
+      "b0": 0.6418538861723944,
+      "true_mean": 0.6551724137931034,
+      "coverage": {
+       "cp_exact": 0.96425,
+       "dependency_graph_effn_cp": 0.968,
+       "primitive_product_percentile": 0.979,
+       "primitive_product_effn_cp": 0.9915,
+       "first_primitive_cluster_percentile": 0.9345,
+       "first_primitive_cluster_effn_cp": 0.967,
+       "iid_attack_percentile": 0.94775,
+       "iid_attack_effn_cp": 0.96425
+      },
+      "mean_bound": {
+       "cp_exact": 0.5404738900330565,
+       "dependency_graph_effn_cp": 0.5349855113720818,
+       "primitive_product_percentile": 0.5161826216455075,
+       "primitive_product_effn_cp": 0.498705209067793,
+       "first_primitive_cluster_percentile": 0.5532669020434735,
+       "first_primitive_cluster_effn_cp": 0.536350558287626,
+       "iid_attack_percentile": 0.5527411637931036,
+       "iid_attack_effn_cp": 0.5396806636152246
+      },
+      "mean_dependency_graph_deff": 0.9553955906648743,
+      "median_dependency_graph_deff": 0.9383141762452107,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.5180601655500237,
+       "0.5": 0.9383141762452107,
+       "0.95": 1.4529967159277501
+      },
+      "share_deff_ge_observed": {
+       "2.230": 0.00025,
+       "2.104": 0.0005
+      },
+      "degenerate_datasets": 0
+     },
+     {
+      "sigma": 0.5,
+      "b0": 0.6929318131033845,
+      "true_mean": 0.6551724137931034,
+      "coverage": {
+       "cp_exact": 0.9575,
+       "dependency_graph_effn_cp": 0.9645,
+       "primitive_product_percentile": 0.975,
+       "primitive_product_effn_cp": 0.9915,
+       "first_primitive_cluster_percentile": 0.92825,
+       "first_primitive_cluster_effn_cp": 0.96225,
+       "iid_attack_percentile": 0.9405,
+       "iid_attack_effn_cp": 0.9575
+      },
+      "mean_bound": {
+       "cp_exact": 0.5411085417277802,
+       "dependency_graph_effn_cp": 0.5320425014054492,
+       "primitive_product_percentile": 0.5127806261540176,
+       "primitive_product_effn_cp": 0.4940954227312303,
+       "first_primitive_cluster_percentile": 0.551671725594564,
+       "first_primitive_cluster_effn_cp": 0.5353376724833097,
+       "iid_attack_percentile": 0.5533314655172414,
+       "iid_attack_effn_cp": 0.5403735871393053
+      },
+      "mean_dependency_graph_deff": 1.0659033566097633,
+      "median_dependency_graph_deff": 1.0409649071568117,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.6032751199722949,
+       "0.5": 1.0409649071568117,
+       "0.95": 1.597522453348224
+      },
+      "share_deff_ge_observed": {
+       "2.230": 0.00025,
+       "2.104": 0.00075
+      },
+      "degenerate_datasets": 0
+     },
+     {
+      "sigma": 1.0,
+      "b0": 0.816172362313111,
+      "true_mean": 0.6551724137931034,
+      "coverage": {
+       "cp_exact": 0.93975,
+       "dependency_graph_effn_cp": 0.954,
+       "primitive_product_percentile": 0.968,
+       "primitive_product_effn_cp": 0.98825,
+       "first_primitive_cluster_percentile": 0.9195,
+       "first_primitive_cluster_effn_cp": 0.9485,
+       "iid_attack_percentile": 0.921,
+       "iid_attack_effn_cp": 0.93975
+      },
+      "mean_bound": {
+       "cp_exact": 0.5425643080934119,
+       "dependency_graph_effn_cp": 0.52515516680617,
+       "primitive_product_percentile": 0.5072996370546645,
+       "primitive_product_effn_cp": 0.4868489119785129,
+       "first_primitive_cluster_percentile": 0.548023317422735,
+       "first_primitive_cluster_effn_cp": 0.5327293162864498,
+       "iid_attack_percentile": 0.5548142241379311,
+       "iid_attack_effn_cp": 0.5417912756763867
+      },
+      "mean_dependency_graph_deff": 1.2726424628002846,
+      "median_dependency_graph_deff": 1.247209541390576,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7607613197449861,
+       "0.5": 1.247209541390576,
+       "0.95": 1.877014693564149
+      },
+      "share_deff_ge_observed": {
+       "2.230": 0.0065,
+       "2.104": 0.015
+      },
+      "degenerate_datasets": 0
+     },
+     {
+      "sigma": 1.5,
+      "b0": 0.9765954614491479,
+      "true_mean": 0.6551724137931034,
+      "coverage": {
+       "cp_exact": 0.93325,
+       "dependency_graph_effn_cp": 0.95525,
+       "primitive_product_percentile": 0.969,
+       "primitive_product_effn_cp": 0.9845,
+       "first_primitive_cluster_percentile": 0.91625,
+       "first_primitive_cluster_effn_cp": 0.948,
+       "iid_attack_percentile": 0.914,
+       "iid_attack_effn_cp": 0.93325
+      },
+      "mean_bound": {
+       "cp_exact": 0.5408368704203511,
+       "dependency_graph_effn_cp": 0.5147148458577147,
+       "primitive_product_percentile": 0.4989563848869784,
+       "primitive_product_effn_cp": 0.47729259841137067,
+       "first_primitive_cluster_percentile": 0.5419907596828221,
+       "first_primitive_cluster_effn_cp": 0.527063876056542,
+       "iid_attack_percentile": 0.5531989224137932,
+       "iid_attack_effn_cp": 0.5400460876666604
+      },
+      "mean_dependency_graph_deff": 1.4581156388380527,
+      "median_dependency_graph_deff": 1.4474050853361198,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.914590788521823,
+       "0.5": 1.4474050853361198,
+       "0.95": 2.034907574154399
+      },
+      "share_deff_ge_observed": {
+       "2.230": 0.019,
+       "2.104": 0.03575
+      },
+      "degenerate_datasets": 0
+     },
+     {
+      "sigma": 2.0,
+      "b0": 1.1576659424714473,
+      "true_mean": 0.6551724137931034,
+      "coverage": {
+       "cp_exact": 0.91925,
+       "dependency_graph_effn_cp": 0.95225,
+       "primitive_product_percentile": 0.96525,
+       "primitive_product_effn_cp": 0.98525,
+       "first_primitive_cluster_percentile": 0.908,
+       "first_primitive_cluster_effn_cp": 0.9405,
+       "iid_attack_percentile": 0.897,
+       "iid_attack_effn_cp": 0.91925
+      },
+      "mean_bound": {
+       "cp_exact": 0.5419589036013568,
+       "dependency_graph_effn_cp": 0.5094917581059009,
+       "primitive_product_percentile": 0.49664580088099114,
+       "primitive_product_effn_cp": 0.47388529538153873,
+       "first_primitive_cluster_percentile": 0.5397878195323645,
+       "first_primitive_cluster_effn_cp": 0.5246208290059481,
+       "iid_attack_percentile": 0.5543566810344828,
+       "iid_attack_effn_cp": 0.541164268457163
+      },
+      "mean_dependency_graph_deff": 1.5857731893584182,
+      "median_dependency_graph_deff": 1.5684729064039407,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 1.0365910382720727,
+       "0.5": 1.5684729064039407,
+       "0.95": 2.1827586206896554
+      },
+      "share_deff_ge_observed": {
+       "2.230": 0.03875,
+       "2.104": 0.07125
+      },
+      "degenerate_datasets": 0
+     },
+     {
+      "sigma": 3.0,
+      "b0": 1.553623842494036,
+      "true_mean": 0.6551724137931034,
+      "coverage": {
+       "cp_exact": 0.911,
+       "dependency_graph_effn_cp": 0.95425,
+       "primitive_product_percentile": 0.962,
+       "primitive_product_effn_cp": 0.98125,
+       "first_primitive_cluster_percentile": 0.904,
+       "first_primitive_cluster_effn_cp": 0.93675,
+       "iid_attack_percentile": 0.8835,
+       "iid_attack_effn_cp": 0.911
+      },
+      "mean_bound": {
+       "cp_exact": 0.5421387905527697,
+       "dependency_graph_effn_cp": 0.5020933733461751,
+       "primitive_product_percentile": 0.49182376309004294,
+       "primitive_product_effn_cp": 0.46768322691640074,
+       "first_primitive_cluster_percentile": 0.5367072020455144,
+       "first_primitive_cluster_effn_cp": 0.5211446860768261,
+       "iid_attack_percentile": 0.5546364224137931,
+       "iid_attack_effn_cp": 0.5413632048426478
+      },
+      "mean_dependency_graph_deff": 1.7398973616628888,
+      "median_dependency_graph_deff": 1.720853858784894,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 1.1970443349753692,
+       "0.5": 1.720853858784894,
+       "0.95": 2.344878899835796
+      },
+      "share_deff_ge_observed": {
+       "2.230": 0.08925,
+       "2.104": 0.15025
+      },
+      "degenerate_datasets": 0
+     },
+     {
+      "sigma": 4.0,
+      "b0": 1.9737234166755326,
+      "true_mean": 0.6551724137931034,
+      "coverage": {
+       "cp_exact": 0.90875,
+       "dependency_graph_effn_cp": 0.95325,
+       "primitive_product_percentile": 0.95925,
+       "primitive_product_effn_cp": 0.981,
+       "first_primitive_cluster_percentile": 0.90625,
+       "first_primitive_cluster_effn_cp": 0.9375,
+       "iid_attack_percentile": 0.8875,
+       "iid_attack_effn_cp": 0.90875
+      },
+      "mean_bound": {
+       "cp_exact": 0.5428917426195613,
+       "dependency_graph_effn_cp": 0.4984191509100318,
+       "primitive_product_percentile": 0.49012956344793757,
+       "primitive_product_effn_cp": 0.46504033396000394,
+       "first_primitive_cluster_percentile": 0.5354431279256613,
+       "first_primitive_cluster_effn_cp": 0.5193856662501789,
+       "iid_attack_percentile": 0.5554387931034482,
+       "iid_attack_effn_cp": 0.5421392552879267
+      },
+      "mean_dependency_graph_deff": 1.8305613113182095,
+      "median_dependency_graph_deff": 1.8170484341760251,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 1.281459919390954,
+       "0.5": 1.8170484341760251,
+       "0.95": 2.436795162579138
+      },
+      "share_deff_ge_observed": {
+       "2.230": 0.127,
+       "2.104": 0.21425
+      },
+      "degenerate_datasets": 0
+     },
+     {
+      "sigma": 6.0,
+      "b0": 2.845040075995856,
+      "true_mean": 0.6551724137931034,
+      "coverage": {
+       "cp_exact": 0.9055,
+       "dependency_graph_effn_cp": 0.959,
+       "primitive_product_percentile": 0.962,
+       "primitive_product_effn_cp": 0.9815,
+       "first_primitive_cluster_percentile": 0.90525,
+       "first_primitive_cluster_effn_cp": 0.93525,
+       "iid_attack_percentile": 0.87875,
+       "iid_attack_effn_cp": 0.9055
+      },
+      "mean_bound": {
+       "cp_exact": 0.5403952320335541,
+       "dependency_graph_effn_cp": 0.49186268660447807,
+       "primitive_product_percentile": 0.48487466358199527,
+       "primitive_product_effn_cp": 0.45919996762998944,
+       "first_primitive_cluster_percentile": 0.5310596641138492,
+       "first_primitive_cluster_effn_cp": 0.5148096031989708,
+       "iid_attack_percentile": 0.5529183189655174,
+       "iid_attack_effn_cp": 0.5396294083599442
+      },
+      "mean_dependency_graph_deff": 1.9165819140487905,
+      "median_dependency_graph_deff": 1.9018062397372737,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 1.3723621750300519,
+       "0.5": 1.9018062397372737,
+       "0.95": 2.5067562896873254
+      },
+      "share_deff_ge_observed": {
+       "2.230": 0.18825,
+       "2.104": 0.291
+      },
+      "degenerate_datasets": 0
+     }
+    ]
+   },
+   "concealment_like_38_detected": {
+    "units": 38,
+    "true_mean": 0.23684210526315788,
+    "direction": "<=",
+    "nsim": 4000,
+    "bsim": 2000,
+    "mc_se_at_0.95": 0.0034460121880225555,
+    "by_sigma": [
+     {
+      "sigma": 0.0,
+      "b0": -1.1700712526502544,
+      "true_mean": 0.23684210526315788,
+      "coverage": {
+       "cp_exact": 0.96325,
+       "dependency_graph_effn_cp": 0.96825,
+       "primitive_product_percentile": 0.972,
+       "primitive_product_effn_cp": 0.99275,
+       "first_primitive_cluster_percentile": 0.92625,
+       "first_primitive_cluster_effn_cp": 0.96675,
+       "iid_attack_percentile": 0.954,
+       "iid_attack_effn_cp": 0.96325
+      },
+      "mean_bound": {
+       "cp_exact": 0.37581310045835525,
+       "dependency_graph_effn_cp": 0.3832275642480186,
+       "primitive_product_percentile": 0.3995041503280959,
+       "primitive_product_effn_cp": 0.4362141831395313,
+       "first_primitive_cluster_percentile": 0.3512454389505733,
+       "first_primitive_cluster_effn_cp": 0.3820397597867905,
+       "iid_attack_percentile": 0.3522835526315789,
+       "iid_attack_effn_cp": 0.3768435625445702
+      },
+      "mean_dependency_graph_deff": 0.9541273215108574,
+      "median_dependency_graph_deff": 0.9359649122807019,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.5071770334928231,
+       "0.5": 0.9359649122807019,
+       "0.95": 1.4737447065940712
+      },
+      "share_deff_ge_observed": {
+       "1.666": 0.02025
+      },
+      "degenerate_datasets": 2
+     },
+     {
+      "sigma": 0.5,
+      "b0": -1.2604809677888582,
+      "true_mean": 0.23684210526315788,
+      "coverage": {
+       "cp_exact": 0.96125,
+       "dependency_graph_effn_cp": 0.968,
+       "primitive_product_percentile": 0.971,
+       "primitive_product_effn_cp": 0.99275,
+       "first_primitive_cluster_percentile": 0.918,
+       "first_primitive_cluster_effn_cp": 0.966,
+       "iid_attack_percentile": 0.95125,
+       "iid_attack_effn_cp": 0.96125
+      },
+      "mean_bound": {
+       "cp_exact": 0.37534681864905184,
+       "dependency_graph_effn_cp": 0.38578280585940977,
+       "primitive_product_percentile": 0.40128265824314774,
+       "primitive_product_effn_cp": 0.43940597021684935,
+       "first_primitive_cluster_percentile": 0.35269128058766325,
+       "first_primitive_cluster_effn_cp": 0.3831432143518513,
+       "iid_attack_percentile": 0.35187565789473685,
+       "iid_attack_effn_cp": 0.37638417470457236
+      },
+      "mean_dependency_graph_deff": 1.022059347994495,
+      "median_dependency_graph_deff": 0.9989917322040733,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.5381615328644193,
+       "0.5": 0.9989917322040733,
+       "0.95": 1.5956091377869963
+      },
+      "share_deff_ge_observed": {
+       "1.666": 0.039
+      },
+      "degenerate_datasets": 1
+     },
+     {
+      "sigma": 1.0,
+      "b0": -1.4830411582723129,
+      "true_mean": 0.23684210526315788,
+      "coverage": {
+       "cp_exact": 0.94875,
+       "dependency_graph_effn_cp": 0.9625,
+       "primitive_product_percentile": 0.9645,
+       "primitive_product_effn_cp": 0.9935,
+       "first_primitive_cluster_percentile": 0.8995,
+       "first_primitive_cluster_effn_cp": 0.96,
+       "iid_attack_percentile": 0.937,
+       "iid_attack_effn_cp": 0.94875
+      },
+      "mean_bound": {
+       "cp_exact": 0.3746747604249083,
+       "dependency_graph_effn_cp": 0.39161459897449674,
+       "primitive_product_percentile": 0.40626504181425843,
+       "primitive_product_effn_cp": 0.4473449288979687,
+       "first_primitive_cluster_percentile": 0.3558772676588244,
+       "first_primitive_cluster_effn_cp": 0.38586191832792605,
+       "iid_attack_percentile": 0.3513654605263158,
+       "iid_attack_effn_cp": 0.3756511029921065
+      },
+      "mean_dependency_graph_deff": 1.1595857057208376,
+      "median_dependency_graph_deff": 1.1167341430499322,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.6408397237437482,
+       "0.5": 1.1167341430499322,
+       "0.95": 1.790726817042607
+      },
+      "share_deff_ge_observed": {
+       "1.666": 0.083
+      },
+      "degenerate_datasets": 0
+     },
+     {
+      "sigma": 1.5,
+      "b0": -1.7755947207776055,
+      "true_mean": 0.23684210526315788,
+      "coverage": {
+       "cp_exact": 0.942,
+       "dependency_graph_effn_cp": 0.9565,
+       "primitive_product_percentile": 0.95875,
+       "primitive_product_effn_cp": 0.98775,
+       "first_primitive_cluster_percentile": 0.90325,
+       "first_primitive_cluster_effn_cp": 0.952,
+       "iid_attack_percentile": 0.93,
+       "iid_attack_effn_cp": 0.942
+      },
+      "mean_bound": {
+       "cp_exact": 0.3736272736040376,
+       "dependency_graph_effn_cp": 0.39722992489258757,
+       "primitive_product_percentile": 0.40987531603348987,
+       "primitive_product_effn_cp": 0.45316489966768664,
+       "first_primitive_cluster_percentile": 0.3580303820939128,
+       "first_primitive_cluster_effn_cp": 0.3880392939564323,
+       "iid_attack_percentile": 0.35028651315789466,
+       "iid_attack_effn_cp": 0.37465823442337154
+      },
+      "mean_dependency_graph_deff": 1.2772474043288276,
+      "median_dependency_graph_deff": 1.2557085020242917,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7157551220709112,
+       "0.5": 1.2557085020242917,
+       "0.95": 1.9327268170426066
+      },
+      "share_deff_ge_observed": {
+       "1.666": 0.1545
+      },
+      "degenerate_datasets": 1
+     },
+     {
+      "sigma": 2.0,
+      "b0": -2.106945614580575,
+      "true_mean": 0.23684210526315788,
+      "coverage": {
+       "cp_exact": 0.92575,
+       "dependency_graph_effn_cp": 0.94625,
+       "primitive_product_percentile": 0.9465,
+       "primitive_product_effn_cp": 0.98575,
+       "first_primitive_cluster_percentile": 0.888,
+       "first_primitive_cluster_effn_cp": 0.9425,
+       "iid_attack_percentile": 0.91325,
+       "iid_attack_effn_cp": 0.92575
+      },
+      "mean_bound": {
+       "cp_exact": 0.3730691486892047,
+       "dependency_graph_effn_cp": 0.4024116737051038,
+       "primitive_product_percentile": 0.412304714057911,
+       "primitive_product_effn_cp": 0.4572266082968739,
+       "first_primitive_cluster_percentile": 0.3607052150101729,
+       "first_primitive_cluster_effn_cp": 0.3909460753537952,
+       "iid_attack_percentile": 0.34939177631578944,
+       "iid_attack_effn_cp": 0.37404338701348505
+      },
+      "mean_dependency_graph_deff": 1.3755105667865415,
+      "median_dependency_graph_deff": 1.3475033738191629,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7859649122807018,
+       "0.5": 1.3475033738191629,
+       "0.95": 2.0564629965718892
+      },
+      "share_deff_ge_observed": {
+       "1.666": 0.22775
+      },
+      "degenerate_datasets": 1
+     },
+     {
+      "sigma": 3.0,
+      "b0": -2.832590633556766,
+      "true_mean": 0.23684210526315788,
+      "coverage": {
+       "cp_exact": 0.9245,
+       "dependency_graph_effn_cp": 0.94875,
+       "primitive_product_percentile": 0.95,
+       "primitive_product_effn_cp": 0.9895,
+       "first_primitive_cluster_percentile": 0.8905,
+       "first_primitive_cluster_effn_cp": 0.94375,
+       "iid_attack_percentile": 0.9095,
+       "iid_attack_effn_cp": 0.9245
+      },
+      "mean_bound": {
+       "cp_exact": 0.3768376196605044,
+       "dependency_graph_effn_cp": 0.41359381947449375,
+       "primitive_product_percentile": 0.42148599418663424,
+       "primitive_product_effn_cp": 0.46889903288751283,
+       "first_primitive_cluster_percentile": 0.36822543094151367,
+       "first_primitive_cluster_effn_cp": 0.39866690149422257,
+       "iid_attack_percentile": 0.3535282894736842,
+       "iid_attack_effn_cp": 0.3778159675743375
+      },
+      "mean_dependency_graph_deff": 1.496814358174335,
+      "median_dependency_graph_deff": 1.4812030075187972,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.8812030075187973,
+       "0.5": 1.4812030075187972,
+       "0.95": 2.17308949140528
+      },
+      "share_deff_ge_observed": {
+       "1.666": 0.32925
+      },
+      "degenerate_datasets": 1
+     },
+     {
+      "sigma": 4.0,
+      "b0": -3.6024778119909033,
+      "true_mean": 0.23684210526315788,
+      "coverage": {
+       "cp_exact": 0.91125,
+       "dependency_graph_effn_cp": 0.93825,
+       "primitive_product_percentile": 0.94175,
+       "primitive_product_effn_cp": 0.9825,
+       "first_primitive_cluster_percentile": 0.88225,
+       "first_primitive_cluster_effn_cp": 0.9285,
+       "iid_attack_percentile": 0.89925,
+       "iid_attack_effn_cp": 0.91125
+      },
+      "mean_bound": {
+       "cp_exact": 0.37404496269102433,
+       "dependency_graph_effn_cp": 0.4140103501401134,
+       "primitive_product_percentile": 0.42074815819308375,
+       "primitive_product_effn_cp": 0.46930092368401133,
+       "first_primitive_cluster_percentile": 0.36620928459653374,
+       "first_primitive_cluster_effn_cp": 0.3969498740333902,
+       "iid_attack_percentile": 0.35043684210526316,
+       "iid_attack_effn_cp": 0.37501162410623123
+      },
+      "mean_dependency_graph_deff": 1.547315912191379,
+      "median_dependency_graph_deff": 1.5226776618966769,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.9026315789473682,
+       "0.5": 1.5226776618966769,
+       "0.95": 2.2231384913897645
+      },
+      "share_deff_ge_observed": {
+       "1.666": 0.365
+      },
+      "degenerate_datasets": 3
+     },
+     {
+      "sigma": 6.0,
+      "b0": -5.195422495296028,
+      "true_mean": 0.23684210526315788,
+      "coverage": {
+       "cp_exact": 0.9075,
+       "dependency_graph_effn_cp": 0.9385,
+       "primitive_product_percentile": 0.93575,
+       "primitive_product_effn_cp": 0.979,
+       "first_primitive_cluster_percentile": 0.878,
+       "first_primitive_cluster_effn_cp": 0.92925,
+       "iid_attack_percentile": 0.895,
+       "iid_attack_effn_cp": 0.9075
+      },
+      "mean_bound": {
+       "cp_exact": 0.3726037835470918,
+       "dependency_graph_effn_cp": 0.4156356469589467,
+       "primitive_product_percentile": 0.4197973477078065,
+       "primitive_product_effn_cp": 0.4692061909656934,
+       "first_primitive_cluster_percentile": 0.36676299186031175,
+       "first_primitive_cluster_effn_cp": 0.3979536077142068,
+       "iid_attack_percentile": 0.3489756578947368,
+       "iid_attack_effn_cp": 0.37363557249125523
+      },
+      "mean_dependency_graph_deff": 1.5962941505411206,
+      "median_dependency_graph_deff": 1.5910931174089065,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.9522859568275528,
+       "0.5": 1.5910931174089065,
+       "0.95": 2.2633595482960276
+      },
+      "share_deff_ge_observed": {
+       "1.666": 0.42475
+      },
+      "degenerate_datasets": 4
+     }
+    ]
+   },
+   "localisation_like_38_detected": {
+    "units": 38,
+    "true_mean": 0.9736842105263158,
+    "direction": ">=",
+    "nsim": 4000,
+    "bsim": 2000,
+    "mc_se_at_0.95": 0.0034460121880225555,
+    "by_sigma": [
+     {
+      "sigma": 0.0,
+      "b0": 3.6109179126442377,
+      "true_mean": 0.9736842105263158,
+      "coverage": {
+       "cp_exact": 1.0,
+       "dependency_graph_effn_cp": 1.0,
+       "primitive_product_percentile": 0.64225,
+       "primitive_product_effn_cp": 1.0,
+       "first_primitive_cluster_percentile": 0.64225,
+       "first_primitive_cluster_effn_cp": 1.0,
+       "iid_attack_percentile": 0.64225,
+       "iid_attack_effn_cp": 1.0
+      },
+      "mean_bound": {
+       "cp_exact": 0.8828397696388214,
+       "dependency_graph_effn_cp": 0.881523333245113,
+       "primitive_product_percentile": 0.9214735199979291,
+       "primitive_product_effn_cp": 0.8466622996126054,
+       "first_primitive_cluster_percentile": 0.9360465787377148,
+       "first_primitive_cluster_effn_cp": 0.8809469295532356,
+       "iid_attack_percentile": 0.9357809210526316,
+       "iid_attack_effn_cp": 0.8821186372101925
+      },
+      "mean_dependency_graph_deff": 0.942523996090032,
+      "median_dependency_graph_deff": 0.9445234708392612,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7192982456140342,
+       "0.5": 0.9445234708392612,
+       "0.95": 1.05263157894737
+      },
+      "share_deff_ge_observed": {},
+      "degenerate_datasets": 1431
+     },
+     {
+      "sigma": 0.5,
+      "b0": 3.7847267497803885,
+      "true_mean": 0.9736842105263158,
+      "coverage": {
+       "cp_exact": 1.0,
+       "dependency_graph_effn_cp": 1.0,
+       "primitive_product_percentile": 0.64175,
+       "primitive_product_effn_cp": 1.0,
+       "first_primitive_cluster_percentile": 0.64175,
+       "first_primitive_cluster_effn_cp": 1.0,
+       "iid_attack_percentile": 0.64175,
+       "iid_attack_effn_cp": 1.0
+      },
+      "mean_bound": {
+       "cp_exact": 0.8823414766069158,
+       "dependency_graph_effn_cp": 0.8804451294251442,
+       "primitive_product_percentile": 0.9201714661669804,
+       "primitive_product_effn_cp": 0.8442176097756388,
+       "first_primitive_cluster_percentile": 0.935329733168255,
+       "first_primitive_cluster_effn_cp": 0.8801819955463782,
+       "iid_attack_percentile": 0.9352483552631579,
+       "iid_attack_effn_cp": 0.8816428184067434
+      },
+      "mean_dependency_graph_deff": 0.9583115582696177,
+      "median_dependency_graph_deff": 0.9445234708392612,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7401315789473678,
+       "0.5": 0.9445234708392612,
+       "0.95": 1.1097744360902262
+      },
+      "share_deff_ge_observed": {},
+      "degenerate_datasets": 1433
+     },
+     {
+      "sigma": 1.0,
+      "b0": 4.285809805416795,
+      "true_mean": 0.9736842105263158,
+      "coverage": {
+       "cp_exact": 1.0,
+       "dependency_graph_effn_cp": 1.0,
+       "primitive_product_percentile": 0.623,
+       "primitive_product_effn_cp": 1.0,
+       "first_primitive_cluster_percentile": 0.623,
+       "first_primitive_cluster_effn_cp": 1.0,
+       "iid_attack_percentile": 0.623,
+       "iid_attack_effn_cp": 1.0
+      },
+      "mean_bound": {
+       "cp_exact": 0.8838399136248513,
+       "dependency_graph_effn_cp": 0.8812145891534676,
+       "primitive_product_percentile": 0.9209666453887553,
+       "primitive_product_effn_cp": 0.8415074520905894,
+       "first_primitive_cluster_percentile": 0.9373778212061188,
+       "first_primitive_cluster_effn_cp": 0.8813214521110533,
+       "iid_attack_percentile": 0.9375036184210526,
+       "iid_attack_effn_cp": 0.8831804946024383
+      },
+      "mean_dependency_graph_deff": 0.9722410029974735,
+      "median_dependency_graph_deff": 0.9415204678362566,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7669172932330828,
+       "0.5": 0.9415204678362566,
+       "0.95": 1.5478696741854636
+      },
+      "share_deff_ge_observed": {},
+      "degenerate_datasets": 1508
+     },
+     {
+      "sigma": 1.5,
+      "b0": 5.031760782385327,
+      "true_mean": 0.9736842105263158,
+      "coverage": {
+       "cp_exact": 1.0,
+       "dependency_graph_effn_cp": 1.0,
+       "primitive_product_percentile": 0.5965,
+       "primitive_product_effn_cp": 1.0,
+       "first_primitive_cluster_percentile": 0.5965,
+       "first_primitive_cluster_effn_cp": 1.0,
+       "iid_attack_percentile": 0.5965,
+       "iid_attack_effn_cp": 1.0
+      },
+      "mean_bound": {
+       "cp_exact": 0.8842890250870269,
+       "dependency_graph_effn_cp": 0.8798110013811621,
+       "primitive_product_percentile": 0.9205421467374626,
+       "primitive_product_effn_cp": 0.8383615004779881,
+       "first_primitive_cluster_percentile": 0.9382940053671337,
+       "first_primitive_cluster_effn_cp": 0.8811466660430509,
+       "iid_attack_percentile": 0.9388648026315789,
+       "iid_attack_effn_cp": 0.8836309144275102
+      },
+      "mean_dependency_graph_deff": 1.0190718868618398,
+      "median_dependency_graph_deff": 0.9445234708392612,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7192982456140342,
+       "0.5": 0.9445234708392612,
+       "0.95": 1.8304093567251445
+      },
+      "share_deff_ge_observed": {},
+      "degenerate_datasets": 1614
+     },
+     {
+      "sigma": 2.0,
+      "b0": 5.928563952292927,
+      "true_mean": 0.9736842105263158,
+      "coverage": {
+       "cp_exact": 1.0,
+       "dependency_graph_effn_cp": 1.0,
+       "primitive_product_percentile": 0.5985,
+       "primitive_product_effn_cp": 1.0,
+       "first_primitive_cluster_percentile": 0.5985,
+       "first_primitive_cluster_effn_cp": 1.0,
+       "iid_attack_percentile": 0.5985,
+       "iid_attack_effn_cp": 1.0
+      },
+      "mean_bound": {
+       "cp_exact": 0.8840537570910485,
+       "dependency_graph_effn_cp": 0.8779994993273624,
+       "primitive_product_percentile": 0.9186570518617967,
+       "primitive_product_effn_cp": 0.8341708735219491,
+       "first_primitive_cluster_percentile": 0.9376606164430111,
+       "first_primitive_cluster_effn_cp": 0.8804496093923554,
+       "iid_attack_percentile": 0.9385207236842105,
+       "iid_attack_effn_cp": 0.8835378827210422
+      },
+      "mean_dependency_graph_deff": 1.0652018270698513,
+      "median_dependency_graph_deff": 0.9445234708392612,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.766917293233083,
+       "0.5": 0.9445234708392612,
+       "0.95": 1.8859649122807003
+      },
+      "share_deff_ge_observed": {},
+      "degenerate_datasets": 1606
+     },
+     {
+      "sigma": 3.0,
+      "b0": 7.960761115007672,
+      "true_mean": 0.9736842105263158,
+      "coverage": {
+       "cp_exact": 1.0,
+       "dependency_graph_effn_cp": 1.0,
+       "primitive_product_percentile": 0.57325,
+       "primitive_product_effn_cp": 1.0,
+       "first_primitive_cluster_percentile": 0.57325,
+       "first_primitive_cluster_effn_cp": 1.0,
+       "iid_attack_percentile": 0.57325,
+       "iid_attack_effn_cp": 1.0
+      },
+      "mean_bound": {
+       "cp_exact": 0.8845045411490144,
+       "dependency_graph_effn_cp": 0.8763503874732812,
+       "primitive_product_percentile": 0.9182948640786017,
+       "primitive_product_effn_cp": 0.8311334867636424,
+       "first_primitive_cluster_percentile": 0.9382903876292774,
+       "first_primitive_cluster_effn_cp": 0.8797301134193899,
+       "iid_attack_percentile": 0.9397223684210526,
+       "iid_attack_effn_cp": 0.8839452669859522
+      },
+      "mean_dependency_graph_deff": 1.124912206877999,
+      "median_dependency_graph_deff": 0.9445234708392612,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7748538011695898,
+       "0.5": 0.9445234708392612,
+       "0.95": 1.9484649122807016
+      },
+      "share_deff_ge_observed": {},
+      "degenerate_datasets": 1707
+     },
+     {
+      "sigma": 4.0,
+      "b0": 10.149051677954082,
+      "true_mean": 0.9736842105263158,
+      "coverage": {
+       "cp_exact": 1.0,
+       "dependency_graph_effn_cp": 1.0,
+       "primitive_product_percentile": 0.55175,
+       "primitive_product_effn_cp": 1.0,
+       "first_primitive_cluster_percentile": 0.55175,
+       "first_primitive_cluster_effn_cp": 1.0,
+       "iid_attack_percentile": 0.55175,
+       "iid_attack_effn_cp": 1.0
+      },
+      "mean_bound": {
+       "cp_exact": 0.8857517848407669,
+       "dependency_graph_effn_cp": 0.8772013000443677,
+       "primitive_product_percentile": 0.920300160721872,
+       "primitive_product_effn_cp": 0.8324825788033599,
+       "first_primitive_cluster_percentile": 0.9401944270888157,
+       "first_primitive_cluster_effn_cp": 0.8808830425239976,
+       "iid_attack_percentile": 0.9417654605263158,
+       "iid_attack_effn_cp": 0.8852206003688918
+      },
+      "mean_dependency_graph_deff": 1.146755996382771,
+      "median_dependency_graph_deff": 0.9445234708392612,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7748538011695898,
+       "0.5": 0.9445234708392612,
+       "0.95": 2.050813397129184
+      },
+      "share_deff_ge_observed": {},
+      "degenerate_datasets": 1793
+     },
+     {
+      "sigma": 6.0,
+      "b0": 14.701070675891879,
+      "true_mean": 0.9736842105263158,
+      "coverage": {
+       "cp_exact": 1.0,
+       "dependency_graph_effn_cp": 1.0,
+       "primitive_product_percentile": 0.56225,
+       "primitive_product_effn_cp": 1.0,
+       "first_primitive_cluster_percentile": 0.56225,
+       "first_primitive_cluster_effn_cp": 1.0,
+       "iid_attack_percentile": 0.56225,
+       "iid_attack_effn_cp": 1.0
+      },
+      "mean_bound": {
+       "cp_exact": 0.8835576707179421,
+       "dependency_graph_effn_cp": 0.8733913544093543,
+       "primitive_product_percentile": 0.9157421284261698,
+       "primitive_product_effn_cp": 0.8262270442907401,
+       "first_primitive_cluster_percentile": 0.9371960063789887,
+       "first_primitive_cluster_effn_cp": 0.8781235542116893,
+       "iid_attack_percentile": 0.9389638157894735,
+       "iid_attack_effn_cp": 0.8829122227924789
+      },
+      "mean_dependency_graph_deff": 1.1909830397910797,
+      "median_dependency_graph_deff": 0.9985775248933152,
+      "dependency_graph_deff_quantiles": {
+       "0.05": 0.7748538011695899,
+       "0.5": 0.9985775248933152,
+       "0.95": 2.052631578947367
+      },
+      "share_deff_ge_observed": {},
+      "degenerate_datasets": 1751
+     }
+    ]
+   }
+  }
+ },
+ "generated_by": "cluster_bootstrap.py"
+}

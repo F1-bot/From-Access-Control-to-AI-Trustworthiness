@@ -1,0 +1,10 @@
+{
+ "tag": "surrogate_data",
+ "seed": 1234,
+ "corrupt": 0.0,
+ "data": "train2 and the first 80% of train3",
+ "epochs": 8,
+ "per_epoch": 200000,
+ "theta_99.9": 14.931208786964707,
+ "runtime_s": 39.71873211860657
+}

@@ -1,0 +1,244 @@
+{
+ "description": "E4c exploratory label-only extraction against the DEPLOYED smoothed alarm.",
+ "post_hoc": true,
+ "pre_registered": false,
+ "victim": "baseline_s0",
+ "theta": 19.623428543382843,
+ "L_context": 70,
+ "query_recipe": "train1-5 + {replay, freeze, bounded offset, slow drift} on 10-40% of channels, clipped to observed per-channel range",
+ "deployed_oracle": "smoothed 10-s score at window end >= theta",
+ "eval": {
+  "n_test_windows": 360924,
+  "deployed_pos_rate": 0.006167503407919673,
+  "n_pos": 2226,
+  "n_neg": 358698,
+  "stride": 1
+ },
+ "runs": [
+  {
+   "Q": 1000,
+   "seed": 0,
+   "query_pos_rate": 0.024,
+   "balanced": 0.5063798610425104,
+   "agree_pos": 0.018867924528301886,
+   "agree_neg": 0.993891797556719,
+   "surrogate_pred_pos_rate": 0.006186898072724452,
+   "mbb": {
+    "lcb95": 0.4985377487579586,
+    "ucb95": 0.5162494997001158,
+    "lo025": 0.498171885558386,
+    "hi975": 0.5187390833933692,
+    "mean": 0.5061142572671016,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.509781655690896,
+   "query_type_counts": {
+    "replay": 267,
+    "freeze": 247,
+    "offset": 265,
+    "drift": 221
+   }
+  },
+  {
+   "Q": 1000,
+   "seed": 1,
+   "query_pos_rate": 0.016,
+   "balanced": 0.3794129183505983,
+   "agree_pos": 0.3054806828391734,
+   "agree_neg": 0.45334515386202323,
+   "surrogate_pred_pos_rate": 0.5451674036639292,
+   "mbb": {
+    "lcb95": 0.34862714643019405,
+    "ucb95": 0.41594348605355086,
+    "lo025": 0.344044396783649,
+    "hi975": 0.4231044031545683,
+    "mean": 0.38092640181594106,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.39003146141384626,
+   "query_type_counts": {
+    "replay": 253,
+    "freeze": 238,
+    "offset": 259,
+    "drift": 250
+   }
+  },
+  {
+   "Q": 1000,
+   "seed": 2,
+   "query_pos_rate": 0.022,
+   "balanced": 0.35866769286986555,
+   "agree_pos": 0.6338724168912848,
+   "agree_neg": 0.08346296884844633,
+   "surrogate_pred_pos_rate": 0.9147936961798052,
+   "mbb": {
+    "lcb95": 0.3144760914186471,
+    "ucb95": 0.40578390572702655,
+    "lo025": 0.30632140115460965,
+    "hi975": 0.41455428910961384,
+    "mean": 0.35909148178116834,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.36914759950304626,
+   "query_type_counts": {
+    "replay": 256,
+    "freeze": 232,
+    "offset": 265,
+    "drift": 247
+   }
+  },
+  {
+   "Q": 10000,
+   "seed": 0,
+   "query_pos_rate": 0.0226,
+   "balanced": 0.6585887054917501,
+   "agree_pos": 0.5637915543575921,
+   "agree_neg": 0.7533858566259082,
+   "surrogate_pred_pos_rate": 0.24857033613724774,
+   "mbb": {
+    "lcb95": 0.6118957894438539,
+    "ucb95": 0.7069634678072025,
+    "lo025": 0.601095626998791,
+    "hi975": 0.7137680710681847,
+    "mean": 0.6584460036523792,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.6696588292537047,
+   "query_type_counts": {
+    "replay": 2470,
+    "freeze": 2470,
+    "offset": 2635,
+    "drift": 2425
+   }
+  },
+  {
+   "Q": 10000,
+   "seed": 1,
+   "query_pos_rate": 0.0215,
+   "balanced": 0.6466786759583127,
+   "agree_pos": 0.43171608265947886,
+   "agree_neg": 0.8616412692571467,
+   "surrogate_pred_pos_rate": 0.1401680132105374,
+   "mbb": {
+    "lcb95": 0.5910180952738125,
+    "ucb95": 0.6953256480930851,
+    "lo025": 0.5831342509225287,
+    "hi975": 0.7045272628696246,
+    "mean": 0.6449778334027715,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.6576826549410015,
+   "query_type_counts": {
+    "replay": 2457,
+    "freeze": 2582,
+    "offset": 2425,
+    "drift": 2536
+   }
+  },
+  {
+   "Q": 10000,
+   "seed": 2,
+   "query_pos_rate": 0.0205,
+   "balanced": 0.5771579629886039,
+   "agree_pos": 0.4833782569631626,
+   "agree_neg": 0.6709376690140453,
+   "surrogate_pred_pos_rate": 0.3300140749853155,
+   "mbb": {
+    "lcb95": 0.5341349966911071,
+    "ucb95": 0.6266268375284435,
+    "lo025": 0.5285035214073557,
+    "hi975": 0.6338610038790836,
+    "mean": 0.5783463652688865,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.588423995576058,
+   "query_type_counts": {
+    "replay": 2566,
+    "freeze": 2501,
+    "offset": 2405,
+    "drift": 2528
+   }
+  },
+  {
+   "Q": 100000,
+   "seed": 0,
+   "query_pos_rate": 0.0204,
+   "balanced": 0.637853282609601,
+   "agree_pos": 0.31536388140161725,
+   "agree_neg": 0.9603426838175847,
+   "surrogate_pred_pos_rate": 0.041357737362990546,
+   "mbb": {
+    "lcb95": 0.5867896029336838,
+    "ucb95": 0.6895255788756943,
+    "lo025": 0.5767692038976129,
+    "hi975": 0.6996344450500045,
+    "mean": 0.6378731227142196,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.6480520231675058,
+   "query_type_counts": {
+    "replay": 25114,
+    "freeze": 24954,
+    "offset": 24780,
+    "drift": 25152
+   }
+  },
+  {
+   "Q": 100000,
+   "seed": 1,
+   "query_pos_rate": 0.02155,
+   "balanced": 0.6498869661568308,
+   "agree_pos": 0.3054806828391734,
+   "agree_neg": 0.9942932494744883,
+   "surrogate_pred_pos_rate": 0.007555607274661702,
+   "mbb": {
+    "lcb95": 0.5968372403600053,
+    "ucb95": 0.6986221913786338,
+    "lo025": 0.5882002518014503,
+    "hi975": 0.7108878883249133,
+    "mean": 0.6483100214002213,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.6598120157465549,
+   "query_type_counts": {
+    "replay": 25120,
+    "freeze": 25007,
+    "offset": 24925,
+    "drift": 24948
+   }
+  },
+  {
+   "Q": 100000,
+   "seed": 2,
+   "query_pos_rate": 0.02071,
+   "balanced": 0.6902429607686104,
+   "agree_pos": 0.3863432165318958,
+   "agree_neg": 0.9941427050053249,
+   "surrogate_pred_pos_rate": 0.008203943212421452,
+   "mbb": {
+    "lcb95": 0.6375064007087706,
+    "ucb95": 0.7404235836374017,
+    "lo025": 0.6235825769478514,
+    "hi975": 0.7497665675434863,
+    "mean": 0.6896445991534635,
+    "valid_reps": 2000
+   },
+   "naive_cp_ucb95": 0.700661849847511,
+   "query_type_counts": {
+    "replay": 25223,
+    "freeze": 25077,
+    "offset": 24809,
+    "drift": 24891
+   }
+  }
+ ],
+ "runtime_s": 294.76536417007446,
+ "versions": {
+  "python": "3.10.6",
+  "numpy": "1.26.4",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "platform": "Windows-10-10.0.19045-SP0"
+ }
+}

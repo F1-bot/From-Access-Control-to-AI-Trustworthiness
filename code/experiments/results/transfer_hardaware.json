@@ -1,0 +1,1896 @@
+{
+ "description": "Hardening-aware transfer attack against the hardened victim (TM-A).",
+ "victim": "hardened_s0",
+ "threat_model": "TM-A",
+ "eps": [
+  0.1,
+  0.25,
+  0.5,
+  1.0
+ ],
+ "surrogate_knowledge": {
+  "preprocessing": "deployed prep.json (cols, mu, sd) -- generous",
+  "architecture": "2-layer GRU, 128 units, residual head (victim family)",
+  "defence_recipe_known": true,
+  "corrupt_fraction": 0.3,
+  "training_files": [
+   "train5",
+   "train6"
+  ],
+  "victim_training_files": [
+   "train1..train6"
+  ],
+  "validation_segment": "last 20% of train6",
+  "surrogate_seed": 2024,
+  "victim_seed": 0,
+  "surrogate_theta": 8.189609482717398,
+  "victim_theta": 7.22991242408742
+ },
+ "surrogate_train_log": [
+  {
+   "epoch": 0,
+   "train_mse": 0.11935682123412891,
+   "val_mse": 0.04974533941534874
+  },
+  {
+   "epoch": 1,
+   "train_mse": 0.08644382366720511,
+   "val_mse": 0.050717805793912496
+  },
+  {
+   "epoch": 2,
+   "train_mse": 0.07664358612073928,
+   "val_mse": 0.05050091911071329
+  },
+  {
+   "epoch": 3,
+   "train_mse": 0.0722578478482913,
+   "val_mse": 0.050874808802481276
+  },
+  {
+   "epoch": 4,
+   "train_mse": 0.07044588706018973,
+   "val_mse": 0.05115689454091567
+  },
+  {
+   "epoch": 5,
+   "train_mse": 0.06853729134843665,
+   "val_mse": 0.051295404592597287
+  },
+  {
+   "epoch": 6,
+   "train_mse": 0.06783262659244392,
+   "val_mse": 0.050885789502122865
+  },
+  {
+   "epoch": 7,
+   "train_mse": 0.06751920307549286,
+   "val_mse": 0.050971233416542944
+  }
+ ],
+ "greedy_transfer_by_eps": [
+  {
+   "eps": 0.1,
+   "k": 0,
+   "n": 36,
+   "lcb95": 0.0,
+   "ucb95": 0.07984650951989439
+  },
+  {
+   "eps": 0.25,
+   "k": 0,
+   "n": 36,
+   "lcb95": 0.0,
+   "ucb95": 0.07984650951989439
+  },
+  {
+   "eps": 0.5,
+   "k": 0,
+   "n": 36,
+   "lcb95": 0.0,
+   "ucb95": 0.07984650951989439
+  },
+  {
+   "eps": 1.0,
+   "k": 0,
+   "n": 36,
+   "lcb95": 0.0,
+   "ucb95": 0.07984650951989439
+  }
+ ],
+ "improved_pgd_transfer_by_eps": [
+  {
+   "eps": 0.1,
+   "k": 0,
+   "n": 36,
+   "lcb95": 0.0,
+   "ucb95": 0.07984650951989439
+  },
+  {
+   "eps": 0.25,
+   "k": 0,
+   "n": 36,
+   "lcb95": 0.0,
+   "ucb95": 0.07984650951989439
+  },
+  {
+   "eps": 0.5,
+   "k": 0,
+   "n": 36,
+   "lcb95": 0.0,
+   "ucb95": 0.07984650951989439
+  },
+  {
+   "eps": 1.0,
+   "k": 0,
+   "n": 36,
+   "lcb95": 0.0,
+   "ucb95": 0.07984650951989439
+  }
+ ],
+ "rows": {
+  "greedy": [
+   {
+    "attack_id": "A101",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 15.499488830566406
+   },
+   {
+    "attack_id": "A101",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 16.4871826171875
+   },
+   {
+    "attack_id": "A101",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 19.766756057739258
+   },
+   {
+    "attack_id": "A101",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 26.92022705078125
+   },
+   {
+    "attack_id": "A102",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 88.40553283691406
+   },
+   {
+    "attack_id": "A102",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 88.37633514404297
+   },
+   {
+    "attack_id": "A102",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 88.28035736083984
+   },
+   {
+    "attack_id": "A102",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 88.13178253173828
+   },
+   {
+    "attack_id": "A103",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 28.135305404663086
+   },
+   {
+    "attack_id": "A103",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 28.087970733642578
+   },
+   {
+    "attack_id": "A103",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 27.3674259185791
+   },
+   {
+    "attack_id": "A103",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 27.810510635375977
+   },
+   {
+    "attack_id": "A105",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 37499.125
+   },
+   {
+    "attack_id": "A105",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 37366.85546875
+   },
+   {
+    "attack_id": "A105",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 37153.12890625
+   },
+   {
+    "attack_id": "A105",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 36724.9375
+   },
+   {
+    "attack_id": "A203",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 77.91631317138672
+   },
+   {
+    "attack_id": "A203",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 62.31026077270508
+   },
+   {
+    "attack_id": "A203",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 42.86307907104492
+   },
+   {
+    "attack_id": "A203",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 27.392057418823242
+   },
+   {
+    "attack_id": "A204",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 10.953518867492676
+   },
+   {
+    "attack_id": "A204",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 11.046185493469238
+   },
+   {
+    "attack_id": "A204",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 13.187472343444824
+   },
+   {
+    "attack_id": "A204",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 18.909759521484375
+   },
+   {
+    "attack_id": "A206",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 184.11630249023438
+   },
+   {
+    "attack_id": "A206",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 158.01724243164062
+   },
+   {
+    "attack_id": "A206",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 122.17522430419922
+   },
+   {
+    "attack_id": "A206",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 88.9655532836914
+   },
+   {
+    "attack_id": "A207",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 35856.78125
+   },
+   {
+    "attack_id": "A207",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 35735.10546875
+   },
+   {
+    "attack_id": "A207",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 35534.8203125
+   },
+   {
+    "attack_id": "A207",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 35135.70703125
+   },
+   {
+    "attack_id": "A208",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 8.467733383178711
+   },
+   {
+    "attack_id": "A208",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 10.547137260437012
+   },
+   {
+    "attack_id": "A208",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 22.420207977294922
+   },
+   {
+    "attack_id": "A208",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 26.981494903564453
+   },
+   {
+    "attack_id": "A210",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 141.02317810058594
+   },
+   {
+    "attack_id": "A210",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 122.89241790771484
+   },
+   {
+    "attack_id": "A210",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 92.71622467041016
+   },
+   {
+    "attack_id": "A210",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 55.52840805053711
+   },
+   {
+    "attack_id": "A211",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 13.922311782836914
+   },
+   {
+    "attack_id": "A211",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 16.236896514892578
+   },
+   {
+    "attack_id": "A211",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 20.2750244140625
+   },
+   {
+    "attack_id": "A211",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 28.454477310180664
+   },
+   {
+    "attack_id": "A215",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 17.500959396362305
+   },
+   {
+    "attack_id": "A215",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 17.400705337524414
+   },
+   {
+    "attack_id": "A215",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 21.094430923461914
+   },
+   {
+    "attack_id": "A215",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 33.40597152709961
+   },
+   {
+    "attack_id": "A217",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 8.576811790466309
+   },
+   {
+    "attack_id": "A217",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 9.183210372924805
+   },
+   {
+    "attack_id": "A217",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 12.466813087463379
+   },
+   {
+    "attack_id": "A217",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 19.856338500976562
+   },
+   {
+    "attack_id": "A301",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 23.592397689819336
+   },
+   {
+    "attack_id": "A301",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 25.47920036315918
+   },
+   {
+    "attack_id": "A301",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 27.358327865600586
+   },
+   {
+    "attack_id": "A301",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 35.51575469970703
+   },
+   {
+    "attack_id": "A302",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 284481.75
+   },
+   {
+    "attack_id": "A302",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 284380.96875
+   },
+   {
+    "attack_id": "A302",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 284212.59375
+   },
+   {
+    "attack_id": "A302",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 283862.8125
+   },
+   {
+    "attack_id": "A303",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 20.5449161529541
+   },
+   {
+    "attack_id": "A303",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 23.839778900146484
+   },
+   {
+    "attack_id": "A303",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 28.659616470336914
+   },
+   {
+    "attack_id": "A303",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 35.44971466064453
+   },
+   {
+    "attack_id": "A305",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 100.30411529541016
+   },
+   {
+    "attack_id": "A305",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 96.9731216430664
+   },
+   {
+    "attack_id": "A305",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 92.32276153564453
+   },
+   {
+    "attack_id": "A305",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 82.0015640258789
+   },
+   {
+    "attack_id": "A306",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 543917.75
+   },
+   {
+    "attack_id": "A306",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 542983.0
+   },
+   {
+    "attack_id": "A306",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 541416.6875
+   },
+   {
+    "attack_id": "A306",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 538287.0625
+   },
+   {
+    "attack_id": "A308",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 9578.23046875
+   },
+   {
+    "attack_id": "A308",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 9554.6396484375
+   },
+   {
+    "attack_id": "A308",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 9542.0703125
+   },
+   {
+    "attack_id": "A308",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 9497.8056640625
+   },
+   {
+    "attack_id": "A310",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 16.774612426757812
+   },
+   {
+    "attack_id": "A310",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 14.899205207824707
+   },
+   {
+    "attack_id": "A310",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 12.16186809539795
+   },
+   {
+    "attack_id": "A310",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 7.773435115814209
+   },
+   {
+    "attack_id": "A401",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 1458.6134033203125
+   },
+   {
+    "attack_id": "A401",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 1430.815673828125
+   },
+   {
+    "attack_id": "A401",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 1382.1571044921875
+   },
+   {
+    "attack_id": "A401",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 1292.447998046875
+   },
+   {
+    "attack_id": "A403",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 2361.78173828125
+   },
+   {
+    "attack_id": "A403",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 2322.763671875
+   },
+   {
+    "attack_id": "A403",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 2271.922119140625
+   },
+   {
+    "attack_id": "A403",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 2187.832763671875
+   },
+   {
+    "attack_id": "A404",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 151.61029052734375
+   },
+   {
+    "attack_id": "A404",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 132.41122436523438
+   },
+   {
+    "attack_id": "A404",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 100.99700164794922
+   },
+   {
+    "attack_id": "A404",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 66.74101257324219
+   },
+   {
+    "attack_id": "A408",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 16595.076171875
+   },
+   {
+    "attack_id": "A408",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 16547.599609375
+   },
+   {
+    "attack_id": "A408",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 16518.046875
+   },
+   {
+    "attack_id": "A408",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 16457.26953125
+   },
+   {
+    "attack_id": "A409",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 95.97566223144531
+   },
+   {
+    "attack_id": "A409",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 92.41324615478516
+   },
+   {
+    "attack_id": "A409",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 87.61132049560547
+   },
+   {
+    "attack_id": "A409",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 81.16056060791016
+   },
+   {
+    "attack_id": "A410",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 387.0199890136719
+   },
+   {
+    "attack_id": "A410",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 371.49615478515625
+   },
+   {
+    "attack_id": "A410",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 337.4005432128906
+   },
+   {
+    "attack_id": "A410",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 298.3747863769531
+   },
+   {
+    "attack_id": "A411",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 2246.019287109375
+   },
+   {
+    "attack_id": "A411",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 2230.365234375
+   },
+   {
+    "attack_id": "A411",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 2187.9375
+   },
+   {
+    "attack_id": "A411",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 2069.177490234375
+   },
+   {
+    "attack_id": "A413",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 386.0698547363281
+   },
+   {
+    "attack_id": "A413",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 370.83489990234375
+   },
+   {
+    "attack_id": "A413",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 339.2729797363281
+   },
+   {
+    "attack_id": "A413",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 270.75152587890625
+   },
+   {
+    "attack_id": "A414",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 2317.883544921875
+   },
+   {
+    "attack_id": "A414",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 2282.83056640625
+   },
+   {
+    "attack_id": "A414",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 2209.99658203125
+   },
+   {
+    "attack_id": "A414",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 2070.19970703125
+   },
+   {
+    "attack_id": "A415",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 2233.506591796875
+   },
+   {
+    "attack_id": "A415",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 2206.326416015625
+   },
+   {
+    "attack_id": "A415",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 2146.90087890625
+   },
+   {
+    "attack_id": "A415",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 2022.834228515625
+   },
+   {
+    "attack_id": "A418",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 19.871248245239258
+   },
+   {
+    "attack_id": "A418",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 21.461380004882812
+   },
+   {
+    "attack_id": "A418",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 24.08706283569336
+   },
+   {
+    "attack_id": "A418",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 27.96384048461914
+   },
+   {
+    "attack_id": "A420",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 20.212257385253906
+   },
+   {
+    "attack_id": "A420",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 19.04491424560547
+   },
+   {
+    "attack_id": "A420",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 17.168100357055664
+   },
+   {
+    "attack_id": "A420",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 12.044692039489746
+   },
+   {
+    "attack_id": "A421",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 8.320685386657715
+   },
+   {
+    "attack_id": "A421",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 12.010260581970215
+   },
+   {
+    "attack_id": "A421",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 20.41889762878418
+   },
+   {
+    "attack_id": "A421",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 17.275625228881836
+   },
+   {
+    "attack_id": "A422",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 317.6681823730469
+   },
+   {
+    "attack_id": "A422",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 313.26153564453125
+   },
+   {
+    "attack_id": "A422",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 303.70355224609375
+   },
+   {
+    "attack_id": "A422",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 269.4677734375
+   },
+   {
+    "attack_id": "A423",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 8.732476234436035
+   },
+   {
+    "attack_id": "A423",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 13.157519340515137
+   },
+   {
+    "attack_id": "A423",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 32.94696807861328
+   },
+   {
+    "attack_id": "A423",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 47.33985900878906
+   },
+   {
+    "attack_id": "A424",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 12.592635154724121
+   },
+   {
+    "attack_id": "A424",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 12.69663143157959
+   },
+   {
+    "attack_id": "A424",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 12.421990394592285
+   },
+   {
+    "attack_id": "A424",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 10.54365062713623
+   }
+  ],
+  "improved_pgd": [
+   {
+    "attack_id": "A101",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 14.862115859985352
+   },
+   {
+    "attack_id": "A101",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 15.735269546508789
+   },
+   {
+    "attack_id": "A101",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 23.88179588317871
+   },
+   {
+    "attack_id": "A101",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 39.93623733520508
+   },
+   {
+    "attack_id": "A102",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 87.15587615966797
+   },
+   {
+    "attack_id": "A102",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 85.2694091796875
+   },
+   {
+    "attack_id": "A102",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 83.64302825927734
+   },
+   {
+    "attack_id": "A102",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 81.93853759765625
+   },
+   {
+    "attack_id": "A103",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 26.87262535095215
+   },
+   {
+    "attack_id": "A103",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 26.99177360534668
+   },
+   {
+    "attack_id": "A103",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 30.204898834228516
+   },
+   {
+    "attack_id": "A103",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 42.58832931518555
+   },
+   {
+    "attack_id": "A105",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 37442.18359375
+   },
+   {
+    "attack_id": "A105",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 37226.62109375
+   },
+   {
+    "attack_id": "A105",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 36899.99609375
+   },
+   {
+    "attack_id": "A105",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 36203.46875
+   },
+   {
+    "attack_id": "A203",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 76.64607238769531
+   },
+   {
+    "attack_id": "A203",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 58.62124252319336
+   },
+   {
+    "attack_id": "A203",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 39.205074310302734
+   },
+   {
+    "attack_id": "A203",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 34.808101654052734
+   },
+   {
+    "attack_id": "A204",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 10.953518867492676
+   },
+   {
+    "attack_id": "A204",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 11.046185493469238
+   },
+   {
+    "attack_id": "A204",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 13.187472343444824
+   },
+   {
+    "attack_id": "A204",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 18.909759521484375
+   },
+   {
+    "attack_id": "A206",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 184.84698486328125
+   },
+   {
+    "attack_id": "A206",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 163.32095336914062
+   },
+   {
+    "attack_id": "A206",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 125.04839324951172
+   },
+   {
+    "attack_id": "A206",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 88.9655532836914
+   },
+   {
+    "attack_id": "A207",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 35835.91796875
+   },
+   {
+    "attack_id": "A207",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 35656.703125
+   },
+   {
+    "attack_id": "A207",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 35374.5546875
+   },
+   {
+    "attack_id": "A207",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 34782.578125
+   },
+   {
+    "attack_id": "A208",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 8.047406196594238
+   },
+   {
+    "attack_id": "A208",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 11.392277717590332
+   },
+   {
+    "attack_id": "A208",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 21.727285385131836
+   },
+   {
+    "attack_id": "A208",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 18.233142852783203
+   },
+   {
+    "attack_id": "A210",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 145.1505889892578
+   },
+   {
+    "attack_id": "A210",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 142.12986755371094
+   },
+   {
+    "attack_id": "A210",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 143.70591735839844
+   },
+   {
+    "attack_id": "A210",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 107.7364273071289
+   },
+   {
+    "attack_id": "A211",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 14.204625129699707
+   },
+   {
+    "attack_id": "A211",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 16.655529022216797
+   },
+   {
+    "attack_id": "A211",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 21.216238021850586
+   },
+   {
+    "attack_id": "A211",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 30.953292846679688
+   },
+   {
+    "attack_id": "A215",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 17.896472930908203
+   },
+   {
+    "attack_id": "A215",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 18.392026901245117
+   },
+   {
+    "attack_id": "A215",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 21.151960372924805
+   },
+   {
+    "attack_id": "A215",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 28.356861114501953
+   },
+   {
+    "attack_id": "A217",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 7.867259979248047
+   },
+   {
+    "attack_id": "A217",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 9.24604320526123
+   },
+   {
+    "attack_id": "A217",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 13.392277717590332
+   },
+   {
+    "attack_id": "A217",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 19.856338500976562
+   },
+   {
+    "attack_id": "A301",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 23.811630249023438
+   },
+   {
+    "attack_id": "A301",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 24.99013900756836
+   },
+   {
+    "attack_id": "A301",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 27.940189361572266
+   },
+   {
+    "attack_id": "A301",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 34.261268615722656
+   },
+   {
+    "attack_id": "A302",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 284099.46875
+   },
+   {
+    "attack_id": "A302",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 283416.59375
+   },
+   {
+    "attack_id": "A302",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 282289.90625
+   },
+   {
+    "attack_id": "A302",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 280059.4375
+   },
+   {
+    "attack_id": "A303",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 20.411151885986328
+   },
+   {
+    "attack_id": "A303",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 23.31484031677246
+   },
+   {
+    "attack_id": "A303",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 27.175689697265625
+   },
+   {
+    "attack_id": "A303",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 34.72096633911133
+   },
+   {
+    "attack_id": "A305",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 100.66557312011719
+   },
+   {
+    "attack_id": "A305",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 97.83164978027344
+   },
+   {
+    "attack_id": "A305",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 94.32927703857422
+   },
+   {
+    "attack_id": "A305",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 85.71937561035156
+   },
+   {
+    "attack_id": "A306",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 543918.5625
+   },
+   {
+    "attack_id": "A306",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 542978.125
+   },
+   {
+    "attack_id": "A306",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 541392.6875
+   },
+   {
+    "attack_id": "A306",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 538227.9375
+   },
+   {
+    "attack_id": "A308",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 9556.9326171875
+   },
+   {
+    "attack_id": "A308",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 9466.2998046875
+   },
+   {
+    "attack_id": "A308",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 9300.3193359375
+   },
+   {
+    "attack_id": "A308",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 8919.96484375
+   },
+   {
+    "attack_id": "A310",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 16.712820053100586
+   },
+   {
+    "attack_id": "A310",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 14.811372756958008
+   },
+   {
+    "attack_id": "A310",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 12.145608901977539
+   },
+   {
+    "attack_id": "A310",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 7.773435115814209
+   },
+   {
+    "attack_id": "A401",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 1440.2796630859375
+   },
+   {
+    "attack_id": "A401",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 1392.8988037109375
+   },
+   {
+    "attack_id": "A401",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 1323.9686279296875
+   },
+   {
+    "attack_id": "A401",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 1221.104736328125
+   },
+   {
+    "attack_id": "A403",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 2352.15478515625
+   },
+   {
+    "attack_id": "A403",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 2303.03369140625
+   },
+   {
+    "attack_id": "A403",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 2220.0166015625
+   },
+   {
+    "attack_id": "A403",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 2050.162353515625
+   },
+   {
+    "attack_id": "A404",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 153.6072540283203
+   },
+   {
+    "attack_id": "A404",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 133.73324584960938
+   },
+   {
+    "attack_id": "A404",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 100.33897399902344
+   },
+   {
+    "attack_id": "A404",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 75.87993621826172
+   },
+   {
+    "attack_id": "A408",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 16572.22265625
+   },
+   {
+    "attack_id": "A408",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 16478.732421875
+   },
+   {
+    "attack_id": "A408",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 16341.8017578125
+   },
+   {
+    "attack_id": "A408",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 15925.642578125
+   },
+   {
+    "attack_id": "A409",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 96.22437286376953
+   },
+   {
+    "attack_id": "A409",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 92.6461410522461
+   },
+   {
+    "attack_id": "A409",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 88.41500091552734
+   },
+   {
+    "attack_id": "A409",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 76.59788513183594
+   },
+   {
+    "attack_id": "A410",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 389.23492431640625
+   },
+   {
+    "attack_id": "A410",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 392.0055847167969
+   },
+   {
+    "attack_id": "A410",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 359.3277893066406
+   },
+   {
+    "attack_id": "A410",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 319.979736328125
+   },
+   {
+    "attack_id": "A411",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 2231.240234375
+   },
+   {
+    "attack_id": "A411",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 2182.410888671875
+   },
+   {
+    "attack_id": "A411",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 2110.336181640625
+   },
+   {
+    "attack_id": "A411",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 1958.147705078125
+   },
+   {
+    "attack_id": "A413",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 387.902587890625
+   },
+   {
+    "attack_id": "A413",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 379.6015319824219
+   },
+   {
+    "attack_id": "A413",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 337.7006530761719
+   },
+   {
+    "attack_id": "A413",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 305.1150817871094
+   },
+   {
+    "attack_id": "A414",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 2296.98193359375
+   },
+   {
+    "attack_id": "A414",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 2245.531982421875
+   },
+   {
+    "attack_id": "A414",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 2167.462158203125
+   },
+   {
+    "attack_id": "A414",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 2013.493408203125
+   },
+   {
+    "attack_id": "A415",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 2213.763916015625
+   },
+   {
+    "attack_id": "A415",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 2167.2314453125
+   },
+   {
+    "attack_id": "A415",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 2093.477294921875
+   },
+   {
+    "attack_id": "A415",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 1953.9296875
+   },
+   {
+    "attack_id": "A418",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 19.732635498046875
+   },
+   {
+    "attack_id": "A418",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 21.583818435668945
+   },
+   {
+    "attack_id": "A418",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 25.85528564453125
+   },
+   {
+    "attack_id": "A418",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 44.759979248046875
+   },
+   {
+    "attack_id": "A420",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 20.162946701049805
+   },
+   {
+    "attack_id": "A420",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 18.964677810668945
+   },
+   {
+    "attack_id": "A420",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 17.806913375854492
+   },
+   {
+    "attack_id": "A420",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 12.044692039489746
+   },
+   {
+    "attack_id": "A421",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 8.320685386657715
+   },
+   {
+    "attack_id": "A421",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 12.010260581970215
+   },
+   {
+    "attack_id": "A421",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 20.41889762878418
+   },
+   {
+    "attack_id": "A421",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 17.275625228881836
+   },
+   {
+    "attack_id": "A422",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 312.7577209472656
+   },
+   {
+    "attack_id": "A422",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 304.20721435546875
+   },
+   {
+    "attack_id": "A422",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 311.5320739746094
+   },
+   {
+    "attack_id": "A422",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 264.29754638671875
+   },
+   {
+    "attack_id": "A423",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 8.732476234436035
+   },
+   {
+    "attack_id": "A423",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 13.157519340515137
+   },
+   {
+    "attack_id": "A423",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 22.54889488220215
+   },
+   {
+    "attack_id": "A423",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 35.73712158203125
+   },
+   {
+    "attack_id": "A424",
+    "eps": 0.1,
+    "concealed": false,
+    "max_score": 11.871867179870605
+   },
+   {
+    "attack_id": "A424",
+    "eps": 0.25,
+    "concealed": false,
+    "max_score": 11.637804985046387
+   },
+   {
+    "attack_id": "A424",
+    "eps": 0.5,
+    "concealed": false,
+    "max_score": 12.421990394592285
+   },
+   {
+    "attack_id": "A424",
+    "eps": 1.0,
+    "concealed": false,
+    "max_score": 10.54365062713623
+   }
+  ]
+ },
+ "reference_original_surrogate_transfer_TM-A": [
+  {
+   "eps": 0.1,
+   "k": 0,
+   "n": 36
+  },
+  {
+   "eps": 0.25,
+   "k": 0,
+   "n": 36
+  },
+  {
+   "eps": 0.5,
+   "k": 0,
+   "n": 36
+  },
+  {
+   "eps": 1.0,
+   "k": 0,
+   "n": 36
+  }
+ ],
+ "runtime_s": 942.9918210506439,
+ "versions": {
+  "python": "3.10.6",
+  "numpy": "1.26.4",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "platform": "Windows-10-10.0.19045-SP0"
+ }
+}

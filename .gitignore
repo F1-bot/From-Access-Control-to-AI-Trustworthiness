@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.log
+*.nohup
+.pytest_cache/
+
+# raw third-party data are not redistributed (see data/raw/README.md); only the HAI digest manifest is kept
+data/raw/*
+!data/raw/README.md
+!data/raw/hai/
+data/raw/hai/*
+!data/raw/hai/MANIFEST.json
+
+# reference key of the blinded coding package (File S6), kept by the administrator; make_second_coder.py rebuilds it
+data/results/second_coder_reference_key.json

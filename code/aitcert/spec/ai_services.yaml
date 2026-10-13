@@ -1,0 +1,394 @@
+# AI-trustworthiness service class "I" (Cyrillic "І") proposed as an extension of the functional
+# criteria of ND TZI 2.5-004-99. Each service follows the discipline of the legacy criteria:
+# hierarchical levels, cumulative requirements, explicit necessary conditions ('requires'), and,
+# where needed, a minimum assurance level (G-k). New in this class: quantitative acceptance
+# criteria ('acceptance') evaluated with the probabilistic conformity semantics (see stats.py):
+# a claim "metric >= tau" is accepted iff LCB_{1-alpha_G}(metric) >= tau (UCB for "<=").
+# Thresholds tau are *assignment parameters* fixed in the security target / profile
+# (cf. assignment operations of ISO/IEC 15408), not constants of the criteria.
+class:
+  code: I
+  code_uk: І
+  name: AI trustworthiness
+  name_uk: Довіреність систем штучного інтелекту
+global_requirements:
+  - {requires: NC-1, applies_to: all_levels}   # inherited rule of the legacy criteria
+alpha_by_guarantee: {1: 0.10, 2: 0.10, 3: 0.10, 4: 0.05, 5: 0.05, 6: 0.01, 7: 0.01}
+metrics:
+  perf:      {direction: '>=', description: 'Task performance metric declared for the intended purpose (e.g., event recall, F1, accuracy)', ci: 'exact binomial or (block) bootstrap'}
+  far:       {direction: '<=', description: 'False-alarm (false-positive) rate per operating hour', ci: 'Poisson / block bootstrap'}
+  ece:       {direction: '<=', description: 'Expected calibration error of probabilistic outputs', ci: bootstrap}
+  ood:       {direction: '>=', description: 'True-positive rate of out-of-domain / drift detection at declared false-positive rate', ci: 'exact binomial'}
+  coverage:  {direction: '>=', description: 'Empirical coverage of uncertainty sets (e.g., conformal) at nominal level', ci: 'exact binomial'}
+  conf:      {direction: '<=', description: 'Confabulation (unsupported-claim) rate on a representative benchmark', ci: 'exact binomial'}
+  asr:       {direction: '<=', description: 'Attack success rate of adaptive evasion / injection attacks within the declared threat model', ci: 'exact binomial'}
+  cert:      {direction: '>=', description: 'Certified accuracy at declared radius r', ci: 'exact binomial'}
+  pdet:      {direction: '>=', description: 'Detection rate of injected poisoned samples in a poisoning drill (at declared false-positive rate)', ci: 'exact binomial'}
+  pdeg:      {direction: '<=', description: 'Performance degradation caused by undetected poisoning at declared budget beta', ci: bootstrap}
+  mia:       {direction: '<=', description: 'Membership-inference true-positive rate at FPR = 1e-3 (or advantage)', ci: 'exact binomial'}
+  ext:       {direction: '<=', description: 'Agreement (fidelity) of a surrogate model extracted with the declared query budget Q', ci: 'exact binomial'}
+  dp_eps:    {direction: '<=', description: 'Differential-privacy epsilon at declared delta from audited accounting', ci: none}
+  xfid:      {direction: '>=', description: 'Explanation fidelity / localisation accuracy against ground truth or perturbation tests', ci: 'exact binomial'}
+  disparity: {direction: '<=', description: 'Group disparity of a declared fairness metric (e.g., equalised-odds difference)', ci: bootstrap}
+  load:      {direction: '<=', description: 'Oversight workload: alerts or decisions per operator per hour', ci: 'Poisson / block bootstrap'}
+  override:  {direction: '>=', description: 'Proportion of correct operator interventions in oversight drills', ci: 'exact binomial'}
+  bypass:    {direction: '<=', description: 'Probability that an agent action bypasses mediation (zero observed bypasses in n trials gives UCB = 1 - alpha^(1/n))', ci: 'exact binomial'}
+services:
+  ID:
+    uk: ІД
+    name: Data integrity and provenance
+    name_uk: Цілісність і походження даних
+    purpose: >-
+      Protects training, validation, test, fine-tuning and retrieval data against unauthorised or
+      malicious modification (poisoning, label manipulation, backdoor insertion) and makes the
+      provenance of every data item used to build or ground the model traceable.
+    threats:
+      atlas: [AML.T0020, AML.T0059, AML.T0070, AML.T0010.002, AML.T0115.000, AML.T0043.004, AML.T0099]
+      owasp_llm_2025: [LLM04, LLM08]
+      nist_ai_100_2: [availability poisoning, targeted poisoning, backdoor poisoning]
+    levels:
+      1:
+        name: Documented provenance
+        name_uk: Документоване походження
+        requirements:
+          - The data-governance policy defines the set of datasets (training, validation, test, fine-tuning, retrieval corpora) to which it applies.
+          - For each dataset the source, collection method, licence, pre-processing and labelling steps and intended use are documented (datasheet).
+          - A content manifest with cryptographic digests is produced for every dataset version used to build an evaluated model.
+        requires: []
+      2:
+        name: Controlled datasets
+        name_uk: Контрольовані набори даних
+        requirements:
+          - The policy applies to all datasets used by the AI system.
+          - Datasets are versioned under configuration management; integrity is verified against the manifest before each training or evaluation run.
+          - Only authorised roles can modify datasets; every modification is recorded in a protected log.
+        requires: [CA-1, NR-2]
+      3:
+        name: Poisoning-resistant pipeline
+        name_uk: Стійкий до отруєння конвеєр
+        requirements:
+          - Sources of externally acquired data are authenticated.
+          - Statistical screening for poisoned, mislabelled and anomalous samples is applied before training.
+          - The effectiveness of screening is demonstrated in a poisoning drill at the declared budget beta.
+        acceptance:
+          - {metric: pdet, threshold: tau_pdet}
+          - {metric: pdeg, threshold: tau_pdeg}
+        requires: [NV-2, IV-1, G-4]
+      4:
+        name: Attested provenance
+        name_uk: Засвідчене походження
+        requirements:
+          - Every transformation from raw source to training set produces signed provenance attestations verifiable by a third party.
+          - The influence of any k training samples is bounded by a certified method, or the poisoning drill is repeated by an independent party with adaptive strategies.
+        requires: [CV-2, NA-1, G-5]
+  IR:
+    uk: ІР
+    name: Adversarial robustness
+    name_uk: Робастність до змагальних впливів
+    purpose: >-
+      Ensures that the AI system maintains its declared performance under adversarially manipulated
+      inputs within a declared threat model (perturbation set, attacker knowledge, query budget),
+      including evasion of predictive models and prompt injection or jailbreaking of generative models.
+    threats:
+      atlas: [AML.T0015, AML.T0043, AML.T0051, AML.T0054, AML.T0068, AML.T0041]
+      owasp_llm_2025: [LLM01]
+      nist_ai_100_2: [evasion, direct prompt injection, indirect prompt injection]
+    levels:
+      1:
+        name: Declared threat model and black-box assessment
+        name_uk: Задекларована модель загроз і оцінювання "чорною скринькою"
+        requirements:
+          - The robustness policy declares the threat model (perturbation set Delta, attacker knowledge, query budget Q) for the declared operational domain.
+          - Robustness is assessed with transfer-based and query-based black-box attacks; attack success is reported with a confidence interval.
+        requires: [IV-1]
+      2:
+        name: Adaptive white-box robustness
+        name_uk: Стійкість до адаптивних атак "білої скриньки"
+        requirements:
+          - Robustness is evaluated with adaptive white-box attacks tailored to the deployed defences within Delta.
+          - Mitigations are documented and evaluated against adaptive attacks; obscurity is not credited.
+        acceptance:
+          - {metric: asr, threshold: tau_asr}
+        requires: [IV-2, G-4]
+      3:
+        name: Certified or architecturally enforced robustness
+        name_uk: Сертифікована або архітектурно забезпечена стійкість
+        requirements:
+          - Predictive models carry a certified robustness guarantee over the declared region (e.g., randomized smoothing or formal verification).
+          - Generative or agentic systems separate trusted instructions from untrusted content architecturally so that injected content cannot trigger privileged actions.
+        acceptance:
+          - {metric: cert, threshold: tau_cert, applies: predictive}
+          - {metric: asr, threshold: tau_asr, applies: generative}
+        requires: [IM-2, G-4]
+      4:
+        name: Runtime adversarial resilience
+        name_uk: Стійкість під час експлуатації
+        requirements:
+          - Adversarial inputs are detected or contained in operation; detections raise alarms and trigger a safe or degraded mode.
+          - Robustness regression tests gate every model update; independent red-teaming is repeated periodically.
+        requires: [NR-3, IV-3, G-5]
+  IV:
+    uk: ІВ
+    name: Validity and reliability
+    name_uk: Валідність і надійність
+    purpose: >-
+      Ensures that outputs are valid for the intended purpose within the declared operational domain
+      (accuracy, calibration, robustness to natural shift, factual grounding) and that the system
+      detects and signals operation outside that domain.
+    threats:
+      atlas: [AML.T0031, AML.T0062, AML.T0060]
+      owasp_llm_2025: [LLM09]
+      nist_ai_600_1: [Confabulation, Information Integrity]
+    levels:
+      1:
+        name: Declared performance
+        name_uk: Задекларована продуктивність
+        requirements:
+          - The intended purpose, operational domain and performance metrics are declared.
+          - Performance is measured on held-out data representative of the operational domain and reported with confidence intervals.
+        requires: []
+      2:
+        name: Statistically assured performance
+        name_uk: Статистично гарантована продуктивність
+        requirements:
+          - Each declared metric is accepted on held-out test data, not used for development or model selection, whose size is not smaller than n_min(alpha_G, delta).
+          - Performance is reported for declared operating conditions and subgroups; calibration is measured where outputs are probabilistic.
+        acceptance:
+          - {metric: perf, threshold: tau_perf}
+          - {metric: far, threshold: tau_far, applies: detection}
+          - {metric: ece, threshold: tau_ece, applies: probabilistic}
+        requires: [ID-1]
+      3:
+        name: Operating-envelope monitoring
+        name_uk: Контроль робочої області
+        requirements:
+          - Inputs outside the declared operational domain and data or concept drift are detected with declared thresholds; the system abstains, flags or degrades safely.
+          - Uncertainty is quantified with coverage guarantees where applicable (e.g., conformal prediction).
+        acceptance:
+          - {metric: ood, threshold: tau_ood}
+          - {metric: coverage, threshold: tau_cov, applies: set-valued}
+        requires: [NR-3, IO-1]
+      4:
+        name: Continuous validation
+        name_uk: Безперервна валідація
+        requirements:
+          - Online performance monitoring uses statistically controlled alarms and an automatic fallback to a safe state on validated degradation.
+          - Generative systems apply grounding or factuality controls with a measured confabulation rate.
+          - The system is re-validated before every model update.
+        acceptance:
+          - {metric: conf, threshold: tau_conf, applies: generative}
+        requires: [ID-2, DV-2, G-4]
+  IE:
+    uk: ІЕ
+    name: Explainability and transparency
+    name_uk: Пояснюваність і прозорість
+    purpose: >-
+      Enables users, operators and evaluators to understand the capabilities, limitations and
+      individual outputs of the AI system to the extent necessary for appropriate use and oversight.
+    threats:
+      nist_ai_600_1: [Human-AI Configuration]
+      owasp_llm_2025: [LLM09]
+    levels:
+      1:
+        name: System transparency
+        name_uk: Прозорість системи
+        requirements:
+          - A model or system card states the intended purpose, capabilities, limitations, declared performance and known risks; instructions for use are provided.
+          - Interaction with AI and AI-generated content are disclosed where applicable.
+        requires: [IV-1]
+      2:
+        name: Decision-level explanation
+        name_uk: Пояснення окремих рішень
+        requirements:
+          - Each output relevant to oversight is accompanied by an explanation (attribution, counterfactual or retrieved evidence) available to the operator and recorded with the decision.
+          - Explanation fidelity is measured against ground truth or perturbation tests and compared with a declared trivial explainer (e.g., a constant or random explainer), whose accuracy the threshold must exceed.
+        acceptance:
+          - {metric: xfid, threshold: tau_xfid}
+        requires: [NR-2]
+      3:
+        name: Verifiable interpretability
+        name_uk: Верифікована інтерпретованість
+        requirements:
+          - Decisions of the highest declared criticality are produced by an inherently interpretable model or by methods with formal fidelity guarantees.
+          - Explanations are reproducible from logged inputs and support contestation.
+        requires: [IM-2, G-4]
+  IB:
+    uk: ІБ
+    name: Bias management
+    name_uk: Безсторонність (керування упередженістю)
+    purpose: >-
+      Identifies, measures and mitigates harmful statistical, systemic and human-cognitive bias in
+      data and outputs for groups relevant to the intended purpose.
+    threats:
+      nist_ai_600_1: [Harmful Bias and Homogenization]
+    levels:
+      1:
+        name: Bias identification
+        name_uk: Ідентифікація упередженості
+        requirements:
+          - Groups and attributes relevant to the intended purpose are identified; datasets are analysed for representativeness; bias risks are documented.
+        requires: [ID-1]
+      2:
+        name: Quantified group parity
+        name_uk: Кількісний паритет груп
+        requirements:
+          - Declared fairness metrics are measured with confidence intervals; mitigations are documented.
+        acceptance:
+          - {metric: disparity, threshold: tau_disp}
+        requires: [IV-2]
+      3:
+        name: Intersectional and operational bias monitoring
+        name_uk: Інтерсекційний та експлуатаційний моніторинг
+        requirements:
+          - Intersectional disparities are analysed; disparities are monitored in operation with alarm thresholds; causal analysis is documented where feasible.
+        requires: [IV-3]
+  IP:
+    uk: ІП
+    name: Inference-attack protection
+    name_uk: Протидія атакам виведення
+    purpose: >-
+      Protects training data and model functionality against inference through model access:
+      membership and attribute inference, model inversion, training-data extraction and model
+      extraction (stealing).
+    threats:
+      atlas: [AML.T0024, AML.T0057, AML.T0056, AML.T0005.001, AML.T0048.004]
+      owasp_llm_2025: [LLM02, LLM07]
+      nist_ai_100_2: [membership inference, data reconstruction, model extraction, property inference]
+    levels:
+      1:
+        name: Exposure minimisation
+        name_uk: Мінімізація експозиції
+        requirements:
+          - Personal or sensitive training data are minimised and pseudonymised; outputs are minimised to what the purpose requires (e.g., labels instead of scores).
+          - A model-access policy defines who may query the model and how.
+        requires: [KA-1]
+      2:
+        name: Empirical leakage testing
+        name_uk: Емпіричне тестування витоку
+        requirements:
+          - State-of-the-art membership-inference tests are run where the training data contain personal or confidential records, and training-data extraction tests for generative models; model-extraction resistance is tested at the declared query budget Q on a declared evaluation distribution.
+          - Query volume and rate are limited per identity; queries are logged.
+        acceptance:
+          - {metric: mia, threshold: tau_mia, applies: personal or confidential training data}
+          - {metric: ext, threshold: tau_ext}
+        requires: [DR-1, NR-2]
+      3:
+        name: Formal privacy guarantee
+        name_uk: Формальна гарантія приватності
+        requirements:
+          - Training satisfies differential privacy with declared (epsilon, delta) and audited accounting, or an equivalent formal guarantee.
+          - Anomalous query patterns indicative of extraction are detected and alarmed.
+        acceptance:
+          - {metric: dp_eps, threshold: eps_max}
+        requires: [NR-3, G-3]
+      4:
+        name: Privacy-preserving architecture
+        name_uk: Архітектура зі збереженням приватності
+        requirements:
+          - Sensitive training or inference runs in confidential computing with remote attestation or in federated learning with secure aggregation.
+          - An independent privacy audit confirms that empirical leakage is consistent with the declared guarantee.
+        requires: [KV-2, NV-2, G-5]
+  IO:
+    uk: ІО
+    name: Human oversight
+    name_uk: Людський нагляд (контроль оператора)
+    purpose: >-
+      Enables natural persons to effectively oversee the AI system in use, to interpret its outputs,
+      to remain aware of automation bias and to intervene, override or stop the system.
+    threats:
+      nist_ai_600_1: [Human-AI Configuration]
+      owasp_llm_2025: [LLM06]
+    levels:
+      1:
+        name: Human-on-the-loop
+        name_uk: Людина над контуром
+        requirements:
+          - Oversight roles are assigned; operators can monitor outputs and system status, disregard or override outputs and stop the system safely.
+          - Oversight measures are documented in the instructions for use.
+        requires: [NO-1, NR-2, IE-1]
+      2:
+        name: Human-in-the-loop for designated decisions
+        name_uk: Людина в контурі для визначених рішень
+        requirements:
+          - Outputs of declared criticality take effect only after human confirmation.
+          - Oversight workload is bounded and measured; automation-bias countermeasures (training, uncertainty cues) are documented.
+        acceptance:
+          - {metric: load, threshold: tau_load}
+        requires: [IE-2, NO-2]
+      3:
+        name: Verified dual control
+        name_uk: Верифікований подвійний контроль
+        requirements:
+          - Decisions of the highest declared criticality require independent verification by at least two competent persons.
+          - Oversight effectiveness is measured in drills (correct interventions, time to intervene).
+        acceptance:
+          - {metric: override, threshold: tau_ovr}
+        requires: [NO-3, NR-4]
+  IM:
+    uk: ІМ
+    name: Model integrity and supply chain
+    name_uk: Цілісність моделі та ланцюга постачання
+    purpose: >-
+      Ensures that models and AI components, including third-party and foundation models,
+      libraries and serialised artefacts, are authentic, unmodified and of known provenance
+      throughout the life cycle.
+    threats:
+      atlas: [AML.T0010, AML.T0018, AML.T0011.000, AML.T0076, AML.T0115.001, AML.T0109, AML.T0111]
+      owasp_llm_2025: [LLM03, LLM04]
+      nist_ai_100_2: [model poisoning, supply-chain attacks]
+    levels:
+      1:
+        name: Component inventory
+        name_uk: Інвентаризація компонентів
+        requirements:
+          - A model card and an AI bill of materials list models, datasets, libraries and base or foundation models with versions and origins.
+          - Listed components are monitored for published vulnerabilities.
+        requires: [ID-1]
+      2:
+        name: Signed artefacts
+        name_uk: Підписані артефакти
+        requirements:
+          - Model artefacts and the AI bill of materials are cryptographically signed; signatures and digests are verified at load time against a trust anchor held outside the signed artefacts (a pinned key or a certificate of the platform PKI).
+          - Serialisation formats that execute code on load are prohibited or scanned.
+        requires: [CA-1, CV-1]
+      3:
+        name: Attested lineage
+        name_uk: Засвідчене походження моделі
+        requirements:
+          - Build-provenance attestations link data, code and configuration to each model.
+          - Third-party models are accepted only with provenance attestation and backdoor scanning.
+        requires: [ID-3, G-4]
+  IA:
+    uk: ІА
+    name: Agency bounding
+    name_uk: Обмеження автономності
+    purpose: >-
+      For AI systems able to invoke tools or take actions (agentic systems), bounds the set, scope
+      and impact of actions to the authorised objective under complete mediation.
+    threats:
+      atlas: [AML.T0053, AML.T0086, AML.T0101, AML.T0080, AML.T0110, AML.T0034.002]
+      owasp_llm_2025: [LLM06, LLM10]
+    levels:
+      1:
+        name: Declared action space
+        name_uk: Задекларований простір дій
+        requirements:
+          - Tools, actions, parameters and permitted targets are declared in an allow-list.
+          - Every action is logged with its triggering context; iteration, resource and spending limits are enforced.
+        requires: [NR-2, DR-1]
+      2:
+        name: Least-agency mediation
+        name_uk: Посередництво з мінімальними повноваженнями
+        requirements:
+          - Each action is authorised under least privilege with delegated, not elevated, identity; untrusted content cannot trigger privileged actions without confirmation.
+          - High-impact actions require human approval; tool execution is sandboxed.
+        requires: [IO-2, KA-1]
+      3:
+        name: Reference-monitor mediation
+        name_uk: Посередництво монітора звернень
+        requirements:
+          - All agent actions are mediated by a tamper-proof, always-invoked and verifiable policy-enforcement point implementing a formalised policy.
+          - Complete mediation is tested by an independent party; agent actions can be halted and, where possible, rolled back.
+        acceptance:
+          - {metric: bypass, threshold: tau_bypass}
+        requires: [NC-3, CO-1, G-5]

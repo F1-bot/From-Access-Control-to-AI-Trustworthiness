@@ -1,0 +1,43 @@
+{
+ "tag": "baseline_s0",
+ "anchor_sha256_pinned": "c4809ef270a7baa2618d278bcab2899d27aaa2c195c32a4d66f0440bc541c501",
+ "provisioned_utc_this_run": "2026-10-13T04:14:43Z",
+ "tests": {
+  "i_original": {
+   "expected": "accept",
+   "outcome": "accept",
+   "reason": "signature valid under the pinned anchor and all digests match",
+   "as_expected": true
+  },
+  "ii_one_byte": {
+   "expected": "reject",
+   "outcome": "reject",
+   "reason": "digest mismatch: model",
+   "as_expected": true,
+   "file_still_loads": true,
+   "max_abs_parameter_change": 0.0001220703125
+  },
+  "iii_foreign_key": {
+   "expected": "reject",
+   "outcome": "reject",
+   "reason": "signature is not valid under the pinned trust anchor",
+   "as_expected": true,
+   "first_verifier_on_same_forgery": [
+    true,
+    "signature valid under the embedded key"
+   ]
+  },
+  "iv_anchor_replaced": {
+   "expected": "reject",
+   "outcome": "reject",
+   "reason": "trust-anchor file does not match the pinned SHA-256",
+   "as_expected": true
+  }
+ },
+ "all_tests_as_expected": true,
+ "meta": {
+  "script": "r8_im2.py",
+  "runtime_s": 0.18428826332092285,
+  "finished_utc": "2026-10-13T04:14:43Z"
+ }
+}

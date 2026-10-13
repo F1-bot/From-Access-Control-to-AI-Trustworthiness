@@ -1,0 +1,202 @@
+{
+ "Q_ip2": 10000,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "victims": {
+  "baseline_s0": {
+   "theta_point": 21.33342053413335,
+   "theta_smoothed": 18.012214903831914,
+   "n_test_windows": 401700,
+   "victim_pos_rate": 0.008991784914115012,
+   "ip2_runs": [
+    {
+     "seed": 0,
+     "query_pos_rate": 0.5026,
+     "balanced_operational": 0.5483230063958212,
+     "agree_pos": 0.9565337763012182,
+     "agree_neg": 0.14011223649042423,
+     "moving_block_ucb95": 0.5615033483252554,
+     "file_cluster_ucb95": 0.6221275938341982,
+     "mbb_valid": 2000,
+     "fcb_valid": 1000,
+     "balanced_attacker_distribution": 0.9699184277414501
+    },
+    {
+     "seed": 1,
+     "query_pos_rate": 0.495,
+     "balanced_operational": 0.5314835019365991,
+     "agree_pos": 0.9080841638981174,
+     "agree_neg": 0.1548828399750809,
+     "moving_block_ucb95": 0.5486414113050607,
+     "file_cluster_ucb95": 0.5924113196612638,
+     "mbb_valid": 2000,
+     "fcb_valid": 1000,
+     "balanced_attacker_distribution": 0.9600015296367266
+    },
+    {
+     "seed": 2,
+     "query_pos_rate": 0.4997,
+     "balanced_operational": 0.8338096842107934,
+     "agree_pos": 0.7425249169435216,
+     "agree_neg": 0.9250944514780651,
+     "moving_block_ucb95": 0.8513361745621604,
+     "file_cluster_ucb95": 0.8548335964745882,
+     "mbb_valid": 2000,
+     "fcb_valid": 1000,
+     "balanced_attacker_distribution": 0.9559588025708498
+    }
+   ],
+   "ir1_chain": [
+    {
+     "interface": "score",
+     "Q": 1000,
+     "balanced_agreement": 0.7422332900793651,
+     "transfer_k": 0,
+     "transfer_n": 44
+    },
+    {
+     "interface": "score",
+     "Q": 10000,
+     "balanced_agreement": 0.7302521745943862,
+     "transfer_k": 0,
+     "transfer_n": 44
+    },
+    {
+     "interface": "score",
+     "Q": 100000,
+     "balanced_agreement": 0.7794354029607319,
+     "transfer_k": 0,
+     "transfer_n": 44
+    },
+    {
+     "interface": "label",
+     "Q": 1000,
+     "balanced_agreement": 0.5305672519141271,
+     "transfer_k": 0,
+     "transfer_n": 44
+    },
+    {
+     "interface": "label",
+     "Q": 10000,
+     "balanced_agreement": 0.5500568983674132,
+     "transfer_k": 0,
+     "transfer_n": 44
+    },
+    {
+     "interface": "label",
+     "Q": 100000,
+     "balanced_agreement": 0.6129993094382479,
+     "transfer_k": 0,
+     "transfer_n": 44
+    }
+   ],
+   "runtime_s": 232.69897055625916
+  },
+  "hardened_s0": {
+   "theta_point": 16.010824953078654,
+   "theta_smoothed": 15.68723079681418,
+   "n_test_windows": 401700,
+   "victim_pos_rate": 0.016798605924819517,
+   "ip2_runs": [
+    {
+     "seed": 0,
+     "query_pos_rate": 0.4827,
+     "balanced_operational": 0.5025126986985958,
+     "agree_pos": 0.8494368701837581,
+     "agree_neg": 0.15558852721343353,
+     "moving_block_ucb95": 0.5292906805442165,
+     "file_cluster_ucb95": 0.5564849408926215,
+     "mbb_valid": 2000,
+     "fcb_valid": 1000,
+     "balanced_attacker_distribution": 0.9549379467789962
+    },
+    {
+     "seed": 1,
+     "query_pos_rate": 0.4737,
+     "balanced_operational": 0.749143915388252,
+     "agree_pos": 0.6818316538233551,
+     "agree_neg": 0.8164561769531488,
+     "moving_block_ucb95": 0.7753100060279353,
+     "file_cluster_ucb95": 0.7929984187965575,
+     "mbb_valid": 2000,
+     "fcb_valid": 1000,
+     "balanced_attacker_distribution": 0.9518964984063052
+    },
+    {
+     "seed": 2,
+     "query_pos_rate": 0.4794,
+     "balanced_operational": 0.7313637869846328,
+     "agree_pos": 0.8411381149970362,
+     "agree_neg": 0.6215894589722295,
+     "moving_block_ucb95": 0.7520047196375343,
+     "file_cluster_ucb95": 0.7548377212030095,
+     "mbb_valid": 2000,
+     "fcb_valid": 1000,
+     "balanced_attacker_distribution": 0.9464906323678806
+    }
+   ],
+   "ir1_chain": [
+    {
+     "interface": "score",
+     "Q": 1000,
+     "balanced_agreement": 0.7168509688770969,
+     "transfer_k": 0,
+     "transfer_n": 45
+    },
+    {
+     "interface": "score",
+     "Q": 10000,
+     "balanced_agreement": 0.8696738439865157,
+     "transfer_k": 0,
+     "transfer_n": 45
+    },
+    {
+     "interface": "score",
+     "Q": 100000,
+     "balanced_agreement": 0.8868365628392586,
+     "transfer_k": 0,
+     "transfer_n": 45
+    },
+    {
+     "interface": "label",
+     "Q": 1000,
+     "balanced_agreement": 0.5397838189159968,
+     "transfer_k": 0,
+     "transfer_n": 45
+    },
+    {
+     "interface": "label",
+     "Q": 10000,
+     "balanced_agreement": 0.6727581248464622,
+     "transfer_k": 0,
+     "transfer_n": 45
+    },
+    {
+     "interface": "label",
+     "Q": 100000,
+     "balanced_agreement": 0.7140521565792436,
+     "transfer_k": 0,
+     "transfer_n": 45
+    }
+   ],
+   "runtime_s": 220.78080368041992
+  }
+ },
+ "meta": {
+  "script": "r5_e4.py",
+  "runtime_s": 468.0998888015747,
+  "finished_utc": "2026-10-13T04:29:26Z",
+  "versions": {
+   "python": "3.10.6",
+   "numpy": "1.26.4",
+   "scipy": "1.15.3",
+   "pandas": "2.3.3",
+   "torch": "2.6.0+cu124",
+   "cuda": "12.4",
+   "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  }
+ }
+}

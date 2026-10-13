@@ -1,0 +1,754 @@
+{
+ "source": "NIST IR 8596 iprd (Dec 2025), Tables 1-6",
+ "doi": "10.6028/NIST.IR.8596.iprd",
+ "priority_codes": {
+  "1": "High",
+  "2": "Moderate",
+  "3": "Foundational"
+ },
+ "subcategories": [
+  {
+   "id": "GV.OC-01",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "GV.OC-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "GV.OC-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "GV.OC-04",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "GV.OC-05",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "GV.RM-01",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "GV.RM-02",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "GV.RM-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "GV.RM-04",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "GV.RM-05",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "GV.RM-06",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "GV.RM-07",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "GV.RR-01",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "GV.RR-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "GV.RR-03",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "GV.RR-04",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 3,
+   "thwart": 1
+  },
+  {
+   "id": "GV.PO-01",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "GV.PO-02",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "GV.OV-01",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "GV.OV-02",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "GV.OV-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "GV.SC-01",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "GV.SC-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "GV.SC-03",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "GV.SC-04",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "GV.SC-05",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "GV.SC-06",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "GV.SC-07",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "GV.SC-08",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "GV.SC-09",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "GV.SC-10",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "ID.AM-01",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "ID.AM-02",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "ID.AM-03",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "ID.AM-04",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "ID.AM-05",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "ID.AM-07",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "ID.AM-08",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "ID.RA-01",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "ID.RA-02",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "ID.RA-03",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "ID.RA-04",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "ID.RA-05",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "ID.RA-06",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "ID.RA-07",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "ID.RA-08",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 1
+  },
+  {
+   "id": "ID.RA-09",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "ID.RA-10",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "ID.IM-01",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "ID.IM-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "ID.IM-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "ID.IM-04",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "PR.AA-01",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "PR.AA-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "PR.AA-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "PR.AA-04",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "PR.AA-05",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "PR.AA-06",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "PR.AT-01",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "PR.AT-02",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "PR.DS-01",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "PR.DS-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "PR.DS-10",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "PR.DS-11",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "PR.PS-01",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "PR.PS-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 1
+  },
+  {
+   "id": "PR.PS-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "PR.PS-04",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "PR.PS-05",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "PR.PS-06",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "PR.IR-01",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "PR.IR-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "PR.IR-03",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "PR.IR-04",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "DE.CM-01",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "DE.CM-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "DE.CM-03",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "DE.CM-06",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "DE.CM-09",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "DE.AE-02",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "DE.AE-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "DE.AE-04",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "DE.AE-06",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "DE.AE-07",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 1
+  },
+  {
+   "id": "DE.AE-08",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "RS.MA-01",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "RS.MA-02",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 1,
+   "thwart": 2
+  },
+  {
+   "id": "RS.MA-03",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "RS.MA-04",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "RS.MA-05",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "RS.AN-03",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 1,
+   "thwart": 1
+  },
+  {
+   "id": "RS.AN-06",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 1
+  },
+  {
+   "id": "RS.AN-07",
+   "in_csf2": true,
+   "secure": 1,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "RS.AN-08",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "RS.CO-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "RS.CO-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "RS.MI-01",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "RS.MI-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "RC.RP-01",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "RC.RP-02",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 1,
+   "thwart": 3
+  },
+  {
+   "id": "RC.RP-03",
+   "in_csf2": true,
+   "secure": 2,
+   "defend": 2,
+   "thwart": 3
+  },
+  {
+   "id": "RC.RP-04",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 2,
+   "thwart": 2
+  },
+  {
+   "id": "RC.RP-05",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 2
+  },
+  {
+   "id": "RC.RP-06",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "RC.CO-03",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  },
+  {
+   "id": "RC.CO-04",
+   "in_csf2": true,
+   "secure": 3,
+   "defend": 3,
+   "thwart": 3
+  }
+ ],
+ "parse_anomalies": []
+}

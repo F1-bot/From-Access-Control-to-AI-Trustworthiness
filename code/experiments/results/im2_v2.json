@@ -1,0 +1,256 @@
+{
+ "script": "im2_sign_v2.py",
+ "started_utc": "2026-10-12T06:15:19Z",
+ "finished_utc": "2026-10-12T06:15:19Z",
+ "runtime_s": 0.19436001777648926,
+ "versions": {
+  "python": "3.10.6",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "pandas": "2.3.3",
+  "cryptography": "46.0.1",
+  "safetensors": "0.7.0"
+ },
+ "tag": "baseline_s0",
+ "trust_anchor": {
+  "path": "results/models/trust_anchor_v2.pub",
+  "sha256": "1dba522bf480fcbd30a1869c3024659a5e09e788b743d45ba0de5202e760ffd0",
+  "pinned_sha256": "1dba522bf480fcbd30a1869c3024659a5e09e788b743d45ba0de5202e760ffd0",
+  "pin_source": "hard-coded in im2_sign_v2.py",
+  "ed25519_raw_key_fingerprint": "sha256:aa47cd94a3b583cb1992c96d66419aafa368dc56d5090cda6f6e1caeb4c44c00",
+  "private_key_persisted": false
+ },
+ "release": {
+  "folder": "results/models/im2_v2_release",
+  "files": {
+   "baseline_s0.cdx.json": "313b93720c8d8a8cfdca13d5a8a53bfdd48e0d3a6199788e2d15b45852b6b407",
+   "baseline_s0.safetensors": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087",
+   "baseline_s0.sig_v2.json": "2e1532093a652f07810898641b7cbf2cc81af8ac5e924acafdd9ae9c14e38389",
+   "baseline_s0_chanvar.npy": "c4ecb50e35b4ac45b7a05703cc84139abc16b7b09a5abe6a549bee233c23bfaa",
+   "prep.json": "d0700a7e1f3108f5f8fbc4815692bdcf7a9d07e2fd5f8bdfc293ef4b2b01a568"
+  },
+  "envelope": "baseline_s0.sig_v2.json",
+  "manifest": {
+   "anchor_fingerprint": "sha256:aa47cd94a3b583cb1992c96d66419aafa368dc56d5090cda6f6e1caeb4c44c00",
+   "artefacts": {
+    "aibom": {
+     "bytes": 4812,
+     "file": "baseline_s0.cdx.json",
+     "sha256": "313b93720c8d8a8cfdca13d5a8a53bfdd48e0d3a6199788e2d15b45852b6b407"
+    },
+    "chanvar": {
+     "bytes": 400,
+     "file": "baseline_s0_chanvar.npy",
+     "sha256": "c4ecb50e35b4ac45b7a05703cc84139abc16b7b09a5abe6a549bee233c23bfaa"
+    },
+    "model": {
+     "bytes": 802504,
+     "file": "baseline_s0.safetensors",
+     "sha256": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087"
+    },
+    "prep": {
+     "bytes": 3518,
+     "file": "prep.json",
+     "sha256": "d0700a7e1f3108f5f8fbc4815692bdcf7a9d07e2fd5f8bdfc293ef4b2b01a568"
+    }
+   },
+   "created_utc": "2026-10-12T06:14:54Z",
+   "format": "aitcert-manifest-v2",
+   "tag": "baseline_s0"
+  },
+  "release_matches_current_originals": {
+   "model": true,
+   "prep": true,
+   "chanvar": true,
+   "aibom": true
+  }
+ },
+ "provisioning_this_run": null,
+ "provisioned_utc_from_signed_manifest": "2026-10-12T06:14:54Z",
+ "tests": {
+  "i_original": {
+   "expected": "accept",
+   "accepted": true,
+   "reason": "signature valid under the pinned anchor and all digests match",
+   "steps": [
+    {
+     "step": "anchor_pin",
+     "anchor_sha256": "1dba522bf480fcbd30a1869c3024659a5e09e788b743d45ba0de5202e760ffd0",
+     "ok": true
+    },
+    {
+     "step": "envelope",
+     "algorithm": "Ed25519",
+     "embedded_key_present_and_ignored": false,
+     "key_id_matches_anchor": true
+    },
+    {
+     "step": "signature_under_pinned_anchor",
+     "ok": true
+    },
+    {
+     "step": "digest_aibom",
+     "expected": "313b93720c8d8a8cfdca13d5a8a53bfdd48e0d3a6199788e2d15b45852b6b407",
+     "actual": "313b93720c8d8a8cfdca13d5a8a53bfdd48e0d3a6199788e2d15b45852b6b407",
+     "ok": true
+    },
+    {
+     "step": "digest_chanvar",
+     "expected": "c4ecb50e35b4ac45b7a05703cc84139abc16b7b09a5abe6a549bee233c23bfaa",
+     "actual": "c4ecb50e35b4ac45b7a05703cc84139abc16b7b09a5abe6a549bee233c23bfaa",
+     "ok": true
+    },
+    {
+     "step": "digest_model",
+     "expected": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087",
+     "actual": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087",
+     "ok": true
+    },
+    {
+     "step": "digest_prep",
+     "expected": "d0700a7e1f3108f5f8fbc4815692bdcf7a9d07e2fd5f8bdfc293ef4b2b01a568",
+     "actual": "d0700a7e1f3108f5f8fbc4815692bdcf7a9d07e2fd5f8bdfc293ef4b2b01a568",
+     "ok": true
+    }
+   ],
+   "release_copy_sha256": {
+    "model": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087",
+    "prep": "d0700a7e1f3108f5f8fbc4815692bdcf7a9d07e2fd5f8bdfc293ef4b2b01a568",
+    "chanvar": "c4ecb50e35b4ac45b7a05703cc84139abc16b7b09a5abe6a549bee233c23bfaa",
+    "aibom": "313b93720c8d8a8cfdca13d5a8a53bfdd48e0d3a6199788e2d15b45852b6b407"
+   },
+   "outcome": "accept",
+   "as_expected": true
+  },
+  "ii_one_byte_modified": {
+   "expected": "reject",
+   "accepted": false,
+   "reason": "digest mismatch: model",
+   "steps": [
+    {
+     "step": "anchor_pin",
+     "anchor_sha256": "1dba522bf480fcbd30a1869c3024659a5e09e788b743d45ba0de5202e760ffd0",
+     "ok": true
+    },
+    {
+     "step": "envelope",
+     "algorithm": "Ed25519",
+     "embedded_key_present_and_ignored": false,
+     "key_id_matches_anchor": true
+    },
+    {
+     "step": "signature_under_pinned_anchor",
+     "ok": true
+    },
+    {
+     "step": "digest_aibom",
+     "expected": "313b93720c8d8a8cfdca13d5a8a53bfdd48e0d3a6199788e2d15b45852b6b407",
+     "actual": "313b93720c8d8a8cfdca13d5a8a53bfdd48e0d3a6199788e2d15b45852b6b407",
+     "ok": true
+    },
+    {
+     "step": "digest_chanvar",
+     "expected": "c4ecb50e35b4ac45b7a05703cc84139abc16b7b09a5abe6a549bee233c23bfaa",
+     "actual": "c4ecb50e35b4ac45b7a05703cc84139abc16b7b09a5abe6a549bee233c23bfaa",
+     "ok": true
+    },
+    {
+     "step": "digest_model",
+     "expected": "926d0800f3e2de3ff0f76f158bf1f008eb9a741346f02ea34ae8de5f9e973087",
+     "actual": "566462b23c7bfdbc6a10a03aaeb756ebad2e500b29ce04a7d598ce888593ff79",
+     "ok": false
+    }
+   ],
+   "byte_offset": 401728,
+   "byte_before": 179,
+   "byte_after": 178,
+   "tensor": "gru.weight_ih_l0",
+   "tampered_file_still_loads": true,
+   "changed_elements": {
+    "gru.weight_ih_l0": 1
+   },
+   "max_abs_parameter_change": {
+    "gru.weight_ih_l0": 9.313225746154785e-10
+   },
+   "tampered_sha256": "566462b23c7bfdbc6a10a03aaeb756ebad2e500b29ce04a7d598ce888593ff79",
+   "outcome": "reject",
+   "as_expected": true
+  },
+  "iii_foreign_key_resigned": {
+   "expected": "reject",
+   "accepted": false,
+   "reason": "signature is not valid under the pinned trust anchor",
+   "steps": [
+    {
+     "step": "anchor_pin",
+     "anchor_sha256": "1dba522bf480fcbd30a1869c3024659a5e09e788b743d45ba0de5202e760ffd0",
+     "ok": true
+    },
+    {
+     "step": "envelope",
+     "algorithm": "Ed25519",
+     "embedded_key_present_and_ignored": true,
+     "key_id_matches_anchor": false
+    },
+    {
+     "step": "signature_under_pinned_anchor",
+     "ok": false
+    }
+   ],
+   "substituted_model": "baseline_s1.safetensors",
+   "substituted_model_sha256": "d10fe3f78e1b799d0770cc83dddfce6e7fc28eab917d776d4d2b9196b91c320e",
+   "foreign_key_fingerprint": "sha256:03fcd30f7f72a3d486f62a0f323915e72cb91ace702dab0f9e835c11469ff8bc",
+   "v1_logic_on_same_forgery": {
+    "accepted": true,
+    "reason": "v1: signature valid under the embedded key"
+   },
+   "outcome": "reject",
+   "as_expected": true
+  },
+  "iv_anchor_replaced": {
+   "expected": "reject",
+   "accepted": false,
+   "reason": "trust-anchor file does not match the pinned SHA-256",
+   "steps": [
+    {
+     "step": "anchor_pin",
+     "anchor_sha256": "4f984314c53b962eff0d7d7e8e1811a29d4aeb8be7862c65a4ff61ff17d51a77",
+     "ok": false
+    }
+   ],
+   "note": "same forged release as (iii), anchor file swapped for the foreign key",
+   "counterfactual_without_pin": true,
+   "outcome": "reject",
+   "as_expected": true
+  },
+  "v_v1_envelope_against_anchor": {
+   "expected": "reject",
+   "accepted": false,
+   "reason": "signature is not valid under the pinned trust anchor",
+   "steps": [
+    {
+     "step": "anchor_pin",
+     "anchor_sha256": "1dba522bf480fcbd30a1869c3024659a5e09e788b743d45ba0de5202e760ffd0",
+     "ok": true
+    },
+    {
+     "step": "envelope",
+     "algorithm": "Ed25519",
+     "embedded_key_present_and_ignored": true,
+     "key_id_matches_anchor": false
+    },
+    {
+     "step": "signature_under_pinned_anchor",
+     "ok": false
+    }
+   ],
+   "v1_envelope_sha256": "c522a2a51ff92d4497621340d031c949494c4ae7926abb3a4c9b5b4d164c95fe",
+   "outcome": "reject",
+   "as_expected": true
+  }
+ },
+ "all_tests_as_expected": true,
+ "work_copies": "temporary directory, deleted after the run",
+ "generated_by": "im2_sign_v2.py"
+}
